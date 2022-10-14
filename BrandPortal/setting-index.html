@@ -1,0 +1,1590 @@
+<!--
+   Search: 
+   1: "bottom-notify"
+   2. readonly
+   3. Edit Shopify Store URL
+   -->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Brand Setting</title>
+      <link
+         rel="icon"
+         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
+         />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap"
+         rel="stylesheet"
+         />
+      <link media="all" rel="stylesheet" href="./css/vendor.min.css" />
+      <link media="all" rel="stylesheet" href="./css/styles.min.css" />
+      <link media="all" rel="stylesheet" href="./css/media.css" />
+      <link media="all" rel="stylesheet" href="./css/ckeditor.css" />
+   </head>
+   <body>
+      <div class="wrapper">
+         <header class="header mp-header">
+            <div class="header_block header_block-top mp-header_block-top">
+               <div class="header_container">
+                  <!--header logo-->
+                  <div class="header_logo">
+                     <a href="index.html" class="logo">
+                        <picture><img src="images/logo.svg" alt="" /></picture>
+                     </a>
+                  </div>
+                  <!--header menu-->
+                  <div class="header_menu-wrap">
+                      <input type="checkbox" name="" id="" class=""/>
+                     <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                     </div>
+                     <ul class="header_menu menu">
+                        <li class="menu_item"><a href="#" class="menu_link">Dashboard</a></li>
+                        <li class="menu_item ">
+                           <a href="#" class="menu_link">My Products</a>
+                        </li>
+                        <li class="menu_item">
+                           <div class="dropdown">
+                              <div class="dropdown_header">
+                                 <div class="dropdown_header-chevron">
+                                    <a href="#" class="menu_link">Retailers
+                                     <div class="dropdown_header-chevron">
+                                    <svg class="icon">
+                                       <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                    </svg>
+                                 </div>
+                                     </a>
+                                 </div>
+                                 
+                              </div>
+                              <div class="dropdown_body">
+                                 <div class="dropdown_inner">
+                                    <ul>
+                                       <li><a href="#">Approved Retailers</a></li>
+                                       <li><a href="#">Requests for Access</a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="menu_item"><a href="#" class="menu_link">Orders</a></li>
+                     </ul>
+                  </div>
+                  <!--header search-->
+                  <div class="header_search search">
+                     <form action="#" class="search_form">
+                        <div class="search_form-input">
+                           <input type="text" placeholder="Search…" />
+                        </div>
+                        <button type="cancel" class="search_form-button">
+                           <svg class="icon">
+                              <use xlink:href="images/sprite.svg#icon-clear"></use>
+                           </svg>
+                        </button>
+                        <button type="submit"></button>
+                        <svg class="icon">
+                           <use xlink:href="images/sprite.svg#icon-search"></use>
+                        </svg>
+                     </form>
+                  </div>
+                  <!--header actions-->
+                  <div class="header_actions">
+                     <div class="header_usermenu">
+                        <div class="dropdown">
+                           <div class="dropdown_header">
+                              <div class="dropdown_header-text">
+                                 Hi, <span class="username">Jane</span>
+                              </div>
+                              <div class="dropdown_header-icon">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-retailers"></use>
+                                 </svg>
+                              </div>
+                              <div class="dropdown_header-chevron">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                 </svg>
+                              </div>
+                           </div>
+                           <div class="dropdown_body">
+                              <div class="dropdown_inner">
+                                 <ul>
+                                    <li><a href="#">Settings</a></li>
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">Sign out</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <button class="header_action header_action-mails">
+                        <svg class="icon">
+                           <use xlink:href="images/sprite.svg#icon-mail"></use>
+                        </svg>
+                        <div class="text visible">5</div>
+                     </button>
+                     <button class="header_action header_action-notifications">
+                        <!--Changed icon to dropdown, to show list of 'updates'-->
+                        <div class="dropdown">
+                           <div class="dropdown_header">
+                              <svg class="icon">
+                                 <use xlink:href="images/sprite.svg#icon-notification"></use>
+                              </svg>
+                           </div>
+                           <div class="dropdown_body">
+                              <div class="dropdown_inner">
+                                 <ul>
+                                    <li>
+                                       <span>Summer Activities Chips for Kids</span> <br>
+                                       updated Dec.15, 2021, 07:56 PM
+                                    </li>
+                                    <li>
+                                       <span>Summer Activities Chips for Kids</span> <br>
+                                       updated Dec.15, 2021, 07:56 PM
+                                    </li>
+                                    <li>
+                                       <span>Summer Activities Chips for Kids</span> <br>
+                                       updated Dec.15, 2021, 07:56 PM
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="text visible">1</div>
+                     </button>
+                     <div class="header_action header_action-invite">
+                        <button class="button invite-retailer">Invite Retailers</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="header_block header_block-bottom mp-header_block-bottom"></div>
+         </header>
+         <main class="content mp-content setting-section">
+            <section class="section products pc_tabs tabs">
+               <aside class="filters mp-filter">
+                  <div class="filters_wrap">
+                     <div class="filters_block filters_block-body">
+                        <div class="filter open filter-by-products">
+                           <div class="filter_body">
+                              <div class="tab_wrap">
+                                 <div class="setting-tab-title">
+                                    Setting
+                                 </div>
+                                  <input type="checkbox" name="" id="" class=""/>
+                                  <div class="hamburger-lines tabs-hamburger-lines">
+                                    <span class="line line1"></span>
+                                    <span class="line line2"></span>
+                                    <span class="line line3"></span>
+                                 </div>
+                                 <div class="pc_tabs-menu tab_menu">
+                                      <a href="#" data-link="Integration" class="tab-links checked">Integration</a>
+                                    <a href="#" data-link="Account" class="tab-links required active">Brand Profile</a>
+                                    <a href="#" data-link="Preferences" class="tab-links required">Preferences</a>
+                                    <a href="#" data-link="GettingPaid" class="tab-links required">Getting Paid</a>
+                                    <a href="#" data-link="Shipping" class="tab-links required">Shipping</a>
+                                    <a href="#" data-link="Users" class="tab-links">Users</a>
+                                    <a href="#" data-link="Security" class="tab-links">Security</a>
+                                    <a href="#" data-link="AlertsNotifications" class="tab-links">Alerts and Notifications</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </aside>
+               <div class="pc_tabs-content tabs_body">
+                   <div class="tab" data-target="Integration">
+                     <div class="products_content">
+                        <div class="products_head mp-head">
+                           <div class="products_head-content">
+                              <div class="title">
+                                 <h1>
+                                    Store Integration <span class="asterisk-red">*</span>
+                                 </h1>
+                              </div>
+                           </div>
+                        </div>
+                         <div class="products_body">
+                           <div class="content_area">
+                              <div id="integration">
+                                 <div class="integration_info">
+                                    <label>Shopify Store URL</label>
+                                     <div class="email_edit-section">
+                                        <label>janehut.shopify.com</label>
+                                         <a href="" class="icon-link">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#edit-email"></use>
+                                          </svg>
+                                       </a>
+                                     </div>
+                                 </div>
+<!--                                  Edit Shopify Store URL-->
+<!--
+                                  <div class="integration_info">
+                                    <label>Shopify Store URL</label>
+                                     <div class="form-area form-input">
+                                        <input type="email" class="form-control" id="" placeholder="janehut.shopify.com">
+                                         <button class="button">Connect</button>
+                                      </div>
+                                 </div>
+-->
+                                 <div class="integration_info mt-5">
+                                    <h2>Synchronization mode
+                                    </h2>
+                                    <div class="form-area">
+                                       <div class="form-input retailer_access-item">
+                                          <div class="retailer-access">
+                                             <h4>Stock</h4>
+                                             <p>Toggle on if you want the inventory from your eCommerce store to sync with ShopDot. Toggle off if you want to manage your stock levels manually within ShopDot. 
+                                            </p>
+                                          </div>
+                                          <div class="my-toggle-btn">
+                                             <input type="checkbox" id="checkbox2">
+                                             <label for="checkbox2">
+                                             <span class="on" title="Active"></span>
+                                             <span class="off" title="Inctive"></span>
+                                             </label>
+                                          </div>
+                                       </div>
+                                    </div>
+                                     <div class="form-area mt-5">
+                                       <div class="form-input retailer_access-item">
+                                          <div class="retailer-access">
+                                             <h4>Retail Price</h4>
+                                             <p>Toggle on if you want to sync the retail pricing from your eCommerce store to ShopDot. Toggle off if you want to edit the retail pricing manually within ShopDot.
+                                              </p>
+                                          </div>
+                                          <div class="my-toggle-btn">
+                                             <input type="checkbox" id="checkbox3">
+                                             <label for="checkbox3">
+                                             <span class="on" title="Active"></span>
+                                             <span class="off" title="Inctive"></span>
+                                             </label>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab active" data-target="Account">
+                     <div class="products_content">
+                        <div class="products_head mp-head head-with-subtitle">
+                           <div class="products_head-content">
+                              <div class="title">
+                                 <h1>
+                                    Brand Profile <span class="asterisk-red">*</span>
+                                 </h1>
+                                  
+                              </div>
+                           </div><p>Information entered on this page will be visible to retailers within ShopDot</p>
+                        </div>
+                        <div class="products_body">
+                           <div class="content_area">
+                              <div id="account">
+                                  
+                                  <div class="account_info">
+                                    <h2>Account Info</h2>
+                                    <div class="form-area">
+                                       <div class="category-form-input">
+                                          <div class="form-input">
+                                             <label for="" class="form-label">First name</label>
+                                             <input type="text" class="form-control" id="" placeholder="John">
+                                          </div>
+                                          <div class="form-input">
+                                             <label for="" class="form-label">Last name</label>
+                                             <input type="text" class="form-control" id="" placeholder="Doe">
+                                          </div>
+                                       </div>
+                                       <div class="form-input tooltip-input">
+                                          <label for="" class="form-label">
+                                             Account email
+                                             <div class="tooltip">
+                                                <div class="tooltip-icon">
+                                                   <svg class="icon">
+                                                      <use xlink:href="images/sprite.svg#icon-info"></use>
+                                                   </svg>
+                                                </div>
+                                                <div class="tooltip_text">
+                                                   <p>This is the email you use to log in to your account</p>
+                                                </div>
+                                             </div>
+                                          </label>
+                                          <input type="text" class="form-control is-invalid" id="" placeholder="john@jondoe.com">
+                                          <small class="invalid-feedback">Please type correct email</small>
+                                       </div>
+                                        
+                                        <div class="form-input tooltip-input">
+                                          <label for="" class="form-label">
+                                             Contact phone number
+                                          </label>
+                                          <input type="text" class="form-control is-invalid" id="" placeholder="9154651444">
+                                       </div>
+                                    </div>
+                                 </div>
+                                  
+<!--
+                                 <div class="account_info">
+                                    <h2>Company Information <span class="asterisk-red">*</span></h2>
+                                    <div class="form-area">
+                                      
+                                          <div class="form-input">
+                                             <label for="" class="form-label">Company name</label>
+                                             <input type="text" class="form-control" id="" placeholder="Company name">
+                                          </div>
+                                          <div class="form-input">
+                                             <label for="" class="form-label">Company email address</label>
+                                             <input type="text" class="form-control" id="" placeholder="john@john.com">
+                                          </div>
+                                        <div class="form-input">
+                                             <label for="" class="form-label">Company phone number</label>
+                                             <input type="text" class="form-control" id="" placeholder="9876543210">
+                                          </div>
+
+                                       <div class="form-input tooltip-input">
+                                          <label for="" class="form-label">
+                                             Account email
+                                             <div class="tooltip">
+                                                <div class="tooltip-icon">
+                                                   <svg class="icon">
+                                                      <use xlink:href="images/sprite.svg#icon-info"></use>
+                                                   </svg>
+                                                </div>
+                                                <div class="tooltip_text">
+                                                   <p>This is the email you use to log in to your account</p>
+                                                </div>
+                                             </div>
+                                          </label>
+                                           <input type="text" class="form-control is-invalid" id="" placeholder="john@jondoe.com">
+                                           <small class="invalid-feedback">Please type correct email</small>
+                                       </div>
+
+                                       <div class="form-input">
+                                          <label for="" class="form-label">Contact phone number</label>
+                                          <input type="text" class="form-control" id="" placeholder="9154651444">
+                                       </div>
+                                    </div>
+                                 </div>
+-->
+                                 <div class="my_store">
+                                    <h2>Brand Information <span class="asterisk-red">*</span></h2>
+                                    <div class="form-area">
+                                       <div class="form-input form-upload-image">
+                                          <a href="#" class="upload-logo">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#edit-icon"></use>
+                                             </svg>
+                                          </a>
+                                          <div class="profile-user-avtar">
+                                             <img src="images/profile-avatar.jpg">
+                                          </div>
+                                          <label>Upload logo</label>
+                                       </div>
+                                       <div class="form-input">
+                                          <label for="" class="form-label">Store name</label>
+                                          <input type="text" class="form-control" id="" placeholder="Jane Beauty Parlor">
+                                       </div>
+                                       <div class="form-input tooltip-input">
+                                          <label for="" class="form-label">
+                                             Store Website
+<!--
+                                             <div class="tooltip">
+                                                <div class="tooltip-icon">
+                                                   <svg class="icon">
+                                                      <use xlink:href="images/sprite.svg#icon-info"></use>
+                                                   </svg>
+                                                </div>
+                                                <div class="tooltip_text">
+                                                   <p>This is your store that is connected with ShopDot. You can connect a different store in the Integration section.</p>
+                                                </div>
+                                             </div>
+-->
+                                          </label>
+                                          <input type="text" class="form-control disabled" id="" placeholder="janebeautyparlor.com" readonly>
+                                       </div>
+                                       <div class="form-input form-checkbox mb-4">
+                                          <label for="" class="form-label">Brand Category (Select up to three)</label>
+                                          <div class="select-checkbox">
+                                             <div class="check-item">
+                                                <label for="check-a" class="checkbox">
+                                                   <input type="checkbox" name="check-all-filter" id="check-a" checked>
+                                                   <div class="checkbox-text"><span>Animals & Pet Supplies</span></div>
+                                                </label>
+                                             </div>
+                                             <div class="check-item">
+                                                <label for="check-b" class="checkbox">
+                                                   <input type="checkbox" name="check-all-filter" id="check-b" checked>
+                                                   <div class="checkbox-text"><span>Hardware & DIY</span></div>
+                                                </label>
+                                             </div>
+                                             <div class="check-item">
+                                                <label for="check-c" class="checkbox">
+                                                   <input type="checkbox" name="check-all-filter" id="check-c">
+                                                   <div class="checkbox-text"><span>Apparel & Accessories </span></div>
+                                                </label>
+                                             </div>
+                                             <div class="check-item">
+                                                <label for="check-d" class="checkbox">
+                                                   <input type="checkbox" name="check-all-filter" id="check-d">
+                                                   <div class="checkbox-text"><span>Health & Beauty</span></div>
+                                                </label>
+                                             </div>
+                                             <div class="check-item">
+                                                <label for="check-e" class="checkbox">
+                                                   <input type="checkbox" name="check-all-filter" id="check-e">
+                                                   <div class="checkbox-text"><span>Baby & Kids</span></div>
+                                                </label>
+                                             </div>
+                                             <div class="check-item">
+                                                <label for="check-f" class="checkbox">
+                                                   <input type="checkbox" name="check-all-filter" id="check-f">
+                                                   <div class="checkbox-text"><span>Home & Garden</span></div>
+                                                </label>
+                                             </div>
+                                             <div class="check-item">
+                                                <label for="check-g" class="checkbox">
+                                                   <input type="checkbox" name="check-all-filter" id="check-g">
+                                                   <div class="checkbox-text"><span>Electronics </span></div>
+                                                </label>
+                                             </div>
+                                             <div class="check-item">
+                                                <label for="check-h" class="checkbox">
+                                                   <input type="checkbox" name="check-all-filter" id="check-h">
+                                                   <div class="checkbox-text"><span>Paper & Novelty</span></div>
+                                                </label>
+                                             </div>
+                                             <div class="check-item">
+                                                <label for="check-i" class="checkbox">
+                                                   <input type="checkbox" name="check-all-filter" id="check-i">
+                                                   <div class="checkbox-text"><span>Food & Beverage </span></div>
+                                                </label>
+                                             </div>
+                                             <div class="check-item">
+                                                <label for="check-j" class="checkbox">
+                                                   <input type="checkbox" name="check-all-filter" id="check-j" checked>
+                                                   <div class="checkbox-text"><span>Sports & Outdoor</span></div>
+                                                </label>
+                                             </div>
+                                             <div class="check-item">
+                                                <label for="check-k" class="checkbox">
+                                                   <input type="checkbox" name="check-all-filter" id="check-k">
+                                                   <div class="checkbox-text"><span>Footwear </span></div>
+                                                </label>
+                                             </div>
+                                             <div class="check-item">
+                                                <label for="check-l" class="checkbox">
+                                                   <input type="checkbox" name="check-all-filter" id="check-l">
+                                                   <div class="checkbox-text"><span>Toys & Games</span></div>
+                                                </label>
+                                             </div>
+                                             <div class="check-item">
+                                                <label for="check-m" class="checkbox">
+                                                   <input type="checkbox" name="check-all-filter" id="check-m">
+                                                   <div class="checkbox-text"><span>Furniture </span></div>
+                                                </label>
+                                             </div>
+                                             <div class="check-item">
+                                                <label for="check-n" class="checkbox">
+                                                   <input type="checkbox" name="check-all-filter" id="check-n">
+                                                   <div class="checkbox-text"><span>Other</span></div>
+                                                </label>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="form-input form-checkbox mb-4">
+                                          <label for="" class="form-label">Brand Values</label>
+                                          <div class="select-checkbox third-col">
+                                             <div class="check-item">
+                                                <label for="check-o" class="checkbox">
+                                                   <input type="checkbox" name="check-all-filter" id="check-o" checked>
+                                                   <div class="checkbox-text"><span>BIPOC Owned</span></div>
+                                                </label>
+                                             </div>
+                                             <div class="check-item">
+                                                <label for="check-p" class="checkbox">
+                                                   <input type="checkbox" name="check-all-filter" id="check-p" checked>
+                                                   <div class="checkbox-text"><span>Eco-friendly</span></div>
+                                                </label>
+                                             </div>
+                                             <div class="check-item">
+                                                <label for="check-q" class="checkbox">
+                                                   <input type="checkbox" name="check-all-filter" id="check-q">
+                                                   <div class="checkbox-text"><span>Fair Trade</span></div>
+                                                </label>
+                                             </div>
+                                             <div class="check-item">
+                                                <label for="check-r" class="checkbox">
+                                                   <input type="checkbox" name="check-all-filter" id="check-r">
+                                                   <div class="checkbox-text"><span>Handmade</span></div>
+                                                </label>
+                                             </div>
+                                             <div class="check-item">
+                                                <label for="check-t" class="checkbox">
+                                                   <input type="checkbox" name="check-all-filter" id="check-t">
+                                                   <div class="checkbox-text"><span>Made in Canada</span></div>
+                                                </label>
+                                             </div>
+                                             <div class="check-item">
+                                                <label for="check-u" class="checkbox">
+                                                   <input type="checkbox" name="check-all-filter" id="check-u">
+                                                   <div class="checkbox-text"><span>Made in USA</span></div>
+                                                </label>
+                                             </div>
+                                             <div class="check-item">
+                                                <label for="check-v" class="checkbox">
+                                                   <input type="checkbox" name="check-all-filter" id="check-v">
+                                                   <div class="checkbox-text"><span>Not on Amazon</span></div>
+                                                </label>
+                                             </div>
+                                             <div class="check-item">
+                                                <label for="check-w" class="checkbox">
+                                                   <input type="checkbox" name="check-all-filter" id="check-w">
+                                                   <div class="checkbox-text"><span>Organic</span></div>
+                                                </label>
+                                             </div>
+                                             <div class="check-item">
+                                                <label for="check-x" class="checkbox">
+                                                   <input type="checkbox" name="check-all-filter" id="check-x" checked>
+                                                   <div class="checkbox-text"><span>Size Inclusive</span></div>
+                                                </label>
+                                             </div>
+                                             <div class="check-item">
+                                                <label for="check-y" class="checkbox">
+                                                   <input type="checkbox" name="check-all-filter" id="check-y">
+                                                   <div class="checkbox-text"><span>Small Batch</span></div>
+                                                </label>
+                                             </div>
+                                             <div class="check-item">
+                                                <label for="check-z" class="checkbox">
+                                                   <input type="checkbox" name="check-all-filter" id="check-z">
+                                                   <div class="checkbox-text"><span>Social Good</span></div>
+                                                </label>
+                                             </div>
+                                             <div class="check-item">
+                                                <label for="check-aa" class="checkbox">
+                                                   <input type="checkbox" name="check-all-filter" id="check-aa">
+                                                   <div class="checkbox-text"><span>Women Owned</span></div>
+                                                </label>
+                                             </div>
+                                             <div class="check-item">
+                                                <label for="check-ab" class="checkbox">
+                                                   <input type="checkbox" name="check-all-filter" id="check-ab">
+                                                   <div class="checkbox-text"><span>Other</span></div>
+                                                </label>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="form-input form-story mb-4">
+                                          <label for="" class="form-label">Your brand story</label>
+                                          <div class="content-info-">
+                                             <div data-editor="ClassicEditor" data-collaboration="false" data-revision-history="false">
+                                                <main>
+                                                   <div class="centered">
+                                                      <div class="">
+                                                         <div class="editor-container">
+                                                            <div class="editor">
+                                                               <p>
+                                                                  Weaving style and quality into therapeutic threads, VIM & VIGR products are part designer socks, part medical device, and all designed with you in mind.  
+                                                               </p>
+                                                               <p>
+                                                                  Founded in 2013, our team is committed to creating VIM & VIGR products because we have seen the amazing results firsthand. After discovering our need for compression socks — to relieve achiness or fight fatigue from too much sitting or standing — we were completely underwhelmed by the quality and the style options. So we set out to create a compression sock that made us look good and feel great. 
+                                                               </p>
+                                                               <p>
+                                                                  We built our product starting with scientific insights — partnering with vascular surgeons and vein clinics. We found the right formula to create integrally 
+                                                               </p>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </main>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="form-input mb-4">
+                                          <label for="" class="form-label">Add a video link</label>
+                                          <input type="text" class="form-control" id="" placeholder="video link">
+                                       </div>
+                                       <div class="form-input form-upload mb-4">
+                                          <label for="" class="form-label">Upload a brand photo</label>
+<!--
+                                          <div class="upload-image-items">
+                                             <p>Drag and drop file here</p>
+                                          </div>
+-->
+                                           
+                                           <div class="uploadOuter">
+                                              
+                                            <span class="dragBox" >
+                                              Drag and drop file here
+                                            <input type="file" onChange="dragNdrop(event)"  ondragover="drag()" ondrop="drop()" id="uploadFile"  />
+                                            </span>
+                                                <strong>OR</strong>
+                                               <label for="uploadFile" class="btn btn-primary">Upload Image</label>
+                                             
+                                            </div>
+                                            <div id="preview"></div>
+                                           
+                                       </div>
+                                       <div class="form-input form-submit">
+                                          <button class="button button-grey cancel">Cancel</button>
+                                          <button class="button">Update</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                   <div class="tab" data-target="Preferences">
+                     <div class="products_content">
+                        <div class="products_head mp-head">
+                           <div class="products_head-content">
+                              <div class="title">
+                                 <h1>
+                                    Preferences <span class="asterisk-red">*</span>
+                                 </h1>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="products_body">
+                           <div class="content_area">
+                              <div id="preferences">
+                                 <div class="preferences_info">
+                                    <h2>
+                                       <span>Wholesale Pricing </span>
+                                       <div class="tooltip">
+                                          <div class="tooltip-icon">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-info"></use>
+                                             </svg>
+                                          </div>
+                                          <div class="tooltip_text">
+                                             <p class="mb-0">This is the percentage of the retail price that will be applied as your products wholesale pricing. You can make edits at product level. At that point if there's any change in retail price, that won't affect the WSP. It won't constantly override.</p>
+                                          </div>
+                                       </div>
+                                    </h2>
+                                    <div class="form-area">
+                                       <div class="form-input preferences-item">
+                                          <h4>Set your wholesale price based on a percentage of the retail price.</h4>
+<!--
+                                          <p><span>For example,</span> retail price is $100. If you set percentage to 70%, then your product's wholesale price is $70.</p>
+                                          <p><span>Note:</span> You can still edit wholesale pricing for each individual product.</p>
+-->
+                                       </div>
+                                       <div class="form-input preferences-slider">
+                                           
+                                           
+                                               <div class="wp-item mt-5">
+                                                   <div class="wp-left">
+                                                   Wholesale Price Percentage
+                                                   </div>
+                                                   <div class="wp-right">
+                                                    <span class="percentage-lbl">%</span>
+                                                   <input type="number" name="min-price-wsp" id="wpPer" placeholder="50" class="slider">
+                                                   </div>
+                                                   </div>
+                                                    <div class="wp-item srp">
+                                                   <div class="wp-left ">
+                                                    <span class="samle-retail-price">Sample Retail Price</span>
+                                                       <label><span>$</span>100</label>
+                                                   </div>
+                                                   <div class="wp-right">
+                                                   <p>WSP is the wholesale price that retailers will pay you for the product</p>
+                                                      <label><span>$</span><span id="wpValue">50</span></label>
+                                                   </div>
+                                                   
+                                              
+                                           </div>
+                                         
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="preferences_info mt-5">
+                                    <h2><span>Retail Pricing  <span class="asterisk-red">*</span> </span>
+                                    </h2>
+                                    <div class="form-area">
+                                       <div class="form-input preferences-item">
+                                          <div class="retail-flex-item">
+                                             <label>Retail Pricing Flexibility</label>
+                                             <div class="tooltip">
+                                                <div class="tooltip-icon">
+                                                   <svg class="icon">
+                                                      <use xlink:href="images/sprite.svg#icon-info"></use>
+                                                   </svg>
+                                                </div>
+                                                <div class="tooltip_text">
+                                                   <p class="mb-0">This information will be displayed on your brand profile. However, if Retailer manually changes the pricing in their Shopify store, the retail price cannot be overwritten by ShopDot.</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <select name="price" id="retail-price">
+                                             <option value="0">Enforce retail price</option>
+                                             <option value="1">Allow for flexible retail pricing</option>
+                                          </select>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="preferences_info mt-5">
+                                    <h2><span>Inventory Buffer </span>
+                                    </h2>
+                                       <div class="form-area">
+                                       <div class="form-input preferences-item">
+                                          <h4>Set a percentage of the inventory in your eCommerce store that will be published and sold in ShopDot.</h4>
+                                       </div>
+                                       <div class="form-input preferences-slider">
+                                           
+                                           
+                                               <div class="wp-item mt-5">
+                                                   <div class="wp-left">
+                                                   Inventory Buffer Percentage
+                                                   </div>
+                                                   <div class="wp-right">
+                                                   <span class="percentage-lbl">%</span>    
+                                                   <input type="number" name="min-price-wsp" id="ibPer" placeholder="70" class="slider">
+                                                   </div>
+                                                   </div>
+                                                    <div class="wp-item srp">
+                                                   <div class="wp-left ">
+                                                    <span class="samle-retail-price">Sample Shopify Inventory</span>
+                                                       <label>100</label>
+                                                   </div>
+                                                   <div class="wp-right">
+                                                   <p>ShopDot Inventory that is available to your retailers in ShopDot.</p>
+                                                       <label id="ibValue">70</label>
+                                                   </div>
+                                                   
+                                              
+                                           </div>
+                                         
+                                       </div>
+                                    </div>
+                                 </div>
+<!--
+                                 <div class="preferences_info mt-5">
+                                    <h2><span>Retailer Access </span>
+                                    </h2>
+                                    <div class="form-area">
+                                       <div class="form-input retailer_access-item">
+                                          <div class="retailer-access">
+                                             <h4>Auto-assign active products to all approved retailers.</h4>
+                                             <p>If turned on, all active products on ShopDot will automatically be made available to sell for all retailers you are connected with.</p>
+                                          </div>
+                                          <div class="my-toggle-btn">
+                                             <input type="checkbox" id="checkbox1">
+                                             <label for="checkbox1">
+                                             <span class="on" title="Active"></span>
+                                             <span class="off" title="Inctive"></span>
+                                             </label>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+-->
+<!--
+                                   <div class="preferences_info mt-5">
+                                    <h2><span>Retailer Type Preferences</span>
+                                    </h2>
+                                    <div class="form-area">
+                                       <div class="form-input retailer_access-item">
+                                          <div class="retailer-access">
+                                            <p>Type in description on the type of retailers you want to bring on. This will appear in your brand profile.</p>
+                                          </div>
+                                       </div>
+                                         <div class="form-area">
+                                        <div class="form-input">
+                                          <input type="text" class="form-control" id="" placeholder="">
+                                       </div>
+                                       </div>
+                                    </div>
+                                 </div>
+-->
+                                  <div class="preferences_info mt-5">
+                                    <h2><span>Return and Refund Policy <span class="asterisk-red">*</span></span> 
+                                        <div class="tooltip">
+                                        <div class="tooltip-icon">
+                                           <svg class="icon">
+                                              <use xlink:href="images/sprite.svg#icon-info"></use>
+                                           </svg>
+                                        </div>
+                                        <div class="tooltip_text">
+                                           <p class="mb-0">This return and refund policy is universal and will apply to all of your products.</p>
+                                        </div>
+                                     </div>
+                                    </h2>
+                                      <div class="form-area">
+                                     <div class="form-input return_select-item">
+                                        <h4>You can use this section to define the standard return & refund policy for all the products in your store.</h4>
+                                        <div class="pe_radio mt-5">
+                                           <label for="radio-return" class="radiobox">
+                                              <input type="radio" name="radio-filter" id="radio-return" checked="">
+                                              <div class="radiobox-text"><span>No returns or refunds</span></div>
+                                           </label>
+                                           <label for="radio-return-one" class="radiobox">
+                                              <input type="radio" name="radio-filter" id="radio-return-one" checked="">
+                                              <div class="radiobox-text"><span>Returns and refunds are accepted on a case-by-case basis.</span>
+                                               <div class="tooltip">
+                                        <div class="tooltip-icon">
+                                           <svg class="icon">
+                                              <use xlink:href="images/sprite.svg#icon-info"></use>
+                                           </svg>
+                                        </div>
+                                        <div class="tooltip_text">
+                                           <p class="mb-0">Retailers will have to message you to see if an order is eligible for a return or refund.</p>
+                                        </div>
+                                     </div>
+                                               </div>
+                                           </label>
+                                        </div>
+                                     </div>
+                                  </div>
+                                 </div>
+                                  <div class="form-area">
+                                      <div class="form-input form-submit">
+                                          <button class="button button-grey cancel">Cancel</button>
+                                          <button class="button">Update</button>
+                                       </div>
+                                  </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                   <div class="tab" data-target="GettingPaid">
+                     <div class="products_content">
+                         <div class="products_body">
+                           <div class="content_area">
+                              <h2 class="heading">Getting Paid <span class="asterisk-red">*</span></h2>
+                              <div id="gettingpaid">
+                                <div class="gettingpaid_info">
+                                     <div class="form-input preferences-item">
+                                        <h4>ShopDot, Inc. works with Priority Technology Holdings, Inc. ("PRTH") to provide merchant accounts for businesses just like you. Priority provides a valuable service which includes processing your customer's payment transactions and depositing the funds into your account. To enable merchant account services through Priority, please complete the following application. </h4>
+                                        <a href="setting-getting-paid-business_detail.html" class="button btn-lg mt-4">Start Application</a>
+                                   </div>
+                                   
+                                   <div class="form-input">
+                                       <div class="gp-info">
+                                       <div class="gpinfo-item">
+                                           <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#gpinfo-a"></use>
+                                          </svg>
+                                           <h5>What information will I need? </h5>
+                                           <p>You will be asked to provide standard business and bank account details</p>
+                                           
+                                           </div>
+                                       <div class="gpinfo-item">
+                                           
+                                            <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#gpinfo-b"></use>
+                                          </svg>
+                                           <h5>How long does it take? </h5>
+                                           <p>It will take 5-10 minutes to complete this application </p>
+                                           </div>
+                                           
+                                       </div>
+                                       
+                                   </div>
+                               </div>
+                            </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                   <div class="tab" data-target="Shipping">
+                     <div class="products_content">
+                        <div class="products_head mp-head">
+                           <div class="products_head-content">
+                              <div class="title">
+                                 <h1>
+                                    Shipping Information <span class="asterisk-red">*</span>
+                                 </h1>
+                              </div>
+                           </div>
+                        </div>
+                         <div class="products_body">
+                           <div class="content_area">
+                              <div id="shipping">
+                                 <div class="shipping_info">
+                                    <h2>Shipping Location <span class="asterisk-red">*</span></h2>
+                                    <div class="form-area">
+                                          <div class="form-input">
+                                             <label for="" class="form-label">Street Address 1</label>
+                                             <input type="text" class="form-control" id="" placeholder="3102 W Broadway Street">
+                                          </div>
+                                          <div class="form-input">
+                                             <label for="" class="form-label">Street Address 2</label>
+                                             <input type="text" class="form-control is-invalid" id="" placeholder="Suite B">
+                                              <small class="invalid-feedback">Please type correct email</small>
+                                          </div>
+                                         <div class="category-form-input">
+                                          <div class="form-input">
+                                             <label for="" class="form-label">Country</label>
+                                             <select name="Country" id="country-list">
+                                                 <option value="0">United States</option>
+                                                 <option value="1">India</option>
+                                                 <option value="1">Japan</option>
+                                          </select>
+                                          </div>
+                                          <div class="form-input">
+                                             <label for="" class="form-label">State</label>
+                                             <select name="State" id="state-list">
+                                                 <option value="0">Montana</option>
+                                                 <option value="1">Texas</option>
+                                                 <option value="2">Ohio</option>
+                                          </select>
+                                              <small class="invalid-feedback">Please type correct email</small>
+                                          </div>
+                                       </div>
+                                        <div class="category-form-input mt-4">
+                                          <div class="form-input">
+                                             <label for="" class="form-label">City</label>
+                                             <select name="Country" id="country-list">
+                                                 <option value="0">United States</option>
+                                                 <option value="1">India</option>
+                                                 <option value="1">Japan</option>
+                                          </select>
+                                          </div>
+                                          <div class="form-input">
+                                             <label for="" class="form-label">ZIP</label>
+                                             <input type="text" class="form-control mb-0" id="" placeholder="59808">
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                  <div class="default_shipping_info">
+                                    <h2>Default Shipping Flat Rates</h2>
+                                    <div class="form-area">
+                                       <div class="form-input preferences-item">
+                                          <h4>Domestic Shipping Rates</h4>
+                                          <p>You can use this section to define domestic shipping cost, incremental fees for each additional item, and the expected shipping time for domestic shipments.</p>
+                                       </div>
+                                       <div class="category-form-input tooltip-input mt-4">
+                                           <label class="d_shipping">Domestic</label>
+                                          <div class="form-input">
+                                              <label for="" class="form-label">
+                                             Shipping cost
+                                             <div class="tooltip">
+                                                <div class="tooltip-icon">
+                                                   <svg class="icon">
+                                                      <use xlink:href="images/sprite.svg#icon-info"></use>
+                                                   </svg>
+                                                </div>
+                                                <div class="tooltip_text">
+                                                   <p>This is the cost for the first item.</p>
+                                                </div>
+                                             </div>
+                                          </label>
+                                              <input type="text" class="form-control" id="" placeholder="4.95">
+                                          </div>
+                                          <div class="form-input">
+                                               <label for="" class="form-label">
+                                             Incremental fee
+                                             <div class="tooltip">
+                                                <div class="tooltip-icon">
+                                                   <svg class="icon">
+                                                      <use xlink:href="images/sprite.svg#icon-info"></use>
+                                                   </svg>
+                                                </div>
+                                                <div class="tooltip_text">
+                                                   <p>The cost of every extra item added to an order</p>
+                                                </div>
+                                             </div>
+                                          </label>
+                                              <input type="text" class="form-control" id="" placeholder="0">
+                                          </div>
+                                       </div>
+                                         <div class="form-input preferences-item tooltip-input">
+                                          <div class="retail-flex-item">
+                                             <label>Total Shipping Time</label>
+                                             <div class="tooltip">
+                                                <div class="tooltip-icon">
+                                                   <svg class="icon">
+                                                      <use xlink:href="images/sprite.svg#icon-info"></use>
+                                                   </svg>
+                                                </div>
+                                                <div class="tooltip_text">
+                                                   <p class="mb-0">Total shipping time is the number of business days for you to process, ship and deliver products.</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <select name="days" id="retail-price">
+                                             <option value="0">3-7 days</option>
+                                             <option value="1">7-14 days</option>
+                                             <option value="1">14-21 days</option>
+                                             <option value="1">>21 days</option>
+                                          </select>
+                                       </div>
+                                       </div>
+                                      <div class="form-area">
+                                        <div class="shipping_note">
+                                                <div class="note_icon">
+                                                <svg class="icon">
+                                                      <use xlink:href="images/sprite.svg#info_note"></use>
+                                                   </svg>
+                                                </div>
+                                            <div class="note-info">
+                                                    <label>Note</label>
+                                                <p>No international shipping as of the moment. <br>You can also edit shipping rates on a per product level under Products.</p>
+                                            </div>
+                                          </div>
+                                      </div>
+                                      <div class="form-area">
+                                      <div class="form-input form-submit mt-4">
+                                          <button class="button button-grey cancel">Cancel</button>
+                                          <button class="button">Save</button>
+                                       </div>
+                                       </div>   
+                                 </div>
+                                 
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab" data-target="Users">
+                     <div class="products_content">
+                        <div class="products_head mp-head">
+                           <div class="products_head-content">
+                              <div class="title">
+                                 <h1>
+                                    Users
+                                 </h1>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="products_body">
+                           <div class="content_area">
+                              <div id="user">
+                                 <div class="user_info">
+                                    <a href="add-user.html" class="button button-border add-user">
+                                       <span class="plus-icon-sm">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#plus-icon-sm"></use>
+                                          </svg>
+                                       </span>
+                                       Add a new user
+                                    </a>
+                                    <h2>Active Users</h2>
+                                    <div class="datalist-table_wrap">
+                                       <table class="table datalist-table">
+                                          <thead>
+                                             <tr>
+                                                <th>
+                                                   Email
+                                                </th>
+                                                <th>
+                                                   First Name
+                                                </th>
+                                                <th>
+                                                   Last Name
+                                                </th>
+                                                <th>
+                                                   User Access
+                                                </th>
+                                                <th>
+                                                   Action
+                                                </th>
+                                             </tr>
+                                          </thead>
+                                          <tbody>
+                                             <tr>
+                                                <td>
+                                                   <a href="mailto:john@jondoe.com" class="link-text">john@jondoe.com</a>
+                                                </td>
+                                                <td>
+                                                   John
+                                                </td>
+                                                <td>
+                                                   Doe
+                                                </td>
+                                                <td>
+                                                   All Access
+                                                </td>
+                                                <td>
+                                                   <a href="" class="delete-action">
+                                                      <svg class="icon">
+                                                         <use xlink:href="images/sprite.svg#delete-icon"></use>
+                                                      </svg>
+                                                   </a>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td>
+                                                   <a href="mailto:john@jondoe.com" class="link-text">john@jondoe.com</a>
+                                                </td>
+                                                <td>
+                                                   John
+                                                </td>
+                                                <td>
+                                                   Doe
+                                                </td>
+                                                <td>
+                                                   All Access
+                                                </td>
+                                                <td>
+                                                   <a href="" class="delete-action">
+                                                      <svg class="icon">
+                                                         <use xlink:href="images/sprite.svg#delete-icon"></use>
+                                                      </svg>
+                                                   </a>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td>
+                                                   <a href="mailto:john@jondoe.com" class="link-text">john@jondoe.com</a>
+                                                </td>
+                                                <td>
+                                                   John
+                                                </td>
+                                                <td>
+                                                   Doe
+                                                </td>
+                                                <td>
+                                                   All Access
+                                                </td>
+                                                <td>
+                                                   <a href="" class="delete-action">
+                                                      <svg class="icon">
+                                                         <use xlink:href="images/sprite.svg#delete-icon"></use>
+                                                      </svg>
+                                                   </a>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       <div class="pagination_wrap p-3 m-0">
+                                          <div class="pagination">
+                                             <div class="pagination_per">
+                                                <div class="pagination-title">Showing 3 items</div>
+                                             </div>
+                                             <div class="pagination_nav">
+                                                <div class="pagination-title">Page 1</div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <h2>Pending Invites</h2>
+                                    <div class="datalist-table_wrap">
+                                       <table class="table datalist-table">
+                                          <thead>
+                                             <tr>
+                                                <th>
+                                                   Email
+                                                </th>
+                                                <th>
+                                                   First Name
+                                                </th>
+                                                <th>
+                                                   Last Name
+                                                </th>
+                                                <th>
+                                                   User Access
+                                                </th>
+                                                <th>
+                                                   Action
+                                                </th>
+                                             </tr>
+                                          </thead>
+                                          <tbody>
+                                             <tr>
+                                                <td>
+                                                   <a href="mailto:john@jondoe.com" class="link-text">john@jondoe.com</a>
+                                                </td>
+                                                <td>
+                                                   John
+                                                </td>
+                                                <td>
+                                                   Doe
+                                                </td>
+                                                <td>
+                                                   All Access
+                                                </td>
+                                                <td>
+                                                   <button class="button">Resend</button>
+                                                   <a href="" class="delete-action">
+                                                      <svg class="icon">
+                                                         <use xlink:href="images/sprite.svg#delete-icon"></use>
+                                                      </svg>
+                                                   </a>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td>
+                                                   <a href="mailto:john@jondoe.com" class="link-text">john@jondoe.com</a>
+                                                </td>
+                                                <td>
+                                                   John
+                                                </td>
+                                                <td>
+                                                   Doe
+                                                </td>
+                                                <td>
+                                                   All Access
+                                                </td>
+                                                <td>
+                                                   <button class="button">Resend</button>
+                                                   <a href="" class="delete-action">
+                                                      <svg class="icon">
+                                                         <use xlink:href="images/sprite.svg#delete-icon"></use>
+                                                      </svg>
+                                                   </a>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td>
+                                                   <a href="mailto:john@jondoe.com" class="link-text">john@jondoe.com</a>
+                                                </td>
+                                                <td>
+                                                   John
+                                                </td>
+                                                <td>
+                                                   Doe
+                                                </td>
+                                                <td>
+                                                   All Access
+                                                </td>
+                                                <td>
+                                                   <button class="button">Resend</button>
+                                                   <a href="" class="delete-action">
+                                                      <svg class="icon">
+                                                         <use xlink:href="images/sprite.svg#delete-icon"></use>
+                                                      </svg>
+                                                   </a>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       <div class="pagination_wrap p-3 m-0">
+                                          <div class="pagination">
+                                             <div class="pagination_per">
+                                                <div class="pagination-title">Showing 3 items</div>
+                                             </div>
+                                             <div class="pagination_nav">
+                                                <div class="pagination-title">Page 1</div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                   <div class="tab" data-target="Security">
+                     <div class="products_content">
+                        <div class="products_head mp-head">
+                           <div class="products_head-content">
+                              <div class="title">
+                                 <h1>
+                                    Security
+                                 </h1>
+                              </div>
+                           </div>
+                        </div>
+                          <div class="products_body">
+                         <div class="content_area">
+                            <div id="security">
+                         <div class="security_info">
+                                  <h2>
+                                    Change Password
+                                  </h2>
+                                  <div class="form-area">
+                                     <div class="form-input">
+                                        <label for="" class="form-label">Old Password</label>
+                                        <input type="password" class="form-control" id="" placeholder="Enter old password">
+                                     </div>
+                                      <div class="form-input">
+                                        <label for="" class="form-label">New Password</label>
+                                        <input type="password" class="form-control" id="" placeholder="Enter new password">
+                                     </div>
+                                     <div class="form-input">
+                                        <label for="" class="form-label">Confirm New Password</label>
+                                        <input type="password" class="form-control" id="" placeholder="Enter retype new password">
+                                     </div>
+                                  </div>
+                                  <div class="form-area">
+                                     <div class="form-input form-submit mt-4">
+                                        <button class="button button-grey cancel">Cancel</button>
+                                        <button class="button">Update</button>
+                                     </div>
+                                  </div>
+                               </div>
+                             </div>
+                          </div>
+                       </div>    
+                     </div>
+                  </div>
+                  <div class="tab" data-target="AlertsNotifications">
+                   <div class="products_content">
+                      <div class="products_head mp-head">
+                         <div class="products_head-content">
+                            <div class="title">
+                               <h1>
+                                  Alerts and Notifications
+                               </h1>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="products_body">
+                         <div class="content_area">
+                            <div id="alerts">
+                               <div class="alerts_info">
+                                  <h2>Email Notifications</h2>
+                                  <div class="form-area">
+                                     <div class="form-input">
+                                        <h4>Email me when:</h4>
+                                     </div>
+                                     <div class="form-input retailer_access-item mt-4">
+                                        <div class="alert-access">
+                                           <h4>There is a new order</h4>
+                                        </div>
+                                        <div class="my-toggle-btn">
+                                           <input type="checkbox" id="checkbox3" checked>
+                                           <label for="checkbox3">
+                                           <span class="on" title="Active"></span>
+                                           <span class="off" title="Inctive"></span>
+                                           </label>
+                                        </div>
+                                     </div>
+<!--
+                                     <div class="form-input retailer_access-item mt-2">
+                                        <div class="alert-access">
+                                           <h4>Low stock on a product</h4>
+                                        </div>
+                                        <div class="my-toggle-btn">
+                                           <input type="checkbox" id="checkbox4" checked>
+                                           <label for="checkbox4">
+                                           <span class="on" title="Active"></span>
+                                           <span class="off" title="Inctive"></span>
+                                           </label>
+                                        </div>
+                                     </div>
+-->
+<!--
+                                     <div class="form-input retailer_access-item mt-2">
+                                        <div class="alert-access">
+                                           <h4>Low stock on a product variant</h4>
+                                        </div>
+                                        <div class="my-toggle-btn">
+                                           <input type="checkbox" id="checkbox4" checked>
+                                           <label for="checkbox4">
+                                           <span class="on" title="Active"></span>
+                                           <span class="off" title="Inctive"></span>
+                                           </label>
+                                        </div>
+                                     </div>
+-->
+                                  </div>
+                               </div>
+                               <div class="alerts_info mt-5">
+                                  <h2>Low Stock Level Warnings</h2>
+                                  <div class="form-area">
+                                     <div class="form-input retailer_access-item mt-2">
+                                        <div class="alert-access alert-flex">
+                                           <h4>Show Orange flag at product level when product stock is below:</h4>
+                                           <div class="tooltip">
+                                              <div class="tooltip-icon">
+                                                 <svg class="icon">
+                                                    <use xlink:href="images/sprite.svg#question-mark"></use>
+                                                 </svg>
+                                              </div>
+                                              <div class="tooltip_text">
+                                                 <p class="mb-0">This alert indicator applies to both product and variant levels.</p>
+                                              </div>
+                                           </div>
+                                        </div>
+                                     </div>
+                                     <div class="form-input retailer_access-item mt-2">
+                                        <input type="text" class="form-control w-50" id="" placeholder="10">
+                                     </div>
+                                  </div>
+                                  <div class="form-area">
+                                     <div class="shipping_note mt-0">
+                                        <div class="note_icon">
+                                           <svg class="icon">
+                                              <use xlink:href="images/sprite.svg#info_note"></use>
+                                           </svg>
+                                        </div>
+                                        <div class="note-info">
+                                           <label>Note</label>
+                                           <p>Red flag warnings are shown at both product and variant level when stock is 0. There is also automatic in-app notifications for low and empty stock.</p>
+                                        </div>
+                                     </div>
+                                  </div>
+                                  <div class="form-area">
+                                     <div class="form-input form-submit mt-4">
+                                        <button class="button button-grey cancel">Cancel</button>
+                                        <button class="button">Save</button>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                  
+                  
+                  
+                  
+                  
+               </div>
+            </section>
+         </main>
+         <!--
+            <div class="bottom-notify">
+              <div class="container">
+                <div class="bottom-notify_text">
+                  <p>
+                    An invitation email has been re-sent to john@jondoe.com
+                  </p>
+                </div>
+              </div>
+              <div class="bottom-notify-close">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#icon-close"></use>
+                </svg>
+              </div>
+            </div>
+            -->
+         <footer class="footer">
+         </footer>
+         <div class="popup setting-popup upload-logo-modal">
+            <div class="popup_wrapper">
+               <div class="popup_content">
+                  <div class="popup-flex">
+                     <div class="popup-message_info">
+                        <h2>Upload logo</h2>
+                     </div>
+                     <div class="popup-close">
+                        <svg class="icon">
+                           <use xlink:href="images/sprite.svg#icon-close"></use>
+                        </svg>
+                     </div>
+                  </div>
+                  <div class="logo-image-area">
+                     <p>Click and drag on the image to crop your picture.</p>
+                     <div class="image-crop">
+                        <img src="images/profile-logo.jpg">
+                     </div>
+                  </div>
+                  <div class="action-footer">
+                     <button class="button button-border">Upload different photo</button>
+                     <button class="button button-grey px-6">Cancel</button>
+                     <button class="button px-6">Save</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+<!--
+         <div class="popup setting-popup delete-user-modal">
+            <div class="popup_wrapper">
+               <div class="popup_content">
+                  <div class="popup-close">
+                     <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-close"></use>
+                     </svg>
+                  </div>
+                  <div class="popup-flex">
+                     <div class="icon-center">
+                        <svg class="icon">
+                           <use xlink:href="images/sprite.svg#delete-user-md"></use>
+                        </svg>
+                     </div>
+                     <h1>Remove User</h1>
+                     <p>Are you sure you want to remove <a href="#" class="link-text">john@jondoe.com</a>? He will lose access to your account in ShopDot.</p>
+                  </div>
+                  <div class="action-footer">
+                     <button class="button button-grey px-6">Cancel</button>
+                     <button class="button px-6">Yes</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+-->
+          <div class="popup setting-popup delete-user-modal">
+            <div class="popup_wrapper">
+               <div class="popup_content">
+                  <div class="popup-close">
+                     <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-close"></use>
+                     </svg>
+                  </div>
+                  <div class="popup-flex">
+                     <div class="icon-center">
+                        <svg class="icon">
+                           <use xlink:href="images/sprite.svg#confirmtation-round"></use>
+                        </svg>
+                     </div>
+                     <h1>Confirmation Required</h1>
+                      <p>Are you sure you want to remove <a href="#" class="link-text">john@jondoe.com</a>? He will lose access to your account in ShopDot.</p>
+                  </div>
+                  <div class="action-footer">
+                     <button class="button button-dark px-6">Cancel</button>
+                     <button class="button px-6 button-red">Yes</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="js/ckeditor.js"></script>
+      <script>ClassicEditor
+         .create( document.querySelector( '.editor' ), {
+         	licenseKey: '',
+         } )
+         .then( editor => {
+         	window.editor = editor;
+         } )
+      </script>
+      <script src="./js/vendor.min.js" defer></script>
+      <script
+         src="https://code.jquery.com/jquery-3.6.0.min.js"
+         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+         crossorigin="anonymous"
+         ></script>
+      <script src="js/app.min.js" defer></script>
+       <script type="text/javascript">
+           $(document).ready(function(){
+               $(document).on("keyup", "#wpPer", function(){
+                  var wpValue = 100 * $(this).val()/100;
+                  $("#wpValue").html(wpValue);
+               });
+               $(document).on("keyup", "#ibPer", function(){
+                  var ibValue = 100 * $(this).val()/100;
+                  $("#ibValue").html(ibValue);
+               })
+           })
+        </script>
+        <script>
+       "use strict";
+        function dragNdrop(event) {
+            var fileName = URL.createObjectURL(event.target.files[0]);
+            var preview = document.getElementById("preview");
+            var previewImg = document.createElement("img");
+            previewImg.setAttribute("src", fileName);
+            preview.innerHTML = "";
+            preview.appendChild(previewImg);
+            $("#preview").css("display", "block");
+        }
+        function drag() {
+            document.getElementById('uploadFile').parentNode.className = 'draging dragBox';
+        }
+        function drop() {
+            document.getElementById('uploadFile').parentNode.className = 'dragBox';
+        }
+       </script>
+        <style>
+            .getting-paid-step-b,.getting-paid-step-c,.getting-paid-step-d,.getting-paid-step-e{display: none}
+       </style>
+   </body>
+</html>

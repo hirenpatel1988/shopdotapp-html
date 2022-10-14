@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopDot - Entry page</title>
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+  <link media="all" rel="stylesheet" href="./css/vendor.min.css">
+  <link media="all" rel="stylesheet" href="./css/styles.min.css">
+</head>
+
+
+<body class="retailer-page">
+<div class="wrapper">
+  <header class="header">
+
+    <div class="container header-container">
+      <div class="text-center">
+        <h1>Connect Shop</h1>
+      </div>
+    </div>
+
+    <div class="header__logo">
+      <picture><img src="images/logos/logo-main.png" alt="Shop Dot"></picture>
+    </div>
+
+  </header>
+
+  <main class="content">
+    <section class="section info-bar">
+      <div class="container info-bar-container">
+        <!--For store type we have 5 icons from design file-->
+        <!--1. store-type-brik-and-mortar-->
+        <!--2. store-type-marketplace-->
+        <!--3. store-type-online-only-->
+        <!--4. store-type-other-store-->
+        <!--5. store-type-popup-->
+
+        
+        <div class="info-bar__item business-name">
+          <div class="info-bar__icon">
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#store-type-brik-and-mortar"></use>
+            </svg>
+          </div>
+          <div class="info-bar__text">
+            <p>Jane’s Cottage</p>
+          </div>
+        </div>
+        
+
+        
+        <div class="info-bar__item interactions">
+          <div class="info-bar__text">
+            <p>Face-to-face, +2</p>
+          </div>
+        </div>
+        
+
+        
+        <div class="info-bar__item category-name">
+          <div class="info-bar__icon">
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#category-other"></use>
+            </svg>
+          </div>
+          <div class="info-bar__text">
+            <p>Other</p>
+          </div>
+        </div>
+        
+
+        
+        <div class="info-bar__item category-name">
+          <div class="info-bar__icon">
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#icon-thump--up"></use>
+            </svg>
+          </div>
+          <div class="info-bar__text">
+            <p>Not on Amazon, +2</p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="section subheader">
+      <div class="container subheader-container">
+
+        <div class="steps">
+          <!--To highlight current step add class 'active'-->
+          <!--To highlight done step add class 'done'-->
+          <!--To highlight process step (if need, for example: invite brands step) add class 'process'-->
+          <div class="step done">Info</div>
+          <div class="step done">Category</div>
+          <div class="step done">Values</div>
+          <div class="step active">Connect Shop</div>
+          <div class="step ">Invite Brands</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section primary primary-info">
+      <div class="container primary-container">
+        <div class="primary__content">
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+          <div class="text-message text-center">
+            <p>We're almost there. Let's connect ShopDot with your Shopify store. <br>
+              This will allow you to start selling on your website. </p>
+          </div>
+          <form action="#" class="primary__form form">
+            <div class="form__field form__field--floating-label">
+              <input type="email" name="shopify-url" id="shopify-url" placeholder="Your Shopify shop URL">
+              <label for="shopify-url">Your Shopify shop URL</label>
+            </div>
+            <div class="form__field buttons">
+              <button type="submit" class="button">Connect</button>
+            </div>
+            <div class="form__field helpers">
+              <div class="later">
+                <a href="#">Connect your shop later</a>
+              </div>
+            </div>
+          </form>
+          
+
+          
+
+          
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer"></footer>
+</div>
+
+<script src="./js/vendor.min.js" defer></script>
+<script src="./js/app.min.js" defer></script>
+
+</body>
+
+</html>

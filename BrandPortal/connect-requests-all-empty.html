@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Connect Requests - All</title>
+      <link
+         rel="icon"
+         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
+         />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap"
+         rel="stylesheet"
+         />
+      <link media="all" rel="stylesheet" href="./css/vendor.min.css" />
+      <link media="all" rel="stylesheet" href="./css/styles.min.css" />
+      <link media="all" rel="stylesheet" href="./css/media.css" />
+   </head>
+   <body>
+      <div class="wrapper">
+                  <header class="header mp-header">
+            <div class="header_block header_block-top mp-header_block-top">
+               <div class="header_container">
+                  <!--header logo-->
+                  <div class="header_logo">
+                     <a href="index.html" class="logo">
+                        <picture><img src="images/logo.svg" alt="" /></picture>
+                     </a>
+                  </div>
+                  <!--header menu-->
+                  <div class="header_menu-wrap">
+                     <input type="checkbox" name="" id="" class=""/>
+                     <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                     </div>
+                     <ul class="header_menu menu">
+                        <li class="menu_item"><a href="#" class="menu_link">Dashboard</a></li>
+                        <li class="menu_item">
+                           <a href="#" class="menu_link">Products</a>
+                        </li>
+                        <li class="menu_item">
+                           <div class="dropdown">
+                              <div class="dropdown_header">
+                                 <div class="dropdown_header-chevron">
+                                    <a href="#" class="menu_link active">
+                                       Retailers
+                                       <div class="dropdown_header-chevron">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                          </svg>
+                                       </div>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="dropdown_body">
+                                 <div class="dropdown_inner">
+                                    <ul>
+                                       <li><a href="#">Approved Retailers</a></li>
+                                       <li><a href="#">Requests for Access</a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="menu_item"><a href="#" class="menu_link">Orders</a></li>
+                     </ul>
+                  </div>
+                  <!--header search-->
+                  <div class="header_search search">
+                     <form action="#" class="search_form">
+                        <div class="search_form-input">
+                           <input type="text" placeholder="Search…" />
+                        </div>
+                        <button type="cancel" class="search_form-button">
+                           <svg class="icon">
+                              <use xlink:href="images/sprite.svg#icon-clear"></use>
+                           </svg>
+                        </button>
+                        <button type="submit"></button>
+                        <svg class="icon">
+                           <use xlink:href="images/sprite.svg#icon-search"></use>
+                        </svg>
+                     </form>
+                  </div>
+                  <!--header actions-->
+                  <div class="header_actions">
+                     <div class="header_usermenu">
+                        <div class="dropdown">
+                           <div class="dropdown_header">
+                              <div class="dropdown_header-text">
+                                 Hi, <span class="username">Jane</span>
+                              </div>
+                              <div class="dropdown_header-icon">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-retailers"></use>
+                                 </svg>
+                              </div>
+                              <div class="dropdown_header-chevron">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                 </svg>
+                              </div>
+                           </div>
+                           <div class="dropdown_body">
+                              <div class="dropdown_inner">
+                                 <ul>
+                                    <li><a href="#">Settings</a></li>
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">Sign out</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <button class="header_action header_action-mails">
+                        <svg class="icon">
+                           <use xlink:href="images/sprite.svg#icon-mail"></use>
+                        </svg>
+                        <div class="text visible">5</div>
+                     </button>
+                     <button class="header_action header_action-notifications">
+                        <!--Changed icon to dropdown, to show list of 'updates'-->
+                        <div class="dropdown">
+                           <div class="dropdown_header">
+                              <svg class="icon">
+                                 <use xlink:href="images/sprite.svg#icon-notification"></use>
+                              </svg>
+                           </div>
+                           <div class="dropdown_body">
+                              <div class="dropdown_inner">
+                                 <ul>
+                                    <li>
+                                       <span>Summer Activities Chips for Kids</span> <br>
+                                       updated Dec.15, 2021, 07:56 PM
+                                    </li>
+                                    <li>
+                                       <span>Summer Activities Chips for Kids</span> <br>
+                                       updated Dec.15, 2021, 07:56 PM
+                                    </li>
+                                    <li>
+                                       <span>Summer Activities Chips for Kids</span> <br>
+                                       updated Dec.15, 2021, 07:56 PM
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="text visible">1</div>
+                     </button>
+                     <div class="header_action header_action-invite">
+                        <button class="button invite-retailer">Invite Retailers</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="header_block header_block-bottom mp-header_block-bottom"></div>
+         </header>
+         <main class="content mp-content">
+            <section class="section products">
+               <div class="products_content mw-100">
+                  <div class="products_head">
+                     <div class="breadcrumbs_wrap">
+                        <ul class="breadcrumbs">
+                           <li> <a href="#">Home</a></li>
+                           <li> <span>Requests for Access</span></li>
+                        </ul>
+                     </div>
+                     <div class="products_head-content">
+                        <div class="title">
+                           <h1>Requests for Access</h1>
+                           <div class="number">0</div>
+                        </div>
+                        <div class="products_head-search">
+                           <form action="#" class="search_form">
+                              <div class="search_form-input">
+                                 <input type="text" placeholder="Search retailer or website" />
+                              </div>
+                              <button type="cancel" class="search_form-button">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-clear"></use>
+                                 </svg>
+                              </button>
+                              <button type="submit"></button>
+                              <svg class="icon">
+                                 <use xlink:href="images/sprite.svg#icon-search"></use>
+                              </svg>
+                           </form>
+                        </div>
+                        <div class="products_head-retailer-types">
+                           <!--For active selected type add class 'active'-->
+                           <a href="#" class="retailer-type active">All</a>
+                           <a href="#" class="retailer-type">Pending</a>
+                           <a href="#" class="retailer-type">Approvad</a>
+                           <a href="#" class="retailer-type">Declined</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="products_body">
+                     <div class="content_area">
+                        <div class="card-empty">
+                           <div class="card-empty_body">
+                              <div class="image mb-5">
+                                 <picture><img src="images/product-card-empty.svg" alt=""></picture>
+                              </div>
+                              <h3>You currently have no requests for access from any retailer.</h3>
+                              <p>Invite your retailers to join ShopDot so they can start selling your products on their website.</p>
+                              <button class="button">Invite Retailers</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </main>
+         <footer class="footer">
+         </footer>
+         <div class="popup popup-invite false">
+                <div class="popup_wrapper">
+                    <div class="popup_content">
+                        <div class="popup-close">
+                            <svg class="icon">
+                                <use xlink:href="images/sprite.svg#icon-close"></use>
+                            </svg>
+                        </div>
+
+                        <form action="#" class="primary__form form form_retailers">
+                            <div class="form_retailers-left">
+                                <div class="form_field">
+                                    <span>Add retailer email address</span>
+                                    <input type="email" name="add-retailer-email" id="add-retailer-email" placeholder="Add retailer email address…" />
+                                    <div class="form_field-help">
+                                        <small>Don’t worry, the brands won’t see the other recipients.</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_retailers-right">
+                                <h3>Edit Message</h3>
+                                <div class="form_field">
+                                    <!--Make it with div because we cant add links into textarea-->
+                                    <!--If need it can be replaced with textarea-->
+                                    <div class="email-message-box" id="email-message-box" contenteditable="true">
+                                        Hi, it's Michelle Huie from Vim & Vigr. I just signed up for <a href="#">ShopDot</a>, a brand-to-retail platform that integrates with my Shopify store to Distribute products with ease and streamline
+                                        inventory and drop-shipping. <br />
+                                        <br />
+
+                                        I'm interested in partnering with you through <a href="#">ShopDot</a>. To learn more about the benefits of selling on ShopDot, <a href="#">click here</a>. <br />
+                                        <br />
+
+                                        Here's my brand profile: <a href="#">wwww.shopdot.com/brand/profile</a>
+                                    </div>
+                                </div>
+                                <div class="form_field form_field-buttons">
+                                    <button type="submit" class="button" disabled>Invite Retailer</button>
+                                </div>
+                                <div class="form_field form_field-help">
+                                    <div class="later">
+                                        <a href="#" class="popup-close">Invite Retailers Later</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+      </div>
+      <script src="./js/vendor.min.js" defer></script>
+      <script
+         src="https://code.jquery.com/jquery-3.6.0.min.js"
+         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+         crossorigin="anonymous"
+         ></script>
+      <script src="./js/app.min.js" defer></script>
+   </body>
+</html>

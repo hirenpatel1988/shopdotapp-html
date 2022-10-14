@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Retailer Setting</title>
+      <link
+         rel="icon"
+         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
+         />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap"
+         rel="stylesheet"
+         />
+      <link media="all" rel="stylesheet" href="./css/vendor.min.css" />
+      <link media="all" rel="stylesheet" href="./css/styles.min.css" />
+      <link media="all" rel="stylesheet" href="./css/media.css" />
+   </head>
+   <body>
+      <div class="wrapper">
+         <header class="header mp-header">
+            <div class="header_block header_block-top mp-header_block-top">
+               <div class="header_container">
+                  <!--header logo-->
+                  <div class="header_logo">
+                     <a href="index.html" class="logo">
+                        <picture><img src="images/logo.svg" alt="" /></picture>
+                     </a>
+                  </div>
+                  <!--header menu-->
+                  <div class="header_menu-wrap">
+                  <ul class="header_menu menu">
+                    <li class="menu_item"><a href="#" class="menu_link">Home</a></li>
+                    <li class="menu_item">
+                      <a href="brands-all.html" class="menu_link">Brands</a>
+                    </li>
+                    <li class="menu_item">
+                      <a href="products-all.html" class="menu_link ">Products</a>
+                    </li>
+                    <li class="menu_item"><a href="#" class="menu_link">My List</a></li>
+                    <li class="menu_item"><a href="#" class="menu_link">Orders</a></li>
+                  </ul>
+                </div>
+                  <!--header search-->
+                  <div class="header_search search">
+                     <form action="#" class="search_form">
+                        <div class="search_form-input">
+                           <input type="text" placeholder="Search…" />
+                        </div>
+                        <button type="cancel" class="search_form-button">
+                           <svg class="icon">
+                              <use xlink:href="images/sprite.svg#icon-clear"></use>
+                           </svg>
+                        </button>
+                        <button type="submit"></button>
+                        <svg class="icon">
+                           <use xlink:href="images/sprite.svg#icon-search"></use>
+                        </svg>
+                     </form>
+                  </div>
+                  <!--header actions-->
+                  <div class="header_actions">
+                     <div class="header_usermenu">
+                        <div class="dropdown">
+                           <div class="dropdown_header">
+                              <div class="dropdown_header-text">
+                                 Hi, <span class="username">Jane</span>
+                              </div>
+                              <div class="dropdown_header-icon">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-retailers"></use>
+                                 </svg>
+                              </div>
+                              <div class="dropdown_header-chevron">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                 </svg>
+                              </div>
+                           </div>
+                           <div class="dropdown_body">
+                              <div class="dropdown_inner">
+                                 <ul>
+                                    <li><a href="#">Settings</a></li>
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">Sign out</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <button class="header_action header_action-mails">
+                        <svg class="icon">
+                           <use xlink:href="images/sprite.svg#icon-mail"></use>
+                        </svg>
+                        <div class="text visible">5</div>
+                     </button>
+                     <button class="header_action header_action-notifications">
+                        <!--Changed icon to dropdown, to show list of 'updates'-->
+                        <div class="dropdown">
+                           <div class="dropdown_header">
+                              <svg class="icon">
+                                 <use xlink:href="images/sprite.svg#icon-notification"></use>
+                              </svg>
+                           </div>
+                           <div class="dropdown_body">
+                              <div class="dropdown_inner">
+                                 <ul>
+                                    <li>
+                                       <span>Summer Activities Chips for Kids</span> <br>
+                                       updated Dec.15, 2021, 07:56 PM
+                                    </li>
+                                    <li>
+                                       <span>Summer Activities Chips for Kids</span> <br>
+                                       updated Dec.15, 2021, 07:56 PM
+                                    </li>
+                                    <li>
+                                       <span>Summer Activities Chips for Kids</span> <br>
+                                       updated Dec.15, 2021, 07:56 PM
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="text visible">1</div>
+                     </button>
+                     <div class="header_action header_action-invite">
+                        <button class="button invite-retailer">Invite Brand</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="header_block header_block-bottom mp-header_block-bottom"></div>
+         </header>
+         <main class="content mp-content setting-section">
+            <section class="section products pc_tabs tabs">
+               <aside class="filters mp-filter">
+                  <div class="filters_wrap">
+                     <div class="filters_block filters_block-body">
+                        <div class="filter open filter-by-products">
+                           <div class="filter_body filter_body_custom">
+                              <div class="tab_wrap">
+                                 <div class="setting-tab-title">
+                                    Setting
+                                 </div>
+                                  <input type="checkbox" name="" id="" class=""/>
+                                 <div class="hamburger-lines tabs-hamburger-lines">
+                                    <span class="line line1"></span>
+                                    <span class="line line2"></span>
+                                    <span class="line line3"></span>
+                                 </div>
+                                 <div class="pc_tabs-menu tab_menu">
+                                <a href="#" data-link="Account" class="tab-links">Retailer Profile</a>
+                                     <a href="#" data-link="Billing" class="tab-links active">Billing</a>
+                                     <a href="#" data-link="Integration" class="tab-links">Integration</a>
+                                    <a href="#" data-link="Users" class="tab-links">Users</a>
+                                     <a href="#" data-link="Security" class="tab-links">Security</a>
+                                    <a href="#" data-link="EmailPreferences" class="tab-links">Alerts and Notifications</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </aside>
+               <div class="pc_tabs-content tabs_body">
+                  
+                  
+                   <div class="tab active" data-target="Billing">
+                     <div class="products_content">
+                        <div class="products_body">
+                           <div class="content_area">
+                              <div id="billing">
+                                 <div class="billing_info">
+                                    <h2 class="heading">Billing</h2>
+                                    <div class="form-area">
+                                     <div class="form-input return_select-item">
+                                        <div class="pe_radio">
+                                           <label for="radio-credit" class="radiobox radio-click">
+                                              <input type="radio" name="radio-filter-billing" id="radio-credit">
+                                              <div class="radiobox-text"><span>Credit Card</span></div>
+                                           </label>
+                                            
+                                            <div class="radio-data-info">
+                                                
+                                               
+                                               <div class="form-input">
+                                                  <label for="" class="form-label">
+                                                     Card Number
+                                                  </label>
+                                                  <input type="text" class="form-control" id="" placeholder="4242424242424242">
+                                               </div>
+                                                <div class="category-form-input">
+                                                  <div class="form-input">
+                                                     <label for="" class="form-label">cvv</label>
+                                                     <input type="text" class="form-control" id="" placeholder="100">
+                                                  </div>
+                                                  <div class="form-input input-relative">
+                                                     <label for="" class="form-label">Card Type</label>
+                                                     <input type="text" class="form-control" id="" placeholder="VISA">
+                                                      <div class="card-type">
+                                                      <img src="images/credit-card.png">
+                                                          </div>
+                                                  </div>
+                                               </div>
+                                                <div class="category-form-input">
+                                                  <div class="form-input">
+                                                     <label for="" class="form-label">Expiry Month</label>
+                                                     <input type="text" class="form-control" id="" placeholder="12">
+                                                  </div>
+                                                  <div class="form-input">
+                                                     <label for="" class="form-label">Expiry Year</label>
+                                                     <input type="text" class="form-control" id="" placeholder="2022">
+                                                  </div>
+                                               </div>
+                                                <div class="form-input">
+                                                  <label for="" class="form-label">Holder Name</label>
+                                                  <input type="text" class="form-control" id="" placeholder="Jack">
+                                               </div>
+                                                <div class="form-input">
+                                                  <label for="" class="form-label">Address Line1</label>
+                                                  <input type="text" class="form-control" id="" placeholder="99 Apartment">
+                                               </div>
+                                                <div class="category-form-input">
+                                                  <div class="form-input">
+                                                     <label for="" class="form-label">City</label>
+                                                     <input type="text" class="form-control" id="" placeholder="San Jose">
+                                                  </div>
+                                                  <div class="form-input">
+                                                     <label for="" class="form-label">State</label>
+                                                     <input type="text" class="form-control" id="" placeholder="CA">
+                                                  </div>
+                                               </div>
+                                               <div class="category-form-input">
+                                                  <div class="form-input">
+                                                     <label for="" class="form-label">Zip</label>
+                                                     <input type="text" class="form-control w-50" id="" placeholder="43211">
+                                                  </div>
+                                               </div>
+                                            
+                                            </div>
+                                            </div>
+                                            
+                                            <div class="pe_radio">
+                                           <label for="radio-bank" class="radiobox radio-click">
+                                              <input type="radio" name="radio-filter-billing" id="radio-bank">
+                                              <div class="radiobox-text"><span>Direct from bank account (ACH)</span>
+                                               </div>
+                                           </label>
+                                                
+                                                <div class="radio-data-info">
+                                               
+                                                <div class="category-form-input">
+                                                  <div class="form-input">
+                                                     <label for="" class="form-label">Name</label>
+                                                     <input type="text" class="form-control" id="" placeholder="Consumer John Doe">
+                                                  </div>
+                                                  <div class="form-input">
+                                                     <label for="" class="form-label">Account Number</label>
+                                                     <input type="text" class="form-control" id="" placeholder="084339231638309">
+                                                  </div>
+                                               </div>
+                                                <div class="category-form-input">
+                                                  <div class="form-input">
+                                                     <label for="" class="form-label">Routing Number</label>
+                                                     <input type="text" class="form-control" id="" placeholder="121122676">
+                                                  </div>
+                                                  <div class="form-input disabled">
+                                                     <label for="" class="form-label">Purpose</label>
+                                                     <input type="text" class="form-control" id="" placeholder="CORPORATE">
+                                                  </div>
+                                               </div>
+                                                <div class="form-input disabled">
+                                                  <label for="" class="form-label">Account Type</label>
+                                                  <input type="text" class="form-control" id="" placeholder="SAVINGS">
+                                               </div>
+                                            </div>
+                                        </div>
+                                     </div>
+                                        
+                                      </div>
+                                     <div class="form-area">
+                                     <div class="form-input form-submit mt-4">
+                                        <button class="button button-grey cancel">Cancel</button>
+                                        <button class="button">Submit</button>
+                                     </div>
+                                  </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+                  
+               </div>
+            </section>
+         </main>
+                   <!--
+            <div class="bottom-notify">
+              <div class="container">
+                <div class="bottom-notify_text">
+                  <p>
+                    An invitation email has been re-sent to john@jondoe.com.
+                  </p>
+                </div>
+              </div>
+              <div class="bottom-notify-close">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#icon-close"></use>
+                </svg>
+              </div>
+            </div>
+            -->
+         <footer class="footer">
+         </footer>
+         <div class="popup setting-popup upload-logo-modal">
+            <div class="popup_wrapper">
+               <div class="popup_content">
+                  <div class="popup-flex">
+                     <div class="popup-message_info">
+                        <h2>Upload logo</h2>
+                     </div>
+                     <div class="popup-close">
+                        <svg class="icon">
+                           <use xlink:href="images/sprite.svg#icon-close"></use>
+                        </svg>
+                     </div>
+                  </div>
+                  <div class="logo-image-area">
+                     <p>Click and drag on the image to crop your picture.</p>
+                     <div class="image-crop">
+                        <img src="images/profile-logo.jpg">
+                     </div>
+                  </div>
+                  <div class="action-footer">
+                     <button class="button button-border">Upload different photo</button>
+                     <button class="button button-grey px-6">Cancel</button>
+                     <button class="button px-6">Save</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="popup setting-popup delete-user-modal">
+            <div class="popup_wrapper">
+               <div class="popup_content">
+                  <div class="popup-close">
+                     <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-close"></use>
+                     </svg>
+                  </div>
+                  <div class="popup-flex">
+                     <div class="icon-center">
+                        <svg class="icon">
+                           <use xlink:href="images/sprite.svg#confirmtation-round"></use>
+                        </svg>
+                     </div>
+                     <h1>Confirmation Required</h1>
+                      <p>Are you sure you want to remove <a href="#" class="link-text">john@jondoe.com</a>? He will lose access to your account in ShopDot.</p>
+                  </div>
+                  <div class="action-footer">
+                     <button class="button button-dark px-6">Cancel</button>
+                     <button class="button px-6 button-red">Yes</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="./js/vendor.min.js" defer></script>
+      <script
+         src="https://code.jquery.com/jquery-3.6.0.min.js"
+         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+         crossorigin="anonymous"
+         ></script>
+      <script src="js/app.min.js" defer></script>
+   </body>
+</html>

@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Orders | Retailer Portal</title>
+      <link
+         rel="icon"
+         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/1/svg%22 viewBox=%220 0 10 10%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
+         />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap"
+         rel="stylesheet"
+         />
+      <link media="all" rel="stylesheet" href="css/vendor.min.css" />
+      <link media="all" rel="stylesheet" href="css/styles.min.css" />
+      <link media="all" rel="stylesheet" href="css/media.css" />
+      <style>
+      </style>
+   </head>
+   <body>
+      <div class="wrapper">
+         <header class="header mp-header">
+            <div class="header_block header_block-top mp-header_block-top">
+               <div class="header_container">
+                  <!--header logo-->
+                  <div class="header_logo">
+                     <a href="index.html" class="logo">
+                        <picture><img src="images/logo.svg" alt="" /></picture>
+                     </a>
+                  </div>
+                  <!--header menu-->
+                  <div class="header_menu-wrap">
+                     <ul class="header_menu menu">
+                        <li class="menu_item"><a href="#" class="menu_link">Home</a></li>
+                        <li class="menu_item">
+                           <a href="brands-all.html" class="menu_link">Brands</a>
+                        </li>
+                        <li class="menu_item">
+                           <a href="products-all.html" class="menu_link ">Products</a>
+                        </li>
+                        <li class="menu_item"><a href="#" class="menu_link">My List</a></li>
+                        <li class="menu_item"><a href="#" class="menu_link active">Orders</a></li>
+                     </ul>
+                  </div>
+                  <!--header search-->
+                  <div class="header_search search">
+                     <form action="#" class="search_form">
+                        <div class="search_form-input">
+                           <input type="text" placeholder="Search…" />
+                        </div>
+                        <button type="cancel" class="search_form-button">
+                           <svg class="icon">
+                              <use xlink:href="images/sprite.svg#icon-clear"></use>
+                           </svg>
+                        </button>
+                        <button type="submit"></button>
+                        <svg class="icon">
+                           <use xlink:href="images/sprite.svg#icon-search"></use>
+                        </svg>
+                     </form>
+                  </div>
+                  <!--header actions-->
+                  <div class="header_actions">
+                     <div class="header_usermenu">
+                        <div class="dropdown">
+                           <div class="dropdown_header">
+                              <div class="dropdown_header-text">
+                                 Hi, <span class="username">Jane</span>
+                              </div>
+                              <div class="dropdown_header-icon">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-retailers"></use>
+                                 </svg>
+                              </div>
+                              <div class="dropdown_header-chevron">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                 </svg>
+                              </div>
+                           </div>
+                           <div class="dropdown_body">
+                              <div class="dropdown_inner">
+                                 <ul>
+                                    <li><a href="#">Settings</a></li>
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">Sign out</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <button class="header_action header_action-mails">
+                        <svg class="icon">
+                           <use xlink:href="images/sprite.svg#icon-mail"></use>
+                        </svg>
+                        <div class="text visible">5</div>
+                     </button>
+                     <button class="header_action header_action-notifications">
+                        <!--Changed icon to dropdown, to show list of 'updates'-->
+                        <div class="dropdown">
+                           <div class="dropdown_header">
+                              <svg class="icon">
+                                 <use xlink:href="images/sprite.svg#icon-notification"></use>
+                              </svg>
+                           </div>
+                           <div class="dropdown_body">
+                              <div class="dropdown_inner">
+                                 <ul>
+                                    <li>
+                                       <span>Summer Activities Chips for Kids</span> <br>
+                                       updated Dec.15, 2021, 07:56 PM
+                                    </li>
+                                    <li>
+                                       <span>Summer Activities Chips for Kids</span> <br>
+                                       updated Dec.15, 2021, 07:56 PM
+                                    </li>
+                                    <li>
+                                       <span>Summer Activities Chips for Kids</span> <br>
+                                       updated Dec.15, 2021, 07:56 PM
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="text visible">1</div>
+                     </button>
+                     <div class="header_action header_action-invite">
+                        <button class="button invite-retailer">Invite Brand</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="header_block header_block-bottom mp-header_block-bottom"></div>
+         </header>
+         <main class="content mp-content">
+            <section class="section products">
+               <aside class="filters">
+                  <div class="filters_wrap">
+                     <!--filters head-->
+                     <div class="filters_block filters_block-head">
+                        <!--filters close/unclose filters-->
+                        <button class="filters_hide-and-show">
+                           <svg class="icon">
+                              <use xlink:href="images/sprite.svg#icon-arrow--left"></use>
+                           </svg>
+                        </button>
+                        <!--filters clearn-->
+                        <a href="#" class="filters-clear">Clear Filters</a>
+                     </div>
+                     <div class="filters_block filters_block-body">
+                        <div class="filter open filter-by-brand">
+                           <div class="filter_body">
+                              <div class="subfilters">
+                                 <div class="subfilter">
+                                    <div class="subfilter_head">Retailer</div>
+                                    <div class="subfilter_body">
+                                       <form action="#" class="filter_form search_form mb-4">
+                                          <div class="search_form-input">
+                                             <input type="text" placeholder="Search" />
+                                          </div>
+                                          <button type="cancel" class="search_form-button">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-clear"></use>
+                                             </svg>
+                                          </button>
+                                          <button type="submit"></button>
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#icon-search"></use>
+                                          </svg>
+                                       </form>
+                                       <label class="filter_form-title mb-3 d-block">12 Brand Found</label>
+                                       <div class="filter_form-items">
+                                          <div class="checkbox checkbox--no-decor">
+                                             <label for="bs-1">
+                                                <input type="checkbox" id="bs-1" name="bs">
+                                                <div class="checkbox-text">Retailer A</div>
+                                             </label>
+                                          </div>
+                                          <div class="checkbox checkbox--no-decor">
+                                             <label for="bs-2">
+                                                <input type="checkbox" id="bs-2" name="bs">
+                                                <div class="checkbox-text">Retailer B</div>
+                                             </label>
+                                          </div>
+                                          <div class="checkbox checkbox--no-decor">
+                                             <label for="bs-3">
+                                                <input type="checkbox" id="bs-3" name="bs">
+                                                <div class="checkbox-text">Retailer C</div>
+                                             </label>
+                                          </div>
+                                          <div class="checkbox checkbox--no-decor">
+                                             <label for="bs-4">
+                                                <input type="checkbox" id="bs-4" name="bs">
+                                                <div class="checkbox-text">Retailer D</div>
+                                             </label>
+                                          </div>
+                                          <div class="checkbox checkbox--no-decor">
+                                             <label for="bs-5">
+                                                <input type="checkbox" id="bs-5" name="bs">
+                                                <div class="checkbox-text">Retailer E</div>
+                                             </label>
+                                          </div>
+                                          <div class="checkbox checkbox--no-decor">
+                                             <label for="bs-6">
+                                                <input type="checkbox" id="bs-6" name="bs">
+                                                <div class="checkbox-text">Retailer F</div>
+                                             </label>
+                                          </div>
+                                          <div class="checkbox checkbox--no-decor">
+                                             <label for="bs-7">
+                                                <input type="checkbox" id="bs-7" name="bs">
+                                                <div class="checkbox-text">Retailer G</div>
+                                             </label>
+                                          </div>
+                                          <div class="checkbox checkbox--no-decor">
+                                             <label for="bs-8">
+                                                <input type="checkbox" id="bs-8" name="bs">
+                                                <div class="checkbox-text">Retailer H</div>
+                                             </label>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="subfilter">
+                                    <div class="subfilter_head">Payment Status</div>
+                                    <div class="subfilter_body">
+                                       <div class="filter_form-items">
+                                          <div class="checkbox checkbox--no-decor">
+                                             <label for="ps-11">
+                                                <input type="checkbox" id="ps-11" name="ps">
+                                                <div class="checkbox-text">Paid</div>
+                                             </label>
+                                          </div>
+                                          <div class="checkbox checkbox--no-decor">
+                                             <label for="ps-12">
+                                                <input type="checkbox" id="ps-12" name="ps">
+                                                <div class="checkbox-text">Refunded</div>
+                                             </label>
+                                          </div>
+                                          <div class="checkbox checkbox--no-decor">
+                                             <label for="ps-13">
+                                                <input type="checkbox" id="ps-13" name="ps">
+                                                <div class="checkbox-text">Pending Refund</div>
+                                             </label>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                  
+                                  <div class="subfilter">
+                                    <div class="subfilter_head">Fulfillment Status</div>
+                                    <div class="subfilter_body">
+                                       <div class="filter_form-items">
+                                          <div class="checkbox checkbox--no-decor">
+                                             <label for="ps-114">
+                                                <input type="checkbox" id="ps-114" name="ps">
+                                                <div class="checkbox-text">Unfulfilled</div>
+                                             </label>
+                                          </div>
+                                          <div class="checkbox checkbox--no-decor">
+                                             <label for="ps-124">
+                                                <input type="checkbox" id="ps-124" name="ps">
+                                                <div class="checkbox-text">Fulfilled</div>
+                                             </label>
+                                          </div>
+                                          <div class="checkbox checkbox--no-decor">
+                                             <label for="ps-134">
+                                                <input type="checkbox" id="ps-134" name="ps">
+                                                <div class="checkbox-text">Cancelled</div>
+                                             </label>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="subfilter">
+                                    <div class="subfilter_head">Order Date</div>
+                                    <div class="subfilter_body">
+                                       <div class="date-from-to">
+                                          <div class="date-area">
+                                             <small>From</small>
+                                             <input type="date" name="p-from">
+                                          </div>
+                                          <div class="date-area">
+                                             <small>To</small>
+                                             <input type="date" placeholder="To" name="p-to">
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </aside>
+               <div class="products_content">
+                  <div class="products_head">
+                     <div class="breadcrumbs_wrap">
+                        <ul class="breadcrumbs">
+                           <li><span>My Order List</span></li>
+                        </ul>
+                     </div>
+                     <div class="products_head-content">
+                        <div class="title">
+                           <h1>My Order List</h1>
+                           <div class="number">8</div>
+                        </div>
+                        <div class="products_head-search">
+                           <form action="#" class="search_form">
+                              <div class="search_form-input">
+                                 <input type="text" placeholder="Search by Order ID, Customer Name, Product, Tracking Number" />
+                              </div>
+                              <button type="cancel" class="search_form-button">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-clear"></use>
+                                 </svg>
+                              </button>
+                              <button type="submit"></button>
+                              <svg class="icon">
+                                 <use xlink:href="images/sprite.svg#icon-search"></use>
+                              </svg>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="my_list-body order_table">
+                     <div class="my_list-table-wrap datalist-table_wrap sticky-header-table">
+                        <table class="my_list-table datalist-table my-product-table">
+                           <thead class="sticky-thead">
+                              <tr>
+                                 <th>
+                                    <div class="txt">
+                                       Customer Order ID
+                                       <!--Add class 'active' to sort, when it active-->
+                                       <button class="sort">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </th>
+                                 <th>
+                                    <div class="txt">
+                                       Order Date
+                                       <button class="sort">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </th>
+                                 <th>
+                                    <div class="txt">
+                                       Customer Name
+                                       <button class="sort">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </th>
+                                 <th>
+                                    <div class="txt">
+                                       Source
+                                       <button class="sort">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </th>
+                                 <th></th>
+                              </tr>
+                           </thead>
+                           <tbody class="accordion">
+                              <tr class="order_parent_row">
+                                 <td colspan="5">
+                                    <table class="op_table">
+                                       <tr class="tr-head linen-bg">
+                                          <td>
+                                              <div class="order-action-item">
+                                                 <div class="text-bolder">#200541
+                                              </div>
+                                              </div>
+                                            
+                                          </td>
+                                          <td>
+                                             <div class="text-bolder">Today 01:34 am</div>
+                                          </td>
+                                          <td>
+                                             <div class="text-bolder">Jane Doe</div>
+                                          </td>
+                                          <td>
+                                             <div>Shopify</div>
+                                          </td>
+                                          <td>
+                                              <div class="download-order">
+                                               <a href="order-receipt.html" target="_blank"><svg class="icon">
+                                                 <use xlink:href="images/sprite.svg#order-receipt"></use>
+                                              </svg></a>
+                                                      </div>
+                                             <svg class="icon black-arrow parent-arrow">
+                                                <use xlink:href="images/sprite.svg#black-arrow"></use>
+                                             </svg>
+                                          </td>
+                                       </tr>
+                                       <tr class="tr-body">
+                                          <td colspan="5" class="order-table-td">
+                                             <div class="order_inner-table-area">
+                                                <div class="it-title">
+                                                   <label>Retailer A</label>
+                                                    <span class="black-envelope-action">
+                                                       <a href="mailto:abc@example.com"><svg class="icon black-arrow black-envelope">
+                                                          <use xlink:href="images/sprite.svg#black-message"></use>
+                                                       </svg></a>
+                                                    </span>
+                                                   <svg class="icon black-arrow rotate-icon">
+                                                      <use xlink:href="images/sprite.svg#black-arrow"></use>
+                                                   </svg>
+                                                </div>
+                                                <div class="order_inner-table-div">
+                                                   <div class="order-table-hide">
+                                                      <div class="order-table-auto">
+                                                         <table class="order_inner-table">
+                                                            <thead class="order_inner-thead">
+                                                               <tr>
+                                                                  <th>
+                                                                     <div class="txt">
+                                                                        Product Name
+                                                                        <button class="sort">
+                                                                           <svg class="icon">
+                                                                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                           </svg>
+                                                                        </button>
+                                                                     </div>
+                                                                  </th>
+                                                                  <th>
+                                                                     <div class="txt">
+                                                                        Quantity
+                                                                        <button class="sort">
+                                                                           <svg class="icon">
+                                                                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                           </svg>
+                                                                        </button>
+                                                                     </div>
+                                                                  </th>
+                                                                  <th>
+                                                                     <div class="txt">
+                                                                        Total WSP
+                                                                        <button class="sort">
+                                                                           <svg class="icon">
+                                                                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                           </svg>
+                                                                        </button>
+                                                                     </div>
+                                                                  </th>
+                                                                  <th>
+                                                                     <div class="txt">
+                                                                        Total MSRP
+                                                                        <button class="sort">
+                                                                           <svg class="icon">
+                                                                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                           </svg>
+                                                                        </button>
+                                                                     </div>
+                                                                  </th>
+                                                                  <th>
+                                                                     <div class="txt">
+                                                                        Payment Status
+                                                                        <button class="sort">
+                                                                           <svg class="icon">
+                                                                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                           </svg>
+                                                                        </button>
+                                                                     </div>
+                                                                  </th>
+                                                                   <th>
+                                                                     <div class="txt">
+                                                                        Fulfillment Status
+                                                                        <button class="sort">
+                                                                           <svg class="icon">
+                                                                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                           </svg>
+                                                                        </button>
+                                                                     </div>
+                                                                  </th>
+                                                                 
+                                                                  <th>
+                                                                     <div class="txt">
+                                                                        Shipping Fee
+                                                                        <button class="sort">
+                                                                           <svg class="icon">
+                                                                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                           </svg>
+                                                                        </button>
+                                                                     </div>
+                                                                  </th>
+                                                                  <th>
+                                                                     <div class="txt">
+                                                                        Shipping Carrier
+                                                                        <button class="sort">
+                                                                           <svg class="icon">
+                                                                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                           </svg>
+                                                                        </button>
+                                                                     </div>
+                                                                  </th>
+                                                                  <th>
+                                                                     <div class="txt">
+                                                                        Tracking Number
+                                                                        <button class="sort">
+                                                                           <svg class="icon">
+                                                                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                           </svg>
+                                                                        </button>
+                                                                     </div>
+                                                                  </th>
+                                                               </tr>
+                                                            </thead>
+                                                            <tbody class="order_inner-body">
+                                                               <tr>
+                                                                  <td>
+                                                                     <div class="my_list-product">
+                                                                        <div class="my_list-product-image">
+                                                                           <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                                                        </div>
+                                                                        <div>
+                                                                           <a href="#" class="my_list-product-title">
+                                                                           Summer Activities Chips for Kids (Blue) (V1N-071A-0122-01)
+                                                                           </a>
+                                                                        </div>
+                                                                     </div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div>03</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div><span>$</span>10.00</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div><span>$</span>25.00</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <span class="status-pill pill_paid">Paid</span>
+                                                                  </td>
+                                                                   <td><div class="badge bg-warning">Unfulfilled</div></td>
+                                                                  <td>
+                                                                     <div><span>$</span>10.95</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div>-</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div>-</div>
+                                                                  </td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <td>
+                                                                     <div class="my_list-product">
+                                                                        <div class="my_list-product-image">
+                                                                           <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                                                        </div>
+                                                                        <div>
+                                                                           <a href="#" class="my_list-product-title">
+                                                                           Summer Activities Chips for Kids (Blue) (V1N-071A-0122-01)
+                                                                           </a>
+                                                                        </div>
+                                                                     </div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div>03</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div><span>$</span>10.00</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div><span>$</span>25.00</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <span class="status-pill pill_paid">Paid</span>
+                                                                  </td>
+                                                                   <td><div class="badge bg-blue">Fulfilled</div></td>
+                                                                 
+                                                                  <td>
+                                                                     <div><span>$</span>10.95</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div>USPS Standard shipping (7-10 business days)</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div class="tracking-detail">
+                                                                        <span>54554115</span>
+                                                                       <span>54554115</span>
+                                                                         <span>54554115</span>
+                                                                      </div>
+                                                                  </td>
+                                                               </tr>
+                                                                <tr>
+                                                                  <td>
+                                                                     <div class="my_list-product">
+                                                                        <div class="my_list-product-image">
+                                                                           <picture class="product-img-md"><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                                                        </div>
+                                                                        <div>
+                                                                           <a href="#" class="my_list-product-title">
+                                                                           Summer Activities Chips for Kids (Blue) (V1N-071A-0122-01)
+                                                                           </a>
+                                                                        </div>
+                                                                     </div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div>03</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div><span>$</span>10.00</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div><span>$</span>25.00</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <span class="status-pill pill_refunded">Refunded</span>
+                                                                  </td>
+                                                                   <td><div class="badge bg-blue">Fulfilled</div></td>
+                                                                  <td>
+                                                                     <div><span>$</span>10.95</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div>-</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div>-</div>
+                                                                  </td>
+                                                               </tr>
+                                                                 <tr>
+                                                                  <td>
+                                                                     <div class="my_list-product">
+                                                                        <div class="my_list-product-image">
+                                                                           <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                                                        </div>
+                                                                        <div>
+                                                                           <a href="#" class="my_list-product-title">
+                                                                           Summer Activities Chips for Kids (Blue) (V1N-071A-0122-01)
+                                                                           </a>
+                                                                        </div>
+                                                                     </div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div>03</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div><span>$</span>10.00</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div><span>$</span>25.00</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <span class="status-pill pill_pending_refunded">Pending Refund</span>
+                                                                  </td>
+                                                                 <td>
+                                                                     <div class="badge bg-red">
+                                                                         <div class="tooltip">
+                                                                            <div class="tooltip-icon tooltip-icon-info">
+                                                                              Cancelled
+                                                                            </div>
+                                                                            <div class="tooltip_text"><p>Incorrect order</p></div>
+                                                                        </div>
+                                                                      </div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div><span>$</span>10.95</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div>-</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div>-</div>
+                                                                  </td>
+                                                               </tr>
+                                                                <tr>
+                                                                  <td>
+                                                                     <div class="my_list-product">
+                                                                        <div class="my_list-product-image">
+                                                                           <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                                                        </div>
+                                                                        <div>
+                                                                           <a href="#" class="my_list-product-title">
+                                                                           Summer Activities Chips for Kids (Blue) (V1N-071A-0122-01)
+                                                                           </a>
+                                                                        </div>
+                                                                     </div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div>03</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div><span>$</span>10.00</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div><span>$</span>25.00</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <span class="status-pill pill_pending_refunded">Pending Refund</span>
+                                                                  </td>
+                                                                    <td><div class="badge bg-blue">Fulfilled</div></td>
+<!--
+                                                                <td>
+                                                                     <div class="badge bg-copper">Delivered</div>
+                                                                  </td>
+-->
+                                                                  <td>
+                                                                     <div><span>$</span>10.95</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div>-</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div>-</div>
+                                                                  </td>
+                                                               </tr>
+                                                                
+                                                                <tr>
+                                                                  <td>
+                                                                     <div class="my_list-product">
+                                                                        <div class="my_list-product-image">
+                                                                           <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                                                        </div>
+                                                                        <div>
+                                                                           <a href="#" class="my_list-product-title">
+                                                                           Summer Activities Chips for Kids (Blue) (V1N-071A-0122-01)
+                                                                           </a>
+                                                                        </div>
+                                                                     </div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div>03</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div><span>$</span>10.00</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div><span>$</span>25.00</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <span class="status-pill pill_failed">Failed</span>
+                                                                  </td>
+                                                                    <td><div class="badge bg-warning">Unfulfilled</div></td>
+                                                                  <td>
+                                                                     <div><span>$</span>10.95</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div>-</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div>-</div>
+                                                                  </td>
+                                                               </tr>
+                                                                
+                                                            </tbody>
+                                                         </table>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr class="order_parent_row">
+                                 <td colspan="5">
+                                    <table class="op_table">
+                                       <tr class="tr-head linen-bg">
+                                          <td>
+                                             <div class="text-bolder">#200541</div>
+                                          </td>
+                                          <td>
+                                             <div class="text-bolder">Today 01:34 am</div>
+                                          </td>
+                                          <td>
+                                             <div class="text-bolder">Jane Doe</div>
+                                          </td>
+                                          <td>
+                                             <div>In-store</div>
+                                          </td>
+                                          <td>
+                                             <svg class="icon black-arrow parent-arrow">
+                                                <use xlink:href="images/sprite.svg#black-arrow"></use>
+                                             </svg>
+                                          </td>
+                                       </tr>
+                                        <tr class="tr-body">
+                                          <td colspan="5" class="order-table-td">
+                                             <div class="order_inner-table-area">
+                                                <div class="it-title">
+                                                   <label>RetailerTwo</label>
+                                                   <span class="black-envelope-action">
+                                                       <a href="mailto:abc@example.com"><svg class="icon black-arrow black-envelope">
+                                                          <use xlink:href="images/sprite.svg#black-message"></use>
+                                                       </svg></a>
+                                                    </span>
+                                                   <svg class="icon black-arrow rotate-icon">
+                                                      <use xlink:href="images/sprite.svg#black-arrow"></use>
+                                                   </svg>
+                                                </div>
+                                                <div class="order_inner-table-div">
+                                                   <div class="order-table-hide">
+                                                      <div class="order-table-auto">
+                                                         <table class="order_inner-table">
+                                                            <thead class="order_inner-thead">
+                                                               <tr>
+                                                                  <th>
+                                                                     <div class="txt">
+                                                                        Product Name
+                                                                        <button class="sort">
+                                                                           <svg class="icon">
+                                                                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                           </svg>
+                                                                        </button>
+                                                                     </div>
+                                                                  </th>
+                                                                  <th>
+                                                                     <div class="txt">
+                                                                        Quantity
+                                                                        <button class="sort">
+                                                                           <svg class="icon">
+                                                                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                           </svg>
+                                                                        </button>
+                                                                     </div>
+                                                                  </th>
+                                                                  <th>
+                                                                     <div class="txt">
+                                                                        Total WSP
+                                                                        <button class="sort">
+                                                                           <svg class="icon">
+                                                                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                           </svg>
+                                                                        </button>
+                                                                     </div>
+                                                                  </th>
+                                                                  <th>
+                                                                     <div class="txt">
+                                                                        Total MSRP
+                                                                        <button class="sort">
+                                                                           <svg class="icon">
+                                                                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                           </svg>
+                                                                        </button>
+                                                                     </div>
+                                                                  </th>
+                                                                  <th>
+                                                                     <div class="txt">
+                                                                        Payment Status
+                                                                        <button class="sort">
+                                                                           <svg class="icon">
+                                                                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                           </svg>
+                                                                        </button>
+                                                                     </div>
+                                                                  </th>
+                                                                    <th>
+                                                                     <div class="txt">
+                                                                        Fulfillment Status
+                                                                        <button class="sort">
+                                                                           <svg class="icon">
+                                                                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                           </svg>
+                                                                        </button>
+                                                                     </div>
+                                                                  </th>
+                                                                  <th>
+                                                                     <div class="txt">
+                                                                        Shipping Fee
+                                                                        <button class="sort">
+                                                                           <svg class="icon">
+                                                                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                           </svg>
+                                                                        </button>
+                                                                     </div>
+                                                                  </th>
+                                                                  <th>
+                                                                     <div class="txt">
+                                                                        Shipping Carrier
+                                                                        <button class="sort">
+                                                                           <svg class="icon">
+                                                                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                           </svg>
+                                                                        </button>
+                                                                     </div>
+                                                                  </th>
+                                                                  <th>
+                                                                     <div class="txt">
+                                                                        Tracking Number
+                                                                        <button class="sort">
+                                                                           <svg class="icon">
+                                                                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                           </svg>
+                                                                        </button>
+                                                                     </div>
+                                                                  </th>
+                                                               </tr>
+                                                            </thead>
+                                                            <tbody class="order_inner-body">
+                                                               <tr>
+                                                                  <td>
+                                                                     <div class="my_list-product">
+                                                                        <div class="my_list-product-image">
+                                                                           <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                                                        </div>
+                                                                        <div>
+                                                                           <a href="#" class="my_list-product-title">
+                                                                           Summer Activities Chips for Kids (Blue) (V1N-071A-0122-01)
+                                                                           </a>
+                                                                        </div>
+                                                                     </div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div>03</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div><span>$</span>10.00</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div><span>$</span>25.00</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <span class="status-pill pill_paid">Paid</span>
+                                                                  </td>
+                                                                   <td><div class="badge bg-warning">Unfulfilled</div></td>
+                                                                  <td>
+                                                                     <div><span>$</span>10.95</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div>-</div>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div>54554115</div>
+                                                                  </td>
+                                                               </tr>
+                                                            </tbody>
+                                                         </table>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                              
+                                          </td>
+                                       </tr>
+                                        
+                                        
+                                       <tr class="order_parent_row">
+                                          <td colspan="5">
+                                             <table class="op_table">
+                                                <tr class="tr-head">
+                                                   <td>
+                                                      <div class="text-bolder">#000012</div>
+                                                   </td>
+                                                   <td>
+                                                      <div class="text-bolder">08/05/21</div>
+                                                   </td>
+                                                   <td>
+                                                      <div class="text-bolder">Jane Doe</div>
+                                                   </td>
+                                                   <td>
+                                                      <div>Shopify</div>
+                                                   </td>
+                                                   <td>
+                                                      <svg class="icon black-arrow parent-arrow">
+                                                         <use xlink:href="images/sprite.svg#black-arrow"></use>
+                                                      </svg>
+                                                   </td>
+                                                </tr>
+                                                <tr class="tr-body">
+                                                   <td colspan="5" class="order-table-td">
+                                                      <div class="order_inner-table-area">
+                                                         <div class="it-title">
+                                                            <label>RetailerOne</label>
+                                                            <span class="black-envelope-action">
+                                                               <a href="mailto:abc@example.com"><svg class="icon black-arrow black-envelope">
+                                                                  <use xlink:href="images/sprite.svg#black-message"></use>
+                                                               </svg></a>
+                                                            </span>
+                                                            <svg class="icon black-arrow rotate-icon">
+                                                               <use xlink:href="images/sprite.svg#black-arrow"></use>
+                                                            </svg>
+                                                         </div>
+                                                         <div class="order_inner-table-div">
+                                                            <div class="order-table-hide">
+                                                               <div class="order-table-auto">
+                                                                  Inner Data table here
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </td>
+                                                </tr>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                       <tr class="order_parent_row">
+                                          <td colspan="5">
+                                             <table class="op_table">
+                                                <tr class="tr-head">
+                                                   <td>
+                                                      <div class="text-bolder">#000012</div>
+                                                   </td>
+                                                   <td>
+                                                      <div class="text-bolder">08/05/21</div>
+                                                   </td>
+                                                   <td>
+                                                      <div class="text-bolder">Jane Doe</div>
+                                                   </td>
+                                                   <td>
+                                                      <div>In-store</div>
+                                                   </td>
+                                                   <td>
+                                                      <svg class="icon black-arrow parent-arrow">
+                                                         <use xlink:href="images/sprite.svg#black-arrow"></use>
+                                                      </svg>
+                                                   </td>
+                                                </tr>
+                                                <tr class="tr-body">
+                                                   <td colspan="5" class="order-table-td">
+                                                      <div class="order_inner-table-area">
+                                                         <div class="it-title">
+                                                            <label>RetailerOne</label>
+                                                            <span class="black-envelope-action">
+                                                               <a href="mailto:abc@example.com"><svg class="icon black-arrow black-envelope">
+                                                                  <use xlink:href="images/sprite.svg#black-message"></use>
+                                                               </svg></a>
+                                                            </span>
+                                                            <svg class="icon black-arrow rotate-icon">
+                                                               <use xlink:href="images/sprite.svg#black-arrow"></use>
+                                                            </svg>
+                                                         </div>
+                                                         <div class="order_inner-table-div">
+                                                            <div class="order-table-hide">
+                                                               <div class="order-table-auto">
+                                                                  Inner Data table here
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </td>
+                                                </tr>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                       <tr class="order_parent_row">
+                                          <td colspan="5">
+                                             <table class="op_table">
+                                                <tr class="tr-head">
+                                                   <td>
+                                                      <div class="text-bolder">#000013</div>
+                                                   </td>
+                                                   <td>
+                                                      <div class="text-bolder">08/05/21</div>
+                                                   </td>
+                                                   <td>
+                                                      <div class="text-bolder">Jane Doe</div>
+                                                   </td>
+                                                   <td>
+                                                      <div>Shopify</div>
+                                                   </td>
+                                                   <td>
+                                                      <svg class="icon black-arrow parent-arrow">
+                                                         <use xlink:href="images/sprite.svg#black-arrow"></use>
+                                                      </svg>
+                                                   </td>
+                                                </tr>
+                                                <tr class="tr-body">
+                                                   <td colspan="5" class="order-table-td">
+                                                      <div class="order_inner-table-area">
+                                                         <div class="it-title">
+                                                            <label>RetailerOne</label>
+                                                            <span class="black-envelope-action">
+                                                               <a href="mailto:abc@example.com"><svg class="icon black-arrow black-envelope">
+                                                                  <use xlink:href="images/sprite.svg#black-message"></use>
+                                                               </svg></a>
+                                                            </span>
+                                                            <svg class="icon black-arrow rotate-icon">
+                                                               <use xlink:href="images/sprite.svg#black-arrow"></use>
+                                                            </svg>
+                                                         </div>
+                                                         <div class="order_inner-table-div">
+                                                            <div class="order-table-hide">
+                                                               <div class="order-table-auto">
+                                                                  Inner Data table here
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </td>
+                                                </tr>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                       <tr class="order_parent_row">
+                                          <td colspan="5">
+                                             <table class="op_table">
+                                                <tr class="tr-head">
+                                                   <td>
+                                                      <div class="text-bolder">#000014</div>
+                                                   </td>
+                                                   <td>
+                                                      <div class="text-bolder">08/05/21</div>
+                                                   </td>
+                                                   <td>
+                                                      <div class="text-bolder">Jane Doe</div>
+                                                   </td>
+                                                   <td>
+                                                      <div>Shopify</div>
+                                                   </td>
+                                                   <td>
+                                                      <svg class="icon black-arrow parent-arrow">
+                                                         <use xlink:href="images/sprite.svg#black-arrow"></use>
+                                                      </svg>
+                                                   </td>
+                                                </tr>
+                                                <tr class="tr-body">
+                                                   <td colspan="5" class="order-table-td">
+                                                      <div class="order_inner-table-area">
+                                                         <div class="it-title">
+                                                            <label>RetailerOne</label>
+                                                           <span class="black-envelope-action">
+                                                               <a href="mailto:abc@example.com"><svg class="icon black-arrow black-envelope">
+                                                                  <use xlink:href="images/sprite.svg#black-message"></use>
+                                                               </svg></a>
+                                                            </span>
+                                                            <svg class="icon black-arrow rotate-icon">
+                                                               <use xlink:href="images/sprite.svg#black-arrow"></use>
+                                                            </svg>
+                                                         </div>
+                                                         <div class="order_inner-table-div">
+                                                            <div class="order-table-hide">
+                                                               <div class="order-table-auto">
+                                                                  Inner Data table here
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </td>
+                                                </tr>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                       <tr class="order_parent_row">
+                                          <td colspan="5">
+                                             <table class="op_table">
+                                                <tr class="tr-head">
+                                                   <td>
+                                                      <div class="text-bolder">#000015</div>
+                                                   </td>
+                                                   <td>
+                                                      <div class="text-bolder">08/05/21</div>
+                                                   </td>
+                                                   <td>
+                                                      <div class="text-bolder">Jane Doe</div>
+                                                   </td>
+                                                   <td>
+                                                      <div>Shopify</div>
+                                                   </td>
+                                                   <td>
+                                                      <svg class="icon black-arrow parent-arrow">
+                                                         <use xlink:href="images/sprite.svg#black-arrow"></use>
+                                                      </svg>
+                                                   </td>
+                                                </tr>
+                                                <tr class="tr-body">
+                                                   <td colspan="5" class="order-table-td">
+                                                      <div class="order_inner-table-area">
+                                                         <div class="it-title">
+                                                            <label>RetailerOne</label>
+                                                            <span class="black-envelope-action">
+                                                               <a href="mailto:abc@example.com"><svg class="icon black-arrow black-envelope">
+                                                                  <use xlink:href="images/sprite.svg#black-message"></use>
+                                                               </svg></a>
+                                                            </span>
+                                                            <svg class="icon black-arrow rotate-icon">
+                                                               <use xlink:href="images/sprite.svg#black-arrow"></use>
+                                                            </svg>
+                                                         </div>
+                                                         <div class="order_inner-table-div">
+                                                            <div class="order-table-hide">
+                                                               <div class="order-table-auto">
+                                                                  Inner Data table here
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </td>
+                                                </tr>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                       <tr class="order_parent_row">
+                                          <td colspan="5">
+                                             <table class="op_table">
+                                                <tr class="tr-head">
+                                                   <td>
+                                                      <div class="text-bolder">#000016</div>
+                                                   </td>
+                                                   <td>
+                                                      <div class="text-bolder">08/05/21</div>
+                                                   </td>
+                                                   <td>
+                                                      <div class="text-bolder">Jane Doe</div>
+                                                   </td>
+                                                   <td>
+                                                      <div>Shopify</div>
+                                                   </td>
+                                                   <td>
+                                                      <svg class="icon black-arrow parent-arrow">
+                                                         <use xlink:href="images/sprite.svg#black-arrow"></use>
+                                                      </svg>
+                                                   </td>
+                                                </tr>
+                                                <tr class="tr-body">
+                                                   <td colspan="5" class="order-table-td">
+                                                      <div class="order_inner-table-area">
+                                                         <div class="it-title">
+                                                            <label>RetailerOne</label>
+                                                            <span class="black-envelope-action">
+                                                               <a href="mailto:abc@example.com"><svg class="icon black-arrow black-envelope">
+                                                                  <use xlink:href="images/sprite.svg#black-message"></use>
+                                                               </svg></a>
+                                                            </span>
+                                                            <svg class="icon black-arrow rotate-icon">
+                                                               <use xlink:href="images/sprite.svg#black-arrow"></use>
+                                                            </svg>
+                                                         </div>
+                                                         <div class="order_inner-table-div">
+                                                            <div class="order-table-hide">
+                                                               <div class="order-table-auto">
+                                                                  Inner Data table here
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </td>
+                                                </tr>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                       <tr class="order_parent_row">
+                                          <td colspan="5">
+                                             <table class="op_table">
+                                                <tr class="tr-head">
+                                                   <td>
+                                                      <div class="text-bolder">#000017</div>
+                                                   </td>
+                                                   <td>
+                                                      <div class="text-bolder">08/05/21</div>
+                                                   </td>
+                                                   <td>
+                                                      <div class="text-bolder">Jane Doe</div>
+                                                   </td>
+                                                   <td>
+                                                      <div>Shopify</div>
+                                                   </td>
+                                                   <td>
+                                                      <svg class="icon black-arrow parent-arrow">
+                                                         <use xlink:href="images/sprite.svg#black-arrow"></use>
+                                                      </svg>
+                                                   </td>
+                                                </tr>
+                                                <tr class="tr-body">
+                                                   <td colspan="5" class="order-table-td">
+                                                      <div class="order_inner-table-area">
+                                                         <div class="it-title">
+                                                            <label>RetailerOne</label>
+                                                            <span class="black-envelope-action">
+                                                               <a href="mailto:abc@example.com"><svg class="icon black-arrow black-envelope">
+                                                                  <use xlink:href="images/sprite.svg#black-message"></use>
+                                                               </svg></a>
+                                                            </span>
+                                                            <svg class="icon black-arrow rotate-icon">
+                                                               <use xlink:href="images/sprite.svg#black-arrow"></use>
+                                                            </svg>
+                                                         </div>
+                                                         <div class="order_inner-table-div">
+                                                            <div class="order-table-hide">
+                                                               <div class="order-table-auto">
+                                                                  Inner Data table here
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </td>
+                                                </tr>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                       <tr class="order_parent_row">
+                                          <td colspan="5">
+                                             <table class="op_table">
+                                                <tr class="tr-head">
+                                                   <td>
+                                                      <div class="text-bolder">#000018</div>
+                                                   </td>
+                                                   <td>
+                                                      <div class="text-bolder">08/05/21</div>
+                                                   </td>
+                                                   <td>
+                                                      <div class="text-bolder">Jane Doe</div>
+                                                   </td>
+                                                   <td>
+                                                      <div>Shopify</div>
+                                                   </td>
+                                                   <td>
+                                                      <svg class="icon black-arrow parent-arrow">
+                                                         <use xlink:href="images/sprite.svg#black-arrow"></use>
+                                                      </svg>
+                                                   </td>
+                                                </tr>
+                                                <tr class="tr-body">
+                                                   <td colspan="5" class="order-table-td">
+                                                      <div class="order_inner-table-area">
+                                                         <div class="it-title">
+                                                            <label>RetailerOne</label>
+                                                            <span class="black-envelope-action">
+                                                               <a href="mailto:abc@example.com"><svg class="icon black-arrow black-envelope">
+                                                                  <use xlink:href="images/sprite.svg#black-message"></use>
+                                                               </svg></a>
+                                                            </span>
+                                                            <svg class="icon black-arrow rotate-icon">
+                                                               <use xlink:href="images/sprite.svg#black-arrow"></use>
+                                                            </svg>
+                                                         </div>
+                                                         <div class="order_inner-table-div">
+                                                            <div class="order-table-hide">
+                                                               <div class="order-table-auto">
+                                                                  Inner Data table here
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </td>
+                                                </tr>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                       <tr class="order_parent_row">
+                                          <td colspan="5">
+                                             <table class="op_table">
+                                                <tr class="tr-head">
+                                                   <td>
+                                                      <div class="text-bolder">#000019</div>
+                                                   </td>
+                                                   <td>
+                                                      <div class="text-bolder">08/05/21</div>
+                                                   </td>
+                                                   <td>
+                                                      <div class="text-bolder">Jane Doe</div>
+                                                   </td>
+                                                   <td>
+                                                      <div>Shopify</div>
+                                                   </td>
+                                                   <td>
+                                                      <svg class="icon black-arrow parent-arrow">
+                                                         <use xlink:href="images/sprite.svg#black-arrow"></use>
+                                                      </svg>
+                                                   </td>
+                                                </tr>
+                                                <tr class="tr-body">
+                                                   <td colspan="5" class="order-table-td">
+                                                      <div class="order_inner-table-area">
+                                                         <div class="it-title">
+                                                            <label>RetailerOne</label>
+                                                           <span class="black-envelope-action">
+                                                               <a href="mailto:abc@example.com"><svg class="icon black-arrow black-envelope">
+                                                                  <use xlink:href="images/sprite.svg#black-message"></use>
+                                                               </svg></a>
+                                                            </span>
+                                                            <svg class="icon black-arrow rotate-icon">
+                                                               <use xlink:href="images/sprite.svg#black-arrow"></use>
+                                                            </svg>
+                                                         </div>
+                                                         <div class="order_inner-table-div">
+                                                            <div class="order-table-hide">
+                                                               <div class="order-table-auto">
+                                                                  Inner Data table here
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </td>
+                                                </tr>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                       <tr class="order_parent_row">
+                                          <td colspan="5">
+                                             <table class="op_table">
+                                                <tr class="tr-head">
+                                                   <td>
+                                                      <div class="text-bolder">#000020</div>
+                                                   </td>
+                                                   <td>
+                                                      <div class="text-bolder">08/05/21</div>
+                                                   </td>
+                                                   <td>
+                                                      <div class="text-bolder">Jane Doe</div>
+                                                   </td>
+                                                   <td>
+                                                      <div>Shopify</div>
+                                                   </td>
+                                                   <td>
+                                                      <svg class="icon black-arrow parent-arrow">
+                                                         <use xlink:href="images/sprite.svg#black-arrow"></use>
+                                                      </svg>
+                                                   </td>
+                                                </tr>
+                                                <tr class="tr-body">
+                                                   <td colspan="5" class="order-table-td">
+                                                      <div class="order_inner-table-area">
+                                                         <div class="it-title">
+                                                            <label>RetailerOne</label>
+                                                            <span class="black-envelope-action">
+                                                       <a href="mailto:abc@example.com"><svg class="icon black-arrow black-envelope">
+                                                          <use xlink:href="images/sprite.svg#black-message"></use>
+                                                       </svg></a>
+                                                    </span>
+                                                            <svg class="icon black-arrow rotate-icon">
+                                                               <use xlink:href="images/sprite.svg#black-arrow"></use>
+                                                            </svg>
+                                                         </div>
+                                                         <div class="order_inner-table-div">
+                                                            <div class="order-table-hide">
+                                                               <div class="order-table-auto">
+                                                                  Inner Data table here
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </td>
+                                                </tr>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                <div class="pagination_wrap">
+                <div class="pagination">
+                  <div class="pagination_per">
+                    <select name="per" id="per">
+                      <option value="10">10</option>
+                      <option value="20" selected>20</option>
+                      <option value="50">50</option>
+                      <option value="100">100</option>
+                    </select>
+                    <div class="pagination-title">items per page</div>
+                  </div>
+                  <div class="pagination_nav">
+                    <button class="pagination-arrow pagination-arrow-prev">
+                      <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-chevron--left"></use>
+                      </svg>
+                    </button>
+                    <div class="pagination-current">
+                      <input type="text" value="1" />
+                    </div>
+                    <button class="pagination-arrow pagination-arrow-next">
+                      <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-chevron--right"></use>
+                      </svg>
+                    </button>
+                    <div class="pagination-title">of 10 pages</div>
+                  </div>
+                </div>
+              </div>
+                  </div>
+               </div>
+            </section>
+         </main>
+         <footer class="footer">
+         </footer>
+      </div>
+      <script src="js/vendor.min.js" defer></script>
+      <script
+         src="js/jquery-3.6.0.min.js"></script>
+      <script src="js/vendor.min.js" defer></script>
+      <script>
+         $(".accordion .tr-head").click(function () {
+          var current_li = $(this).parent();
+          $(".accordion .tr-body").each(function(i,el) {			
+            if($(el).parent().is(current_li)) {				
+              $(el).prev().toggleClass("order_show");
+              $(el).slideToggle(1);
+              var itTitle = $(el).closest('.tr-body').find(".order_inner-table-area > .it-title");
+              if (!itTitle.hasClass("order_show")) {
+               itTitle.trigger("click");
+              }
+            } else{
+              $(el).prev().removeClass("order_show");
+              $(el).slideUp(1);
+            }
+          });
+         });
+         $('.accordion .order_parent_row .tr-body').hide(1);
+         $('.accordion .order_parent_row > .tr-body').first().show(1).addClass("order_show");  
+          
+          
+          $(document).find(".order_inner-table-area .it-title").click(function () {
+          var current_div = $(this).parent();
+          $(".order_inner-table-area .order_inner-table-div").each(function(i,el) {			
+            if($(el).parent().is(current_div)) {				
+              $(el).prev().toggleClass("order_show");
+              $(el).slideToggle(1);				
+            } else{
+              $(el).prev().removeClass("order_show");
+              $(el).slideUp(1);
+            }
+          });
+         });
+           $('.black-envelope-action').on('click', function(e){e.stopPropagation();});
+         $('.order_inner-table-area .order_inner-table-div').hide(1);
+           $('.download-order').on('click', function(e){e.stopPropagation();});
+      </script>    
+       
+       <script src="js/app.min.js" defer></script>
+   </body>
+</html>

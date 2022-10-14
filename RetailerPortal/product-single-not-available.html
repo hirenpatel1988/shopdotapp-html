@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product single</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link media="all" rel="stylesheet" href="./css/vendor.min.css" />
+    <link media="all" rel="stylesheet" href="./css/styles.min.css" />
+  </head>
+
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header_block header_block-top">
+          <div class="header_container">
+            <!--header logo-->
+            <div class="header_logo">
+              <a href="index.html" class="logo">
+                <picture><img src="images/logo.svg" alt="" /></picture>
+              </a>
+            </div>
+            <!--header menu-->
+            <div class="header_menu-wrap">
+              <ul class="header_menu menu">
+                <li class="menu_item"><a href="#" class="menu_link">Home</a></li>
+                <li class="menu_item">
+                  <a href="brands-all.html" class="menu_link ">Brands</a>
+                </li>
+                <li class="menu_item">
+                  <a href="products-all.html" class="menu_link active">Products</a>
+                </li>
+                <li class="menu_item"><a href="#" class="menu_link @@m">My List</a></li>
+                <li class="menu_item"><a href="#" class="menu_link">Orders</a></li>
+              </ul>
+            </div>
+            <!--header search-->
+            <div class="header_search search">
+              <form action="#" class="search_form">
+                <div class="search_form-input">
+                  <input type="text" placeholder="Search…" />
+                </div>
+                <button type="cancel" class="search_form-button">
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#icon-clear"></use>
+                  </svg>
+                </button>
+                <button type="submit"></button>
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#icon-search"></use>
+                </svg>
+              </form>
+            </div>
+            <!--header actions-->
+            <div class="header_actions">
+              <div class="header_usermenu">
+                <div class="dropdown">
+                  <div class="dropdown_header">
+                    <div class="dropdown_header-text">
+                      Hi, <span class="username">Jane</span>
+                    </div>
+                    <div class="dropdown_header-icon">
+                      <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-retailers"></use>
+                      </svg>
+                    </div>
+                    <div class="dropdown_header-chevron">
+                      <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="dropdown_body">
+                    <div class="dropdown_inner">
+                      <ul>
+                        <li>
+                          <a href="#"
+                            >Switch to Brand
+                            <svg class="icon">
+                              <use xlink:href="images/sprite.svg#icon-brands"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Sign out</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="header_action header_action-mails">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#icon-mail"></use>
+                </svg>
+                <div class="text visible">5</div>
+              </button>
+              <button class="header_action header_action-notifications">
+                <!--Changed icon to dropdown, to show list of 'updates'-->
+                <div class="dropdown">
+                  <div class="dropdown_header">
+                    <svg class="icon">
+                      <use xlink:href="images/sprite.svg#icon-notification"></use>
+                    </svg>
+                  </div>
+                  <div class="dropdown_body">
+                    <div class="dropdown_inner">
+                      <ul>
+                        <li>
+                          <span>Summer Activities Chips for Kids</span> <br>
+                          updated Dec.15, 2021, 07:56 PM
+                        </li>
+                        <li>
+                          <span>Summer Activities Chips for Kids</span> <br>
+                          updated Dec.15, 2021, 07:56 PM
+                        </li>
+                        <li>
+                          <span>Summer Activities Chips for Kids</span> <br>
+                          updated Dec.15, 2021, 07:56 PM
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="text visible">1</div>
+              </button>
+              <div class="header_action header_action-invite">
+                <button class="button invite-brand">Invite Brands</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header_block header_block-bottom">
+          <button
+            class="header_submenu-scroll-button header_submenu-scroll-button-prev"
+          >
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#icon-arrow--left"></use>
+            </svg>
+          </button>
+          <div class="header_submenu">
+            <ul class="submenu">
+              <li class="submenu_item with-child" data-target="automotive">
+                <a href="#" class="submenu_link"
+                  >Automotive
+                  <div class="icon_wrap">
+                    <svg class="icon">
+                      <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="submenu_item with-child" data-target="baby-and-kids">
+                <a href="#" class="submenu_link"
+                  >Baby & Kids
+                  <div class="icon_wrap">
+                    <svg class="icon">
+                      <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="submenu_item with-child" data-target="beauty-and-wellness">
+                <a href="#" class="submenu_link"
+                  >Beauty & Wellness
+                  <div class="icon_wrap">
+                    <svg class="icon">
+                      <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li
+                class="submenu_item with-child"
+                data-target="electronics-and-gadgets"
+              >
+                <a href="#" class="submenu_link"
+                  >Electronics & Gadgets
+                  <div class="icon_wrap">
+                    <svg class="icon">
+                      <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="submenu_item with-child" data-target="food-and-drinks">
+                <a href="#" class="submenu_link"
+                  >Food & Drinks
+                  <div class="icon_wrap">
+                    <svg class="icon">
+                      <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="submenu_item with-child" data-target="home-decor">
+                <a href="#" class="submenu_link"
+                  >Home Decor
+                  <div class="icon_wrap">
+                    <svg class="icon">
+                      <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="submenu_item with-child" data-target="jewelry">
+                <a href="#" class="submenu_link"
+                  >Jewelry
+                  <div class="icon_wrap">
+                    <svg class="icon">
+                      <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="submenu_item with-child" data-target="men">
+                <a href="#" class="submenu_link"
+                  >Men
+                  <div class="icon_wrap">
+                    <svg class="icon">
+                      <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="submenu_item with-child" data-target="music-and-instruments">
+                <a href="#" class="submenu_link"
+                  >Music & Instruments
+                  <div class="icon_wrap">
+                    <svg class="icon">
+                      <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="submenu_item with-child" data-target="paper-and-novelty">
+                <a href="#" class="submenu_link"
+                  >Paper & Novelty
+                  <div class="icon_wrap">
+                    <svg class="icon">
+                      <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="submenu_item with-child" data-target="pets">
+                <a href="#" class="submenu_link"
+                  >Pets
+                  <div class="icon_wrap">
+                    <svg class="icon">
+                      <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button
+            class="header_submenu-scroll-button header_submenu-scroll-button-next"
+          >
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#icon-arrow--right"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="header_submenu-content">
+          <div class="header_submenu-content-item" id="baby-and-kids">
+            <div class="header_submenu-category-wrap">
+              <div class="header_submenu-category-title">Bath & Safety (7)</div>
+              <ul class="header_submenu-category">
+                <li><a href="#">Air Quality</a></li>
+                <li><a href="#">Baby Monitors</a></li>
+                <li><a href="#">Bath & Potty</a></li>
+                <li><a href="#">Body & Haircare</a></li>
+                <li><a href="#">Dental Care</a></li>
+                <li><a href="#">First Aid</a></li>
+                <li><a href="#">Towels & Washclothes</a></li>
+              </ul>
+            </div>
+            <div class="header_submenu-category-wrap">
+              <div class="header_submenu-category-title">Baby Apparel (10)</div>
+              <ul class="header_submenu-category">
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Body Suits & Footies</a></li>
+                <li><a href="#">Bottoms</a></li>
+                <li><a href="#">Dresses & Rompers</a></li>
+                <li><a href="#">Sleep & Swaddles</a></li>
+                <li><a href="#">Socks & Underwear</a></li>
+                <li><a href="#">Swim</a></li>
+                <li><a href="#">Footwear</a></li>
+                <li><a href="#">Sweaters & Outwear</a></li>
+                <li><a href="#">Tops</a></li>
+              </ul>
+            </div>
+            <div class="header_submenu-category-wrap">
+              <div class="header_submenu-category-title">Gear & Essentials (6)</div>
+              <ul class="header_submenu-category">
+                <li><a href="#">Car Seats & Carriers</a></li>
+                <li><a href="#">Diaper Bags & Bagpacks</a></li>
+                <li><a href="#">Baby Food</a></li>
+                <li><a href="#">Feeding Gears</a></li>
+                <li><a href="#">Highchairs & Strollers</a></li>
+                <li><a href="#">Travel Essentials</a></li>
+              </ul>
+            </div>
+            <div class="header_submenu-category-wrap">
+              <div class="header_submenu-category-title">Kids Apparel (11)</div>
+              <ul class="header_submenu-category">
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Bottoms</a></li>
+                <li><a href="#">Costumes</a></li>
+                <li><a href="#">Dresses & Rompers</a></li>
+                <li><a href="#">Footwear</a></li>
+                <li><a href="#">Pajamas & Robes</a></li>
+                <li><a href="#">Socks & Underwear</a></li>
+                <li><a href="#">Sweaters & Outwear</a></li>
+                <li><a href="#">Sweatshirts & Hoodies</a></li>
+                <li><a href="#">Swims</a></li>
+                <li><a href="#">Tops</a></li>
+              </ul>
+            </div>
+            <div class="header_submenu-category-wrap">
+              <div class="header_submenu-category-title">Maternity (3)</div>
+              <ul class="header_submenu-category">
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Apparel</a></li>
+                <li><a href="#">Nursing Essentials</a></li>
+              </ul>
+            </div>
+            <div class="header_submenu-category-wrap">
+              <div class="header_submenu-category-title">Nursery & Decor (6)</div>
+              <ul class="header_submenu-category">
+                <li><a href="#">Blankets, Beddings & Pillows</a></li>
+                <li><a href="#">Keepsakes & Decor</a></li>
+                <li><a href="#">Furniture & Storage</a></li>
+                <li><a href="#">Laundry & Cleaning</a></li>
+                <li><a href="#">Lounges & Covers</a></li>
+                <li><a href="#">Rugs & Playmats</a></li>
+              </ul>
+            </div>
+            <div class="header_submenu-category-wrap">
+              <div class="header_submenu-category-title">Paper & Novelty (2)</div>
+              <ul class="header_submenu-category">
+                <li><a href="#">Greeting Cards</a></li>
+                <li><a href="#">Stickers, Pins & Magnets</a></li>
+              </ul>
+            </div>
+            <div class="header_submenu-category-wrap">
+              <div class="header_submenu-category-title">Toys & Learning (7)</div>
+              <ul class="header_submenu-category">
+                <li><a href="#">Arts & Crafts</a></li>
+                <li><a href="#">Baby Toys</a></li>
+                <li><a href="#">Bath Toys</a></li>
+                <li><a href="#">Dolls & Dollhouses</a></li>
+                <li><a href="#">Kids’ Books</a></li>
+                <li><a href="#">Kids’ Toys & Games</a></li>
+                <li><a href="#">Puppets</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="section product">
+          <div class="product_breadcrumbs">
+            <ul class="breadcrumbs">
+              <li> <a href="#">Home</a></li><li> <a href="#">Products</a></li><li> <a href="#">Baby & Kids</a></li><li> <a href="#">Toys & Learning</a></li><li> <a href="#">Kids’ Toys & Games</a></li><li> <span>Summer Activities Chips for Kids</span></li>
+            </ul>
+          </div>
+          <div class="product_head">
+            <a href="#" class="back">
+              <svg class="icon">
+                <use xlink:href="images/sprite.svg#icon-arrow--left"></use>
+              </svg>
+            </a>
+            <div class="title">
+              <h1>Summer Activities Chips for Kids</h1>
+              <div class="product_status">
+                  
+                <div class="product-status product-status--connected">
+                  <div class="icon_wrap">
+                    <svg class="icon">
+                      <use xlink:href="images/sprite.svg#icon-checked"></use>
+                    </svg>
+                  </div>
+                  Connected
+                </div>
+                
+                <div class="product-status product-status--not-available">
+                   Not Available
+                   <div class="icon_wrap">
+                      <svg class="icon">
+                         <use xlink:href="images/sprite.svg#icon-not-available"></use>
+                      </svg>
+                      <!--Changed icon to tooltip end-->
+                   </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="product-new">new</div>
+            <button class="button button-dark bordered large view-list">
+              <svg class="icon">
+                <use xlink:href="images/sprite.svg#icon-list"></use>
+              </svg>
+              View My List
+            </button>
+          </div>
+          <div class="product_details open">
+            <div class="product_details-block">
+              <div class="product-detail product-detail--brand">
+                <div class="product-detail_image">
+                  <div class="image image--cover image--1-1">
+                    <picture><img src="images/brand.jfif" alt="" /></picture>
+                  </div>
+                </div>
+                <div class="product-detail_info">
+                  <div  class="ttl">Brand</div>
+                  <p class="txt">Alpha One</p>
+                </div>
+              </div>
+              <div class="product-detail product-detail--stock">
+                <div class="product-detail_info">
+                  <div  class="ttl">
+                    9 in stock
+                    <div class="tooltip">
+                      <div class="tooltip-icon tooltip-icon-danger">
+                        <svg class="icon">
+                          <use xlink:href="images/sprite.svg#icon-danger"></use>
+                        </svg>
+                      </div>
+                      <div class="tooltip_text"><p>Some text</p></div>
+                    </div>
+
+                  </div>
+                  <p class="txt">4 variants</p>
+                </div>
+              </div>
+              <div class="product-detail product-detail--wsp">
+                  <div class="product-detail_info">
+                    <div  class="ttl">
+                      WSP
+                      <div class="tooltip">
+                        <div class="tooltip-icon tooltip-icon-info">
+                          <svg class="icon">
+                            <use xlink:href="images/sprite.svg#icon-info"></use>
+                          </svg>
+                        </div>
+                        <div class="tooltip_text"><p>The WSP is an approximate wholesale pricing and can change during brand connect approval</p></div>
+                      </div>
+
+                    </div>
+                    <p class="txt">$5.00-$7.50</p>
+                  </div>
+                </div>
+                <div class="product-detail product-detail--shipping">
+                  <div class="product-detail_info">
+                    <div  class="ttl">
+                      Shipping
+                      <div class="tooltip">
+                        <div class="tooltip-icon tooltip-icon-info">
+                          <svg class="icon">
+                            <use xlink:href="images/sprite.svg#icon-info"></use>
+                          </svg>
+                        </div>
+                        <div class="tooltip_text"><p>Total shipping time is the number of business days for the supplier to process, ship and deliver product.</p></div>
+                      </div>
+
+                    </div>
+                    <p class="txt">$5.00</p>
+                  </div>
+                </div>
+                <div class="product-detail product-detail--mspr">
+                  <div class="product-detail_info">
+                    <div  class="ttl">
+                      MSPR
+                      <!--3 types of icon for msrp icon-mspr--up, icon-mspr--down, icon-mspr--flexible-->
+                      <span class="image">
+                          <picture
+                            ><img src="images/icons/mspr/icon-mspr--up.svg" alt=""
+                          /></picture>
+                        </span>
+                      <div class="tooltip">
+                        <div class="tooltip-icon tooltip-icon-info">
+                          <svg class="icon">
+                            <use xlink:href="images/sprite.svg#icon-info"></use>
+                          </svg>
+                        </div>
+                        <div class="tooltip_text"><p>The brand does not allow for lower retail pricing than the MSRP</p></div>
+                      </div>
+
+                    </div>
+                    <p class="txt">$15.00-$17.50</p>
+                  </div>
+                </div>
+                <div class="product-detail product-detail--profit">
+                  <div class="product-detail_info">
+                    <div  class="ttl">
+                      Profit
+                      <div class="tooltip">
+                        <div class="tooltip-icon tooltip-icon-info">
+                          <svg class="icon">
+                            <use xlink:href="images/sprite.svg#icon-info"></use>
+                          </svg>
+                        </div>
+                        <div class="tooltip_text"><p>This is the difference after WSP & shipping cost are deducted from the MSRP</p></div>
+                      </div>
+
+                    </div>
+                    <p class="txt">$5.00</p>
+                  </div>
+                </div>
+                <div class="product-detail product-detail--ship-from">
+                  <div class="product-detail_info">
+                    <div  class="ttl">
+                      Ships From
+                    </div>
+                    <p class="txt">Wilsonville, Oregon</p>
+                  </div>
+                </div>
+                <!--Added latest detail-->
+                <div class="product-detail product-detail--ship-from">
+                  <div class="product-detail_info">
+                    <div  class="ttl">
+                      Latest Update by Brand
+                    </div>
+                    <div class="txt">Dec.6, 2021, 07:56 PM <span class="indicator">
+                      <div class="tooltip">
+                        <div class="tooltip-icon tooltip-icon-info">
+                          <svg class="icon">
+                            <use xlink:href="images/sprite.svg#icon-info"></use>
+                          </svg>
+                        </div>
+                        <div class="tooltip_text"><p><strong>List of Updates:</strong></p><p><ul><li>Product Title</li><li>Product Image</li><li>Product Description</li><li>Product Category</li><li>Pricing (WSP/MSRP)</li><li>Shipping & Processing</li><li>Dropship Eligibility</li><li>Return & Refund </li></ul></div>
+                      </div>
+
+                    </span></div>
+                  </div>
+                </div>
+                <!--Added latest detail end-->
+            </div>
+            <div class="product_details-block product_details-block-extra">
+<!--
+              <div class="product_details-block-extra-close">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#icon-clear"></use>
+                </svg>
+              </div>
+-->
+              <div class="row">
+                <!--Updates items start-->
+                <div class="col-12">
+                  <p>
+                    <strong>Alpha One</strong> has updated the following information
+                    about this product on Dec.15, 2021, 07:56 PM:
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <ul>
+                    <li>Product Title</li>
+                    <li>Product Image</li>
+                    <li>Product Description</li>
+                  </ul>
+                </div>
+                <div class="col-lg-4">
+                  <ul>
+                    <li>Product Category</li>
+                    <li>Pricing (WSP/MSRP)</li>
+                    <li>Shipping & Processing</li>
+                  </ul>
+                </div>
+                <div class="col-lg-4">
+                  <ul>
+                    <li>Return & Refund</li>
+                  </ul>
+                </div>
+                <!--Updates items end-->
+                <!--White 'Do you wish' block -->
+                <div class="col-12">
+                  <div class="product_details-wish">
+                    <div class="text">
+                      <p>Do you wish to re-push this product to store? This will override all the updates you made on Shopify. </p>
+                      <p>The product listing on ShopDot always contain the updated details. Ignoring changes will not re-push the product to store. Your store's product listing will not be overridden.</p>
+                    </div>
+                    <div class="buttons">
+                      <button class="button push-apply">Push & Apply Changes</button>
+                      <button class="button ignore">Ignore Changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product_main">
+            <div class="product_slider">
+              <div class="product_slider-thumbs">
+                <div class="swiper-container gallery-thumbs">
+                  <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/pc-slider-temp.jfif" alt="" /></picture>
+                      </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/pc-slider-temp.jfif" alt="" /></picture>
+                      </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/pc-slider-temp.jfif" alt="" /></picture>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="product_slider-main">
+                <div class="swiper-container gallery-main">
+                  <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/pc-slider-temp.jfif" alt="" /></picture>
+                      </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/pc-slider-temp.jfif" alt="" /></picture>
+                      </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/pc-slider-temp.jfif" alt="" /></picture>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="swiper-button-prev">
+                    <svg class="icon">
+                      <use xlink:href="images/sprite.svg#icon-chevron--left"></use>
+                    </svg>
+                  </div>
+                  <div class="swiper-button-next">
+                    <svg class="icon">
+                      <use xlink:href="images/sprite.svg#icon-chevron--right"></use>
+                    </svg>
+                  </div>
+                    
+                    <!--Single Product modal-->
+                    <div class="pc_links">
+                        <a href="#" class="pc_links-gallery" data-target="pg1">
+                          <svg class="icon">
+                            <use xlink:href="images/sprite.svg#icon-zoom"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    <!--Single Product modal end-->
+                </div>
+              </div>
+            </div>
+
+            <div class="product_info">
+              <div class="product-category">
+                <div class="title">Category:</div>
+                <div class="tags">
+                  <div class="tag">Kids’ Toys & Games</div>
+                </div>
+              </div>
+              <h2 class="h1">
+                Simple summertime activities for kids. No guesswork, no planning… just a lot
+                of living in the moment.
+              </h2>
+              <p>
+                Running out of ideas to tame your little ones? Have a little box of summer
+                activity ideas for kids. Guaranteed to keep them busy.
+              </p>
+              <div class="for">
+                <div class="line"><strong>Activities:</strong> 60 ideas</div>
+                <div class="line">
+                  <strong>Content:</strong> 30 natural, wood coins, each measuring 1 ½
+                  inches round
+                </div>
+                <div class="line"><strong>Dimension:</strong> 4.8" l x 2" w x 1.8"h</div>
+                <div class="line"><strong>Weight:</strong> 0.32 lb</div>
+              </div>
+              <div class="tags">
+                <p>
+                  <strong>Tags:</strong> 5222, baby & kids, toys, games, toys & games,
+                  chips, wooden chips, summer, summer activity, activity toys, alpha one
+                </p>
+              </div>
+              <div class="product_info-buttons">
+                <!-- <button class="button button-dark large connect-product">Connect</button> -->
+                <button class="button button-dark large remove-from-list-product">Remove from My List</button>
+                <button class="button button-orange large push-product">Push to Store</button>
+                <!-- <button class="button button-red large remove-from-store-product">Remove Product From Store</button> -->
+                <a href="#vars" class="button button-grey scroll"
+                  >View Product Variants
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="product_vars" id="vars">
+              <table class="table table-vars">
+                <thead>
+                    <tr>
+                      <th></th>
+                      <th><div class="txt">Material</div></th>
+                      <th><div class="txt">Colour</div></th>
+                      <th><div class="txt">SKU</div></th>
+                      <th>
+                        <div class="txt">
+                          Barcode <div class="tooltip">
+  <div class="tooltip-icon tooltip-icon-info">
+    <svg class="icon">
+      <use xlink:href="images/sprite.svg#icon-info"></use>
+    </svg>
+  </div>
+  <div class="tooltip_text"><p>ISBN, UPC, GTIN, …</p></div>
+</div>
+
+                        </div>
+                      </th>
+                      <th><div class="txt">Stock</div></th>
+                      <th>
+                        <div class="txt">
+                          WSP <div class="tooltip">
+  <div class="tooltip-icon tooltip-icon-info">
+    <svg class="icon">
+      <use xlink:href="images/sprite.svg#icon-info"></use>
+    </svg>
+  </div>
+  <div class="tooltip_text"><p>The WSP is an approximate wholesale pricing and can change during brand connect approval</p></div>
+</div>
+
+                        </div>
+                      </th>
+  
+                      <th>
+                        <div class="txt">
+                          Shipping <div class="tooltip">
+  <div class="tooltip-icon tooltip-icon-info">
+    <svg class="icon">
+      <use xlink:href="images/sprite.svg#icon-info"></use>
+    </svg>
+  </div>
+  <div class="tooltip_text"><p>Total shipping time is the number of business days for the supplier to process, ship and deliver product.</p></div>
+</div>
+
+                        </div>
+                      </th>
+                        <th>
+                          <div class="txt">
+                            MSPR
+                            <!--3 types of icon for msrp icon-mspr--up, icon-mspr--down, icon-mspr--flexible-->
+                            <span class="image">
+                              <picture
+                                ><img src="images/icons/mspr/icon-mspr--up.svg" alt=""
+                              /></picture>
+                            </span>
+                            <div class="tooltip">
+                              <div class="tooltip-icon tooltip-icon-info">
+                                <svg class="icon">
+                                  <use xlink:href="images/sprite.svg#icon-info"></use>
+                                </svg>
+                              </div>
+                              <div class="tooltip_text"><p>The brand does not allow for lower retail pricing than the MSRP</p></div>
+                            </div>
+
+                          </div>
+                        </th>
+                        <th>
+                          <div class="txt">
+                            Profit
+                            <div class="tooltip">
+                              <div class="tooltip-icon tooltip-icon-info">
+                                <svg class="icon">
+                                  <use xlink:href="images/sprite.svg#icon-info"></use>
+                                </svg>
+                              </div>
+                              <div class="tooltip_text"><p>This is the difference after WSP & shipping cost are deducted from the MSRP</p></div>
+                            </div>
+
+                          </div>
+                        </th>
+                    </tr>
+                  </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="image image--cover image--1-1">
+                        <picture><img src="images/pc-slider-temp.jfif" alt="" /></picture>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="txt">Wood</div>
+                    </td>
+                    <td>
+                      <div class="txt">Blue</div>
+                    </td>
+                    <td>
+                      <div class="txt">V1N-071A-0122-01</div>
+                    </td>
+                    <td>
+                      <div class="txt">813687021196</div>
+                    </td>
+                    <td>
+                      <div class="txt">
+                        <!--Red color for icon by default, orange with class icon--orange-->
+                        5
+                        <div class="tooltip">
+                          <div class="tooltip-icon tooltip-icon-danger">
+                            <svg class="icon">
+                              <use xlink:href="images/sprite.svg#icon-danger"></use>
+                            </svg>
+                          </div>
+                          <div class="tooltip_text"><p>Some text</p></div>
+                        </div>
+
+                      </div>
+                    </td>
+                    <td>
+                      <div class="txt">$5.00-$7.50</div>
+                    </td>
+                    <td>
+                      <div class="txt">$5.00</div>
+                    </td>
+                    <td>
+                      <div class="txt">$15.00-$17.50</div>
+                    </td>
+                    <td>
+                      <div class="txt">+ $5.00</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="image image--cover image--1-1">
+                        <picture><img src="images/pc-slider-temp.jfif" alt="" /></picture>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="txt">Wood</div>
+                    </td>
+                    <td>
+                      <div class="txt">Blue</div>
+                    </td>
+                    <td>
+                      <div class="txt">V1N-071A-0122-01</div>
+                    </td>
+                    <td>
+                      <div class="txt">813687021196</div>
+                    </td>
+                    <td>
+                      <div class="txt">
+                        <!--Red color for icon by default, orange with class icon--orange, add class to '.txt"'-->
+            0
+                        <div class="tooltip">
+                          <div class="tooltip-icon tooltip-icon-danger">
+                            <svg class="icon">
+                              <use xlink:href="images/sprite.svg#icon-danger"></use>
+                            </svg>
+                          </div>
+                          <div class="tooltip_text"><p>Some text</p></div>
+                        </div>
+
+                      </div>
+                    </td>
+                    <td>
+                      <div class="txt">$5.00-$7.50</div>
+                    </td>
+                    <td>
+                      <div class="txt">$5.00</div>
+                    </td>
+                    <td>
+                      <div class="txt">$15.00-$17.50</div>
+                    </td>
+                    <td>
+                      <div class="txt">+ $5.00</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="product_extra product_shipping">
+              <div class="product_extra-head">
+                <h3>Total Shipping Time</h3>
+              </div>
+              <div class="product_extra-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="product_extra-text">
+                      <p>
+                        Estimated total shipping time is <strong>8-16</strong> days. Ships
+                        from Wilsonville, Oregon, United States. No international shipping.
+                      </p>
+                      <p>
+                        Ships product for <strong>$4.95</strong> flat rate plus
+                        <strong>$1</strong> for each additional item in the same order.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="product_extra-text">
+                      <h4>
+                        <svg class="icon">
+                          <use xlink:href="images/sprite.svg#icon-question"></use>
+                        </svg>
+                        Notes
+                      </h4>
+                      <p>
+                        Total shipping time is the number of business days for the supplier
+                        to process, ship and deliver product.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product_extra product_return">
+              <div class="product_extra-head">
+                <h3>Return & Refund</h3>
+              </div>
+              <div class="product_extra-body">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="product_extra-text">
+                      <h4>Return & Refund Policy</h4>
+                      <p>
+                        Returns and refunds are accepted on a case-by-case basis. Message
+                        Brand to see if an order is eligible for a return or refund.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product_about">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="product_about-content">
+                    <div class="product_about-image">
+                      <div class="image image--cover image--1-1">
+                        <picture><img src="images/brand.jfif" alt="" /></picture>
+                      </div>
+                    </div>
+                    <div class="product_about-title">
+                      <h2>The Idea Box Kids</h2>
+                    </div>
+                    <div class="product_about-items">
+                      <div class="product_about-item">
+                        <div class="product_about-item-title">Brand Categories:</div>
+                        <div class="product_about-item-wrap">
+                          <a href="#">Baby & Kids</a>
+                          <a href="#">Toys & Games</a>
+                          <a href="#">Apparel & Accessories</a>
+                        </div>
+                      </div>
+                      <div class="product_about-item">
+                        <div class="product_about-item-title">Brand Values:</div>
+                        <div class="product_about-item-wrap">
+                          <a href="#">Handmade</a>
+                          <a href="#">Made in USA</a>
+                          <a href="#">Small Batch</a>
+                          <a href="#">Women Owned</a>
+                        </div>
+                      </div>
+                      <div class="product_about-item">
+                        <div class="product_about-item-title">Product Categories:</div>
+                        <div class="product_about-item-wrap">
+                          <a href="#">Baby & Kids</a>
+                          <a href="#">Men</a>
+                          <a href="#">Women</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product_about-buttons">
+                      <!-- <a href="#" class="button button-dark large"
+                        >View All Products (31)</a
+                      > -->
+                      <a href="#" class="button large message-brand">Message Brand</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-8">
+                  <div class="product_about-content">
+                    <div class="product_about-text">
+                      <h2>
+                        We are a company that seeks to cure “I’m bored” in kids by creating
+                        covertly educational activities.
+                      </h2>
+                      <p>
+                        Thousands of boxes of open-ended fun have been sold worldwide. With
+                        wholesale products in every US State, The Idea Box Kids has been
+                        featured in Country Living, American Farmhouse, MaryJanes Farm, and
+                        on sites like Fodor’s Travel, The Week, Cafe Mom, Simply Real Moms
+                        and more.
+                      </p>
+                      <p>
+                        We have been a business owner for 23 years with 16 of those in
+                        ecommerce. We are passionate advocate for all things handmade
+                        wholesale, for both the sellers that create and the buyers that buy.
+                      </p>
+                      <p>
+                        <strong>Note: </strong><br />
+                        Please, no presales of our products. Orders are filled in the order
+                        received. Please order early for any Holiday(s) to ensure production
+                        availability and timely delivery of your product. Turn-around times
+                        listed are kept up-to-date and accurate. Please get in touch with
+                        any questions.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+        <script>
+          const extraClose = document.querySelector('.product_details-block-extra-close')
+
+          if (extraClose) {
+            extraClose.addEventListener('click', () => {
+              document.querySelector('.product_details').classList.remove('open')
+            })
+          }
+        </script>
+      </main>
+      <footer class="footer">
+  
+      </footer>
+
+      <div class="popup popup-invite false">
+        <div class="popup_wrapper">
+          <div class="popup_content">
+            <div class="popup-close">
+              <svg class="icon">
+                <use xlink:href="images/sprite.svg#icon-close"></use>
+              </svg>
+            </div>
+
+            
+              
+                  <form action="#" class="primary__form form form_brands">
+                      
+                      
+              <div class="form_brands-left">
+                
+                <div class="form_field">
+                  <input
+                    type="email"
+                    name="add-brand-email"
+                    id="add-brand-email"
+                    placeholder="Add brand email address…"
+                  />
+                  <div class="form_field-help">
+                    <small
+                      >Don’t worry, the brands won’t see the other recipients.</small
+                    >
+                  </div>
+                </div>
+                  
+              </div>
+              <div class="form_brands-right">
+                <h3>Edit Message</h3>
+                <div class="form_field">
+                  <!--Make it with div because we cant add links into textarea-->
+                  <!--If need it can be replaced with textarea-->
+                  <div
+                    class="email-message-box"
+                    id="email-message-box"
+                    contenteditable="true"
+                  >
+                    Hi, it's John Doe from John Doe’s. I just signed up for
+                    <a href="#">ShopDot</a>, a brand-to-retail platform that
+                    integrates with my Shopify store to launch products with ease and
+                    streamline inventory and drop-shipping. <br /><br />
+                    I'm interested in selling your brand on my website through
+                    <a href="#">ShopDot</a>. To learn more about the benefits of
+                    selling on ShopDot, <a href="#">click here</a>.
+                  </div>
+                </div>
+                <div class="form_field form_field-buttons">
+                  
+                  <button type="submit" class="button" disabled>Invite</button>
+                   
+                </div>
+                <div class="form_field form_field-help">
+                  <div class="later">
+                    <a href="#" class="popup-close">Invite Brands Later</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+             
+          </div>
+        </div>
+      </div>
+        
+        <div class="products_popups">
+              <!--For each product card with different id but same gallery content as for product-card -->
+              <div class="popup popup-product-gallery" id="pg1">
+                <div class="popup_wrapper">
+                  <div class="popup_content">
+                    <div class="popup-close">
+                      <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-close"></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        
+                        <div class="swiper-slide">
+                          <div class="image">
+                            <picture
+                              ><img src="images/pc-slider-temp.jfif" alt=""
+                            /></picture>
+                          </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                          <div class="image">
+                            <picture
+                              ><img src="images/pc-slider-temp.jfif" alt=""
+                            /></picture>
+                          </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                          <div class="image">
+                            <picture
+                              ><img src="images/pc-slider-temp.jfif" alt=""
+                            /></picture>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev">
+                      <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-arrow--left"></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-button-next">
+                      <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-arrow--right"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+    </div>
+
+    <script src="./js/vendor.min.js" defer></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/app.min.js" defer></script>
+
+  </body>
+</html>

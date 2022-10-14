@@ -1,0 +1,876 @@
+<!--
+Notes Find: 
+1. toggle active mode
+2. If Product status is connected
+3. Category Value
+4. Tag as chip design
+5. Stock: When OFF (sync icon is gray)
+5. MSRP: When ON (sync icon is blue):
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Detail</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link media="all" rel="stylesheet" href="./css/vendor.min.css" />
+    <link media="all" rel="stylesheet" href="./css/styles.min.css" />
+      <link media="all" rel="stylesheet" href="css/media.css" />
+  </head>
+
+
+  <body>
+    <div class="wrapper">
+      <header class="header mp-header">
+            <div class="header_block header_block-top mp-header_block-top">
+               <div class="header_container">
+                  <!--header logo-->
+                  <div class="header_logo">
+                     <a href="index.html" class="logo">
+                        <picture><img src="images/logo.svg" alt="" /></picture>
+                     </a>
+                  </div>
+                  <!--header menu-->
+                  <div class="header_menu-wrap">
+                     <ul class="header_menu menu">
+                        <li class="menu_item"><a href="#" class="menu_link">Dashboard</a></li>
+                        <li class="menu_item">
+                           <a href="products-all.html" class="menu_link active">My Products</a>
+                        </li>
+                        <li class="menu_item"><a href="#" class="menu_link">Retailers</a></li>
+                        <li class="menu_item"><a href="#" class="menu_link">Orders</a></li>
+                     </ul>
+                  </div>
+                  <!--header search-->
+                  <div class="header_search search">
+                     <form action="#" class="search_form">
+                        <div class="search_form-input">
+                           <input type="text" placeholder="Search…" />
+                        </div>
+                        <button type="cancel" class="search_form-button">
+                           <svg class="icon">
+                              <use xlink:href="images/sprite.svg#icon-clear"></use>
+                           </svg>
+                        </button>
+                        <button type="submit"></button>
+                        <svg class="icon">
+                           <use xlink:href="images/sprite.svg#icon-search"></use>
+                        </svg>
+                     </form>
+                  </div>
+                  <!--header actions-->
+                  <div class="header_actions">
+                     <div class="header_usermenu">
+                        <div class="dropdown">
+                           <div class="dropdown_header">
+                              <div class="dropdown_header-text">
+                                 Hi, <span class="username">Jane</span>
+                              </div>
+                              <div class="dropdown_header-icon">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-retailers"></use>
+                                 </svg>
+                              </div>
+                              <div class="dropdown_header-chevron">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                 </svg>
+                              </div>
+                           </div>
+                           <div class="dropdown_body">
+                              <div class="dropdown_inner">
+                                 <ul>
+                                    <li>
+                                       <a href="#"
+                                          >
+                                          Switch to Brand
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#icon-brands"></use>
+                                          </svg>
+                                       </a>
+                                    </li>
+                                    <li><a href="#">Settings</a></li>
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">Sign out</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <button class="header_action header_action-mails">
+                        <svg class="icon">
+                           <use xlink:href="images/sprite.svg#icon-mail"></use>
+                        </svg>
+                        <div class="text visible">5</div>
+                     </button>
+                     <button class="header_action header_action-notifications">
+                        <!--Changed icon to dropdown, to show list of 'updates'-->
+                        <div class="dropdown">
+                           <div class="dropdown_header">
+                              <svg class="icon">
+                                 <use xlink:href="images/sprite.svg#icon-notification"></use>
+                              </svg>
+                           </div>
+                           <div class="dropdown_body">
+                              <div class="dropdown_inner">
+                                 <ul>
+                                    <li>
+                                       <span>Summer Activities Chips for Kids</span> <br>
+                                       updated Dec.15, 2021, 07:56 PM
+                                    </li>
+                                    <li>
+                                       <span>Summer Activities Chips for Kids</span> <br>
+                                       updated Dec.15, 2021, 07:56 PM
+                                    </li>
+                                    <li>
+                                       <span>Summer Activities Chips for Kids</span> <br>
+                                       updated Dec.15, 2021, 07:56 PM
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="text visible">1</div>
+                     </button>
+                     <div class="header_action header_action-invite">
+                        <button class="button invite-brand">Invite Retailers</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="header_block header_block-bottom mp-header_block-bottom"></div>
+            
+         </header>
+
+      <main class="content mp-content">
+        <section class="section product">
+            <div class="product-alert">
+            <div class="alert alert-error d-flex align-items-center" role="alert">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#exclamation-red"></use>
+                                 </svg>
+                                 <div>
+                                    Unfortunately, the syncing of the product was not successful. Please try again. 
+                                 </div>
+                              </div>
+                </div>
+          <div class="product_breadcrumbs">
+            <ul class="breadcrumbs">
+              <li> <a href="#">Home</a></li><li> <a href="#">Products</a></li><li> <a href="#">Baby & Kids</a></li><li> <a href="#">Toys & Learning</a></li><li> <a href="#">Kids’ Toys & Games</a></li><li> <span>Summer Activities Chips for Kids</span></li>
+            </ul>
+          </div>
+          <div class="product_head">
+            <a href="#" class="back">
+              <svg class="icon">
+                <use xlink:href="images/sprite.svg#icon-arrow--left"></use>
+              </svg>
+            </a>
+            <div class="title">
+              <h1>Summer Activities Chips for Kids <svg class="shopify-icon">
+                          <use xlink:href="images/sprite.svg#shopify"></use>
+                        </svg></h1>
+                 <div class="product_status">
+                    
+                  <div class="my-toggle-btn">
+                                             <input type="checkbox" id="checkbox1">
+                                             <label for="checkbox1">
+                                             <span class="on" title="Active">Active</span>
+                                             <span class="off" title="Inctive">Inactive</span>
+                                             </label>
+                                                <div class="bg-toggle"></div>
+                                             <div class="tooltip_text">
+                                                <p>To activate a product, please add billing information, assign category, and fill in all required fields.</p>
+                                             </div>
+                                                <!--If toggle active mode-->
+<!--
+                                                <div class="tooltip_text">
+                                                <p>Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.</p>
+                                                </div>
+-->
+                                               
+                        <!--If Product status is connected-->
+                      
+                      <!--
+              <div class="product_status">
+                <div class="product-status product-status--connected">
+                  <div class="icon_wrap">
+                    <svg class="icon">
+                      <use xlink:href="images/sprite.svg#icon-checked"></use>
+                    </svg>
+                  </div>
+                  Connected
+                </div>
+                
+                <div class="product-status product-status--ready">
+                  Ready to Store
+                  <div class="icon_wrap">
+                  
+                    <div class="tooltip">
+                      <div class="tooltip-icon tooltip-icon-info">
+                        <svg class="icon">
+                          <use xlink:href="images/sprite.svg#icon-info"></use>
+                        </svg>
+                      </div>
+                      <div class="tooltip_text"><p><strong>Added:</strong> August 9, 2021, 08:32 AM</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+-->
+                                         
+                  </div>
+                </div>
+                <button class="button button-sky-blue remove-all-from-my-list large">Sync Product from Shopify</button>
+            </div>
+           
+            <button class="button button-dark bordered large view-list">
+              <svg class="icon pt-1">
+                <use xlink:href="images/sprite.svg#eye"></use>
+              </svg>
+              View Page as Retailer
+            </button>
+              
+              <button class="button button-dark large">
+                  <svg class="icon btn-dark">
+                <use xlink:href="images/sprite.svg#pencil"></use>
+              </svg>
+                  Edit Product</button>
+              
+          </div>
+          <div class="product_details open pd-update">
+            <div class="product_details-block">
+              <div class="product-detail product-detail--brand">
+                <div class="product-detail_image">
+                  <div class="image image--cover image--1-1">
+                    <picture><img src="images/brand.jfif" alt="" /></picture>
+                  </div>
+                </div>
+                <div class="product-detail_info">
+                  <div  class="ttl">Brand</div>
+                  <p class="txt">Alpha One</p>
+                </div>
+              </div>
+                
+                <div class="product-detail product-detail--stock">
+                <div class="product-detail_info">
+                  
+                  <div  class="ttl">
+                      Stock
+                       <div class="tooltip link-tooltip">
+                                          <div class="tooltip-icon-info sync-icon">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-sync"></use>
+                                             </svg>
+                                          </div>
+                                            <div class="tooltip_text">
+                                              <div class="tooltip-data">
+                                             <p>Stock Sync is ON. Turn it off if you want to edit stock levels and manage them manually in ShopDot. Your changes will not be overridden.</p>
+                                             <a href="#" class="tooltip-setting">settings</a>          
+                                              </div>
+                                          </div>
+                                       </div>
+                      <!-- Stock: When OFF (sync icon is gray):-->
+                      
+<!--
+                       <div class="tooltip link-tooltip">
+                                          <div class="tooltip-icon tooltip-icon-info sync-icon-off">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-sync"></use>
+                                             </svg>
+                                          </div>
+                                            <div class="tooltip_text">
+                                              <div class="tooltip-data">
+                                             <p>Stock Sync is OFF. Turn it on if you want Stock Levels in ShopDot to automatically sync from Shopify. Your previous changes will be overridden</p>
+                                             <a href="#" class="tooltip-setting">settings</a>          
+                                              </div>
+                                          </div>
+                                       </div>
+-->
+
+                    </div>
+                    <p class="txt txt-dark">9,999
+                    <svg class="icon icon--orange width-icon">
+                                                    <use xlink:href="images/sprite.svg#icon-danger">
+                                                    </use>
+                                                </svg>
+                    </p>
+                </div>
+              </div>
+                
+                
+             
+              <div class="product-detail product-detail--wsp">
+                  <div class="product-detail_info">
+                    <div  class="ttl">
+                      WSP
+                    </div>
+                    <p class="txt">$5.00</p>
+                  </div>
+                </div>
+                
+                <div class="product-detail product-detail--shipping">
+                  <div class="product-detail_info">
+                    <div  class="ttl">
+                      Shipping
+                      <div class="tooltip">
+                        <div class="tooltip-icon tooltip-icon-info ic-if-blue">
+                          <svg class="icon">
+                            <use xlink:href="images/sprite.svg#icon-info-blue-2"></use>
+                          </svg>
+                        </div>
+                        <div class="tooltip_text"><p>This is the cost the retailer has to pay brand for shipping</p></div>
+                      </div>
+
+                    </div>
+                    <p class="txt">$5.00</p>
+                  </div>
+                </div>
+                
+              
+                <div class="product-detail product-detail--msrp">
+                <div class="product-detail_info">
+                  
+                  <div  class="ttl">
+                      MSRP
+                      
+                      <!-- MSRP: When ON (sync icon is blue): -->
+<!--
+                       <div class="tooltip link-tooltip">
+                                          <div class="tooltip-icon-info sync-icon">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-sync"></use>
+                                             </svg>
+                                          </div>
+                                            <div class="tooltip_text">
+                                              <div class="tooltip-data">
+                                             <p>MSRP Sync is ON. MSRP in ShopDot automatically syncs from Shopify. Turn it off to edit the MSRP and manage pricing manually in ShopDot</p>
+                                             <a href="#" class="tooltip-setting">settings</a>          
+                                              </div>
+                                          </div>
+                                       </div>
+-->
+                      
+<!--                      When OFF (sync icon is gray): -->
+                      
+<!--
+                      <div class="tooltip link-tooltip">
+                                          <div class="tooltip-icon tooltip-icon-info sync-icon-off">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-sync-off"></use>
+                                             </svg>
+                                          </div>
+                                            <div class="tooltip_text">
+                                              <div class="tooltip-data">
+                                             <p>MSRP Sync is OFF. Turn it on if you want MSRP in ShopDot to automatically sync from Shopify. Your previous changes will be overridden</p>
+                                             <a href="#" class="tooltip-setting">settings</a>          
+                                              </div>
+                                          </div>
+                                       </div>
+-->
+                       
+
+                    </div>
+                    <p class="txt txt-dark">$15.00</p>
+                </div>
+              </div>
+                
+                
+               
+                
+                <div class="product-detail product-detail--ship-from">
+                  <div class="product-detail_info">
+                    <div  class="ttl">
+                      Ships From
+                    </div>
+                    <p class="txt">Wilsonville, Oregon</p>
+                  </div>
+                </div>
+                <!--Added latest detail-->
+                <div class="product-detail product-detail--ship-from">
+                  <div class="product-detail_info">
+                    <div  class="ttl">
+                      Last Update by Brand
+                    </div>
+                    <div class="txt">Dec.6, 2021 </div>
+                  </div>
+                </div>
+                <!--Added latest detail end-->
+            </div>
+            
+          </div>
+          <div class="product_main">
+            <div class="product_slider">
+              <div class="product_slider-thumbs">
+                <div class="swiper-container gallery-thumbs">
+                  <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/pc-slider-temp.jfif" alt="" /></picture>
+                      </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/pc-slider-temp.jfif" alt="" /></picture>
+                      </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/pc-slider-temp.jfif" alt="" /></picture>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="product_slider-main">
+                <div class="swiper-container gallery-main">
+                  <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/pc-slider-temp.jfif" alt="" /></picture>
+                      </div>
+                        
+                    </div>
+                    
+                    <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/pc-slider-temp.jfif" alt="" /></picture>
+                      </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/pc-slider-temp.jfif" alt="" /></picture>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="swiper-button-prev">
+                    <svg class="icon">
+                      <use xlink:href="images/sprite.svg#icon-chevron--left"></use>
+                    </svg>
+                  </div>
+                  <div class="swiper-button-next">
+                    <svg class="icon">
+                      <use xlink:href="images/sprite.svg#icon-chevron--right"></use>
+                    </svg>
+                  </div>
+                    
+                    <!--Single Product modal-->
+                    <div class="pc_links">
+                        <a href="#" class="pc_links-gallery" data-target="pg1">
+                          <svg class="icon">
+                            <use xlink:href="images/sprite.svg#icon-zoom"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    <!--Single Product modal end-->
+                </div>
+              </div>
+            </div>
+
+            <div class="product_info">
+              <div class="product-category">
+                <div class="title">Category:</div>
+<!--                  Category Value-->
+<!--
+                <div class="tags">
+                  <div class="tag">Kids’ Toys & Games</div>
+                </div>
+-->
+                 
+                  <div>---</div>
+                
+              </div>
+              <h2 class="h1">
+                Simple summertime activities for kids. No guesswork, no planning… just a lot
+                of living in the moment.
+              </h2>
+              <p>
+                Running out of ideas to tame your little ones? Have a little box of summer
+                activity ideas for kids. Guaranteed to keep them busy.
+              </p>
+              <div class="for">
+                <div class="line"><strong>Activities:</strong> 60 ideas</div>
+                <div class="line">
+                  <strong>Content:</strong> 30 natural, wood coins, each measuring 1 ½
+                  inches round
+                </div>
+                <div class="line"><strong>Dimension:</strong> 4.8" l x 2" w x 1.8"h</div>
+                <div class="line"><strong>Weight:</strong> 0.32 lb</div>
+              </div>
+
+              <div class="tags">
+                  <strong>Tags:</strong> <span>---</span>             
+              </div>
+                <!--Tag as chip design-->
+<!--
+                <div class="product-tags">
+                       <div class="mb-2"><strong>Tags:</strong></div>
+                  <div class="tag">Chips</div>
+                  <div class="tag">Summer</div>
+                  <div class="tag">Sumer Activities</div>
+                  <div class="tag">Sumer Toys</div>
+                </div>
+-->
+                
+               
+                
+             
+            </div>
+
+            <div class="product_vars pv-update" id="vars">
+                  <div class="product_extra-head">
+                <h3>Product Variants</h3>
+              </div>
+                
+              <table class="table table-vars">
+                <thead>
+                    <tr>
+                      <th></th>
+                      <th><div class="txt">Material
+                          <button class="sort">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                          </svg>
+                                       </button>
+                          </div></th>
+                      <th><div class="txt">Colour
+                          <button class="sort">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                          </svg>
+                                       </button>
+                          </div></th>
+                      <th><div class="txt">SKU
+                          
+                          <button class="sort">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                          </svg>
+                                       </button>
+                          </div></th>
+                      <th>
+                        <div class="txt">
+                          Barcode <div class="tooltip">
+                        <div class="tooltip-icon tooltip-icon-info ic-if-blue">
+                          <svg class="icon">
+                            <use xlink:href="images/sprite.svg#icon-info-blue-2"></use>
+                          </svg>
+                        </div>
+                        <div class="tooltip_text"><p>This is the cost the retailer has to pay brand for shipping</p></div>
+                      </div>
+
+                        </div>
+                      </th>
+                      
+                      
+  
+                      <th>
+                                    <div class="txt">
+                                       Stock
+                                       <!--Add class 'active' to sort, when it active-->
+                                        
+                                        <!--When Sync is ON-->
+                                       <div class="tooltip link-tooltip">
+                                          <div class="tooltip-icon tooltip-icon-info sync-icon product-sync-icon">
+                                             <a href="#" class="sync-link"><svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-sync"></use>
+                                             </svg></a>
+                                          </div>
+                                            <div class="tooltip_text">
+                                              <div class="tooltip-data">
+                                             <p>Stock Sync is ON. Turn it off if you want to edit stock levels and manage them manually in ShopDot. Your changes will not be overridden.</p>
+                                             <a href="#" class="tooltip-setting">settings</a>          
+                                              </div>
+                                          </div>
+                                       </div>
+                                        
+                                        <!--When Sync is OFF-->
+
+                                        <div class="tooltip link-tooltip" style="display: none">
+                                          <div class="tooltip-icon tooltip-icon-info sync-icon product-sync-icon-off">
+                                             <a href="#"><svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-sync-off"></use>
+</svg></a>
+                                          </div>
+                                          <div class="tooltip_text">
+                                              <div class="tooltip-data">
+                                             <p>Stock Sync is OFF. Turn it on if you want Stock Levels in ShopDot to automatically sync from Shopify. Your previous changes will be overridden</p>
+                                             <a href="#" class="tooltip-setting">settings</a>          
+                                              </div>
+                                          </div>
+                                       </div>
+
+                                       <button class="sort">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </th>
+                        
+                        <th>
+                        <div class="txt">
+                          WSP  <button class="sort">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                          </svg>
+                                       </button>
+
+                        </div>
+                      </th>
+                        
+                        <th>
+                          <div class="txt">
+                            Shipping
+                              
+                              <div class="tooltip">
+                        <div class="tooltip-icon tooltip-icon-info ic-if-blue">
+                          <svg class="icon">
+                            <use xlink:href="images/sprite.svg#icon-info-blue-2"></use>
+                          </svg>
+                        </div>
+                        <div class="tooltip_text"><p>This is the cost the retailer has to pay brand for shipping</p></div>
+                      </div>
+
+                          </div>
+                        </th>
+                        
+                        
+                        <th>
+                          <div class="txt">
+                            MSRP
+                              
+<!--
+                              <div class="tooltip">
+                                          <div class="tooltip-icon-info sync-icon">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-sync"></use>
+                                             </svg>
+                                          </div>
+                                           
+                                              
+                                             <div class="tooltip_text"><p>The brand allows for flexible retail pricing</p></div>         
+                                             
+                                          
+                                       </div>
+-->
+                              <button class="sort">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                          </svg>
+                                       </button>
+                              
+
+                          </div>
+                        </th>
+                        
+                       
+                        
+                    </tr>
+                  </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="image image--cover image--1-1">
+                        <picture><img src="images/pc-slider-temp.jfif" alt="" /></picture>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="txt">Wood</div>
+                    </td>
+                    <td>
+                      <div class="txt">Blue</div>
+                    </td>
+                    <td>
+                      <div class="txt">V1N-071A-0122-01</div>
+                    </td>
+                    <td>
+                      <div class="txt">813687021196</div>
+                    </td>
+                      <td>
+                      <div class="txt">500</div>
+                      </td>
+                      <td>
+                      <div class="txt">$10.95</div>
+                    </td>
+                      
+                      <td>
+                      <div class="txt">$5.00</div>
+                    </td>
+                      <td>
+                      <div class="txt">$15.95</div>
+                    </td>
+                     
+                   
+                   
+                  </tr>
+                   
+                </tbody>
+              </table>
+            </div>
+
+            <div class="product_extra product_shipping">
+              <div class="product_extra-head">
+                <h3>Total Shipping Time</h3>
+              </div>
+              <div class="product_extra-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="product_extra-text">
+                        <p>Estimated total shipping time is <strong>21 days or more</strong>. Ships from Wilsonville, Oregon, United States. No international shipping. </p>
+
+<p>Ships product for <strong>$5.00</strong> flat rate plus <strong>$1</strong> for each additional item in the same order.</p>
+                        
+                       
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="product_extra-text">
+                      <h4>
+                        <svg class="icon">
+                          <use xlink:href="images/sprite.svg#icon-question"></use>
+                        </svg>
+                        Notes
+                      </h4>
+                      <p>
+                        Total shipping time is the number of business days for the supplier to process, ship and deliver product.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product_extra product_return">
+              <div class="product_extra-head">
+                <h3>Return & Refund</h3>
+              </div>
+              <div class="product_extra-body">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="product_extra-text">
+                      <h4>Return & Refund Policy</h4>
+                      <p>
+                        Returns and refunds are accepted on a case-by-case basis. Message
+                        Brand to see if an order is eligible for a return or refund.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+
+          </div>
+        </section>
+        <script>
+          const extraClose = document.querySelector('.product_details-block-extra-close')
+
+          if (extraClose) {
+            extraClose.addEventListener('click', () => {
+              document.querySelector('.product_details').classList.remove('open')
+            })
+          }
+        </script>
+      </main>
+      <footer class="footer">
+  
+      </footer>
+
+      
+        
+        <div class="products_popups">
+              <!--For each product card with different id but same gallery content as for product-card -->
+              <div class="popup popup-product-gallery" id="pg1">
+                <div class="popup_wrapper">
+                  <div class="popup_content">
+                    <div class="popup-close">
+                      <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-close"></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        
+                        <div class="swiper-slide">
+                          <div class="image">
+                            <picture
+                              ><img src="images/pc-slider-temp.jfif" alt=""
+                            /></picture>
+                              
+                          </div>
+                            <div class="product-snack active">
+                              Summer - A little box of summer activity ideas for kids 1 
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                          <div class="image">
+                            <picture
+                              ><img src="images/pc-slider-temp.jfif" alt=""
+                            /></picture>
+                          </div>
+                            <div class="product-snack active">
+                              Summer - A little box of summer activity ideas for kids 2
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                          <div class="image">
+                            <picture
+                              ><img src="images/pc-slider-temp.jfif" alt=""
+                            /></picture>
+                          </div>
+                            <div class="product-snack active">
+                              Summer - A little box of summer activity ideas for kids 3
+                            </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev">
+                      <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-arrow--left"></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-button-next">
+                      <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-arrow--right"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+    </div>
+
+    <script src="./js/vendor.min.js" defer></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/app.min.js" defer></script>
+
+  </body>
+</html>
