@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
    <head>
       <meta charset="utf-8" />
@@ -535,51 +534,48 @@
                                                                   </form>
                                                                </div>
                                                             </div>
-                                                           <div class="align-filter-checkbox">
-                                                                   <div class="products_active-filter">
-                                                                      <div class="txt">Baby &amp; Kids</div>
-                                                                      <button class="products_active-remove">
-                                                                         <svg class="icon">
-                                                                            <use xlink:href="images/sprite.svg#icon-close"></use>
-                                                                         </svg>
-                                                                      </button>
-                                                                   </div>
-                                                                   <div class="products_body-content">
-                                                                      <div class="my_list-table">
-                                                                         <label for="check-all-filter" class="checkbox">
-                                                                            <input type="checkbox" name="check-all-filter" id="check-all-filter">
-                                                                            <div class="checkbox-text">Select all 500 products</div>
-                                                                         </label>
-                                                                      </div>
-                                                                   </div>
+                                                            <div class="align-filter-checkbox">
+                                                                <div class="products_active-filters my-1" id="unassignedSelectedFilter">
+                                                                    <div class="products_body-content">
+                                                                        <div class="my_list-table">
+                                                                            <label for="check-all-unassigned" class="checkbox">
+                                                                                <input type="checkbox" name="check-all-unassigned" id="check-all-unassigned" onclick="selectAllProducts(this)">
+                                                                                <div class="checkbox-text">Select all&nbsp;<span id="unassign_total_count">24</span>&nbsp;products</div>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+
                                                                 </div>
+                                                            </div>
                                                             <div class="content_area overflow-auto retailer-table">
                                                                <table class="my_list-table">
                                                                   <thead class="nodark-bg">
                                                                      <tr>
                                                                         <th>
-                                                                           <div class="check-all">
+                                                                           <div class="check-all title">
                                                                                <label for="check-all" class="checkbox">
-                                                                                  <input type="checkbox" name="check-all" id="check-all">
-                                                                                  <div class="checkbox-text"></div>
-                                                                               </label>
-                                                                               <div class="check-all_dropdown dropdown">
-                                                                                  <div class="dropdown_header">
-                                                                                     <svg class="icon">
-                                                                                        <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
-                                                                                     </svg>
-                                                                                  </div>
-                                                                                  <div class="dropdown_body db-width">
-                                                                                     <div class="dropdown_inner">
-                                                                                        <ul>
-                                                                                            <li><button>Select All Items
-                                                                                               </button></li>
-                                                                                        </ul>
-                                                                                     </div>
-                                                                                  </div>
-                                                                               </div>
-                                                                            </div>
-                                                                         </th>
+                                                                                 <input type="checkbox" name="check-all" id="check-all" />
+                                                                                 <div class="checkbox-text"></div>
+                                                                              </label>
+                                                                              <div class="check-all_dropdown dropdown">
+                                                                                 <div class="dropdown_header">
+                                                                                    <button class="sort">
+                                                                                       <svg class="icon">
+                                                                                          <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                                       </svg>
+                                                                                    </button>
+                                                                                 </div>
+                                                                                 <div class="dropdown_body cstm_dropdown">
+                                                                                    <div class="dropdown_inner">
+                                                                                       <ul>
+                                                                                          <li><button>Ready for store Items</button></li>
+                                                                                          <li><button>Published to store Items</button></li>
+                                                                                          <li><button>All Items In My List</button></li>
+                                                                                       </ul>
+                                                                                    </div>
+                                                                                 </div>
+                                                                              </div>
+                                                                           </div>
                                                                         <th>
                                                                            <div class="title">
                                                                               Product Name
@@ -627,12 +623,12 @@
                                                                            </div>
                                                                         </th>
                                                                         <th>
-                                                                           <div class="title">
+                                                                           <div class="title cstm-gap">
                                                                               WSP 
                                                                               <div class="tooltip">
                                                                                  <div class="tooltip-icon tooltip-icon-info">
                                                                                     <svg class="icon">
-                                                                                       <use xlink:href="images/sprite.svg#icon-info"></use>
+                                                                                       <use xlink:href="images/sprite.svg#info-white"></use>
                                                                                     </svg>
                                                                                  </div>
                                                                                  <div class="tooltip_text tt-right">
@@ -796,45 +792,38 @@
                                                                   </form>
                                                                </div>
                                                             </div>
-                                                            <div class="products_active-filters mt-4">
-                                                                <div class="products_active-filter">
-                                                                  <div class="txt">Baby &amp; Kids</div>
-                                                                  <button class="products_active-remove">
-                                                                    <svg class="icon">
-                                                                      <use xlink:href="images/sprite.svg#icon-close"></use>
-                                                                    </svg>
-                                                                  </button>
-                                                                </div>
-                                                                
-                                                                <button class="products_active-remove-all">Clear All</button>
-                                                              </div>
+                                                            <div class="products_body-content">
+                                                               <div class="product-selected"><span>Select all 500 products</span></div>
+                                                            </div>
                                                             <div class="content_area overflow-auto retailer-table">
                                                                <table class="my_list-table">
                                                                   <thead class="nodark-bg">
                                                                      <tr>
-                                                                       <th>
-                                                                           <div class="check-all">
-                                                                               <label for="check-all" class="checkbox">
-                                                                                  <input type="checkbox" name="check-all" id="check-all">
-                                                                                  <div class="checkbox-text"></div>
-                                                                               </label>
-                                                                               <div class="check-all_dropdown dropdown">
-                                                                                  <div class="dropdown_header">
-                                                                                     <svg class="icon">
-                                                                                        <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
-                                                                                     </svg>
-                                                                                  </div>
-                                                                                  <div class="dropdown_body db-width">
-                                                                                     <div class="dropdown_inner">
-                                                                                        <ul>
-                                                                                            <li><button>Select All Items
-                                                                                               </button></li>
-                                                                                        </ul>
-                                                                                     </div>
-                                                                                  </div>
-                                                                               </div>
-                                                                            </div>
-                                                                         </th>
+                                                                        <th>
+                                                                           <div class="check-all title">
+                                                                               <label for="check-allz" class="checkbox">
+                                                                                 <input type="checkbox" name="check-allz" id="check-allz" />
+                                                                                 <div class="checkbox-text"></div>
+                                                                              </label>
+                                                                              <div class="check-all_dropdown dropdown">
+                                                                                 <div class="dropdown_header">
+                                                                                    <button class="sort">
+                                                                                       <svg class="icon">
+                                                                                          <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                                       </svg>
+                                                                                    </button>
+                                                                                 </div>
+                                                                                 <div class="dropdown_body">
+                                                                                    <div class="dropdown_inner cstm_dropdown">
+                                                                                       <ul>
+                                                                                          <li><button>Ready for store Items</button></li>
+                                                                                          <li><button>Published to store Items</button></li>
+                                                                                          <li><button>All Items In My List</button></li>
+                                                                                       </ul>
+                                                                                    </div>
+                                                                                 </div>
+                                                                              </div>
+                                                                           </div>
                                                                         <th>
                                                                            <div class="title">
                                                                               Product Name
@@ -902,12 +891,12 @@
                                                                            </div>
                                                                         </th>
                                                                         <th>
-                                                                           <div class="title">
+                                                                           <div class="title cstm-gap">
                                                                               WSP 
                                                                               <div class="tooltip">
                                                                                  <div class="tooltip-icon tooltip-icon-info">
                                                                                     <svg class="icon">
-                                                                                       <use xlink:href="images/sprite.svg#icon-info"></use>
+                                                                                       <use xlink:href="images/sprite.svg#info-white"></use>
                                                                                     </svg>
                                                                                  </div>
                                                                                  <div class="tooltip_text tt-right">

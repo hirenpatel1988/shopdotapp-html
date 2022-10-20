@@ -169,7 +169,7 @@
                <div class="pc_tabs-content tabs_body">
                   <div class="tab active" data-target="Account">
                      <div class="products_content">
-                        <div class="products_head mp-head">
+                        <div class="products_head mp-head head-with-subtitle">
                            <div class="products_head-content">
                               <div class="title">
                                  <h1>
@@ -177,44 +177,39 @@
                                  </h1>
                               </div>
                            </div>
+                            <p>Information entered on this page will be visible to brands within ShopDot.</p>
                         </div>
                         <div class="products_body">
                            <div class="content_area">
                               <div id="account">
                                  <div class="account_info">
-                                    <h2>Account Info</h2>
+                                    <h2>Company Information</h2>
                                     <div class="form-area">
-                                       <div class="category-form-input">
-                                          <div class="form-input">
-                                             <label for="" class="form-label">First name</label>
-                                             <input type="text" class="form-control" id="" placeholder="John">
-                                          </div>
-                                          <div class="form-input">
-                                             <label for="" class="form-label">Last name</label>
-                                             <input type="text" class="form-control" id="" placeholder="Doe">
-                                          </div>
-                                       </div>
                                        <div class="form-input tooltip-input">
                                           <label for="" class="form-label">
-                                             Account email
-                                             <div class="tooltip">
-                                                <div class="tooltip-icon">
-                                                   <svg class="icon">
-                                                      <use xlink:href="images/sprite.svg#icon-info"></use>
-                                                   </svg>
-                                                </div>
-                                                <div class="tooltip_text">
-                                                   <p>This is the email you use to log in to your account</p>
-                                                </div>
-                                             </div>
+                                             Company name
                                           </label>
-                                          <input type="text" class="form-control is-invalid" id="" placeholder="john@jondoe.com">
-                                          <small class="invalid-feedback">Please type correct email</small>
+                                          <input type="text" class="form-control" id="" placeholder="Company name">
+                                       </div>
+                                        
+                                        <div class="form-input tooltip-input">
+                                          <label for="" class="form-label">
+                                            Company email address
+                                          </label>
+                                          <input type="text" class="form-control" id="" placeholder="john@jondoe.com">
+                                       </div>
+                                        
+                                        
+                                         <div class="form-input tooltip-input">
+                                          <label for="" class="form-label">
+                                             Company phone number
+                                          </label>
+                                          <input type="text" class="form-control" id="" placeholder="9154651444">
                                        </div>
                                     </div>
                                  </div>
                                  <div class="my_store">
-                                    <h2>My Store</h2>
+                                    <h2>Retailer Information <span class="asterisk-red">*</span></h2>
                                     <div class="form-area">
                                        <div class="form-input form-upload-image">
                                           <a href="#" class="upload-logo">
@@ -338,7 +333,7 @@
                                           </div>
                                        </div>
                                        <div class="form-input form-story mb-4">
-                                          <label for="" class="form-label">Brand description</label>
+                                          <label for="" class="form-label">Your Retailer Story</label>
                                           <div class="content-info-">
                                              <div data-editor="ClassicEditor" data-collaboration="false" data-revision-history="false">
                                                 <main>
@@ -363,12 +358,8 @@
                                              </div>
                                           </div>
                                        </div>
-                                       <div class="form-input mb-4">
-                                          <label for="" class="form-label">Add a video link</label>
-                                          <input type="text" class="form-control" id="" placeholder="video link">
-                                       </div>
                                        <div class="form-input form-upload mb-4">
-                                          <label for="" class="form-label">Upload a Retailer photo</label>
+                                          <label for="" class="form-label">Upload a photo of your store</label>
                                            
                                            <div class="uploadOuter">
                                               
@@ -376,8 +367,10 @@
                                               Drag and drop file here
                                             <input type="file" onChange="dragNdrop(event)"  ondragover="drag()" ondrop="drop()" id="uploadFile"  />
                                             </span>
+<!--
                                                 <strong>OR</strong>
                                                <label for="uploadFile" class="btn btn-primary">Upload Image</label>
+-->
                                              
                                             </div>
                                             <div id="preview"></div>
@@ -387,43 +380,46 @@
                                  <div class="shipping_info mt-5">
                                     <h2>Store Address</h2>
                                     <div class="form-area">
-                                      
-                                                <div class="form-input">
-                                                   <label for="" class="form-label">Street Address 1</label>
-                                                   <input type="text" class="form-control" id="" placeholder="3102 W Broadway Street">
+                                      <div class="category-form-input">
+                                          <div class="form-input">
+                                             <label for="" class="form-label">Country</label>
+                                             <select name="Country" id="country-list">
+                                                 <option value="0">United States</option>
+                                                 <option value="1">India</option>
+                                                 <option value="1">Japan</option>
+                                          </select>
+                                          </div>
+                                          <div class="form-input">
+                                             <label for="" class="form-label">State</label>
+                                             <select name="State" id="state-list">
+                                                 <option value="0">Montana</option>
+                                                 <option value="1">Texas</option>
+                                                 <option value="2">Ohio</option>
+                                          </select>
+                                          </div>
+                                       </div>
+                                                <div class="form-input mt-4">
+                                                   <label for="" class="form-label">City</label>
+                                                   <input type="text" class="form-control" id="" placeholder="Missoula">
                                                 </div>
-                                                <div class="form-input">
-                                                   <label for="" class="form-label">Street Address 2</label>
-                                                   <input type="text" class="form-control" id="" placeholder="Suite B">
+                                        <div class="form-input tooltip-input">
+                                          <label for="" class="form-label">
+                                             Mailing Address
+                                             <div class="tooltip">
+                                                <div class="tooltip-icon">
+                                                   <svg class="icon">
+                                                      <use xlink:href="images/sprite.svg#icon-info"></use>
+                                                   </svg>
                                                 </div>
-                                                <div class="category-form-input">
-                                                   <div class="form-input">
-                                                      <label for="" class="form-label">Country</label>
-                                                      <select name="Country" id="country-list">
-                                                         <option value="0">United States</option>
-                                                         <option value="1">India</option>
-                                                         <option value="1">Japan</option>
-                                                      </select>
-                                                   </div>
-                                                   <div class="form-input">
-                                                      <label for="" class="form-label">State</label>
-                                                      <select name="State" id="state-list">
-                                                         <option value="0">Montana</option>
-                                                         <option value="1">Texas</option>
-                                                         <option value="2">Ohio</option>
-                                                      </select>
-                                                   </div>
+                                                <div class="tooltip_text">
+                                                   <p>The brand will send product samples to your mailing address.</p>
                                                 </div>
-                                                <div class="category-form-input mt-4 pb-4">
-                                                   <div class="form-input">
-                                                      <label for="" class="form-label">City</label>
-                                                      <input type="text" class="form-control mb-0" id="" placeholder="Missoula">
-                                                   </div>
-                                                   <div class="form-input">
-                                                      <label for="" class="form-label">ZIP</label>
-                                                      <input type="text" class="form-control mb-0" id="" placeholder="59808">
-                                                   </div>
-                                                </div>
+                                             </div>
+                                          </label>
+                                          <input type="text" class="form-control disabled" id="" placeholder="3102 W Broadway Street">
+                                       </div>
+                                               
+                                               
                                              
                                     </div>
                                     <div class="form-area">

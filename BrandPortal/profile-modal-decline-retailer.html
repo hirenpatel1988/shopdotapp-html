@@ -21,7 +21,7 @@
    </head>
    <body class="brands-single-page">
       <div class="wrapper">
-                  <header class="header mp-header">
+         <header class="header mp-header">
             <div class="header_block header_block-top mp-header_block-top">
                <div class="header_container">
                   <!--header logo-->
@@ -177,16 +177,16 @@
                      <div class="title">
                         <h1>A Schuler Bookst</h1>
                         <span class="status-pill pill_connected w-auto">
-                                 Connected
-                                 </span>
+                        Connected
+                        </span>
                      </div>
                      <div class="buttons">
                         <button class="button button-red">Decline</button>
                         <button class="button message-brand">
-                                <svg class="icon">
-                                    <use href="images/sprite.svg#message-white"></use>
-                                  </svg>
-                              </button>
+                           <svg class="icon">
+                              <use href="images/sprite.svg#message-white"></use>
+                           </svg>
+                        </button>
                      </div>
                   </div>
                </div>
@@ -503,18 +503,18 @@
                                              <div class="pc_tabs tabs">
                                                 <div class="tab_wrap">
                                                    <div class="pc_tabs-menu tab_menu">
-                                                      <button data-link="unassigned" class="tab-link active">Unassigned Products</button>
-                                                      <button data-link="assigned" class="tab-link">Assigned Products</button>
+                                                      <button data-link="unassigned" class="tab-link">Unassigned Products</button>
+                                                      <button data-link="assigned" class="tab-link active">Assigned Products</button>
                                                    </div>
                                                 </div>
-                                                   <div class="ml-auto-action" style="top: 8px;right: 16px;display: none">
-                                                    <button class="button button button-red">Unassign</button>
-                                                    </div> 
-                                                 <div class="ml-auto-action" style="top: 8px;right: 16px;">
-                                                    <button class="button button button-blue">Assign</button>
-                                                    </div> 
+                                                <div class="ml-auto-action" style="top: 8px;right: 16px;">
+                                                   <button class="button button button-red">Unassign</button>
+                                                </div>
+                                                <div class="ml-auto-action" style="top: 8px;right: 16px;display: none">
+                                                   <button class="button button button-blue">Assign</button>
+                                                </div>
                                                 <div class="pc_tabs-content tabs_body">
-                                                    <div class="tab active" data-target="unassigned">
+                                                   <div class="tab" data-target="unassigned">
                                                       <div class="tab_inner">
                                                          <div class="tab_inner-text">
                                                             <div class="products_head-content">
@@ -535,51 +535,47 @@
                                                                   </form>
                                                                </div>
                                                             </div>
-                                                           <div class="align-filter-checkbox">
-                                                                   <div class="products_active-filter">
-                                                                      <div class="txt">Baby &amp; Kids</div>
-                                                                      <button class="products_active-remove">
-                                                                         <svg class="icon">
-                                                                            <use xlink:href="images/sprite.svg#icon-close"></use>
-                                                                         </svg>
-                                                                      </button>
-                                                                   </div>
-                                                                   <div class="products_body-content">
-                                                                      <div class="my_list-table">
-                                                                         <label for="check-all-filter" class="checkbox">
-                                                                            <input type="checkbox" name="check-all-filter" id="check-all-filter">
-                                                                            <div class="checkbox-text">Select all 500 products</div>
-                                                                         </label>
-                                                                      </div>
-                                                                   </div>
-                                                                </div>
+                                                            <div class="align-filter-checkbox">
+                                                               <div class="products_active-filters my-1" id="unassignedSelectedFilter">
+                                                                  <div class="products_body-content">
+                                                                     <div class="my_list-table">
+                                                                        <label for="check-all-unassigned" class="checkbox">
+                                                                           <input type="checkbox" name="check-all-unassigned" id="check-all-unassigned" onclick="selectAllProducts(this)">
+                                                                           <div class="checkbox-text">Select all&nbsp;<span id="unassign_total_count">24</span>&nbsp;products</div>
+                                                                        </label>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
                                                             <div class="content_area overflow-auto retailer-table">
                                                                <table class="my_list-table">
                                                                   <thead class="nodark-bg">
                                                                      <tr>
                                                                         <th>
-                                                                           <div class="check-all">
-                                                                               <label for="check-all" class="checkbox">
-                                                                                  <input type="checkbox" name="check-all" id="check-all">
-                                                                                  <div class="checkbox-text"></div>
-                                                                               </label>
-                                                                               <div class="check-all_dropdown dropdown">
-                                                                                  <div class="dropdown_header">
-                                                                                     <svg class="icon">
-                                                                                        <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
-                                                                                     </svg>
-                                                                                  </div>
-                                                                                  <div class="dropdown_body db-width">
-                                                                                     <div class="dropdown_inner">
-                                                                                        <ul>
-                                                                                            <li><button>Select All Items
-                                                                                               </button></li>
-                                                                                        </ul>
-                                                                                     </div>
-                                                                                  </div>
-                                                                               </div>
-                                                                            </div>
-                                                                         </th>
+                                                                           <div class="check-all title">
+                                                                              <label for="check-all" class="checkbox">
+                                                                                 <input type="checkbox" name="check-all" id="check-all" />
+                                                                                 <div class="checkbox-text"></div>
+                                                                              </label>
+                                                                              <div class="check-all_dropdown dropdown">
+                                                                                 <div class="dropdown_header">
+                                                                                    <button class="sort">
+                                                                                       <svg class="icon">
+                                                                                          <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                                       </svg>
+                                                                                    </button>
+                                                                                 </div>
+                                                                                 <div class="dropdown_body cstm_dropdown">
+                                                                                    <div class="dropdown_inner">
+                                                                                       <ul>
+                                                                                          <li><button>Ready for store Items</button></li>
+                                                                                          <li><button>Published to store Items</button></li>
+                                                                                          <li><button>All Items In My List</button></li>
+                                                                                       </ul>
+                                                                                    </div>
+                                                                                 </div>
+                                                                              </div>
+                                                                           </div>
                                                                         <th>
                                                                            <div class="title">
                                                                               Product Name
@@ -613,8 +609,6 @@
                                                                               </button>
                                                                            </div>
                                                                         </th>
-                                                                        
-                                                                      
                                                                         <th>
                                                                            <div class="title">
                                                                               Stock
@@ -626,13 +620,13 @@
                                                                               </button>
                                                                            </div>
                                                                         </th>
-                                                                        <th>
-                                                                           <div class="title">
+                                                                         <th>
+                                                                           <div class="title cstm-gap">
                                                                               WSP 
                                                                               <div class="tooltip">
                                                                                  <div class="tooltip-icon tooltip-icon-info">
                                                                                     <svg class="icon">
-                                                                                       <use xlink:href="images/sprite.svg#icon-info"></use>
+                                                                                       <use xlink:href="images/sprite.svg#info-white"></use>
                                                                                     </svg>
                                                                                  </div>
                                                                                  <div class="tooltip_text tt-right">
@@ -670,7 +664,6 @@
                                                                         <td>
                                                                            <div>Chips</div>
                                                                         </td>
-                                                                       
                                                                         <td>
                                                                            <div class="text-bold">$5.00-$7.50</div>
                                                                         </td>
@@ -701,7 +694,6 @@
                                                                         <td>
                                                                            <div>Chips, Summer,  Summer Activities, Summer Toys</div>
                                                                         </td>
-                                                                       
                                                                         <td>
                                                                            <div class="text-bold">$5.00-$7.50</div>
                                                                         </td>
@@ -732,7 +724,6 @@
                                                                         <td>
                                                                            <div>Chips, Summer,  Summer Activities, Summer Toys</div>
                                                                         </td>
-                                                                       
                                                                         <td>
                                                                            <div class="text-bold">$5.00-$7.50</div>
                                                                         </td>
@@ -772,7 +763,7 @@
                                                          </div>
                                                       </div>
                                                    </div>
-                                                   <div class="tab" data-target="assigned">
+                                                   <div class="tab active" data-target="assigned">
                                                       <div class="tab_inner">
                                                          <div class="tab_inner-text">
                                                             <div class="products_head-content">
@@ -796,45 +787,38 @@
                                                                   </form>
                                                                </div>
                                                             </div>
-                                                            <div class="products_active-filters mt-4">
-                                                                <div class="products_active-filter">
-                                                                  <div class="txt">Baby &amp; Kids</div>
-                                                                  <button class="products_active-remove">
-                                                                    <svg class="icon">
-                                                                      <use xlink:href="images/sprite.svg#icon-close"></use>
-                                                                    </svg>
-                                                                  </button>
-                                                                </div>
-                                                                
-                                                                <button class="products_active-remove-all">Clear All</button>
-                                                              </div>
+                                                            <div class="products_body-content">
+                                                               <div class="product-selected"><span>Select all 500 products</span></div>
+                                                            </div>
                                                             <div class="content_area overflow-auto retailer-table">
                                                                <table class="my_list-table">
                                                                   <thead class="nodark-bg">
                                                                      <tr>
-                                                                       <th>
-                                                                           <div class="check-all">
-                                                                               <label for="check-all" class="checkbox">
-                                                                                  <input type="checkbox" name="check-all" id="check-all">
-                                                                                  <div class="checkbox-text"></div>
-                                                                               </label>
-                                                                               <div class="check-all_dropdown dropdown">
-                                                                                  <div class="dropdown_header">
-                                                                                     <svg class="icon">
-                                                                                        <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
-                                                                                     </svg>
-                                                                                  </div>
-                                                                                  <div class="dropdown_body db-width">
-                                                                                     <div class="dropdown_inner">
-                                                                                        <ul>
-                                                                                            <li><button>Select All Items
-                                                                                               </button></li>
-                                                                                        </ul>
-                                                                                     </div>
-                                                                                  </div>
-                                                                               </div>
-                                                                            </div>
-                                                                         </th>
+                                                                        <th>
+                                                                           <div class="check-all title">
+                                                                              <label for="check-allz" class="checkbox">
+                                                                                 <input type="checkbox" name="check-allz" id="check-allz" />
+                                                                                 <div class="checkbox-text"></div>
+                                                                              </label>
+                                                                              <div class="check-all_dropdown dropdown">
+                                                                                 <div class="dropdown_header">
+                                                                                    <button class="sort">
+                                                                                       <svg class="icon">
+                                                                                          <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                                       </svg>
+                                                                                    </button>
+                                                                                 </div>
+                                                                                 <div class="dropdown_body">
+                                                                                    <div class="dropdown_inner cstm_dropdown">
+                                                                                       <ul>
+                                                                                          <li><button>Ready for store Items</button></li>
+                                                                                          <li><button>Published to store Items</button></li>
+                                                                                          <li><button>All Items In My List</button></li>
+                                                                                       </ul>
+                                                                                    </div>
+                                                                                 </div>
+                                                                              </div>
+                                                                           </div>
                                                                         <th>
                                                                            <div class="title">
                                                                               Product Name
@@ -901,13 +885,13 @@
                                                                               </button>
                                                                            </div>
                                                                         </th>
-                                                                        <th>
-                                                                           <div class="title">
+                                                                         <th>
+                                                                           <div class="title cstm-gap">
                                                                               WSP 
                                                                               <div class="tooltip">
                                                                                  <div class="tooltip-icon tooltip-icon-info">
                                                                                     <svg class="icon">
-                                                                                       <use xlink:href="images/sprite.svg#icon-info"></use>
+                                                                                       <use xlink:href="images/sprite.svg#info-white"></use>
                                                                                     </svg>
                                                                                  </div>
                                                                                  <div class="tooltip_text tt-right">
@@ -1062,7 +1046,6 @@
                                                          </div>
                                                       </div>
                                                    </div>
-                                                   
                                                 </div>
                                              </div>
                                           </div>
@@ -1079,9 +1062,120 @@
          </main>
          <footer class="footer">
          </footer>
-          
-<!--
-          <div class="popup popup-confirm popup-confirm-push">
+         <div class="popup popup-confirm popup-confirm-push">
+            <div class="popup_wrapper">
+               <div class="popup_content">
+                  <div class="popup-close">
+                     <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-close"></use>
+                     </svg>
+                  </div>
+                  <div class="popup_content-header">
+                     <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-info-1"></use>
+                     </svg>
+                     <div class="h1">Confirmation Required</div>
+                  </div>
+                  <div class="popup_content-body text-center">
+                     <p>
+                        You are assigning 1 products to your retailer. Do you wish to continue?
+                     </p>
+                  </div>
+                  <div class="popup_content-footer">
+                     <button class="button button-dark ignore-cancel">
+                     Cancel
+                     </button>
+                     <button class="button button-orange push">
+                     yes
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="popup popup-confirm popup-confirm-push">
+            <div class="popup_wrapper">
+               <div class="popup_content">
+                  <div class="popup-close">
+                     <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-close"></use>
+                     </svg>
+                  </div>
+                  <div class="popup_content-header">
+                     <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-info-1"></use>
+                     </svg>
+                     <div class="h1">Confirmation Required</div>
+                  </div>
+                  <div class="popup_content-body text-center">
+                     <p>
+                        You are unassigning <span class="link-text fw-bold">1</span> product from your retailer. Products that are already published to store and unassigned will be archived in the retailer’s website. They will not be available  to the retailer in <a href="" class="link-text fw-bold">ShopDot</a>.
+                     </p>
+                  </div>
+                  <div class="popup_content-footer">
+                     <button class="button button-dark ignore-cancel">
+                     Cancel
+                     </button>
+                     <button class="button button-orange push">
+                     yes
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="popup popup-message active ">
+            <div class="popup_wrapper">
+               <div class="popup_content">
+                  <div class="popup-close">
+                     <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-close"></use>
+                     </svg>
+                  </div>
+                  <div class="popup_success popup_decline active">
+                     <div class="icon_wrap icon-check">
+                        <svg class="icon">
+                           <use xlink:href="images/sprite.svg#decline"></use>
+                        </svg>
+                     </div>
+                     <h2 class="h1">Decline Retailer</h2>
+                     <p>Are you sure you want to revoke <a href="">Retailer Store Name</a> access to your products?</p>
+                     <p>Your products will be automatically removed from their store.</p>
+                     <p>They will still be able to view your products but not publish to their store.</p>
+                     <div class="popup_content-footer">
+                        <button class="button button-grey cancel mr-2">Cancel</button>
+                        <button class="button">Yes</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="popup popup-message">
+         <div class="popup_wrapper">
+            <div class="popup_content">
+               <div class="popup-close">
+                  <svg class="icon">
+                     <use xlink:href="images/sprite.svg#icon-close"></use>
+                  </svg>
+               </div>
+               <div class="popup_success popup_decline active">
+                  <div class="icon_wrap icon-check">
+                     <svg class="icon">
+                        <use xlink:href="images/sprite.svg#decline"></use>
+                     </svg>
+                  </div>
+                  <h2 class="h1">Decline Request</h2>
+                  <p>You are declining <a href="" class="">Retailer Name's</a> request for access. They will still be able to view your products but not list nor push them to store.</p>
+                  <p>Do you wish to continue?</p>
+                  <div class="popup_content-footer">
+                     <button class="button button-grey cancel mr-2">Cancel</button>
+                     <button class="button">Yes</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+       
+       <div class="popup popup-message">
           <div class="popup_wrapper">
             <div class="popup_content">
               <div class="popup-close">
@@ -1089,31 +1183,24 @@
                   <use xlink:href="images/sprite.svg#icon-close"></use>
                 </svg>
               </div>
-  
-              <div class="popup_content-header">
-                <svg class="icon">
-                  <use xlink:href="images/sprite.svg#icon-info-1"></use>
-                </svg>
-                <div class="h1">Confirmation Required</div>
+        
+               
+              <div class="popup_success active">
+                <div class="icon_wrap icon-check">
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#icon-checked-1"></use>
+                  </svg>
+                </div>
+              
+                  
+                    <h2 class="h1">Request Approved Successfully</h2>
+                  <p> Retailer <a href="" class="link-text">Walker Pharmacy</a> is now connected with you. Retailer has been configured and currently has access to <a href="" class="link-text">1</a> of your products.</p>
+                <button class="button popup-close">Close</button>
               </div>
-              <div class="popup_content-body text-center">
-                <p>
-                  You are assigning 1 products to your retailer. Do you wish to continue?
-                </p>
-              </div>
-              <div class="popup_content-footer">
-                <button class="button button-dark ignore-cancel">
-                  Cancel
-                </button>
-                <button class="button button-orange push">
-                  yes
-                </button>
-              </div>
+              
             </div>
           </div>
         </div>
--->
-      </div>
       <script src="./js/vendor.min.js" defer></script>
       <script
          src="https://code.jquery.com/jquery-3.6.0.min.js"

@@ -561,7 +561,7 @@ button,input[type=button],input[type=reset],input[type=file],input[type=submit]{
 .products_head-retailer-types .retailer-type:first-child:last-child{border-radius:.8rem}
 .products_head-retailer-types .retailer-type:last-child{border-radius:0 .8rem .8rem 0}
 .products_head-retailer-types .retailer-type:last-child:first-child{border-radius:.8rem}
-.products_active-remove-all{color:var(--color-orange-100);font-size:1.3rem;background:transparent}
+.products_active-remove-all{color:var(--color-orange-100);font-size:1.3rem;background:transparent;border: none}
 .products_active-remove-all:hover{opacity:.8}
 .products_active-filters{position:relative;width:100%;display:flex;flex-wrap:wrap;gap:.8rem;margin-bottom:1.6rem}
 .products_active-filters .icon{width:1.2rem;height:1.2rem}
@@ -1305,7 +1305,7 @@ input[type="range"]:active::-webkit-slider-thumb{background-color:#ffffff;border
 .align-filter-checkbox .my_list-table{border:none;white-space:nowrap}
 .align-filter-checkbox .my_list-table .checkbox-text{margin-right:-15px;color:#e5a275}
 .align-filter-checkbox .my_list-table .checkbox{line-height:17px}
-.popup_decline .icon{width:100%;height:100%}
+.popup_decline .icon{width:100%;height:100%;stroke: none}
 .popup_decline .icon_wrap{width:6rem;height:6rem;border-radius:100%;border:none;color:#EB5757}
 
 
@@ -1533,7 +1533,7 @@ to{transform:rotate(359deg)}
 .swiper-button-next,.swiper-button-prev{z-index:9}
 .close-select{display:flex;gap:2rem}
 .close-select .icon{width:1rem;height:1rem;margin-top:4px}
-.db-width{width:20rem}
+.db-width{max-width: 15rem;width: 15rem;min-width: 15rem;}
 .product-varient{padding:1.3rem;background:#FFFFFF;font-weight:700;color:var(--color-navy)}
 .pd-varient{width:100rem;height:34rem}
 .vp-details{color:var(--color-orange-100);text-decoration:underline;margin-left:2rem}
@@ -2172,7 +2172,7 @@ svg.icon.arrow-dir.rev{margin-top:-4px;transform:rotate(180deg)}
 .scrollable_table .actions .dropdown{color: #283b49}
 .scrollable_table table,.scrollable_table table.datalist-table,.scrollable_table table.table.datalist-table{overflow-x:auto}
 .scrollable_table tbody .dropdown_body{left:auto;right:0}
-.status-pill{font-style:normal;font-weight:500;font-size:12px;line-height:12px;letter-spacing:.3px;align-items:center;padding:6px 16px;min-height:24px;border-radius:100px;min-width:90px;display:inline-block;text-align:center}
+.status-pill{font-style:normal;font-weight:500;font-size:12px;line-height:12px;letter-spacing:.3px;align-items:center;padding:6px 10px;min-height:24px;border-radius:100px;min-width:110px;display:inline-block;text-align:center}
 .pill_pending{background:#FBECBF;border:1px solid #F8DD8C;color:#8D6F27}
 .pill_connected{border:1px solid #8AB8F5;background:#E0EDFF;color:#2F80ED}
 .pill_declined{background:#FFE8E8;color:#EB5757;border:1px solid #F7B8B8}
@@ -2187,3 +2187,36 @@ svg.icon.arrow-dir.rev{margin-top:-4px;transform:rotate(180deg)}
 
 .product-sync-icon-off{height:18px;transition:.5s;width:18px;display:flex;justify-content:end;align-items:center;color:#c1c1c1;background:#fff;align-content:center;padding-top:8px}
 .product-sync-icon{height:18px;transition:.5s;width:18px;display:flex;justify-content:end;align-items:center;color:#fff;background:#2F80ED;align-content:center;padding-top:3px}
+
+.status-pill.w-auto{min-width:auto}
+button.button.message-brand{padding:0 10px}
+.message-brand svg.icon{width:16px;height:14px;stroke:none}
+.cstm_dropdown{width:190px}
+.fw-bold{font-weight:700}
+.cstm-gap .tooltip-icon-info{padding:0;color:transparent;width:18px;height:18px;stroke:none}
+.cstm-gap .tooltip-icon-info .icon:hover{color:transparent;opacity:.9}
+.products_head .title.cstm-gap{gap: 0.5rem}
+.cstm-gap .tooltip-icon-info:hover{background: transparent;color: transparent;}
+.my-product-table .add-item-label{padding:4px 8px 4px 4px;background:transparent;border-radius:4px;color:#808084;line-height:13px;border:1px solid #808084;font-weight: 700}
+.my-product-table .add-item-label:hover{color:#000}
+.value_added{color:#d46f2c;text-decoration:none;max-width:150px;overflow:hidden;text-overflow:ellipsis;display:block;white-space:nowrap}
+.value_added:hover{text-decoration:underline}
+
+.my_list-dropdown{display:flex;align-content:center;align-items:center;justify-content:flex-start;gap:1rem;flex-wrap: wrap}
+.my_list-dropdown label{font-weight:400;font-size:14px;color:#354253;line-height:16px}
+.my_list-dropdown label span{font-weight:700}
+.my_list-dropdown select{min-width:250px;height:32px}
+/*UI Drodpwn ***********************************************************************************************/
+.ui-dropdown .category-dropdown > span{width:250px;height:32px;border:1px solid #354253;border-radius:4px;padding:8px;max-height:32px;min-height:32px}
+.ui-dropdown .category-dropdown > span > span{color:#283B49;font-weight:400;font-size:13px;line-height:16px}
+.ui-dropdown .category-dropdown ul{top:25px;background:#FFFFFF;box-shadow:0 2px 16px rgba(0,0,0,0.12);padding:8px 0;border-radius:4px;border:none}
+.ui-dropdown .category-dropdown.open > span{border:1px solid #D46F2C}
+.ui-dropdown .category-dropdown ul li a{color:#BD6F34;font-weight:400;font-size:13px;line-height:16px}
+.ui-dropdown .category-dropdown ul li a:hover,.ui-dropdown .category-dropdown ul li.active a{color:#BD6F34;background:#FBF5F0}
+
+.products_active-filters button.product-active,.products_active-filters button.product-deactive{border:.2rem solid var(--btn-background);padding:8px 16px}
+.product-active,.product-deactive{width:87px;height:32px}
+.table tbody td.text-right,.table thead th.text-right{text-align:right}
+.my-product-table .add-item-label.add-category{background: #FCE7D4;color: #5D5D5F;border-color:#FCE7D4}
+.my-product-table .add-item-label.add-tags{background: #BFF1D5;color: #5D5D5F;border-color:#BFF1D5}
+.my-product-table .add-item-label.add-retailer{background: #CEE1FB;color: #5D5D5F;border-color:#CEE1FB}
