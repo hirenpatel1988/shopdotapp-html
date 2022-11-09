@@ -1,0 +1,2994 @@
+<!--
+Notes Find: 
+1. "Tooltip for all state"
+2. sync button rotation: "rotation"
+3. "Before selected sales dropdown"
+4. "When Sync is ON"
+5. On "active" class row will show
+6. Button with close icon
+-->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Brand Product</title>
+      <link
+         rel="icon"
+         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
+         />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap"
+         rel="stylesheet"
+         />
+      <link media="all" rel="stylesheet" href="css/vendor.min.css" />
+      <link media="all" rel="stylesheet" href="css/styles.min.css" />
+       <link media="all" rel="stylesheet" href="css/media.css" />
+       <link media="all" rel="stylesheet" href="css/dropdown.css" />
+         <script src="https://cdn.jsdelivr.net/npm/bcryptjs@2.4.3/dist/bcrypt.js"></script>
+         <script src="../js/script.js"></script>
+   </head>
+   <body>
+      <div class="wrapper">
+         <header class="header mp-header">
+            <div class="header_block header_block-top mp-header_block-top">
+               <div class="header_container">
+                  <!--header logo-->
+                  <div class="header_logo">
+                     <a href="index.html" class="logo">
+                        <picture><img src="images/logo.svg" alt=""></picture>
+                     </a>
+                  </div>
+                  <!--header menu-->
+                  <div class="header_menu-wrap">
+                     <input type="checkbox" name="" id="" class="">
+                     <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                     </div>
+                     <ul class="header_menu menu">
+                        <li class="menu_item"><a href="#" class="menu_link">Dashboard</a></li>
+                        <li class="menu_item ">
+                           <a href="#" class="menu_link">Products</a>
+                        </li>
+                        <li class="menu_item">
+                           <div class="dropdown">
+                              <div class="dropdown_header">
+                                 <div class="dropdown_header-chevron">
+                                    <a href="#" class="menu_link">
+                                       Retailers
+                                       <div class="dropdown_header-chevron">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                          </svg>
+                                       </div>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="dropdown_body">
+                                 <div class="dropdown_inner">
+                                    <ul>
+                                       <li><a href="#">Approved Retailers</a></li>
+                                       <li><a href="#">Requests for Access</a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="menu_item"><a href="#" class="menu_link">Orders</a></li>
+                     </ul>
+                  </div>
+                  <!--header search-->
+                  <div class="header_search search">
+                     <form action="#" class="search_form">
+                        <div class="search_form-input">
+                           <input type="text" placeholder="Search…">
+                        </div>
+                        <button type="cancel" class="search_form-button">
+                           <svg class="icon">
+                              <use xlink:href="images/sprite.svg#icon-clear"></use>
+                           </svg>
+                        </button>
+                        <button type="submit"></button>
+                        <svg class="icon">
+                           <use xlink:href="images/sprite.svg#icon-search"></use>
+                        </svg>
+                     </form>
+                  </div>
+                  <!--header actions-->
+                  <div class="header_actions">
+                     <div class="header_usermenu">
+                        <div class="dropdown">
+                           <div class="dropdown_header">
+                              <div class="dropdown_header-text">
+                                 Hi, <span class="username">Jane</span>
+                              </div>
+                              <div class="dropdown_header-icon">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-retailers"></use>
+                                 </svg>
+                              </div>
+                              <div class="dropdown_header-chevron">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                 </svg>
+                              </div>
+                           </div>
+                           <div class="dropdown_body">
+                              <div class="dropdown_inner">
+                                 <ul>
+                                    <li><a href="#">Settings</a></li>
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">Sign out</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <button class="header_action header_action-mails">
+                        <svg class="icon">
+                           <use xlink:href="images/sprite.svg#icon-mail"></use>
+                        </svg>
+                        <div class="text visible">5</div>
+                     </button>
+                     <button class="header_action header_action-notifications">
+                        <!--Changed icon to dropdown, to show list of 'updates'-->
+                        <div class="dropdown">
+                           <div class="dropdown_header">
+                              <svg class="icon">
+                                 <use xlink:href="images/sprite.svg#icon-notification"></use>
+                              </svg>
+                           </div>
+                           <div class="dropdown_body">
+                              <div class="dropdown_inner">
+                                 <ul>
+                                    <li>
+                                       <span>Summer Activities Chips for Kids</span> <br>
+                                       updated Dec.15, 2021, 07:56 PM
+                                    </li>
+                                    <li>
+                                       <span>Summer Activities Chips for Kids</span> <br>
+                                       updated Dec.15, 2021, 07:56 PM
+                                    </li>
+                                    <li>
+                                       <span>Summer Activities Chips for Kids</span> <br>
+                                       updated Dec.15, 2021, 07:56 PM
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="text visible">1</div>
+                     </button>
+                     <div class="header_action header_action-invite">
+                        <button class="button invite-retailer">Invite Retailers</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="header_block header_block-bottom mp-header_block-bottom"></div>
+         </header>
+         <main class="content mp-content">
+            <section class="section products">
+               <aside class="filters">
+                  <div class="filters_wrap">
+                     <!--filters head-->
+                     <div class="filters_block filters_block-head">
+                        <!--filters close/unclose filters-->
+                        <button class="filters_hide-and-show">
+                           <svg class="icon">
+                              <use xlink:href="images/sprite.svg#icon-arrow--left"></use>
+                           </svg>
+                        </button>
+                        <!--filters clearn-->
+                        <a href="#" class="filters-clear">Clear Filters</a>
+                     </div>
+                     <div class="filters_block filters_block-body">
+                        <div class="filter open filter-by-products">
+                           <div class="filter_body">
+                              <!--single filter subfilters-->
+                              <div class="subfilters">
+                                 <div class="subfilter">
+                                    <div class="subfilter_head">Product Category</div>
+                                    <div class="subfilter_body">
+                                       <div class="checkbox checkbox--no-decor">
+                                          <label for="p-cat-1"
+                                             >
+                                             <input type="radio" id="p-cat-1" name="p-cat" />
+                                             <div class="checkbox-text">Baby & Kids</div>
+                                          </label>
+                                       </div>
+                                       <div class="checkbox checkbox--no-decor">
+                                          <label for="p-cat-2"
+                                             >
+                                             <input type="radio" id="p-cat-2" name="p-cat" />
+                                             <div class="checkbox-text">Men</div>
+                                          </label>
+                                       </div>
+                                       <div class="checkbox checkbox--no-decor">
+                                          <label for="p-cat-3"
+                                             >
+                                             <input type="radio" id="p-cat-3" name="p-cat" />
+                                             <div class="checkbox-text">Women</div>
+                                          </label>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="subfilter">
+                                    <div class="subfilter_head">Product Tags</div>
+                                    <div class="subfilter_body">
+                                       <div class="checkbox checkbox--no-decor">
+                                          <label for="p-tag-1"
+                                             >
+                                             <input type="radio" id="p-tag-1" name="p-tag" />
+                                             <div class="checkbox-text">Chips</div>
+                                          </label>
+                                       </div>
+                                       <div class="checkbox checkbox--no-decor">
+                                          <label for="p-tag-2"
+                                             >
+                                             <input type="radio" id="p-tag-2" name="p-tag" />
+                                             <div class="checkbox-text">Summer</div>
+                                          </label>
+                                       </div>
+                                       <div class="checkbox checkbox--no-decor">
+                                          <label for="p-tag-3"
+                                             >
+                                             <input type="radio" id="p-tag-3" name="p-tag" checked/>
+                                             <div class="checkbox-text">Summer Activities</div>
+                                          </label>
+                                       </div>
+                                       <div class="checkbox checkbox--no-decor">
+                                          <label for="p-tag-4"
+                                             >
+                                             <input type="radio" id="p-tag-4" name="p-tag" />
+                                             <div class="checkbox-text">Summer Toys</div>
+                                          </label>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="subfilter">
+                                    <div class="subfilter_head">Stock</div>
+                                    <div class="subfilter_body">
+                                       <div class="checkbox checkbox--no-decor">
+                                          <label for="stock-1"
+                                             >
+                                             <input type="checkbox" id="stock-1" name="stock" checked />
+                                             <div class="checkbox-text">&lt; 10 units in stock</div>
+                                          </label>
+                                       </div>
+                                       <div class="checkbox checkbox--no-decor">
+                                          <label for="stock-2"
+                                             >
+                                             <input type="checkbox" id="stock-2" name="stock" />
+                                             <div class="checkbox-text">11-50 units in stock</div>
+                                          </label>
+                                       </div>
+                                       <div class="checkbox checkbox--no-decor">
+                                          <label for="stock-3"
+                                             >
+                                             <input type="checkbox" id="stock-3" name="stock" />
+                                             <div class="checkbox-text">&gt; 50 units in stock</div>
+                                          </label>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="subfilter">
+                                    <div class="subfilter_head">
+                                       <div class="filter-label">Last sync</div>
+                                    </div>
+                                    <div class="subfilter_body">
+                                     
+                                            
+                                               
+                                                   <div class="checkbox checkbox--no-decor">
+                                                      <label for="p-1"
+                                                         >
+                                                         <input type="checkbox" id="p-1" name="p" />
+                                                         <div class="checkbox-text">Today</div>
+                                                      </label>
+                                                   </div>
+                                                   <div class="checkbox checkbox--no-decor">
+                                                      <label for="p-2"
+                                                         >
+                                                         <input type="checkbox" id="p-2" name="p" />
+                                                         <div class="checkbox-text">This week</div>
+                                                      </label>
+                                                   </div>
+                                                   <div class="checkbox checkbox--no-decor">
+                                                      <label for="p-3"
+                                                         >
+                                                         <input type="checkbox" id="p-3" name="p" />
+                                                         <div class="checkbox-text">This month</div>
+                                                      </label>
+                                                   </div>
+                                                   <div class="date-from-to">
+                                                        <div class="date-area">
+                                                            <small>From</small>
+                                                            <input type="date" name="p-from" />
+                                                            
+                                                        </div>
+                                                       <div class="date-area">
+                                                            <small>To</small>
+                                                            <input type="date" placeholder="To" name="p-to" />
+                                                           
+                                                        </div>
+                                                    </div>
+                                                
+                                            
+                                             
+                                        
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </aside>
+               <div class="products_content">
+                  <div class="products_head">
+                     <div class="breadcrumbs_wrap">
+                        <ul class="breadcrumbs">
+                            <li><span>Products</span></li>                           
+                        </ul>
+                     </div>
+                     <div class="products_head-content">
+                        <a href="#" class="back">
+                           <svg class="icon">
+                              <use xlink:href="images/sprite.svg#icon-arrow--left"></use>
+                           </svg>
+                        </a>
+                        <div class="title">
+                           <h1>Products</h1>
+                           <div class="number">20</div>
+                        </div>
+                        <div class="products_head-search">
+                           <form action="#" class="search_form">
+                              <div class="search_form-input">
+                                 <input type="text" placeholder="Search product name or SKU" />
+                              </div>
+                              <button type="cancel" class="search_form-button">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-clear"></use>
+                                 </svg>
+                              </button>
+                              <button type="submit"></button>
+                              <svg class="icon">
+                                 <use xlink:href="images/sprite.svg#icon-search"></use>
+                              </svg>
+                           </form>
+                        </div>
+                        <div class="products_head-brand-types">
+                           <!--For active selected type add class 'active'-->
+                           <a href="#" class="brand-type active">All</a>
+                           <a href="#" class="brand-type">Active</a>
+                           <a href="#" class="brand-type">Inactive</a>
+                        </div>
+<!--
+                        <div class="products_head-brand-types">
+                           <a href="#" class="brand-type">Archived</a>
+                        </div>
+-->
+                     </div>
+                  </div>
+                  <div class="my_list-body">
+                     <div class="products_active-filters">
+                        <div class="products_active-filter">
+                           <div class="txt">&lt; 10 units in stock</div>
+                           <button class="products_active-remove">
+                              <svg class="icon">
+                                 <use xlink:href="images/sprite.svg#icon-close"></use>
+                              </svg>
+                           </button>
+                        </div>
+<!--
+                        <div class="products_active-filter">
+                           <div class="txt">Summer Activities</div>
+                           <button class="products_active-remove">
+                              <svg class="icon">
+                                 <use xlink:href="images/sprite.svg#icon-close"></use>
+                              </svg>
+                           </button>
+                        </div>
+-->
+                        <button class="products_active-remove-all">Clear Filters</button>
+                     </div>
+                      
+                      <div class="products_active-filters mt-2">
+                        <div class="my_list-dropdown">
+                           <label>You have selected <span>20</span> records</label>
+                            <button class="button button-dark product-active">Activate</button>
+                            <button class="button button-red product-deactive">Deactivate</button>
+                             <div class="ui-dropdown">
+                                 
+                                 <div class="my_list-dropdown">
+                           <label>You have selected <span>1</span> records</label>
+                           <div class="ui-dropdown">
+                              <div class="select_wrap">
+                                 <ul class="default_option">
+                                    <li>
+                                       <div class="option">
+                                          <p>Choose action</p>
+                                       </div>
+                                    </li>
+                                 </ul>
+                                 <ul class="select_ul">
+                                    <li>
+                                       <div class="option">
+                                          <p>Edit Categories</p>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div class="option">
+                                          <p>Add Tags</p>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div class="option">
+                                          <p>Assign Retailers</p>
+                                       </div>
+                                    </li>
+                                     <li>
+                                       <div class="option">
+                                          <p>Sync Product</p>
+                                       </div>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                            </div>
+                        </div>
+                     </div>
+                      
+                     <div class="my_list-table-wrap datalist-table_wrap sticky-header-table">
+                        <table class="my_list-table datalist-table my-product-table">
+                           <thead class="sticky-thead">
+                              <tr>
+                                 <th>
+                                    <!--Add class 'active' to 'check-all' for 'grey background'-->
+                                    <div class="check-all">
+                                       <label for="check-all" class="checkbox">
+                                          <input type="checkbox" name="check-all" id="check-all" />
+                                          <div class="checkbox-text"></div>
+                                       </label>
+                                       <div class="check-all_dropdown dropdown">
+                                          <div class="dropdown_header">
+                                             <svg class="icon">
+                                                <use
+                                                   xlink:href="images/sprite.svg#icon-chevron--down"
+                                                   ></use>
+                                             </svg>
+                                          </div>
+                                          <div class="dropdown_body db-width">
+                                             <div class="dropdown_inner">
+                                                <ul>
+                                                    <li><button>Select All Items
+                                                       </button></li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </th>
+                                 <th class="product-column">
+                                    <div class="txt">
+                                       Product Name
+                                       <!--Add class 'active' to sort, when it active-->
+                                       <button class="sort">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </th>
+                                 <th>
+                                    <div class="txt brand-status">
+                                       Status
+                                        <div class="tooltip">
+                                                <div class="tooltip-icon tooltip-icon-info">
+                                                  <svg class="icon">
+                                                    <use xlink:href="images/sprite.svg#icon-info-blue"></use>
+                                                  </svg>
+                                                </div>
+                                                <div class="tooltip_text"><p>All required product fields must be filled before you can activate a product</p></div>
+                                              </div>
+                                       <!--Add class 'active' to sort, when it active-->
+                                       <button class="sort">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </th>                                  
+                                 <th>
+                                    <div class="txt">
+                                       Category
+                                       <!--Add class 'active' to sort, when it active-->
+                                       <button class="sort">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </th>
+                                 <th>
+                                    <div class="txt">Tags</div>
+                                 </th>
+                                 <th>
+                                    <div class="txt">
+                                       Stock
+                                       <!--Add class 'active' to sort, when it active-->
+                                        
+                                        <!--When Sync is ON-->
+                                       <div class="tooltip link-tooltip">
+                                          <div class="tooltip-icon tooltip-icon-info sync-icon">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-sync"></use>
+                                             </svg>
+                                          </div>
+                                            <div class="tooltip_text">
+                                              <div class="tooltip-data">
+                                             <p>Stock Sync is ON. Turn it off if you want to edit stock levels and manage them manually in ShopDot. Your changes will not be overridden.</p>
+                                             <a href="#" class="tooltip-setting">settings</a>          
+                                              </div>
+                                          </div>
+                                       </div>
+                                        
+                                        <!--When Sync is OFF-->
+<!--
+                                        <div class="tooltip link-tooltip">
+                                          <div class="tooltip-icon tooltip-icon-info sync-icon-off">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-sync-off"></use>
+                                             </svg>
+                                          </div>
+                                          <div class="tooltip_text">
+                                              <div class="tooltip-data">
+                                             <p>Stock Sync is OFF. Turn it on if you want Stock Levels in ShopDot to automatically sync from Shopify. Your previous changes will be overridden</p>
+                                             <a href="#" class="tooltip-setting">settings</a>          
+                                              </div>
+                                          </div>
+                                       </div>
+-->
+                                       <button class="sort">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </th>
+                                 <th>
+                                    <div class="txt sales">
+                                            <!--Before selected sales dropdown-->
+                                            <!--<span class="head-label">Sales</span>-->
+                                        
+                                            <!--After Selected sales dropdown-->
+                                       <span class="head-label">
+                                           Sales</span>
+                                       
+                                       <!--Add class 'active' to sort, when it active-->
+                                       <div class="check-all_dropdown dropdown">
+                                          <div class="dropdown_header">
+                                             <svg class="icon sales-dropdown-arrow">
+                                                <use
+                                                   xlink:href="images/sprite.svg#icon-chevron--down"
+                                                   ></use>
+                                             </svg>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </th>
+                                 <th>
+                                    <div class="txt">
+                                       Retailers
+                                       <!--Add class 'active' to sort, when it active-->
+                                       <button class="sort">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </th>
+                                 <th>
+                                    <div class="txt">
+                                       Last Sync
+                                       <!--Add class 'active' to sort, when it active-->
+                                       <button class="sort">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </th>
+                                 <th>
+                                    <div class="txt">Action</div>
+                                 </th>
+                              </tr>
+                                <!-- On "active" class row will show -->
+                               
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>
+                                    <label for="check-1" class="checkbox">
+                                       <input type="checkbox" name="check-1" id="check-1" />
+                                       <div class="checkbox-text"></div>
+                                    </label>
+                                 </td>
+                                 <td>
+                                    <div class="my_list-product">
+                                       <div class="my_list-product-image">
+                                          <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                       </div>
+                                       <div>
+                                          <a href="#" class="my_list-product-title">
+                                          Summer Chips for Kids
+                                          </a>
+                                          <a href="#" class="my_list-product-variants variants-modal-action">
+                                          4 Variants
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <div class="my-toggle-btn-wrapper tooltip">
+                                          <div class="my-toggle-btn">
+                                             <input type="checkbox" id="checkbox1">
+                                             <label for="checkbox1">
+                                             <span class="on" title="Active">Active</span>
+                                             <span class="off" title="Inctive">Inactive</span>
+                                             </label>
+                                             <!--                                Tooltip for all state:
+                                                Active: Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.
+                                                Inactive: By activating, your product will be visible to all retailers who are sourcing products on ShopDot.
+                                                Disabled: To activate a product please add billing information, assign category, and fill in all required fields.
+                                                more info screenshot: https://prnt.sc/JupyNsuyrkOP
+                                                End Tooltip for all state-->
+                                             <div class="tooltip_text">
+                                                <p>By activating, your product will be visible to all retailers who are sourcing products on ShopDot.</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="add-item-label add-category">
+                                       <span>+</span> Category
+                                       </a>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="add-item-label add-tags">
+                                       <span>+</span> Tags
+                                       </a>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt red">
+                                     <span>0</span>
+                                       <div class="tooltip-icon tooltip-icon-danger">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#icon-danger"></use>
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       $0 <br/>
+                                       0 sold
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="add-item-label add-retailer">
+                                       <span>+</span> Retailer
+                                       </a>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">01/14/22</div>
+                                 </td>
+                                
+                                 <td>
+                                    <div class="actions">
+                                       <div class="dropdown">
+                                          <div class="dropdown_header">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-more"></use>
+                                             </svg>
+                                          </div>
+                                          <div class="dropdown_body">
+                                             <div class="dropdown_inner">
+                                                <ul>
+                                                   <li><a href="#">View Product</a></li>
+                                                   <li><button class="edit-product">Edit Product</button></li>
+                                                   <li><button class="sync-product">Sync Product</button></li>
+                                                   <li><button class="assign-retailr">Assign Retailers</button></li>
+                                                   <li><button class="view-store">View in Store</button></li>
+<!--                                                   <li><button class="archive-product">Archive Product</button></li>-->
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                              </tr>
+                               <tr>
+                                 <td>
+                                    <label for="check-1" class="checkbox">
+                                       <input type="checkbox" name="check-1" id="check-1" />
+                                       <div class="checkbox-text"></div>
+                                    </label>
+                                 </td>
+                                 <td>
+                                    <div class="my_list-product">
+                                       <div class="my_list-product-image">
+                                          <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                       </div>
+                                       <div>
+                                          <a href="#" class="my_list-product-title">
+                                          Summer Chips for Kids
+                                          </a>
+                                         <a href="#" class="my_list-product-variants variants-modal-action">
+                                          4 Variants
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <div class="my-toggle-btn-wrapper tooltip">
+                                          <div class="my-toggle-btn">
+                                             <input type="checkbox" id="checkbox4" checked="">
+                                             <label for="checkbox4">
+                                             <span class="on" title="Active">Active</span>
+                                             <span class="off" title="Inactive">Inactive</span>
+                                             </label>
+                                             <div class="tooltip_text">
+                                                <p>Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="value_added">
+                                       Baby &amp; Kids
+                                       </a>
+                                    </div>
+                                 </td>
+                                <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="value_added">
+                                       Chips, +4…
+                                       </a>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt red">
+                                     <span>0</span>
+                                       <div class="tooltip-icon tooltip-icon-danger">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#icon-danger"></use>
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       $4,000,000 <br/>
+                                       1,001 sold
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="value_added">
+                                       2 assigned
+                                       </a>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">01/14/22</div>
+                                 </td>
+                                
+                                 <td>
+                                    <div class="actions">
+                                       <div class="dropdown">
+                                          <div class="dropdown_header">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-more"></use>
+                                             </svg>
+                                          </div>
+                                          <div class="dropdown_body">
+                                             <div class="dropdown_inner">
+                                                <ul>
+                                                   <li><a href="#">View Product</a></li>
+                                                   <li><button class="edit-product">Edit Product</button></li>
+                                                   <li><button class="sync-product">Sync Product</button></li>
+                                                   <li><button class="assign-retailr">Assign Retailers</button></li>
+                                                   <li><button class="view-store">View in Store</button></li>
+<!--                                                   <li><button class="archive-product">Archive Product</button></li>-->
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                              </tr>
+                                <tr>
+                                 <td>
+                                    <label for="check-17" class="checkbox">
+                                       <input type="checkbox" name="check-17" id="check-17" />
+                                       <div class="checkbox-text"></div>
+                                    </label>
+                                 </td>
+                                 <td>
+                                    <div class="my_list-product">
+                                       <div class="my_list-product-image">
+                                          <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                       </div>
+                                       <div>
+                                          <a href="#" class="my_list-product-title">
+                                          Summer Chips for Kids
+                                          </a>
+                                          <a href="#" class="my_list-product-variants variants-modal-action">
+                                          4 Variants
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <div class="my-toggle-btn-wrapper tooltip">
+                                          <div class="my-toggle-btn">
+                                             <input type="checkbox" id="checkbox3">
+                                             <label for="checkbox3">
+                                             <span class="on" title="Active">Active</span>
+                                             <span class="off" title="Inctive">Inactive</span>
+                                             </label>
+                                             <!--                                Tooltip for all state:
+                                                Active: Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.
+                                                Inactive: By activating, your product will be visible to all retailers who are sourcing products on ShopDot.
+                                                Disabled: To activate a product please add billing information, assign category, and fill in all required fields.
+                                                more info screenshot: https://prnt.sc/JupyNsuyrkOP
+                                                End Tooltip for all state-->
+                                             <div class="tooltip_text">
+                                                <p>By activating, your product will be visible to all retailers who are sourcing products on ShopDot.</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="add-item-label add-category">
+                                       <span>+</span> Category
+                                       </a>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="add-item-label add-tags">
+                                       <span>+</span> Tags
+                                       </a>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <!--'orange' class for normal quantity, 'red' class for small-->
+                                    <div class="txt orange">
+                                       <span>9</span>
+                                       <div class="tooltip-icon tooltip-icon-orange">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#icon-danger"></use>
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       $0 <br/>
+                                       0 sold
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="add-item-label add-retailer">
+                                       <span>+</span> Retailer
+                                       </a>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">01/14/22</div>
+                                 </td>
+                                
+                                 <td>
+                                    <div class="actions">
+                                       <div class="dropdown">
+                                          <div class="dropdown_header">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-more"></use>
+                                             </svg>
+                                          </div>
+                                          <div class="dropdown_body">
+                                             <div class="dropdown_inner">
+                                                <ul>
+                                                   <li><a href="#">View Product</a></li>
+                                                   <li><button class="edit-product">Edit Product</button></li>
+                                                   <li><button class="sync-product">Sync Product</button></li>
+                                                   <li><button class="assign-retailr">Assign Retailers</button></li>
+                                                   <li><button class="view-store">View in Store</button></li>
+<!--                                                   <li><button class="archive-product">Archive Product</button></li>-->
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                              </tr>
+                               <tr>
+                                 <td>
+                                    <label for="check-13" class="checkbox">
+                                       <input type="checkbox" name="check-13" id="check-13" />
+                                       <div class="checkbox-text"></div>
+                                    </label>
+                                 </td>
+                                 <td>
+                                    <div class="my_list-product">
+                                       <div class="my_list-product-image">
+                                          <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                       </div>
+                                       <div>
+                                          <a href="#" class="my_list-product-title">
+                                          Summer Chips for Kids
+                                          </a>
+                                          <a href="#" class="my_list-product-variants variants-modal-action">
+                                          4 Variants
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <div class="my-toggle-btn-wrapper tooltip">
+                                          <div class="my-toggle-btn">
+                                             <input type="checkbox" id="checkbox6" checked="">
+                                             <label for="checkbox6">
+                                             <span class="on" title="Active">Active</span>
+                                             <span class="off" title="Inactive">Inactive</span>
+                                             </label>
+                                             <div class="tooltip_text">
+                                                <p>Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="value_added">
+                                       Baby &amp; Kids
+                                       </a>
+                                    </div>
+                                 </td>
+                                <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="value_added">
+                                       Chips, +4…
+                                       </a>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <span>999</span>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       $4,000,000 <br/>
+                                       1,001 sold
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="value_added">
+                                       2 assigned
+                                       </a>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">01/14/22</div>
+                                 </td>
+                                
+                                 <td>
+                                    <div class="actions">
+                                       <div class="dropdown">
+                                          <div class="dropdown_header">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-more"></use>
+                                             </svg>
+                                          </div>
+                                          <div class="dropdown_body">
+                                             <div class="dropdown_inner">
+                                                <ul>
+                                                   <li><a href="#">View Product</a></li>
+                                                   <li><button class="edit-product">Edit Product</button></li>
+                                                   <li><button class="sync-product">Sync Product</button></li>
+                                                   <li><button class="assign-retailr">Assign Retailers</button></li>
+                                                   <li><button class="view-store">View in Store</button></li>
+<!--                                                   <li><button class="archive-product">Archive Product</button></li>-->
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                              </tr>
+                                <tr>
+                                 <td>
+                                    <label for="check-10" class="checkbox">
+                                       <input type="checkbox" name="check-10" id="check-10" />
+                                       <div class="checkbox-text"></div>
+                                    </label>
+                                 </td>
+                                 <td>
+                                    <div class="my_list-product">
+                                       <div class="my_list-product-image">
+                                          <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                       </div>
+                                       <div>
+                                          <a href="#" class="my_list-product-title">
+                                          Summer Chips for Kids
+                                          </a>
+                                          <a href="#" class="my_list-product-variants variants-modal-action">
+                                          4 Variants
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <div class="my-toggle-btn-wrapper tooltip">
+                                          <div class="my-toggle-btn">
+                                             <input type="checkbox" id="checkbox7">
+                                             <label for="checkbox7">
+                                             <span class="on" title="Active">Active</span>
+                                             <span class="off" title="Inctive">Inactive</span>
+                                             </label>
+                                             <!--                                Tooltip for all state:
+                                                Active: Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.
+                                                Inactive: By activating, your product will be visible to all retailers who are sourcing products on ShopDot.
+                                                Disabled: To activate a product please add billing information, assign category, and fill in all required fields.
+                                                more info screenshot: https://prnt.sc/JupyNsuyrkOP
+                                                End Tooltip for all state-->
+                                             <div class="tooltip_text">
+                                                <p>By activating, your product will be visible to all retailers who are sourcing products on ShopDot.</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="add-item-label add-category">
+                                       <span>+</span> Category
+                                       </a>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="add-item-label add-tags">
+                                       <span>+</span> Tags
+                                       </a>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt red">
+                                     <span>0</span>
+                                       <div class="tooltip-icon tooltip-icon-danger">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#icon-danger"></use>
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       $0 <br/>
+                                       0 sold
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="add-item-label add-retailer">
+                                       <span>+</span> Retailer
+                                       </a>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">01/14/22</div>
+                                 </td>
+                                
+                                 <td>
+                                    <div class="actions">
+                                       <div class="dropdown">
+                                          <div class="dropdown_header">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-more"></use>
+                                             </svg>
+                                          </div>
+                                          <div class="dropdown_body">
+                                             <div class="dropdown_inner">
+                                                <ul>
+                                                   <li><a href="#">View Product</a></li>
+                                                   <li><button class="edit-product">Edit Product</button></li>
+                                                   <li><button class="sync-product">Sync Product</button></li>
+                                                   <li><button class="assign-retailr">Assign Retailers</button></li>
+                                                   <li><button class="view-store">View in Store</button></li>
+<!--                                                   <li><button class="archive-product">Archive Product</button></li>-->
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                              </tr>
+                               <tr>
+                                 <td>
+                                    <label for="check-11" class="checkbox">
+                                       <input type="checkbox" name="check-11" id="check-11" />
+                                       <div class="checkbox-text"></div>
+                                    </label>
+                                 </td>
+                                 <td>
+                                    <div class="my_list-product">
+                                       <div class="my_list-product-image">
+                                          <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                       </div>
+                                       <div>
+                                          <a href="#" class="my_list-product-title">
+                                          Summer Chips for Kids
+                                          </a>
+                                          <a href="#" class="my_list-product-variants variants-modal-action">
+                                          4 Variants
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <div class="my-toggle-btn-wrapper tooltip">
+                                          <div class="my-toggle-btn">
+                                             <input type="checkbox" id="checkbox48" checked="">
+                                             <label for="checkbox48">
+                                             <span class="on" title="Active">Active</span>
+                                             <span class="off" title="Inactive">Inactive</span>
+                                             </label>
+                                             <div class="tooltip_text">
+                                                <p>Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="value_added">
+                                       Baby &amp; Kids
+                                       </a>
+                                    </div>
+                                 </td>
+                                <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="value_added">
+                                       Chips, +4…
+                                       </a>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <span>999</span>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       $4,000,000 <br/>
+                                       1,001 sold
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="value_added">
+                                       2 assigned
+                                       </a>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">01/14/22</div>
+                                 </td>
+                                
+                                 <td>
+                                    <div class="actions">
+                                       <div class="dropdown">
+                                          <div class="dropdown_header">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-more"></use>
+                                             </svg>
+                                          </div>
+                                          <div class="dropdown_body">
+                                             <div class="dropdown_inner">
+                                                <ul>
+                                                   <li><a href="#">View Product</a></li>
+                                                   <li><button class="edit-product">Edit Product</button></li>
+                                                   <li><button class="sync-product">Sync Product</button></li>
+                                                   <li><button class="assign-retailr">Assign Retailers</button></li>
+                                                   <li><button class="view-store">View in Store</button></li>
+<!--                                                   <li><button class="archive-product">Archive Product</button></li>-->
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                              </tr>
+                             
+                           </tbody>
+                        </table>
+                     </div>
+                     <!--products pagination-->
+                     <div class="pagination_wrap">
+                        <div class="pagination">
+                           <div class="pagination_per">
+                              <select name="per" id="per">
+                                 <option value="20" selected>20</option>
+                                 <option value="50">50</option>
+                                 <option value="100">100</option>
+                              </select>
+                              <div class="pagination-title">per page | 20 of 30 items</div>
+                           </div>
+                           <div class="pagination_nav">
+                               <div class="pagination-title">page</div>
+                               <select name="per" id="per">
+                                 <option value="1" selected>1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                              </select>
+                               <div class="pagination-title">of 2</div>
+                              <button class="pagination-arrow pagination-arrow-prev">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-chevron--left"></use>
+                                 </svg>
+                              </button>
+                              <button class="pagination-arrow pagination-arrow-next">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-chevron--right"></use>
+                                 </svg>
+                              </button>
+                              
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </main>
+         <footer class="footer">
+         </footer>
+          
+          <div class="popup my-product-modal">
+            <div class="popup_wrapper">
+               <div class="popup_content">
+                  <div class="popup-close">
+                     <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-close"></use>
+                     </svg>
+                  </div>
+                  <div class="popup-display pd-varient active">
+                     <div class="retailers-tab">
+                        <div class="action-head">
+                           <button class="button button-white cancel">Cancel </button>
+                           <button class="button button-orange-dark">
+                              <span class="icon-size">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#save"></use>
+                                 </svg>
+                              </span>
+                              Save Changes
+                           </button>
+                        </div>
+                        <div class="product-varient">
+                           Product Variants
+                           <a href="" class="vp-details">
+                           View Product Details
+                           </a>
+                        </div>
+                        <div class="v-table pv-update">
+                           <table class="table table-vars">
+                              <thead class="sticky-thead">
+                                 <tr>
+                                    <th></th>
+                                    <th>
+                                       <div class="txt">
+                                          Size
+                                          <button class="sort">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                             </svg>
+                                          </button>
+                                       </div>
+                                    </th>
+                                    <th>
+                                       <div class="txt">
+                                          Colour
+                                          <button class="sort">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                             </svg>
+                                          </button>
+                                       </div>
+                                    </th>
+                                    <th>
+                                       <div class="txt">
+                                          SKU
+                                       </div>
+                                    </th>
+                                    <th>
+                                       <div class="txt">
+                                          Barcode 
+                                          <div class="tooltip">
+                                             <div class="tooltip-icon tooltip-icon-info ic-if-blue">
+                                                <svg class="icon">
+                                                   <use xlink:href="images/sprite.svg#icon-info-blue-2"></use>
+                                                </svg>
+                                             </div>
+                                             <div class="tooltip_text">
+                                                <p>ISBN, UPC, GTIN, ...</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </th>
+                                    <th>
+                                       <div class="txt">
+                                          Stock
+                                          <!--Add class 'active' to sort, when it active-->
+                                          <!--When Sync is ON-->
+                                          
+                                             <div class="tooltip link-tooltip">
+                                                <div class="tooltip-icon tooltip-icon-info sync-icon">
+                                                   <svg class="icon">
+                                                      <use xlink:href="images/sprite.svg#icon-sync"></use>
+                                                   </svg>
+                                                </div>
+                                                  <div class="tooltip_text">
+                                                    <div class="tooltip-data">
+                                                   <p>Stock Sync is ON. Turn it off if you want to edit stock levels and manage them manually in ShopDot. Your changes will not be overridden.</p>
+                                                   <a href="#" class="tooltip-setting">settings</a>          
+                                                    </div>
+                                                </div>
+                                             </div>
+                                             
+                                          <!--When Sync is OFF-->
+<!--
+                                          <div class="tooltip link-tooltip">
+                                             <div class="tooltip-icon tooltip-icon-info sync-icon-off">
+                                                <svg class="icon">
+                                                   <use xlink:href="images/sprite.svg#icon-sync-off"></use>
+                                                </svg>
+                                             </div>
+                                             <div class="tooltip_text">
+                                                <div class="tooltip-data">
+                                                   <p>Stock Sync is OFF. Turn it on if you want Stock Levels in ShopDot to automatically sync from Shopify. Your previous changes will be overridden</p>
+                                                   <a href="#" class="tooltip-setting">settings</a>          
+                                                </div>
+                                             </div>
+                                          </div>
+-->
+                                          <button class="sort">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                             </svg>
+                                          </button>
+                                       </div>
+                                    </th>
+                                    <th>
+                                       <div class="txt">
+                                          WSP  
+                                          <button class="sort">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                             </svg>
+                                          </button>
+                                       </div>
+                                    </th>
+                                    <th class="text-right">
+                                       <div class="txt">
+                                          Shipping
+                                          <div class="tooltip">
+                                             <div class="tooltip-icon tooltip-icon-info ic-if-blue">
+                                                <svg class="icon">
+                                                   <use xlink:href="images/sprite.svg#icon-info-blue-2"></use>
+                                                </svg>
+                                             </div>
+                                             <div class="tooltip_text">
+                                                <p>This is the cost that the retailer has to pay brand for shipping</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </th>
+                                    <th>
+                                       <div class="txt">
+                                          MSRP
+                                                                                     <button class="sort">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                             </svg>
+                                          </button>
+                                       </div>
+                                    </th>
+                                 </tr>
+                              </thead>
+                              <tbody class="scroll-table">
+                                 <tr>
+                                    <td>
+                                       <div class="image image--cover image--1-1">
+                                          <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                       </div>
+                                    </td>
+                                    <td>
+                                       <div class="txt">Wood</div>
+                                    </td>
+                                    <td>
+                                       <div class="txt">Blue</div>
+                                    </td>
+                                    <td>
+                                       <div class="txt">&nbsp;</div>
+                                    </td>
+                                    <td>
+                                       <div class="txt">&nbsp;</div>
+                                    </td>
+                                    <td>
+                                       <div class="txt">500</div>
+                                    </td>
+                                    <td>
+                                       <div class="txt">
+                                        <input type="text" class="tabel-text" placeholder="$10.95">
+                                       </div>
+                                    </td>
+                                    <td class="text-right">
+                                       <div class="txt">$5.00</div>
+                                    </td>
+                                    <td>
+                                       <div class="txt">
+                                        <input type="text" class="tabel-text" placeholder="$15.95">
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <div class="image image--cover image--1-1">
+                                          <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                       </div>
+                                    </td>
+                                    <td>
+                                       <div class="txt">Wood</div>
+                                    </td>
+                                    <td>
+                                       <div class="txt">Blue</div>
+                                    </td>
+                                    <td>
+                                       <div class="txt">&nbsp;</div>
+                                    </td>
+                                    <td>
+                                       <div class="txt">&nbsp;</div>
+                                    </td>
+                                    <td>
+                                    <div class="txt red">
+                                     <span>0</span>
+                                       <div class="tooltip-icon tooltip-icon-danger">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#icon-danger"></use>
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </td>
+                                    <td>
+                                       <div class="txt">
+                                        <input type="text" class="tabel-text" placeholder="$10.95">
+                                       </div>
+                                    </td>
+                                    <td class="text-right">
+                                       <div class="txt">$5.00</div>
+                                    </td>
+                                   <td>
+                                       <div class="txt">
+                                        <input type="text" class="tabel-text" placeholder="$15.95">
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <div class="image image--cover image--1-1">
+                                          <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                       </div>
+                                    </td>
+                                    <td>
+                                       <div class="txt">Wood</div>
+                                    </td>
+                                    <td>
+                                       <div class="txt">Blue</div>
+                                    </td>
+                                    <td>
+                                       <div class="txt">&nbsp;</div>
+                                    </td>
+                                    <td>
+                                       <div class="txt">&nbsp;</div>
+                                    </td>
+                                    <td>
+                                    <div class="txt orange">
+                                       <span>9</span>
+                                       <div class="tooltip-icon tooltip-icon-orange">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#icon-danger"></use>
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </td>
+                                    <td>
+                                       <div class="txt">
+                                        <input type="text" class="tabel-text" placeholder="$10.95">
+                                       </div>
+                                    </td>
+                                    <td class="text-right">
+                                       <div class="txt">$5.00</div>
+                                    </td>
+                                   <td>
+                                       <div class="txt">
+                                        <input type="text" class="tabel-text" placeholder="$15.95">
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <div class="image image--cover image--1-1">
+                                          <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                       </div>
+                                    </td>
+                                    <td>
+                                       <div class="txt">Wood</div>
+                                    </td>
+                                    <td>
+                                       <div class="txt">Blue</div>
+                                    </td>
+                                    <td>
+                                       <div class="txt">&nbsp;</div>
+                                    </td>
+                                    <td>
+                                       <div class="txt">&nbsp;</div>
+                                    </td>
+                                    <td>
+                                       <div class="txt">500</div>
+                                    </td>
+                                    <td>
+                                       <div class="txt">
+                                        <input type="text" class="tabel-text" placeholder="$10.95">
+                                       </div>
+                                    </td>
+                                    <td class="text-right">
+                                       <div class="txt">$5.00</div>
+                                    </td>
+                                   <td>
+                                       <div class="txt">
+                                        <input type="text" class="tabel-text" placeholder="$15.95">
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <div class="image image--cover image--1-1">
+                                          <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                       </div>
+                                    </td>
+                                    <td>
+                                       <div class="txt">Wood</div>
+                                    </td>
+                                    <td>
+                                       <div class="txt">Blue</div>
+                                    </td>
+                                    <td>
+                                       <div class="txt">&nbsp;</div>
+                                    </td>
+                                    <td>
+                                       <div class="txt">&nbsp;</div>
+                                    </td>
+                                    <td>
+                                       <div class="txt">500</div>
+                                    </td>
+                                    <td>
+                                       <div class="txt">
+                                        <input type="text" class="tabel-text" placeholder="$10.95">
+                                       </div>
+                                    </td>
+                                    <td class="text-right">
+                                       <div class="txt">$5.00</div>
+                                    </td>
+                                   <td>
+                                       <div class="txt">
+                                        <input type="text" class="tabel-text" placeholder="$15.95">
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+          
+          <div class="popup my-product-modal pd-retailer-modal">
+            <div class="popup_wrapper">
+               <div class="popup_content">
+                  <div class="popup-close">
+                     <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-close"></use>
+                     </svg>
+                  </div>
+                  <div class="popup-display pd-retailer active">
+                     <div class="retailers-tab">
+                        <div class="action-head">
+                           <button class="button button-white cancel">Cancel </button>
+                           <button class="button button-orange-dark">
+                              <span class="icon-size">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#save"></use>
+                                 </svg>
+                              </span>
+                              Save Changes
+                           </button>
+                        </div>
+                        <div class="product-title">
+                           Allow Product for Retailer 
+                        </div>
+                         
+                         <div class="products_head-search">
+                           <form action="#" class="search_form">
+                              <div class="search_form-input">
+                                 <input type="text" placeholder="Search product name or SKU">
+                              </div>
+                              <button type="cancel" class="search_form-button">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-clear"></use>
+                                 </svg>
+                              </button>
+                              <button type="submit"></button>
+                              <svg class="icon">
+                                 <use xlink:href="images/sprite.svg#icon-search"></use>
+                              </svg>
+                           </form>
+                        </div>
+                         
+                        <div class="product-retailer-area">
+                           <div class="available-area">
+                            <div class="av-title">
+                               36 Retailers Available
+                               </div>
+                               
+                               <a href="#" class="add-item-label add-category">
+                                       <span>+</span> Assign All
+                                       </a>
+                               
+                               <div class="retailer-box">
+                                    <div class="retailer-area">
+                                        <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                                   
+                                   <div class="retailer-area">
+                                        <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                                   
+                                   <div class="retailer-area"> <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                                   
+                                   <div class="retailer-area">
+                                        <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                                   
+                                   <div class="retailer-area">
+                                        <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                                   
+                                   <div class="retailer-area">
+                                        <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                                   
+                                   <div class="retailer-area">
+                                        <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                                   
+                                   <div class="retailer-area">
+                                        <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                                   
+                                   <div class="retailer-area">
+                                        <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                                   
+                                   <div class="retailer-area">
+                                        <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                                   
+                                   <div class="retailer-area">
+                                        <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                                   
+                                   <div class="retailer-area">
+                                        <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                                   
+                                   <div class="retailer-area">
+                                        <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                                   
+                                   <div class="retailer-area">
+                                        <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                               </div>
+                               
+                            </div>
+                            
+                            
+                            <div class="assigned-area">
+                            
+                                <div class="av-title">
+                               0 Retailer Assigned
+                               </div>
+                                 <a href="#" class="add-item-label add-category light-pill">
+                                       <span>-</span> Remove All
+                                       </a>
+                                <div class="retailer-box">
+                                    <div class="retailer-area">
+                                        <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#minus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                                   
+                                   <div class="retailer-area">
+                                        <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#minus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                                   
+                                   <div class="retailer-area"> <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#minus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                                   
+                                   <div class="retailer-area">
+                                        <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#minus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                                   
+                                   <div class="retailer-area">
+                                        <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#minus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                                   
+                                   <div class="retailer-area">
+                                        <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#minus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                                   
+                                   <div class="retailer-area">
+                                        <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#minus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                                   
+                                   <div class="retailer-area">
+                                        <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#minus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                                   
+                                   <div class="retailer-area">
+                                        <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#minus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                                   
+                                   <div class="retailer-area">
+                                        <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#minus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                                   
+                                   <div class="retailer-area">
+                                        <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#minus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                                   
+                                   <div class="retailer-area">
+                                        <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#minus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                                   
+                                   <div class="retailer-area">
+                                        <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#minus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                                   
+                                   <div class="retailer-area">
+                                        <svg class="click-move">
+                                            <use xlink:href="images/sprite.svg#minus-icon"></use>
+                                        </svg>
+                                        <div class="retailer-item">
+                                            <div class="ri-photo">
+                                                <img src="https://placeimg.com/200/200/nature">
+                                            </div>
+                                        <div class="ri-detail">
+                                                <h3>AlphaBox</h3>
+                                            <p>Published to Store Products: <span>9,999,999</span></p>
+                                            <p>All Time Sales: <span>$ 9,999,999</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="retailer-category">
+                                        <label>Category:</label>
+                                        <p class="chips-area">
+                                            <label>Baby &amp; Kids</label>
+                                        </p>
+                                        </div>
+                                   
+                                   </div>
+                               </div>
+                                
+                            </div>
+                            
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+          
+          <div class="popup my-product-modal category-modal">
+            <div class="popup_wrapper">
+               <div class="popup_content">
+                  <div class="popup-close">
+                     <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-close"></use>
+                     </svg>
+                  </div>
+                  <div class="popup-display active ">
+                     <div class="retailers-tab">
+                        <div class="pc_tabs tabs">
+                           <div class="tab_wrap">
+                              <div class="pc_tabs-menu tab_menu">
+                                 <button data-link="categories" class="tab-link active">Categories</button>
+                                 <button data-link="tag" class="tab-link">Tags</button>
+                              </div>
+                              <div class="action-head">
+                                 <button class="button button-white cancel">Cancel </button>
+                                 <button class="button button-orange-dark">
+                                    <span class="icon-size">
+                                       <svg class="icon">
+                                          <use xlink:href="images/sprite.svg#save"></use>
+                                       </svg>
+                                    </span>
+                                    Save Changes
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="pc_tabs-content tabs_body p-0">
+                              <div class="tab active" data-target="categories">
+                                 <div class="tab_inner s-line">
+                                    <div class="tab_inner-text">
+                                       <div class="tab-data-area">
+                                          <div class="category-area">
+                                             <div class="category-list">
+                                                <div class="category-items">
+                                                   <div class="category-title">
+                                                      Main category:
+                                                   </div>
+                                                   <div class="category-data filter">
+                                                      <div class="subfilter_body">
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-11">
+                                                               <input type="radio" id="p-tag-11" name="p-tag" checked="">
+                                                               <div class="checkbox-text">
+                                                                  <span class="icon-size">
+                                                                     <svg class="icon ct-kids">
+                                                                        <use xlink:href="images/sprite.svg#category-baby"></use>
+                                                                     </svg>
+                                                                  </span>
+                                                                  <span class="category-name">Baby &amp; Kids</span>
+                                                               </div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-22">
+                                                               <input type="radio" id="p-tag-22" name="p-tag">
+                                                               <div class="checkbox-text">
+                                                                  <span class="icon-size">
+                                                                     <svg class="icon ct-men">
+                                                                        <use xlink:href="images/sprite.svg#category-men"></use>
+                                                                     </svg>
+                                                                  </span>
+                                                                  <span class="category-name">Men</span>
+                                                               </div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-33">
+                                                               <input type="radio" id="p-tag-33" name="p-tag">
+                                                               <div class="checkbox-text">
+                                                                  <span class="icon-size">
+                                                                     <svg class="icon ct-women">
+                                                                        <use xlink:href="images/sprite.svg#category-women"></use>
+                                                                     </svg>
+                                                                  </span>
+                                                                  <span class="category-name">Women</span>
+                                                               </div>
+                                                            </label>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="category-list">
+                                                <div class="category-items">
+                                                   <div class="category-title">
+                                                      Sub-category:
+                                                   </div>
+                                                   <div class="category-data filter">
+                                                      <div class="subfilter_body">
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-a">
+                                                               <input type="radio" id="p-tag-a" name="ap-tag">
+                                                               <div class="checkbox-text">Bath &amp; Safety</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-b">
+                                                               <input type="radio" id="p-tag-b" name="ap-tag">
+                                                               <div class="checkbox-text">Baby Apparel</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-c">
+                                                               <input type="radio" id="p-tag-c" name="ap-tag">
+                                                               <div class="checkbox-text">Gears &amp; Essential</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-d">
+                                                               <input type="radio" id="p-tag-d" name="ap-tag">
+                                                               <div class="checkbox-text">Kids Apparel</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-e">
+                                                               <input type="radio" id="p-tag-e" name="ap-tag">
+                                                               <div class="checkbox-text">Maternity</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-f">
+                                                               <input type="radio" id="p-tag-f" name="ap-tag">
+                                                               <div class="checkbox-text">Nursery &amp; Decor</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-g">
+                                                               <input type="radio" id="p-tag-g" name="ap-tag">
+                                                               <div class="checkbox-text">Paper &amp; Novelty</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-h">
+                                                               <input type="radio" id="p-tag-h" name="ap-tag" checked="">
+                                                               <div class="checkbox-text">Toys &amp; Learning</div>
+                                                            </label>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="category-list">
+                                                <div class="category-items">
+                                                   <div class="category-title">
+                                                      Group:
+                                                   </div>
+                                                   <div class="category-data filter">
+                                                      <div class="subfilter_body">
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-aa">
+                                                               <input type="radio" id="p-tag-aa" name="ap-tags">
+                                                               <div class="checkbox-text">Arts &amp; Crafts</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-ab">
+                                                               <input type="radio" id="p-tag-ab" name="ap-tags">
+                                                               <div class="checkbox-text">Baby Toys</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-ac">
+                                                               <input type="radio" id="p-tag-ac" name="ap-tags" checked="">
+                                                               <div class="checkbox-text">Bath Toys</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-ad">
+                                                               <input type="radio" id="p-tag-ad" name="ap-tags">
+                                                               <div class="checkbox-text">Dolls &amp; Dollhouses</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-ae">
+                                                               <input type="radio" id="p-tag-ae" name="ap-tags">
+                                                               <div class="checkbox-text">Kids’ Books</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-af">
+                                                               <input type="radio" id="p-tag-af" name="ap-tags">
+                                                               <div class="checkbox-text">Kids’ Toys &amp; Games</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-ag">
+                                                               <input type="radio" id="p-tag-ag" name="ap-tags">
+                                                               <div class="checkbox-text">Puppets</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-ah">
+                                                               <input type="radio" id="p-tag-ah" name="ap-tags">
+                                                               <div class="checkbox-text">Stuffed &amp; Plush</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-ai">
+                                                               <input type="radio" id="p-tag-ai" name="ap-tags">
+                                                               <div class="checkbox-text">Teethers &amp; Rattles</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-aj">
+                                                               <input type="radio" id="p-tag-aj" name="ap-tags">
+                                                               <div class="checkbox-text">Teethers</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-ah">
+                                                               <input type="radio" id="p-tag-ah" name="ap-tags">
+                                                               <div class="checkbox-text">Teethers</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-ah">
+                                                               <input type="radio" id="p-tag-ah" name="ap-tags">
+                                                               <div class="checkbox-text">Teethers</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-h">
+                                                               <input type="radio" id="p-tag-h" name="ap-tags">
+                                                               <div class="checkbox-text">Teethers</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-h">
+                                                               <input type="radio" id="p-tag-h" name="ap-tags">
+                                                               <div class="checkbox-text">Teethers</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-h">
+                                                               <input type="radio" id="p-tag-h" name="ap-tags">
+                                                               <div class="checkbox-text">Teethers</div>
+                                                            </label>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="tab" data-target="tag">
+                                 <div class="tab_inner">
+                                    <div class="tab_inner-text">
+                                       <div class="tab-data-area tag-list">
+                                          <div class="products_head-content pt-3">
+                                             <div class="title">
+                                                <h3 class="p-assigned-title">Add Tag:</h3>
+                                             </div>
+                                             <div class="products_head-search">
+                                                <div class="">
+                                                   <div class="search_form-input">
+                                                      <input type="text" placeholder="Tag name">
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="category-data filter">
+                                             <div class="subfilter_body">
+                                                <div class="tab-list">
+                                                   <div class="checkbox checkbox--no-decor">
+                                                      <label class="tag-lbl">
+                                                         <div class="checkbox-text">Chips</div>
+                                                      </label>
+                                                   </div>
+                                                   <div class="checkbox checkbox--no-decor">
+                                                      <label class="tag-lbl">
+                                                         <div class="checkbox-text">Summer</div>
+                                                      </label>
+                                                   </div>
+                                                   <div class="checkbox checkbox--no-decor">
+                                                      <label class="tag-lbl">
+                                                         <div class="checkbox-text">Summer Activities</div>
+                                                      </label>
+                                                   </div>
+                                                   <div class="checkbox checkbox--no-decor">
+                                                      <label class="tag-lbl">
+                                                         <div class="checkbox-text">Summer Toys</div>
+                                                      </label>
+                                                   </div>
+                                                   <div class="checkbox checkbox--no-decor">
+                                                      <label class="tag-lbl">
+                                                         <div class="checkbox-text">Chips</div>
+                                                      </label>
+                                                   </div>
+                                                   <div class="checkbox checkbox--no-decor">
+                                                      <label class="tag-lbl">
+                                                         <div class="checkbox-text">Summer Activities Chips</div>
+                                                      </label>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+          
+          <div class="popup my-product-modal tags-modal">
+            <div class="popup_wrapper">
+               <div class="popup_content">
+                  <div class="popup-close">
+                     <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-close"></use>
+                     </svg>
+                  </div>
+                  <div class="popup-display active">
+                     <div class="retailers-tab">
+                        <div class="pc_tabs tabs">
+                           <div class="tab_wrap">
+                              <div class="pc_tabs-menu tab_menu">
+                                 <button data-link="categories" class="tab-link">Categories</button>
+                                 <button data-link="tag" class="tab-link active">Tags</button>
+                              </div>
+                              <div class="action-head">
+                                 <button class="button button-white cancel">Cancel </button>
+                                 <button class="button button-orange-dark">
+                                    <span class="icon-size">
+                                       <svg class="icon">
+                                          <use xlink:href="images/sprite.svg#save"></use>
+                                       </svg>
+                                    </span>
+                                    Save Changes
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="pc_tabs-content tabs_body p-0">
+                              <div class="tab" data-target="categories">
+                                 <div class="tab_inner s-line">
+                                    <div class="tab_inner-text">
+                                       <div class="tab-data-area">
+                                          <div class="category-area">
+                                             <div class="category-list">
+                                                <div class="category-items">
+                                                   <div class="category-title">
+                                                      Main category:
+                                                   </div>
+                                                   <div class="category-data filter">
+                                                      <div class="subfilter_body">
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-11">
+                                                               <input type="radio" id="p-tag-11" name="p-tag" checked="">
+                                                               <div class="checkbox-text">
+                                                                  <span class="icon-size">
+                                                                     <svg class="icon ct-kids">
+                                                                        <use xlink:href="images/sprite.svg#category-baby"></use>
+                                                                     </svg>
+                                                                  </span>
+                                                                  <span class="category-name">Baby &amp; Kids</span>
+                                                               </div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-22">
+                                                               <input type="radio" id="p-tag-22" name="p-tag">
+                                                               <div class="checkbox-text">
+                                                                  <span class="icon-size">
+                                                                     <svg class="icon ct-men">
+                                                                        <use xlink:href="images/sprite.svg#category-men"></use>
+                                                                     </svg>
+                                                                  </span>
+                                                                  <span class="category-name">Men</span>
+                                                               </div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-33">
+                                                               <input type="radio" id="p-tag-33" name="p-tag">
+                                                               <div class="checkbox-text">
+                                                                  <span class="icon-size">
+                                                                     <svg class="icon ct-women">
+                                                                        <use xlink:href="images/sprite.svg#category-women"></use>
+                                                                     </svg>
+                                                                  </span>
+                                                                  <span class="category-name">Women</span>
+                                                               </div>
+                                                            </label>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="category-list">
+                                                <div class="category-items">
+                                                   <div class="category-title">
+                                                      Sub-category:
+                                                   </div>
+                                                   <div class="category-data filter">
+                                                      <div class="subfilter_body">
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-a">
+                                                               <input type="radio" id="p-tag-a" name="ap-tag">
+                                                               <div class="checkbox-text">Bath &amp; Safety</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-b">
+                                                               <input type="radio" id="p-tag-b" name="ap-tag">
+                                                               <div class="checkbox-text">Baby Apparel</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-c">
+                                                               <input type="radio" id="p-tag-c" name="ap-tag">
+                                                               <div class="checkbox-text">Gears &amp; Essential</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-d">
+                                                               <input type="radio" id="p-tag-d" name="ap-tag">
+                                                               <div class="checkbox-text">Kids Apparel</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-e">
+                                                               <input type="radio" id="p-tag-e" name="ap-tag">
+                                                               <div class="checkbox-text">Maternity</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-f">
+                                                               <input type="radio" id="p-tag-f" name="ap-tag">
+                                                               <div class="checkbox-text">Nursery &amp; Decor</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-g">
+                                                               <input type="radio" id="p-tag-g" name="ap-tag">
+                                                               <div class="checkbox-text">Paper &amp; Novelty</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-h">
+                                                               <input type="radio" id="p-tag-h" name="ap-tag" checked="">
+                                                               <div class="checkbox-text">Toys &amp; Learning</div>
+                                                            </label>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="category-list">
+                                                <div class="category-items">
+                                                   <div class="category-title">
+                                                      Group:
+                                                   </div>
+                                                   <div class="category-data filter">
+                                                      <div class="subfilter_body">
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-aa">
+                                                               <input type="radio" id="p-tag-aa" name="ap-tags">
+                                                               <div class="checkbox-text">Arts &amp; Crafts</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-ab">
+                                                               <input type="radio" id="p-tag-ab" name="ap-tags">
+                                                               <div class="checkbox-text">Baby Toys</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-ac">
+                                                               <input type="radio" id="p-tag-ac" name="ap-tags" checked="">
+                                                               <div class="checkbox-text">Bath Toys</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-ad">
+                                                               <input type="radio" id="p-tag-ad" name="ap-tags">
+                                                               <div class="checkbox-text">Dolls &amp; Dollhouses</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-ae">
+                                                               <input type="radio" id="p-tag-ae" name="ap-tags">
+                                                               <div class="checkbox-text">Kids’ Books</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-af">
+                                                               <input type="radio" id="p-tag-af" name="ap-tags">
+                                                               <div class="checkbox-text">Kids’ Toys &amp; Games</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-ag">
+                                                               <input type="radio" id="p-tag-ag" name="ap-tags">
+                                                               <div class="checkbox-text">Puppets</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-ah">
+                                                               <input type="radio" id="p-tag-ah" name="ap-tags">
+                                                               <div class="checkbox-text">Stuffed &amp; Plush</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-ai">
+                                                               <input type="radio" id="p-tag-ai" name="ap-tags">
+                                                               <div class="checkbox-text">Teethers &amp; Rattles</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-aj">
+                                                               <input type="radio" id="p-tag-aj" name="ap-tags">
+                                                               <div class="checkbox-text">Teethers</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-ah">
+                                                               <input type="radio" id="p-tag-ah" name="ap-tags">
+                                                               <div class="checkbox-text">Teethers</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-ah">
+                                                               <input type="radio" id="p-tag-ah" name="ap-tags">
+                                                               <div class="checkbox-text">Teethers</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-h">
+                                                               <input type="radio" id="p-tag-h" name="ap-tags">
+                                                               <div class="checkbox-text">Teethers</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-h">
+                                                               <input type="radio" id="p-tag-h" name="ap-tags">
+                                                               <div class="checkbox-text">Teethers</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="p-tag-h">
+                                                               <input type="radio" id="p-tag-h" name="ap-tags">
+                                                               <div class="checkbox-text">Teethers</div>
+                                                            </label>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="tab active" data-target="tag">
+                                 <div class="tab_inner">
+                                    <div class="tab_inner-text">
+                                       <div class="tab-data-area tag-list">
+                                          <div class="products_head-content pt-3">
+                                             <div class="title">
+                                                <h3 class="p-assigned-title">Add Tag:</h3>
+                                             </div>
+                                             <div class="products_head-search">
+                                                <div class="">
+                                                   <div class="search_form-input">
+                                                      <input type="text" placeholder="Tag name">
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="category-data filter">
+                                             <div class="subfilter_body">
+                                                <div class="tab-list">
+                                                   <div class="checkbox checkbox--no-decor">
+                                                      <label class="tag-lbl">
+                                                         <div class="checkbox-text">Chips</div>
+                                                      </label>
+                                                   </div>
+                                                   <div class="checkbox checkbox--no-decor">
+                                                      <label class="tag-lbl">
+                                                         <div class="checkbox-text">Summer</div>
+                                                      </label>
+                                                   </div>
+                                                   <div class="checkbox checkbox--no-decor">
+                                                      <label class="tag-lbl">
+                                                         <div class="checkbox-text">Summer Activities</div>
+                                                      </label>
+                                                   </div>
+                                                   <div class="checkbox checkbox--no-decor">
+                                                      <label class="tag-lbl">
+                                                         <div class="checkbox-text">Summer Toys</div>
+                                                      </label>
+                                                   </div>
+                                                   <div class="checkbox checkbox--no-decor">
+                                                      <label class="tag-lbl">
+                                                         <div class="checkbox-text">Chips</div>
+                                                      </label>
+                                                   </div>
+                                                   <div class="checkbox checkbox--no-decor">
+                                                      <label class="tag-lbl">
+                                                         <div class="checkbox-text">Summer Activities Chips</div>
+                                                      </label>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         
+      </div>
+      <script src="./js/vendor.min.js" defer></script>
+      <script
+         src="https://code.jquery.com/jquery-3.6.0.min.js"
+         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+         crossorigin="anonymous"
+         ></script>
+      <script src="./js/app.min.js" defer></script>
+      <script src="./js/dropdown.js" defer></script>
+   </body>
+</html>

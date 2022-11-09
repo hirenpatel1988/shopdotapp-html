@@ -18,7 +18,7 @@
       <link media="all" rel="stylesheet" href="./css/styles.min.css" />
       <link media="all" rel="stylesheet" href="./css/media.css" />
       <link media="all" rel="stylesheet" href="./css/ckeditor.css" />
-      <link media="all" rel="stylesheet" href="./css/img-dropdown.css" />
+      <link media="all" rel="stylesheet" href="./css/dropdown.css" />
    </head>
    <body>
       <div class="wrapper">
@@ -290,6 +290,7 @@
 -->
                                                    </div>
                                                    <div class="product-images product-images pi-radio">
+<!--
                                                       <div class="pe active">
                                                          <div class="pe_main">
                                                             <div class="pe_body">
@@ -309,6 +310,7 @@
                                                             </div>
                                                          </div>
                                                       </div>
+-->
                                                       <div class="pe">
                                                          <div class="pe_main">
                                                             <div class="pe_body">
@@ -328,7 +330,8 @@
                                                             </div>
                                                          </div>
                                                       </div>
-                                                      <div class="pe">
+
+                                                    <!--  <div class="pe">
                                                          <div class="pe_main">
                                                             <div class="pe_body">
                                                                <div class="image">
@@ -480,6 +483,7 @@
                                                             </div>
                                                          </div>
                                                       </div>
+-->
                                                    </div>
 <!--
                                                    <div class="upload-image-area">
@@ -1180,7 +1184,7 @@
          ></script>
       <script src="js/app.min.js"></script>
        
-      <script src="js/img-dropdown.js"></script>
+      <script src="js/dropdown.js"></script>
        <script>
          "use strict";
           function dragNdrop(event) {
@@ -1223,17 +1227,12 @@
                      </div>';
                   }
                }
-               var peDiv = $(document).find('div[class="pe"]:last');
+//               var peDiv = $(document).find('div[class="pe"]:last');
+              var peDiv = $('.product-images').children('.pe').length;
                if(peDiv.length == 0) {
                   $(document).find(".product-images").html(productHtml);
                } else {
                   $(document).find(".product-images").append(productHtml);
-                  // var num = parseInt( peDiv.find("input[type='radio'][name='radio-filter']").prop("id").match(/\d+/g), 10 ) +1;
-                  // var $radio = peDiv.clone();
-                  // $radio.find("label.radiobox").prop("for", "radio"+num);
-                  // $radio.find("input[type='radio'][name='radio-filter']").prop("id", "radio"+num);
-                  // $radio.find(".image").find("img").prop("src", fileSource);
-                  // peDiv.after( $radio );
                }
             }
             function drag() {

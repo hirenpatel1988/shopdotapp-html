@@ -81,7 +81,7 @@
     --headings-sizes-h5: 1.4rem;
     --headings-sizes-h6: 1.2rem;
     --text: 1.4rem;
-    --h-height-top: 5.2rem;
+    --h-height-top: 1.2rem;
     --h-height-bottom: 4rem;
     --h-height: calc(var(--h-height-bottom) + var(--h-height-top));
     --color-bluewood:#283B49;
@@ -365,7 +365,7 @@ input[type="submit"] {
     justify-content: inherit;
     flex-wrap: nowrap;
     width: 100%;
-    max-width: 3.075rem;
+    max-width: 50px;
 }
 
 .logo picture {

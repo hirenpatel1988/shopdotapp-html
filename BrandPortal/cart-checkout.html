@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Checkout and Payment | Retailer Portal </title>
+      <link
+         rel="icon"
+         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
+         />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap"
+         rel="stylesheet"
+         />
+      <link media="all" rel="stylesheet" href="./css/vendor.min.css" />
+      <link media="all" rel="stylesheet" href="./css/styles.min.css" />
+      <link media="all" rel="stylesheet" href="./css/media.css" />
+      <link media="all" rel="stylesheet" href="./css/ckeditor.css" />
+   </head>
+   <body>
+      <div class="wrapper">
+         <header class="header mp-header">
+            <div class="header_block header_block-top mp-header_block-top">
+               <div class="header_container">
+                  <!--header logo-->
+                  <div class="header_logo">
+                     <a href="index.html" class="logo">
+                        <picture><img src="images/logo.svg" alt="" /></picture>
+                     </a>
+                  </div>
+                  <!--header menu-->
+                  <div class="header_menu-wrap">
+                     <ul class="header_menu menu">
+                        <li class="menu_item"><a href="#" class="menu_link">Home</a></li>
+                        <li class="menu_item">
+                           <a href="brands-all.html" class="menu_link">Brands</a>
+                        </li>
+                        <li class="menu_item">
+                           <a href="products-all.html" class="menu_link ">Products</a>
+                        </li>
+                        <li class="menu_item"><a href="#" class="menu_link">My List</a></li>
+                        <li class="menu_item"><a href="#" class="menu_link">Orders</a></li>
+                     </ul>
+                  </div>
+                  <!--header search-->
+                  <div class="header_search search">
+                     <form action="#" class="search_form">
+                        <div class="search_form-input">
+                           <input type="text" placeholder="Search…" />
+                        </div>
+                        <button type="cancel" class="search_form-button">
+                           <svg class="icon">
+                              <use xlink:href="images/sprite.svg#icon-clear"></use>
+                           </svg>
+                        </button>
+                        <button type="submit"></button>
+                        <svg class="icon">
+                           <use xlink:href="images/sprite.svg#icon-search"></use>
+                        </svg>
+                     </form>
+                  </div>
+                  <!--header actions-->
+                  <div class="header_actions">
+                     <div class="header_usermenu">
+                        <div class="dropdown">
+                           <div class="dropdown_header">
+                              <div class="dropdown_header-text">
+                                 Hi, <span class="username">Jane</span>
+                              </div>
+                              <div class="dropdown_header-icon">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-retailers"></use>
+                                 </svg>
+                              </div>
+                              <div class="dropdown_header-chevron">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                 </svg>
+                              </div>
+                           </div>
+                           <div class="dropdown_body">
+                              <div class="dropdown_inner">
+                                 <ul>
+                                    <li><a href="#">Settings</a></li>
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">Sign out</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     
+                     <button class="header_action header_action-notifications">
+                        <!--Changed icon to dropdown, to show list of 'updates'-->
+                        <div class="dropdown">
+                           <div class="dropdown_header">
+                              <svg class="icon">
+                                 <use xlink:href="images/sprite.svg#icon-notification"></use>
+                              </svg>
+                           </div>
+                           <div class="dropdown_body">
+                              <div class="dropdown_inner">
+                                 <ul>
+                                    <li>
+                                       <span>Summer Activities Chips for Kids</span> <br>
+                                       updated Dec.15, 2021, 07:56 PM
+                                    </li>
+                                    <li>
+                                       <span>Summer Activities Chips for Kids</span> <br>
+                                       updated Dec.15, 2021, 07:56 PM
+                                    </li>
+                                    <li>
+                                       <span>Summer Activities Chips for Kids</span> <br>
+                                       updated Dec.15, 2021, 07:56 PM
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="text visible">1</div>
+                     </button>
+                      <button class="header_action header_action-cart">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#icon-cart"></use>
+                </svg>
+                <div class="text visible">5</div>
+              </button>
+                     <div class="header_action header_action-invite">
+                        <button class="button invite-retailer">Invite Brand</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="header_block header_block-bottom mp-header_block-bottom"></div>
+         </header>
+         <main class="content shopping-cart">
+            <section class="section products">
+               <div class="products_content mw-100">
+                  <div class="products_head">
+                     <div class="breadcrumbs_wrap">
+                        <ul class="breadcrumbs">
+                           <li> <a href="#">Home</a></li>
+                           <li> <span>Checkout and Payment </span></li>
+                        </ul>
+                     </div>
+                     <div class="products_head-content">
+                        <div class="title">
+                           <h1>Checkout and Payment </h1>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="products_body">
+                     <div class="content_area">
+                        <div class="cart-information checkout-info">
+                           <div class="cart-left">
+                              <div class="cl-data setting-section">
+                                 <h2>Customer Name</h2>
+                                 <div class="form-area">
+                                    <div class="category-form-input">
+                                       <div class="form-input">
+                                          <label for="" class="form-label">First name</label>
+                                          <input type="text" class="form-control" id="" placeholder="First name">
+                                       </div>
+                                       <div class="form-input">
+                                          <label for="" class="form-label">Last name</label>
+                                          <input type="text" class="form-control" id="" placeholder="Last name">
+                                       </div>
+                                    </div>
+                                    <div class="form-input">
+                                       <label for="" class="form-label">Phone number</label>
+                                       <input type="text" class="form-control" id="" placeholder="9154651444">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="cl-data setting-section pt-4">
+                                 <h2>Shipping Address</h2>
+                                 <div class="billing_info">
+                                    <div class="form-area">
+                                       <div class="form-input return_select-item">
+                                          <div class="pe_radio active">
+                                             <label for="radio-credit" class="radiobox radio-click">
+                                                <input type="radio" name="radio-filter-billing" id="radio-credit" checked="">
+                                                <div class="radiobox-text"><span>Ship to Store</span></div>
+                                             </label>
+                                             <div class="radio-data-info">
+                                                <div class="form-input">
+                                                   <label for="" class="form-label">Street Address 1</label>
+                                                   <input type="text" class="form-control" id="" placeholder="3102 W Broadway Street">
+                                                </div>
+                                                <div class="form-input">
+                                                   <label for="" class="form-label">Street Address 2</label>
+                                                   <input type="text" class="form-control" id="" placeholder="Suite B">
+                                                </div>
+                                                <div class="category-form-input">
+                                                   <div class="form-input">
+                                                      <label for="" class="form-label">Country</label>
+                                                      <select name="Country" id="country-list">
+                                                         <option value="0">United States</option>
+                                                         <option value="1">India</option>
+                                                         <option value="1">Japan</option>
+                                                      </select>
+                                                   </div>
+                                                   <div class="form-input">
+                                                      <label for="" class="form-label">State</label>
+                                                      <select name="State" id="state-list">
+                                                         <option value="0">Montana</option>
+                                                         <option value="1">Texas</option>
+                                                         <option value="2">Ohio</option>
+                                                      </select>
+                                                   </div>
+                                                </div>
+                                                <div class="category-form-input mt-4 pb-4">
+                                                   <div class="form-input">
+                                                      <label for="" class="form-label">City</label>
+                                                      <input type="text" class="form-control mb-0" id="" placeholder="Missoula">
+                                                   </div>
+                                                   <div class="form-input">
+                                                      <label for="" class="form-label">ZIP</label>
+                                                      <input type="text" class="form-control mb-0" id="" placeholder="59808">
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="pe_radio">
+                                             <label for="radio-bank" class="radiobox radio-click">
+                                                <input type="radio" name="radio-filter-billing" id="radio-bank">
+                                                <div class="radiobox-text"><span>Ship to Customer</span>
+                                                </div>
+                                             </label>
+                                             <div class="radio-data-info">
+                                                <div class="form-input">
+                                                   <label for="" class="form-label">Street Address 1</label>
+                                                   <input type="text" class="form-control" id="" placeholder="3102 W Broadway Street">
+                                                </div>
+                                                <div class="form-input">
+                                                   <label for="" class="form-label">Street Address 2</label>
+                                                   <input type="text" class="form-control is-invalid" id="" placeholder="Suite B">
+                                                   <small class="invalid-feedback">Please type correct email</small>
+                                                </div>
+                                                <div class="category-form-input">
+                                                   <div class="form-input">
+                                                      <label for="" class="form-label">Country</label>
+                                                      <select name="Country" id="country-list">
+                                                         <option value="0">United States</option>
+                                                         <option value="1">India</option>
+                                                         <option value="1">Japan</option>
+                                                      </select>
+                                                   </div>
+                                                   <div class="form-input">
+                                                      <label for="" class="form-label">State</label>
+                                                      <select name="State" id="state-list">
+                                                         <option value="0">Montana</option>
+                                                         <option value="1">Texas</option>
+                                                         <option value="2">Ohio</option>
+                                                      </select>
+                                                   </div>
+                                                </div>
+                                                <div class="category-form-input mt-4">
+                                                   <div class="form-input">
+                                                      <label for="" class="form-label">City</label>
+                                                      <input type="text" class="form-control mb-0" id="" placeholder="Missoula">
+                                                   </div>
+                                                   <div class="form-input">
+                                                      <label for="" class="form-label">ZIP</label>
+                                                      <input type="text" class="form-control mb-0" id="" placeholder="59808">
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="cart-action-area">
+                                 <a href="cart.html" class="button button-dark edit-categories mt-4">Return to Cart</a>
+                              </div>
+                           </div>
+                           <div class="cart-right">
+                              <div class="cr-table">
+                                 <h2>Retail Price Order Summery</h2>
+                                 <div class="order-summary">
+                                    <div class="order-item order-total">
+                                       <div class="my_list-product">
+                                          <div class="my_list-product-image">
+                                             <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                             <div class="notification-number">1</div>
+                                          </div>
+                                          <div>
+                                             <a href="#" class="my_list-product-title">
+                                             Sneakers 
+                                             </a>
+                                             <a href="#" class="my_list-product-variants">
+                                             Blue, Size S
+                                             </a>
+                                             <span class="summery-note">Sold by:  The Shoe Store</span>
+                                          </div>
+                                       </div>
+                                       <span>$120
+                                       </span>
+                                    </div>
+                                    <div class="order-item order-total">
+                                       <div class="my_list-product">
+                                          <div class="my_list-product-image">
+                                             <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                             <div class="notification-number">1</div>
+                                          </div>
+                                          <div>
+                                             <a href="#" class="my_list-product-title">
+                                             Dress  
+                                             </a>
+                                             <a href="#" class="my_list-product-variants">
+                                             Dusty Blue, Size S
+                                             </a>
+                                             <span class="summery-note">Sold by:  The Dress Store</span>
+                                          </div>
+                                       </div>
+                                       <span>$300
+                                       </span>
+                                    </div>
+                                    <div class="line mt-3 pb-3"></div>
+                                    <div class="order-item order-total">
+                                       <label>Total Retail Price</label>
+                                       <span>$420
+                                       </span>
+                                    </div>
+                                    <small class="order_note">This is the amount you charge your customer </small>
+                                 </div>
+                              </div>
+                              <div class="cr-table white-bg">
+                                 <h2>Wholesale Price Order Summery</h2>
+                                 <div class="order-summary">
+                                    <div class="order-item order-total">
+                                       <div class="my_list-product">
+                                          <div class="my_list-product-image">
+                                             <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                             <div class="notification-number">1</div>
+                                          </div>
+                                          <div>
+                                             <a href="#" class="my_list-product-title">
+                                             Dress  
+                                             </a>
+                                             <a href="#" class="my_list-product-variants">
+                                             Dusty Blue, Size S
+                                             </a>
+                                             <span class="summery-note">Sold by:  The Dress Store</span>
+                                          </div>
+                                       </div>
+                                       <span>$90
+                                       </span>
+                                    </div>
+                                    <div class="order-item order-total">
+                                       <div class="my_list-product">
+                                          <div class="my_list-product-image">
+                                             <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                             <div class="notification-number">1</div>
+                                          </div>
+                                          <div>
+                                             <a href="#" class="my_list-product-title">
+                                             Dress  
+                                             </a>
+                                             <a href="#" class="my_list-product-variants">
+                                             Dusty Blue, Size S
+                                             </a>
+                                             <span class="summery-note">Sold by:  The Dress Store</span>
+                                          </div>
+                                       </div>
+                                       <span>$170
+                                       </span>
+                                    </div>
+                                 </div>
+                                 <div class="line mt-3 mb-2"></div>
+                                 <div class="order-summary">
+                                    <div class="order-item">
+                                       <label>Total WSP</label>
+                                       <span>$260</span>
+                                    </div>
+                                    <div class="order-item">
+                                       <label>Shipping Fee</label>
+                                       <span>$50</span>
+                                    </div>
+                                    <div class="order-item">
+                                       <label>Transaction Fee</label>
+                                       <span>$18.60</span>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="order-item order-total line-top">
+                                       <label>Total</label>
+                                       <span>$328.60
+                                       </span>
+                                    </div>
+                                 </div>
+                                 <small class="order_note">This will be the amount to be charged to your account</small>
+                                 <button class="button">Place Order - $328.60</button>
+                                  <div class="alert-note">
+                                    <p>Unfortunately, we are unable to charge your account. Please contact <a href="">support</a>.</p>
+                                      <div class="popup-close">
+                                     <svg class="icon">
+                                        <use xlink:href="images/sprite.svg#icon-close"></use>
+                                     </svg>
+                                  </div>
+                               </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </main>
+         <div class="popup popup-thanks">
+           <div class="popup_wrapper">
+              <div class="popup_content">
+                 <div>
+                    <h2>Thank you for your order</h2>
+                    <p>Your order is successfully placed<br>
+                       Your account is successfully charged 
+                    </p>
+                 </div>
+                 <div class="popup-close">
+                    <svg class="icon">
+                       <use xlink:href="images/sprite.svg#icon-close"></use>
+                    </svg>
+                 </div>
+              </div>
+           </div>
+        </div>
+      </div>
+      <script src="./js/vendor.min.js" defer></script>
+      <script
+         src="https://code.jquery.com/jquery-3.6.0.min.js"
+         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+         crossorigin="anonymous"
+         ></script>
+      <script src="js/app.min.js" defer></script>
+   </body>
+</html>

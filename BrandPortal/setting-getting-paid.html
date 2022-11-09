@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Brand Setting - Getting Paid</title>
+      <link
+         rel="icon"
+         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
+         />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap"
+         rel="stylesheet"
+         />
+      <link media="all" rel="stylesheet" href="./css/vendor.min.css" />
+      <link media="all" rel="stylesheet" href="./css/styles.min.css" />
+      <link media="all" rel="stylesheet" href="./css/media.css" />
+      <link media="all" rel="stylesheet" href="./css/ckeditor.css" />
+   </head>
+   <body>
+      <div class="wrapper">
+         <header class="header mp-header">
+            <div class="header_block header_block-top mp-header_block-top">
+               <div class="header_container">
+                  <!--header logo-->
+                  <div class="header_logo">
+                     <a href="index.html" class="logo">
+                        <picture><img src="images/logo.svg" alt="" /></picture>
+                     </a>
+                  </div>
+                  <!--header menu-->
+                  <div class="header_menu-wrap">
+                      <input type="checkbox" name="" id="" class=""/>
+                     <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                     </div>
+                     <ul class="header_menu menu">
+                        <li class="menu_item"><a href="#" class="menu_link">Dashboard</a></li>
+                        <li class="menu_item ">
+                           <a href="#" class="menu_link">My Products</a>
+                        </li>
+                        <li class="menu_item">
+                           <div class="dropdown">
+                              <div class="dropdown_header">
+                                 <div class="dropdown_header-chevron">
+                                    <a href="#" class="menu_link">My Retailers
+                                     <div class="dropdown_header-chevron">
+                                    <svg class="icon">
+                                       <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                    </svg>
+                                 </div>
+                                     </a>
+                                 </div>
+                                 
+                              </div>
+                              <div class="dropdown_body">
+                                 <div class="dropdown_inner">
+                                    <ul>
+                                       <li><a href="#">Approved Retailers</a></li>
+                                       <li><a href="#">Requests for Access</a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="menu_item"><a href="#" class="menu_link">Orders</a></li>
+                     </ul>
+                  </div>
+                  <!--header search-->
+                  <div class="header_search search">
+                     <form action="#" class="search_form">
+                        <div class="search_form-input">
+                           <input type="text" placeholder="Search…" />
+                        </div>
+                        <button type="cancel" class="search_form-button">
+                           <svg class="icon">
+                              <use xlink:href="images/sprite.svg#icon-clear"></use>
+                           </svg>
+                        </button>
+                        <button type="submit"></button>
+                        <svg class="icon">
+                           <use xlink:href="images/sprite.svg#icon-search"></use>
+                        </svg>
+                     </form>
+                  </div>
+                  <!--header actions-->
+                  <div class="header_actions">
+                     <div class="header_usermenu">
+                        <div class="dropdown">
+                           <div class="dropdown_header">
+                              <div class="dropdown_header-text">
+                                 Hi, <span class="username">Jane</span>
+                              </div>
+                              <div class="dropdown_header-icon">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-retailers"></use>
+                                 </svg>
+                              </div>
+                              <div class="dropdown_header-chevron">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                 </svg>
+                              </div>
+                           </div>
+                           <div class="dropdown_body">
+                              <div class="dropdown_inner">
+                                 <ul>
+                                    <li><a href="#">Settings</a></li>
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">Sign out</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <button class="header_action header_action-mails">
+                        <svg class="icon">
+                           <use xlink:href="images/sprite.svg#icon-mail"></use>
+                        </svg>
+                        <div class="text visible">5</div>
+                     </button>
+                     <button class="header_action header_action-notifications">
+                        <!--Changed icon to dropdown, to show list of 'updates'-->
+                        <div class="dropdown">
+                           <div class="dropdown_header">
+                              <svg class="icon">
+                                 <use xlink:href="images/sprite.svg#icon-notification"></use>
+                              </svg>
+                           </div>
+                           <div class="dropdown_body">
+                              <div class="dropdown_inner">
+                                 <ul>
+                                    <li>
+                                       <span>Summer Activities Chips for Kids</span> <br>
+                                       updated Dec.15, 2021, 07:56 PM
+                                    </li>
+                                    <li>
+                                       <span>Summer Activities Chips for Kids</span> <br>
+                                       updated Dec.15, 2021, 07:56 PM
+                                    </li>
+                                    <li>
+                                       <span>Summer Activities Chips for Kids</span> <br>
+                                       updated Dec.15, 2021, 07:56 PM
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="text visible">1</div>
+                     </button>
+                     <div class="header_action header_action-invite">
+                        <button class="button invite-retailer">Invite Retailers</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="header_block header_block-bottom mp-header_block-bottom"></div>
+         </header>
+         <main class="content mp-content setting-section">
+            <section class="section products pc_tabs tabs">
+               <aside class="filters mp-filter">
+                  <div class="filters_wrap">
+                     <div class="filters_block filters_block-body">
+                        <div class="filter open filter-by-products">
+                           <div class="filter_body">
+                              <div class="tab_wrap">
+                                 <div class="setting-tab-title">
+                                    Setting
+                                 </div>
+                                 <div class="pc_tabs-menu tab_menu">
+                                    <a href="#" data-link="Account" class="tab-links">Brand Profile</a>
+                                    <a href="#" data-link="Users" class="tab-links">Users</a>
+                                    <a href="#" data-link="AlertsNotifications" class="tab-links">Alerts and Notifications</a>
+                                    <a href="#" data-link="Preferences" class="tab-links">Preferences</a>
+                                    <a href="#" data-link="Integration" class="tab-links">Integration</a>
+                                    <a href="#" data-link="GettingPaid" class="tab-links active">Getting Paid</a>
+                                    <a href="#" data-link="Shipping" class="tab-links">Shipping</a>
+                                    <a href="#" data-link="ReturnRefund" class="tab-links">Return and Refund</a>
+                                    <a href="#" data-link="Security" class="tab-links">Security</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </aside>
+               <div class="pc_tabs-content tabs_body">
+                  <div class="tab" data-target="Account">
+                     <div class="products_content">
+                        <div class="products_head mp-head">
+                           <div class="products_head-content">
+                              <div class="title">
+                                 <h1>
+                                    Brand Profile
+                                 </h1>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="products_body">
+                           <div class="content_area">
+                              Brand Profile Data
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab" data-target="Users">
+                     <div class="products_content">
+                        <div class="products_head mp-head">
+                           <div class="products_head-content">
+                              <div class="title">
+                                 <h1>
+                                    Users
+                                 </h1>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="products_body">
+                           <div class="content_area">
+                              Users Data
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab" data-target="AlertsNotifications">
+                   <div class="products_content">
+                      <div class="products_head mp-head">
+                         <div class="products_head-content">
+                            <div class="title">
+                               <h1>
+                                  Alerts and Notifications
+                               </h1>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="products_body">
+                         <div class="content_area">
+                            Alerts and Notifications Data
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                  <div class="tab" data-target="Preferences">
+                     <div class="products_content">
+                        <div class="products_head mp-head">
+                           <div class="products_head-content">
+                              <div class="title">
+                                 <h1>
+                                    Preferences
+                                 </h1>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="products_body">
+                           <div class="content_area">
+                              Preferences Data
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab" data-target="Integration">
+                     <div class="products_content">
+                        <div class="products_head mp-head">
+                           <div class="products_head-content">
+                              <div class="title">
+                                 <h1>
+                                    Store Integration
+                                 </h1>
+                              </div>
+                           </div>
+                        </div>
+                         <div class="products_body">
+                           <div class="content_area">
+                              Store Integration Data
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab active" data-target="GettingPaid">
+                     <div class="products_content">
+                         <div class="products_body">
+                           <div class="content_area">
+                              <h2 class="heading">Getting Paid
+                               <img src="images/gp-logo.jpg" class="company-logo">
+                               </h2>
+                              <div id="gettingpaid">
+                               <div class="gettingpaid_info">
+                                     <div class="form-input preferences-item">
+                                        <h4>ShopDot, Inc. works with Priority Technology Holdings, Inc. ("PRTH") to provide merchant accounts for businesses just like you. Priority provides a valuable service which includes processing your customer's payment transactions and depositing the funds into your account. To enable merchant account services through Priority, please complete the following application. </h4>
+                                        <a href="setting-getting-paid-business_detail.html" class="button btn-lg mt-4">Start Application</a>
+                                   </div>
+                                   
+                                   <div class="form-input">
+                                       <div class="gp-info">
+                                       <div class="gpinfo-item">
+                                           <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#gpinfo-a"></use>
+                                          </svg>
+                                           <h5>What information will I need? </h5>
+                                           <p>You will be asked to provide standard business and bank account details</p>
+                                           
+                                           </div>
+                                       <div class="gpinfo-item">
+                                           
+                                            <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#gpinfo-b"></use>
+                                          </svg>
+                                           <h5>How long does it take? </h5>
+                                           <p>It will take 5-10 minutes to complete this application </p>
+                                           </div>
+                                           
+                                       </div>
+                                       
+                                   </div>
+                               </div>
+                            </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab" data-target="Shipping">
+                     <div class="products_content">
+                        <div class="products_head mp-head">
+                           <div class="products_head-content">
+                              <div class="title">
+                                 <h1>
+                                    Shipping
+                                 </h1>
+                              </div>
+                           </div>
+                        </div>
+                         <div class="products_body">
+                           <div class="content_area">
+                              Shipping Data
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab" data-target="ReturnRefund">
+                        <div class="products_content">
+                      <div class="products_head mp-head">
+                         <div class="products_head-content">
+                            <div class="title">
+                               <h1>
+                                  Return and Refund
+                               </h1>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="products_body">
+                         <div class="content_area">
+                            Return and Refund Data
+                         </div>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="tab" data-target="Security">
+                     <div class="products_content">
+                        <div class="products_head mp-head">
+                           <div class="products_head-content">
+                              <div class="title">
+                                 <h1>
+                                    Security
+                                 </h1>
+                              </div>
+                           </div>
+                        </div>
+                          <div class="products_body">
+                         <div class="content_area">
+                            Security Data
+                          </div>
+                       </div>    
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </main>
+         
+         <footer class="footer">
+         </footer>
+      </div>
+      <script src="js/ckeditor.js"></script>
+      <script>ClassicEditor
+         .create( document.querySelector( '.editor' ), {
+         	licenseKey: '',
+         } )
+         .then( editor => {
+         	window.editor = editor;
+         } )
+      </script>
+      <script src="./js/vendor.min.js" defer></script>
+      <script
+         src="https://code.jquery.com/jquery-3.6.0.min.js"
+         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+         crossorigin="anonymous"
+         ></script>
+      <script src="js/app.min.js" defer></script>
+      <script>
+         window.onload = function () {
+           WholesaleSlide();
+             RetailSlide();
+         };
+         let sliderWholesale = document.getElementById("wholesale_slider");
+         let displayValOne = document.getElementById("wrange1");
+         let WSliderTrack = document.querySelector(".slider-track");
+         let WSliderMaxValue = document.getElementById("wholesale_slider").max;
+                
+         let sliderRetail = document.getElementById("ratail_slider");
+         let displayValTwo = document.getElementById("rrange1");
+         let RSliderTrack = document.querySelector(".retail-track");
+         let RSliderMaxValue = document.getElementById("ratail_slider").max;
+         
+         
+         function WholesaleSlide() {
+           displayValOne.value = sliderWholesale.value;
+           WfillColor();
+         }
+                
+         function RetailSlide() {
+           displayValTwo.value = sliderRetail.value;
+           RfillColor();
+         }
+         
+         function WfillColor() {
+           percent1 = (sliderWholesale.value / WSliderMaxValue) * 100;
+           WSliderTrack.style.background = `linear-gradient(to right, #BD6F34 ${percent1}% , #D0D0D0 ${percent1}%`;
+         }
+                
+         function RfillColor() {
+           percent2 = (sliderRetail.value / RSliderMaxValue) * 100;
+           RSliderTrack.style.background = `linear-gradient(to right, #BD6F34 ${percent2}% , #D0D0D0 ${percent2}%`;
+         }
+          
+         $(".step-1-button").click(function(){
+            $(".getting-paid-step-a").hide();
+            $(".getting-paid-step-b").show();
+         });
+          
+         $(".step-2-button").click(function(){
+            $(".getting-paid-step-b").hide();
+            $(".getting-paid-step-c").show();
+         });
+          
+         $(".step-3-button").click(function(){
+            $(".getting-paid-step-c").hide();
+            $(".getting-paid-step-d").show();
+         });
+          
+        $(".add-user-link").click(function(){
+            $(".getting-paid-step-d").hide();
+            $(".getting-paid-step-e").show();
+         });
+          
+          $(".step-e-button").click(function(){
+            $(".getting-paid-step-e").hide();
+            $(".getting-paid-step-d").show();
+         });
+          
+          $(".step-e-button-cancel").click(function(){
+            $(".getting-paid-step-d").hide();
+            $(".getting-paid-step-e").hide();
+            $(".getting-paid-step-a").show();
+         });
+      </script>
+        <script>
+       "use strict";
+        function dragNdrop(event) {
+            var fileName = URL.createObjectURL(event.target.files[0]);
+            var preview = document.getElementById("preview");
+            var previewImg = document.createElement("img");
+            previewImg.setAttribute("src", fileName);
+            preview.innerHTML = "";
+            preview.appendChild(previewImg);
+            $("#preview").css("display", "block");
+        }
+        function drag() {
+            document.getElementById('uploadFile').parentNode.className = 'draging dragBox';
+        }
+        function drop() {
+            document.getElementById('uploadFile').parentNode.className = 'dragBox';
+        }
+       </script>
+        <style>
+            .getting-paid-step-b,.getting-paid-step-c,.getting-paid-step-d,.getting-paid-step-e{display: none}
+       </style>
+   </body>
+</html>

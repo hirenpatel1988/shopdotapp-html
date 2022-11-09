@@ -38,7 +38,7 @@
                   </div>
                   <!--header menu-->
                   <div class="header_menu-wrap">
-                      <input type="checkbox" name="" id="" class=""/>
+                     <input type="checkbox" name="" id="" class=""/>
                      <div class="hamburger-lines">
                         <span class="line line1"></span>
                         <span class="line line2"></span>
@@ -53,15 +53,15 @@
                            <div class="dropdown">
                               <div class="dropdown_header">
                                  <div class="dropdown_header-chevron">
-                                    <a href="#" class="menu_link">Retailers
-                                     <div class="dropdown_header-chevron">
-                                    <svg class="icon">
-                                       <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
-                                    </svg>
+                                    <a href="#" class="menu_link">
+                                       Retailers
+                                       <div class="dropdown_header-chevron">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                          </svg>
+                                       </div>
+                                    </a>
                                  </div>
-                                     </a>
-                                 </div>
-                                 
                               </div>
                               <div class="dropdown_body">
                                  <div class="dropdown_inner">
@@ -177,21 +177,21 @@
                                  <div class="setting-tab-title">
                                     Setting
                                  </div>
-                                  <input type="checkbox" name="" id="" class=""/>
-                                  <div class="hamburger-lines tabs-hamburger-lines">
+                                 <input type="checkbox" name="" id="" class=""/>
+                                 <div class="hamburger-lines tabs-hamburger-lines">
                                     <span class="line line1"></span>
                                     <span class="line line2"></span>
                                     <span class="line line3"></span>
                                  </div>
                                  <div class="pc_tabs-menu tab_menu">
-                                      <a href="#" data-link="Integration" class="tab-links checked">Integration</a>
+                                    <a href="#" data-link="Integration" class="tab-links checked">Integration</a>
                                     <a href="#" data-link="Account" class="tab-links required active">Brand Profile</a>
                                     <a href="#" data-link="Preferences" class="tab-links required">Preferences</a>
                                     <a href="#" data-link="GettingPaid" class="tab-links required">Getting Paid</a>
                                     <a href="#" data-link="Shipping" class="tab-links required">Shipping</a>
                                     <a href="#" data-link="Users" class="tab-links">Users</a>
                                     <a href="#" data-link="Security" class="tab-links">Security</a>
-                                    <a href="#" data-link="AlertsNotifications" class="tab-links">Alerts and Notifications</a>
+                                    <a href="#" data-link="AlertsNotifications" class="tab-links">Notifications</a>
                                  </div>
                               </div>
                            </div>
@@ -200,7 +200,7 @@
                   </div>
                </aside>
                <div class="pc_tabs-content tabs_body">
-                   <div class="tab" data-target="Integration">
+                  <div class="tab " data-target="Integration">
                      <div class="products_content">
                         <div class="products_head mp-head">
                            <div class="products_head-content">
@@ -211,63 +211,68 @@
                               </div>
                            </div>
                         </div>
-                         <div class="products_body">
+                        <div class="products_body">
                            <div class="content_area">
                               <div id="integration">
                                  <div class="integration_info">
-                                    <label>Shopify Store URL</label>
-                                     <div class="email_edit-section">
-                                        <label>janehut.shopify.com</label>
-                                         <a href="" class="icon-link">
-                                          <svg class="icon">
-                                             <use xlink:href="images/sprite.svg#edit-email"></use>
-                                          </svg>
-                                       </a>
-                                     </div>
-                                 </div>
-<!--                                  Edit Shopify Store URL-->
-<!--
-                                  <div class="integration_info">
-                                    <label>Shopify Store URL</label>
-                                     <div class="form-area form-input">
-                                        <input type="email" class="form-control" id="" placeholder="janehut.shopify.com">
-                                         <button class="button">Connect</button>
-                                      </div>
-                                 </div>
--->
-                                 <div class="integration_info mt-5">
-                                    <h2>Synchronization mode
-                                    </h2>
-                                    <div class="form-area">
-                                       <div class="form-input retailer_access-item">
-                                          <div class="retailer-access">
-                                             <h4>Stock</h4>
-                                             <p>Toggle on if you want the inventory from your eCommerce store to sync with ShopDot. Toggle off if you want to manage your stock levels manually within ShopDot. 
-                                            </p>
-                                          </div>
-                                          <div class="my-toggle-btn">
-                                             <input type="checkbox" id="checkbox2">
-                                             <label for="checkbox2">
-                                             <span class="on" title="Active"></span>
-                                             <span class="off" title="Inctive"></span>
-                                             </label>
+                                    <h2 class="heading">Integration</h2>
+                                    <div class="integration_item">
+                                       <div class="email_edit-section">
+                                          <label>Connect your Shopify Store</label>
+                                          <span class="status-pill pill_not_connected">
+                                          Not Connected
+                                          </span>
+                                       </div>
+                                       <div class="integration_info">
+                                          <div class="form-area form-input">
+                                             <input type="text" class="form-control" id="" placeholder="yourstore.myshopify.com">
+                                             <button class="button connect_shopify">Connect Shopify</button>
                                           </div>
                                        </div>
+                                       <div class="integration_note">
+                                          Not on Shopify? <a href="#">Let us know</a> what eCommerce platform you use and we'll let you know when we're integrated.
+                                       </div>
                                     </div>
-                                     <div class="form-area mt-5">
-                                       <div class="form-input retailer_access-item">
-                                          <div class="retailer-access">
-                                             <h4>Retail Price</h4>
-                                             <p>Toggle on if you want to sync the retail pricing from your eCommerce store to ShopDot. Toggle off if you want to edit the retail pricing manually within ShopDot.
-                                              </p>
+                                    <br/><br/><br/><br/>
+                                    <div class="integration_item">
+                                       <div class="email_edit-section">
+                                          <label>Connect your Shopify Store</label>
+                                          <span class="status-pill pill_connected">
+                                          Connected
+                                          </span>
+                                       </div>
+                                       <div class="integration_url">
+                                          <span>Shopify Store URL:</span>&nbsp;<label>https://janehut.shopify.com</label>
+                                       </div>
+                                       <div class="integration_shopify small">
+                                          <button class="button button-dark">
+                                          Reconnect Shopify
+                                          </button>
+                                       </div>
+                                    </div>
+                                    <br/><br/><br/><br/>
+                                    <div class="integration_item">
+                                       <div class="email_edit-section">
+                                          <label>Connect your Shopify Store</label>
+                                          <span class="status-pill pill_declined">
+                                          Disconnected
+                                          </span>
+                                       </div>
+                                       <div class="alert alert-error d-flex align-items-center" role="alert">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#exclamation-red"></use>
+                                          </svg>
+                                          <div>
+                                             Your Shopify store has been disconnected with ShopDot 
                                           </div>
-                                          <div class="my-toggle-btn">
-                                             <input type="checkbox" id="checkbox3">
-                                             <label for="checkbox3">
-                                             <span class="on" title="Active"></span>
-                                             <span class="off" title="Inctive"></span>
-                                             </label>
-                                          </div>
+                                       </div>
+                                       <div class="integration_url">
+                                          <span>Shopify Store URL:</span>&nbsp;<label>https://janehut.shopify.abc.com</label>
+                                       </div>
+                                       <div class="integration_shopify small">
+                                          <button class="button button-dark">
+                                          Reconnect Shopify
+                                          </button>
                                        </div>
                                     </div>
                                  </div>
@@ -284,41 +289,36 @@
                                  <h1>
                                     Brand Profile 
                                  </h1>
-                                  
                               </div>
-                           </div><p>Information entered on this page will be visible to retailers within ShopDot</p>
+                           </div>
+                           <p>Information entered on this page will be visible to retailers within ShopDot</p>
                         </div>
                         <div class="products_body">
                            <div class="content_area">
                               <div id="account">
-                                  
-                                  <div class="account_info">
+                                 <div class="account_info">
                                     <h2>Company Information <span class="asterisk-red">*</span></h2>
                                     <div class="form-area">
                                        <div class="form-input tooltip-input">
                                           <label for="" class="form-label">
-                                             Company name
+                                          Company name
                                           </label>
                                           <input type="text" class="form-control" id="" placeholder="Company name">
                                        </div>
-                                        
-                                        <div class="form-input tooltip-input">
+                                       <div class="form-input tooltip-input">
                                           <label for="" class="form-label">
-                                            Company email address
+                                          Company email address
                                           </label>
                                           <input type="text" class="form-control" id="" placeholder="john@jondoe.com">
                                        </div>
-                                        
-                                        
-                                         <div class="form-input tooltip-input">
+                                       <div class="form-input tooltip-input">
                                           <label for="" class="form-label">
-                                             Company phone number
+                                          Company phone number
                                           </label>
                                           <input type="text" class="form-control" id="" placeholder="9154651444">
                                        </div>
                                     </div>
                                  </div>
-                                  
                                  <div class="my_store">
                                     <h2>Brand Information <span class="asterisk-red">*</span></h2>
                                     <div class="form-area">
@@ -340,18 +340,18 @@
                                        <div class="form-input tooltip-input">
                                           <label for="" class="form-label">
                                              Company website
-<!--
-                                             <div class="tooltip">
-                                                <div class="tooltip-icon">
-                                                   <svg class="icon">
-                                                      <use xlink:href="images/sprite.svg#icon-info"></use>
-                                                   </svg>
+                                             <!--
+                                                <div class="tooltip">
+                                                   <div class="tooltip-icon">
+                                                      <svg class="icon">
+                                                         <use xlink:href="images/sprite.svg#icon-info"></use>
+                                                      </svg>
+                                                   </div>
+                                                   <div class="tooltip_text">
+                                                      <p>This is your store that is connected with ShopDot. You can connect a different store in the Integration section.</p>
+                                                   </div>
                                                 </div>
-                                                <div class="tooltip_text">
-                                                   <p>This is your store that is connected with ShopDot. You can connect a different store in the Integration section.</p>
-                                                </div>
-                                             </div>
--->
+                                                -->
                                           </label>
                                           <input type="text" class="form-control disabled" id="" placeholder="janebeautyparlor.com" readonly>
                                        </div>
@@ -557,27 +557,27 @@
                                           <label for="" class="form-label">Add a video link</label>
                                           <input type="text" class="form-control" id="" placeholder="video link">
                                        </div>
-<!--
-                                       <div class="form-input form-upload mb-4">
-                                          <label for="" class="form-label">Upload a brand photo</label>
-                                          <div class="upload-image-items">
-                                             <p>Drag and drop file here</p>
-                                          </div>
-                                           
-                                           <div class="uploadOuter">
+                                       <!--
+                                          <div class="form-input form-upload mb-4">
+                                             <label for="" class="form-label">Upload a brand photo</label>
+                                             <div class="upload-image-items">
+                                                <p>Drag and drop file here</p>
+                                             </div>
                                               
-                                            <span class="dragBox" >
-                                              Drag and drop file here
-                                            <input type="file" onChange="dragNdrop(event)"  ondragover="drag()" ondrop="drop()" id="uploadFile"  />
-                                            </span>
-                                                <strong>OR</strong>
-                                               <label for="uploadFile" class="btn btn-primary">Upload Image</label>
-                                             
-                                            </div>
-                                            <div id="preview"></div>
-                                           
-                                       </div>
--->
+                                              <div class="uploadOuter">
+                                                 
+                                               <span class="dragBox" >
+                                                 Drag and drop file here
+                                               <input type="file" onChange="dragNdrop(event)"  ondragover="drag()" ondrop="drop()" id="uploadFile"  />
+                                               </span>
+                                                   <strong>OR</strong>
+                                                  <label for="uploadFile" class="btn btn-primary">Upload Image</label>
+                                                
+                                               </div>
+                                               <div id="preview"></div>
+                                              
+                                          </div>
+                                          -->
                                        <div class="form-input form-submit">
                                           <button class="button button-grey cancel">Cancel</button>
                                           <button class="button">Update</button>
@@ -589,13 +589,13 @@
                         </div>
                      </div>
                   </div>
-                   <div class="tab" data-target="Preferences">
+                  <div class="tab " data-target="Preferences">
                      <div class="products_content">
                         <div class="products_head mp-head">
                            <div class="products_head-content">
                               <div class="title">
                                  <h1>
-                                    Preferences <span class="asterisk-red">*</span>
+                                    Preferences
                                  </h1>
                               </div>
                            </div>
@@ -613,47 +613,38 @@
                                              </svg>
                                           </div>
                                           <div class="tooltip_text">
-                                             <p class="mb-0">This is the percentage of the retail price that will be applied as your products wholesale pricing. You can make edits at product level. At that point if there's any change in retail price, that won't affect the WSP. It won't constantly override.</p>
+                                             <p class="mb-0">When products are imported into ShopDot, we will calculate the wholesale pricing (WSP) by using this percentage of the retail price. You can still make edits to WSP on the product variant level. Modifying this percentage will not have an effect on the WSP for products that have already been imported into ShopDot.</p>
                                           </div>
                                        </div>
                                     </h2>
-                                    <div class="form-area">
+                                    <div class="form-area form-area-full">
                                        <div class="form-input preferences-item">
                                           <h4>Set your wholesale price based on a percentage of the retail price.</h4>
-<!--
-                                          <p><span>For example,</span> retail price is $100. If you set percentage to 70%, then your product's wholesale price is $70.</p>
-                                          <p><span>Note:</span> You can still edit wholesale pricing for each individual product.</p>
--->
                                        </div>
                                        <div class="form-input preferences-slider">
-                                           
-                                           
-                                               <div class="wp-item mt-5">
-                                                   <div class="wp-left">
-                                                   Wholesale Price Percentage
-                                                   </div>
-                                                   <div class="wp-right">
-                                                    <span class="percentage-lbl">%</span>
-                                                   <input type="number" name="min-price-wsp" id="wpPer" placeholder="50" class="slider">
-                                                   </div>
-                                                   </div>
-                                                    <div class="wp-item srp">
-                                                   <div class="wp-left ">
-                                                    <span class="samle-retail-price">Sample Retail Price</span>
-                                                       <label><span>$</span>100</label>
-                                                   </div>
-                                                   <div class="wp-right">
-                                                   <p>WSP is the wholesale price that retailers will pay you for the product</p>
-                                                      <label><span>$</span><span id="wpValue">50</span></label>
-                                                   </div>
-                                                   
-                                              
-                                           </div>
-                                         
+                                          <div class="wp-item mt-5">
+                                             <div class="wp-left">
+                                                Wholesale Price Percentage
+                                             </div>
+                                             <div class="wp-right">
+                                                <span class="percentage-lbl">%</span>
+                                                <input type="number" name="min-price-wsp" id="wpPer" placeholder="50" class="slider">
+                                             </div>
+                                          </div>
+                                          <div class="wp-item srp">
+                                             <div class="wp-left ">
+                                                <span class="samle-retail-price">Sample Retail Price</span>
+                                                <label><span>$</span>100</label>
+                                             </div>
+                                             <div class="wp-right">
+                                                <p>WSP is the wholesale price that retailers will pay you for the product</p>
+                                                <label><span>$</span><span id="wpValue">50</span></label>
+                                             </div>
+                                          </div>
                                        </div>
                                     </div>
                                  </div>
-                                 <div class="preferences_info mt-5">
+                                 <div class="preferences_info mt-4">
                                     <h2><span>Retail Pricing  <span class="asterisk-red">*</span> </span>
                                     </h2>
                                     <div class="form-area">
@@ -671,179 +662,142 @@
                                                 </div>
                                              </div>
                                           </div>
-                                          <select name="price" id="retail-price">
-                                             <option value="0">Enforce retail price</option>
-                                             <option value="1">Allow for flexible retail pricing</option>
+                                          <select name="price" id="" class="white-bg-select">
+                                             <option value="0">Allow for flexible retail pricing</option>
+                                             <option value="1">Enforce retail price</option>
                                           </select>
                                        </div>
                                     </div>
                                  </div>
-                                 <div class="preferences_info mt-5">
+                                 <div class="preferences_info mt-4">
                                     <h2><span>Inventory Buffer </span>
                                     </h2>
-                                       <div class="form-area">
+                                    <div class="form-area form-area-full">
                                        <div class="form-input preferences-item">
                                           <h4>Set a percentage of the inventory in your eCommerce store that will be published and sold in ShopDot.</h4>
                                        </div>
                                        <div class="form-input preferences-slider">
-                                           
-                                           
-                                               <div class="wp-item mt-5">
-                                                   <div class="wp-left">
-                                                   Inventory Buffer Percentage
-                                                   </div>
-                                                   <div class="wp-right">
-                                                   <span class="percentage-lbl">%</span>    
-                                                   <input type="number" name="min-price-wsp" id="ibPer" placeholder="70" class="slider">
-                                                   </div>
-                                                   </div>
-                                                    <div class="wp-item srp">
-                                                   <div class="wp-left ">
-                                                    <span class="samle-retail-price">Sample Shopify Inventory</span>
-                                                       <label>100</label>
-                                                   </div>
-                                                   <div class="wp-right">
-                                                   <p>ShopDot Inventory that is available to your retailers in ShopDot.</p>
-                                                       <label id="ibValue">70</label>
-                                                   </div>
-                                                   
-                                              
-                                           </div>
-                                         
+                                          <div class="wp-item mt-5">
+                                             <div class="wp-left">
+                                                Inventory Buffer Percentage
+                                             </div>
+                                             <div class="wp-right">
+                                                <span class="percentage-lbl">%</span>    
+                                                <input type="number" name="min-price-wsp" id="ibPer" placeholder="70" class="slider">
+                                             </div>
+                                          </div>
+                                          <div class="wp-item srp">
+                                             <div class="wp-left ">
+                                                <span class="samle-retail-price">Sample Shopify Inventory</span>
+                                                <label>100</label>
+                                             </div>
+                                             <div class="wp-right">
+                                                <!--                                                   <p>ShopDot Inventory that is available to your retailers in ShopDot.</p>-->
+                                                <p>ShopDot Inventory is the inventory available to your retailers in ShopDot</p>
+                                                <label id="ibValue">70</label>
+                                             </div>
+                                          </div>
                                        </div>
                                     </div>
                                  </div>
-<!--
-                                 <div class="preferences_info mt-5">
-                                    <h2><span>Retailer Access </span>
-                                    </h2>
-                                    <div class="form-area">
-                                       <div class="form-input retailer_access-item">
-                                          <div class="retailer-access">
-                                             <h4>Auto-assign active products to all approved retailers.</h4>
-                                             <p>If turned on, all active products on ShopDot will automatically be made available to sell for all retailers you are connected with.</p>
+                                 <div class="preferences_info mt-4">
+                                    <h2>
+                                       <span>Return and Refund Policy <span class="asterisk-red">*</span></span> 
+                                       <div class="tooltip">
+                                          <div class="tooltip-icon">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-info"></use>
+                                             </svg>
                                           </div>
-                                          <div class="my-toggle-btn">
-                                             <input type="checkbox" id="checkbox1">
-                                             <label for="checkbox1">
-                                             <span class="on" title="Active"></span>
-                                             <span class="off" title="Inctive"></span>
+                                          <div class="tooltip_text">
+                                             <p class="mb-0">This return and refund policy is universal and will apply to all of your products.</p>
+                                          </div>
+                                       </div>
+                                    </h2>
+                                    <div class="form-area form-area-full">
+                                       <div class="form-input return_select-item">
+                                          <h4>You can use this section to define the standard return & refund policy for all the products in your store.</h4>
+                                          <div class="pe_radio mt-5">
+                                             <label for="radio-return" class="radiobox">
+                                                <input type="radio" name="radio-filter" id="radio-return" checked="">
+                                                <div class="radiobox-text"><span>No returns or refunds</span></div>
+                                             </label>
+                                             <label for="radio-return-one" class="radiobox">
+                                                <input type="radio" name="radio-filter" id="radio-return-one">
+                                                <div class="radiobox-text">
+                                                   <span>Returns and refunds are accepted on a case-by-case basis.</span>
+                                                   <div class="tooltip">
+                                                      <div class="tooltip-icon">
+                                                         <svg class="icon">
+                                                            <use xlink:href="images/sprite.svg#icon-info"></use>
+                                                         </svg>
+                                                      </div>
+                                                      <div class="tooltip_text">
+                                                         <p class="mb-0">Retailers will have to message you to see if an order is eligible for a return or refund.</p>
+                                                      </div>
+                                                   </div>
+                                                </div>
                                              </label>
                                           </div>
                                        </div>
                                     </div>
                                  </div>
--->
-<!--
-                                   <div class="preferences_info mt-5">
-                                    <h2><span>Retailer Type Preferences</span>
+                                 <div class="preferences_info mt-4">
+                                    <h2 class="box-shadow-none"><span>Requirements for retailers who want to connect to with your brand </span> 
                                     </h2>
-                                    <div class="form-area">
-                                       <div class="form-input retailer_access-item">
-                                          <div class="retailer-access">
-                                            <p>Type in description on the type of retailers you want to bring on. This will appear in your brand profile.</p>
-                                          </div>
-                                       </div>
-                                         <div class="form-area">
-                                        <div class="form-input">
-                                          <input type="text" class="form-control" id="" placeholder="">
-                                       </div>
+                                    <div class="form-area form-area-full">
+                                       <div class="form-input">
+                                          <textarea name="" id="" rows="8" required="" class="text-area" placeholder=""></textarea>
                                        </div>
                                     </div>
                                  </div>
--->
-                                  <div class="preferences_info mt-5">
-                                    <h2><span>Return and Refund Policy <span class="asterisk-red">*</span></span> 
-                                        <div class="tooltip">
-                                        <div class="tooltip-icon">
-                                           <svg class="icon">
-                                              <use xlink:href="images/sprite.svg#icon-info"></use>
-                                           </svg>
-                                        </div>
-                                        <div class="tooltip_text">
-                                           <p class="mb-0">This return and refund policy is universal and will apply to all of your products.</p>
-                                        </div>
-                                     </div>
-                                    </h2>
-                                      <div class="form-area">
-                                     <div class="form-input return_select-item">
-                                        <h4>You can use this section to define the standard return & refund policy for all the products in your store.</h4>
-                                        <div class="pe_radio mt-5">
-                                           <label for="radio-return" class="radiobox">
-                                              <input type="radio" name="radio-filter" id="radio-return" checked="">
-                                              <div class="radiobox-text"><span>No returns or refunds</span></div>
-                                           </label>
-                                           <label for="radio-return-one" class="radiobox">
-                                              <input type="radio" name="radio-filter" id="radio-return-one" checked="">
-                                              <div class="radiobox-text"><span>Returns and refunds are accepted on a case-by-case basis.</span>
-                                               <div class="tooltip">
-                                        <div class="tooltip-icon">
-                                           <svg class="icon">
-                                              <use xlink:href="images/sprite.svg#icon-info"></use>
-                                           </svg>
-                                        </div>
-                                        <div class="tooltip_text">
-                                           <p class="mb-0">Retailers will have to message you to see if an order is eligible for a return or refund.</p>
-                                        </div>
-                                     </div>
-                                               </div>
-                                           </label>
-                                        </div>
-                                     </div>
-                                  </div>
+                                 <div class="form-area">
+                                    <div class="form-input form-submit">
+                                       <button class="button button-grey cancel">Cancel</button>
+                                       <button class="button">Update</button>
+                                    </div>
                                  </div>
-                                  <div class="form-area">
-                                      <div class="form-input form-submit">
-                                          <button class="button button-grey cancel">Cancel</button>
-                                          <button class="button">Update</button>
-                                       </div>
-                                  </div>
                               </div>
                            </div>
                         </div>
                      </div>
                   </div>
-                   <div class="tab" data-target="GettingPaid">
+                  <div class="tab" data-target="GettingPaid">
                      <div class="products_content">
-                         <div class="products_body">
+                        <div class="products_body">
                            <div class="content_area">
                               <h2 class="heading">Getting Paid <span class="asterisk-red">*</span></h2>
                               <div id="gettingpaid">
-                                <div class="gettingpaid_info">
-                                     <div class="form-input preferences-item">
-                                        <h4>ShopDot, Inc. works with Priority Technology Holdings, Inc. ("PRTH") to provide merchant accounts for businesses just like you. Priority provides a valuable service which includes processing your customer's payment transactions and depositing the funds into your account. To enable merchant account services through Priority, please complete the following application. </h4>
-                                        <a href="setting-getting-paid-business_detail.html" class="button btn-lg mt-4">Start Application</a>
-                                   </div>
-                                   
-                                   <div class="form-input">
+                                 <div class="gettingpaid_info">
+                                    <div class="form-input preferences-item">
+                                       <h4>ShopDot, Inc. works with Priority Technology Holdings, Inc. ("PRTH") to provide merchant accounts for businesses just like you. Priority provides a valuable service which includes processing your customer's payment transactions and depositing the funds into your account. To enable merchant account services through Priority, please complete the following application. </h4>
+                                       <a href="setting-getting-paid-business_detail.html" class="button btn-lg mt-4">Start Application</a>
+                                    </div>
+                                    <div class="form-input">
                                        <div class="gp-info">
-                                       <div class="gpinfo-item">
-                                           <svg class="icon">
-                                             <use xlink:href="images/sprite.svg#gpinfo-a"></use>
-                                          </svg>
-                                           <h5>What information will I need? </h5>
-                                           <p>You will be asked to provide standard business and bank account details</p>
-                                           
-                                           </div>
-                                       <div class="gpinfo-item">
-                                           
-                                            <svg class="icon">
-                                             <use xlink:href="images/sprite.svg#gpinfo-b"></use>
-                                          </svg>
-                                           <h5>How long does it take? </h5>
-                                           <p>It will take 5-10 minutes to complete this application </p>
-                                           </div>
-                                           
+                                          <div class="gpinfo-item">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#gpinfo-a"></use>
+                                             </svg>
+                                             <h5>What information will I need? </h5>
+                                             <p>You will be asked to provide standard business and bank account details</p>
+                                          </div>
+                                          <div class="gpinfo-item">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#gpinfo-b"></use>
+                                             </svg>
+                                             <h5>How long does it take? </h5>
+                                             <p>It will take 5-10 minutes to complete this application </p>
+                                          </div>
                                        </div>
-                                       
-                                   </div>
-                               </div>
-                            </div>
+                                    </div>
+                                 </div>
+                              </div>
                            </div>
                         </div>
                      </div>
                   </div>
-                   <div class="tab" data-target="Shipping">
+                  <div class="tab" data-target="Shipping">
                      <div class="products_content">
                         <div class="products_head mp-head">
                            <div class="products_head-content">
@@ -854,48 +808,48 @@
                               </div>
                            </div>
                         </div>
-                         <div class="products_body">
+                        <div class="products_body">
                            <div class="content_area">
                               <div id="shipping">
                                  <div class="shipping_info">
                                     <h2>Shipping Location <span class="asterisk-red">*</span></h2>
                                     <div class="form-area">
-                                          <div class="form-input">
-                                             <label for="" class="form-label">Street Address 1</label>
-                                             <input type="text" class="form-control" id="" placeholder="3102 W Broadway Street">
-                                          </div>
-                                          <div class="form-input">
-                                             <label for="" class="form-label">Street Address 2</label>
-                                             <input type="text" class="form-control is-invalid" id="" placeholder="Suite B">
-                                              <small class="invalid-feedback">Please type correct email</small>
-                                          </div>
-                                         <div class="category-form-input">
+                                       <div class="form-input">
+                                          <label for="" class="form-label">Street Address 1</label>
+                                          <input type="text" class="form-control" id="" placeholder="3102 W Broadway Street">
+                                       </div>
+                                       <div class="form-input">
+                                          <label for="" class="form-label">Street Address 2</label>
+                                          <input type="text" class="form-control is-invalid" id="" placeholder="Suite B">
+                                          <small class="invalid-feedback">Please type correct email</small>
+                                       </div>
+                                       <div class="category-form-input">
                                           <div class="form-input">
                                              <label for="" class="form-label">Country</label>
                                              <select name="Country" id="country-list">
-                                                 <option value="0">United States</option>
-                                                 <option value="1">India</option>
-                                                 <option value="1">Japan</option>
-                                          </select>
+                                                <option value="0">United States</option>
+                                                <option value="1">India</option>
+                                                <option value="1">Japan</option>
+                                             </select>
                                           </div>
                                           <div class="form-input">
                                              <label for="" class="form-label">State</label>
                                              <select name="State" id="state-list">
-                                                 <option value="0">Montana</option>
-                                                 <option value="1">Texas</option>
-                                                 <option value="2">Ohio</option>
-                                          </select>
-                                              <small class="invalid-feedback">Please type correct email</small>
+                                                <option value="0">Montana</option>
+                                                <option value="1">Texas</option>
+                                                <option value="2">Ohio</option>
+                                             </select>
+                                             <small class="invalid-feedback">Please type correct email</small>
                                           </div>
                                        </div>
-                                        <div class="category-form-input mt-4">
+                                       <div class="category-form-input mt-4">
                                           <div class="form-input">
                                              <label for="" class="form-label">City</label>
                                              <select name="Country" id="country-list">
-                                                 <option value="0">United States</option>
-                                                 <option value="1">India</option>
-                                                 <option value="1">Japan</option>
-                                          </select>
+                                                <option value="0">United States</option>
+                                                <option value="1">India</option>
+                                                <option value="1">Japan</option>
+                                             </select>
                                           </div>
                                           <div class="form-input">
                                              <label for="" class="form-label">ZIP</label>
@@ -904,7 +858,7 @@
                                        </div>
                                     </div>
                                  </div>
-                                  <div class="default_shipping_info">
+                                 <div class="default_shipping_info">
                                     <h2>Default Shipping Flat Rates</h2>
                                     <div class="form-area">
                                        <div class="form-input preferences-item">
@@ -912,41 +866,41 @@
                                           <p>You can use this section to define domestic shipping cost, incremental fees for each additional item, and the expected shipping time for domestic shipments.</p>
                                        </div>
                                        <div class="category-form-input tooltip-input mt-4">
-                                           <label class="d_shipping">Domestic</label>
+                                          <label class="d_shipping">Domestic</label>
                                           <div class="form-input">
-                                              <label for="" class="form-label">
-                                             Shipping cost
-                                             <div class="tooltip">
-                                                <div class="tooltip-icon">
-                                                   <svg class="icon">
-                                                      <use xlink:href="images/sprite.svg#icon-info"></use>
-                                                   </svg>
+                                             <label for="" class="form-label">
+                                                Shipping cost
+                                                <div class="tooltip">
+                                                   <div class="tooltip-icon">
+                                                      <svg class="icon">
+                                                         <use xlink:href="images/sprite.svg#icon-info"></use>
+                                                      </svg>
+                                                   </div>
+                                                   <div class="tooltip_text">
+                                                      <p>This is the cost for the first item.</p>
+                                                   </div>
                                                 </div>
-                                                <div class="tooltip_text">
-                                                   <p>This is the cost for the first item.</p>
-                                                </div>
-                                             </div>
-                                          </label>
-                                              <input type="text" class="form-control" id="" placeholder="4.95">
+                                             </label>
+                                             <input type="text" class="form-control" id="" placeholder="4.95">
                                           </div>
                                           <div class="form-input">
-                                               <label for="" class="form-label">
-                                             Incremental fee
-                                             <div class="tooltip">
-                                                <div class="tooltip-icon">
-                                                   <svg class="icon">
-                                                      <use xlink:href="images/sprite.svg#icon-info"></use>
-                                                   </svg>
+                                             <label for="" class="form-label">
+                                                Incremental fee
+                                                <div class="tooltip">
+                                                   <div class="tooltip-icon">
+                                                      <svg class="icon">
+                                                         <use xlink:href="images/sprite.svg#icon-info"></use>
+                                                      </svg>
+                                                   </div>
+                                                   <div class="tooltip_text">
+                                                      <p>The cost of every extra item added to an order</p>
+                                                   </div>
                                                 </div>
-                                                <div class="tooltip_text">
-                                                   <p>The cost of every extra item added to an order</p>
-                                                </div>
-                                             </div>
-                                          </label>
-                                              <input type="text" class="form-control" id="" placeholder="0">
+                                             </label>
+                                             <input type="text" class="form-control" id="" placeholder="0">
                                           </div>
                                        </div>
-                                         <div class="form-input preferences-item tooltip-input">
+                                       <div class="form-input preferences-item tooltip-input">
                                           <div class="retail-flex-item">
                                              <label>Total Shipping Time</label>
                                              <div class="tooltip">
@@ -967,28 +921,27 @@
                                              <option value="1">>21 days</option>
                                           </select>
                                        </div>
-                                       </div>
-                                      <div class="form-area">
-                                        <div class="shipping_note">
-                                                <div class="note_icon">
-                                                <svg class="icon">
-                                                      <use xlink:href="images/sprite.svg#info_note"></use>
-                                                   </svg>
-                                                </div>
-                                            <div class="note-info">
-                                                    <label>Note</label>
-                                                <p>No international shipping as of the moment. <br>You can also edit shipping rates on a per product level under Products.</p>
-                                            </div>
+                                    </div>
+                                    <div class="form-area">
+                                       <div class="shipping_note">
+                                          <div class="note_icon">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#info_note"></use>
+                                             </svg>
                                           </div>
-                                      </div>
-                                      <div class="form-area">
-                                      <div class="form-input form-submit mt-4">
+                                          <div class="note-info">
+                                             <label>Note</label>
+                                             <p>No international shipping as of the moment. <br>You can also edit shipping rates on a per product level under Products.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="form-area">
+                                       <div class="form-input form-submit mt-4">
                                           <button class="button button-grey cancel">Cancel</button>
                                           <button class="button">Save</button>
                                        </div>
-                                       </div>   
+                                    </div>
                                  </div>
-                                 
                               </div>
                            </div>
                         </div>
@@ -1224,7 +1177,7 @@
                         </div>
                      </div>
                   </div>
-                   <div class="tab" data-target="Security">
+                  <div class="tab" data-target="Security">
                      <div class="products_content">
                         <div class="products_head mp-head">
                            <div class="products_head-content">
@@ -1235,156 +1188,200 @@
                               </div>
                            </div>
                         </div>
-                          <div class="products_body">
-                         <div class="content_area">
-                            <div id="security">
-                         <div class="security_info">
-                                  <h2>
-                                    Change Password
-                                  </h2>
-                                  <div class="form-area">
-                                     <div class="form-input">
-                                        <label for="" class="form-label">Old Password</label>
-                                        <input type="password" class="form-control" id="" placeholder="Enter old password">
-                                     </div>
-                                      <div class="form-input">
-                                        <label for="" class="form-label">New Password</label>
-                                        <input type="password" class="form-control" id="" placeholder="Enter new password">
-                                     </div>
-                                     <div class="form-input">
-                                        <label for="" class="form-label">Confirm New Password</label>
-                                        <input type="password" class="form-control" id="" placeholder="Enter retype new password">
-                                     </div>
-                                  </div>
-                                  <div class="form-area">
-                                     <div class="form-input form-submit mt-4">
-                                        <button class="button button-grey cancel">Cancel</button>
-                                        <button class="button">Update</button>
-                                     </div>
-                                  </div>
-                               </div>
-                             </div>
-                          </div>
-                       </div>    
+                        <div class="products_body">
+                           <div class="content_area">
+                              <div id="security">
+                                 <div class="security_info">
+                                    <h2>
+                                       Change Password
+                                    </h2>
+                                    <div class="form-area">
+                                       <div class="form-input">
+                                          <label for="" class="form-label">Old Password</label>
+                                          <input type="password" class="form-control" id="" placeholder="Enter old password">
+                                       </div>
+                                       <div class="form-input">
+                                          <label for="" class="form-label">New Password</label>
+                                          <input type="password" class="form-control" id="" placeholder="Enter new password">
+                                       </div>
+                                       <div class="form-input">
+                                          <label for="" class="form-label">Confirm New Password</label>
+                                          <input type="password" class="form-control" id="" placeholder="Enter retype new password">
+                                       </div>
+                                    </div>
+                                    <div class="form-area">
+                                       <div class="form-input form-submit mt-4">
+                                          <button class="button button-grey cancel">Cancel</button>
+                                          <button class="button">Update</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
                      </div>
                   </div>
                   <div class="tab" data-target="AlertsNotifications">
-                   <div class="products_content">
-                      <div class="products_head mp-head">
-                         <div class="products_head-content">
-                            <div class="title">
-                               <h1>
-                                  Alerts and Notifications
-                               </h1>
-                            </div>
-                         </div>
-                      </div>
-                      <div class="products_body">
-                         <div class="content_area">
-                            <div id="alerts">
-                               <div class="alerts_info">
-                                  <h2>Email Notifications</h2>
-                                  <div class="form-area">
-                                     <div class="form-input">
-                                        <h4>Email me when:</h4>
-                                     </div>
-                                     <div class="form-input retailer_access-item mt-4">
-                                        <div class="alert-access">
-                                           <h4>There is a new order</h4>
-                                        </div>
-                                        <div class="my-toggle-btn">
-                                           <input type="checkbox" id="checkbox3" checked>
-                                           <label for="checkbox3">
-                                           <span class="on" title="Active"></span>
-                                           <span class="off" title="Inctive"></span>
-                                           </label>
-                                        </div>
-                                     </div>
+                     <div class="products_content">
+                        <div class="products_head mp-head">
+                           <div class="products_head-content">
+                              <div class="title">
+                                 <h1>
+                                    Notifications
+                                 </h1>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="products_body">
+                           <div class="content_area">
+                              <div id="alerts">
+                                 <div class="alerts_info">
+                                    <h2>Email Notifications</h2>
+                                    <div class="form-area">
+                                       <div class="form-input">
+                                          <h4>Email me when:</h4>
+                                       </div>
+                                       <div class="form-input retailer_access-item flex_start mt-4">
+                                          <div class="alert-access">
+                                             <h4>There is a new order</h4>
+                                          </div>
+                                          <div class="my-toggle-btn">
+                                             <input type="checkbox" id="checkbox3" checked>
+                                             <label for="checkbox3">
+                                             <span class="on" title="Active"></span>
+                                             <span class="off" title="Inctive"></span>
+                                             </label>
+                                          </div>
+                                       </div>
+                                       <!--
+                                          <div class="form-input retailer_access-item mt-2">
+                                             <div class="alert-access">
+                                                <h4>Low stock on a product</h4>
+                                             </div>
+                                             <div class="my-toggle-btn">
+                                                <input type="checkbox" id="checkbox4" checked>
+                                                <label for="checkbox4">
+                                                <span class="on" title="Active"></span>
+                                                <span class="off" title="Inctive"></span>
+                                                </label>
+                                             </div>
+                                          </div>
+                                          -->
+                                       <!--
+                                          <div class="form-input retailer_access-item mt-2">
+                                             <div class="alert-access">
+                                                <h4>Low stock on a product variant</h4>
+                                             </div>
+                                             <div class="my-toggle-btn">
+                                                <input type="checkbox" id="checkbox4" checked>
+                                                <label for="checkbox4">
+                                                <span class="on" title="Active"></span>
+                                                <span class="off" title="Inctive"></span>
+                                                </label>
+                                             </div>
+                                          </div>
+                                          -->
+                                    </div>
+                                 </div>
+                                 <div class="alerts_info mt-5">
+                                    <h2>Low Stock Level Warnings</h2>
+                                    <div class="form-area">
+                                       <div class="form-input retailer_access-item mt-2">
+                                          <div class="alert-access alert-flex">
+                                             <h4>Show Orange flag at product level when product stock is below:</h4>
+                                             <div class="tooltip">
+                                                <div class="tooltip-icon">
+                                                   <svg class="icon">
+                                                      <use xlink:href="images/sprite.svg#question-mark"></use>
+                                                   </svg>
+                                                </div>
+                                                <div class="tooltip_text">
+                                                   <p class="mb-0">This alert indicator applies to both product and variant levels.</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="form-input retailer_access-item mt-2">
+                                          <input type="text" class="form-control w-50" id="" placeholder="10">
+                                       </div>
+                                    </div>
+                                    <div class="form-area">
 <!--
-                                     <div class="form-input retailer_access-item mt-2">
-                                        <div class="alert-access">
-                                           <h4>Low stock on a product</h4>
-                                        </div>
-                                        <div class="my-toggle-btn">
-                                           <input type="checkbox" id="checkbox4" checked>
-                                           <label for="checkbox4">
-                                           <span class="on" title="Active"></span>
-                                           <span class="off" title="Inctive"></span>
-                                           </label>
-                                        </div>
-                                     </div>
+                                       <div class="shipping_note mt-0">
+                                          <div class="note_icon">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#info_note"></use>
+                                             </svg>
+                                          </div>
+                                          <div class="note-info">
+                                             <label>Note</label>
+                                             <p>Red flag warnings are shown at both product and variant level when stock is 0. There is also automatic in-app notifications for low and empty stock.</p>
+                                          </div>
+                                       </div>
 -->
-<!--
-                                     <div class="form-input retailer_access-item mt-2">
-                                        <div class="alert-access">
-                                           <h4>Low stock on a product variant</h4>
-                                        </div>
-                                        <div class="my-toggle-btn">
-                                           <input type="checkbox" id="checkbox4" checked>
-                                           <label for="checkbox4">
-                                           <span class="on" title="Active"></span>
-                                           <span class="off" title="Inctive"></span>
-                                           </label>
-                                        </div>
-                                     </div>
--->
-                                  </div>
-                               </div>
-                               <div class="alerts_info mt-5">
-                                  <h2>Low Stock Level Warnings</h2>
-                                  <div class="form-area">
-                                     <div class="form-input retailer_access-item mt-2">
-                                        <div class="alert-access alert-flex">
-                                           <h4>Show Orange flag at product level when product stock is below:</h4>
-                                           <div class="tooltip">
-                                              <div class="tooltip-icon">
-                                                 <svg class="icon">
-                                                    <use xlink:href="images/sprite.svg#question-mark"></use>
-                                                 </svg>
-                                              </div>
-                                              <div class="tooltip_text">
-                                                 <p class="mb-0">This alert indicator applies to both product and variant levels.</p>
-                                              </div>
-                                           </div>
-                                        </div>
-                                     </div>
-                                     <div class="form-input retailer_access-item mt-2">
-                                        <input type="text" class="form-control w-50" id="" placeholder="10">
-                                     </div>
-                                  </div>
-                                  <div class="form-area">
-                                     <div class="shipping_note mt-0">
-                                        <div class="note_icon">
-                                           <svg class="icon">
-                                              <use xlink:href="images/sprite.svg#info_note"></use>
-                                           </svg>
-                                        </div>
-                                        <div class="note-info">
-                                           <label>Note</label>
-                                           <p>Red flag warnings are shown at both product and variant level when stock is 0. There is also automatic in-app notifications for low and empty stock.</p>
-                                        </div>
-                                     </div>
-                                  </div>
-                                  <div class="form-area">
-                                     <div class="form-input form-submit mt-4">
-                                        <button class="button button-grey cancel">Cancel</button>
-                                        <button class="button">Save</button>
-                                     </div>
-                                  </div>
-                               </div>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-                  
-                  
-                  
-                  
-                  
+                                    </div>
+                                    <div class="form-area">
+                                       <div class="form-input form-submit mt-4">
+                                          <button class="button button-grey cancel">Cancel</button>
+                                          <button class="button">Save</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </section>
          </main>
+         <div class="bottom-notify active">
+            <div class="container">
+               <div class="bottom-notify_text">
+                  <p>
+                     Profile is successfully saved
+                  </p>
+               </div>
+            </div>
+            <div class="bottom-notify-close">
+               <svg class="icon">
+                  <use xlink:href="images/sprite.svg#icon-close"></use>
+               </svg>
+            </div>
+         </div>
+<!--
+          <div class="bottom-notify active">
+            <div class="container">
+               <div class="bottom-notify_text">
+                  <p>
+                     Preference is successfully saved
+                  </p>
+               </div>
+            </div>
+            <div class="bottom-notify-close">
+               <svg class="icon">
+                  <use xlink:href="images/sprite.svg#icon-close"></use>
+               </svg>
+            </div>
+         </div>
+-->
+          
+<!--
+          <div class="bottom-notify">
+            <div class="container">
+               <div class="bottom-notify_text">
+                  <p>
+                     Notification setting is successfully saved
+                  </p>
+               </div>
+            </div>
+            <div class="bottom-notify-close">
+               <svg class="icon">
+                  <use xlink:href="images/sprite.svg#icon-close"></use>
+               </svg>
+            </div>
+         </div>
+-->
          <!--
             <div class="bottom-notify">
               <div class="container">
@@ -1430,33 +1427,33 @@
                </div>
             </div>
          </div>
-<!--
-         <div class="popup setting-popup delete-user-modal">
-            <div class="popup_wrapper">
-               <div class="popup_content">
-                  <div class="popup-close">
-                     <svg class="icon">
-                        <use xlink:href="images/sprite.svg#icon-close"></use>
-                     </svg>
-                  </div>
-                  <div class="popup-flex">
-                     <div class="icon-center">
+         <!--
+            <div class="popup setting-popup delete-user-modal">
+               <div class="popup_wrapper">
+                  <div class="popup_content">
+                     <div class="popup-close">
                         <svg class="icon">
-                           <use xlink:href="images/sprite.svg#delete-user-md"></use>
+                           <use xlink:href="images/sprite.svg#icon-close"></use>
                         </svg>
                      </div>
-                     <h1>Remove User</h1>
-                     <p>Are you sure you want to remove <a href="#" class="link-text">john@jondoe.com</a>? He will lose access to your account in ShopDot.</p>
-                  </div>
-                  <div class="action-footer">
-                     <button class="button button-grey px-6">Cancel</button>
-                     <button class="button px-6">Yes</button>
+                     <div class="popup-flex">
+                        <div class="icon-center">
+                           <svg class="icon">
+                              <use xlink:href="images/sprite.svg#delete-user-md"></use>
+                           </svg>
+                        </div>
+                        <h1>Remove User</h1>
+                        <p>Are you sure you want to remove <a href="#" class="link-text">john@jondoe.com</a>? He will lose access to your account in ShopDot.</p>
+                     </div>
+                     <div class="action-footer">
+                        <button class="button button-grey px-6">Cancel</button>
+                        <button class="button px-6">Yes</button>
+                     </div>
                   </div>
                </div>
             </div>
-         </div>
--->
-          <div class="popup setting-popup delete-user-modal">
+            -->
+         <div class="popup setting-popup delete-user-modal">
             <div class="popup_wrapper">
                <div class="popup_content">
                   <div class="popup-close">
@@ -1471,7 +1468,7 @@
                         </svg>
                      </div>
                      <h1>Confirmation Required</h1>
-                      <p>Are you sure you want to remove <a href="#" class="link-text">john@jondoe.com</a>? He will lose access to your account in ShopDot.</p>
+                     <p>Are you sure you want to remove <a href="#" class="link-text">john@jondoe.com</a>? He will lose access to your account in ShopDot.</p>
                   </div>
                   <div class="action-footer">
                      <button class="button button-dark px-6">Cancel</button>
@@ -1480,53 +1477,49 @@
                </div>
             </div>
          </div>
-          
-          <div class="steps">
-                   <div class="step-indicator">
-                    <h6>Getting Started</h6>
-                    <div class="si-info" style="display: none"><img src="images/onboarding/acceleration-white.png" class="op-img"><a href="#">Confirm your settings</a></div>
-                    <div class="si-info" style="display: none"><img src="images/onboarding/tick-white-dark.png"><a href="#">Confirm your settings</a></div>
-                    <div class="si-info"><img src="images/onboarding/tick-white-dark.png"><a href="#">1/4 completed</a></div>
-                   </div>
-                   
-                   <div class="step-indicator-wide">
-                    <h6>Getting Started (0/4)</h6>
-                    <div class="si-info"><img src="images/onboarding/tick-white-dark.png"><a href="#">Connect your Shopify store</a></div>
-                    <div class="si-info not-completed"><img src="images/onboarding/acceleration-white.png"><a href="#">Confirm your settings</a></div>
-                    <div class="si-info not-completed"><img src="images/onboarding/acceleration-white.png"><a href="#">Add Shopify products to ShopDot</a></div>
-                    <div class="si-info not-completed"><img src="images/onboarding/acceleration-white.png"><a href="#">Activate your products</a></div>
-                   </div>
-                       </div>
-          
-          <div class="popup popup-confirm confirmation-window">
-          <div class="popup_wrapper">
-            <div class="popup_content">
-              <div class="popup-close">
-                <svg class="icon">
-                  <use xlink:href="images/sprite.svg#icon-close"></use>
-                </svg>
-              </div>
-  
-              <div class="popup_content-header">
-                <svg class="icon">
-                  <use xlink:href="images/sprite.svg#acceleration-red"></use>
-                </svg>
-                <div class="h1">Close Window Confirmation</div>
-              </div>
-              <div class="popup_content-body">
-                <p>
-                  Are you sure you wish to close this window? You will lose all changes.
-                </p>
-              </div>
-              <div class="popup_content-footer">
-                <button class="button button-red">
-                  Discard Changes 
-                </button>
-                <a href="#" class="button-link">Cancel</a>
-              </div>
+         <div class="steps">
+            <div class="step-indicator">
+               <h6>Getting Started</h6>
+               <div class="si-info" style="display: none"><img src="images/onboarding/acceleration-white.png" class="op-img"><a href="#">Confirm your settings</a></div>
+               <div class="si-info" style="display: none"><img src="images/onboarding/tick-white-dark.png"><a href="#">Confirm your settings</a></div>
+               <div class="si-info"><img src="images/onboarding/tick-white-dark.png"><a href="#">1/4 completed</a></div>
             </div>
-          </div>
-        </div>
+            <div class="step-indicator-wide">
+               <h6>Getting Started (0/4)</h6>
+               <div class="si-info"><img src="images/onboarding/tick-white-dark.png"><a href="#">Connect your Shopify store</a></div>
+               <div class="si-info not-completed"><img src="images/onboarding/acceleration-white.png"><a href="#">Confirm your settings</a></div>
+               <div class="si-info not-completed"><img src="images/onboarding/acceleration-white.png"><a href="#">Add Shopify products to ShopDot</a></div>
+               <div class="si-info not-completed"><img src="images/onboarding/acceleration-white.png"><a href="#">Activate your products</a></div>
+            </div>
+         </div>
+         <div class="popup popup-confirm confirmation-window">
+            <div class="popup_wrapper">
+               <div class="popup_content">
+                  <div class="popup-close">
+                     <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-close"></use>
+                     </svg>
+                  </div>
+                  <div class="popup_content-header">
+                     <svg class="icon">
+                        <use xlink:href="images/sprite.svg#acceleration-red"></use>
+                     </svg>
+                     <div class="h1">Close Window Confirmation</div>
+                  </div>
+                  <div class="popup_content-body">
+                     <p>
+                        Are you sure you wish to close this window? You will lose all changes.
+                     </p>
+                  </div>
+                  <div class="popup_content-footer">
+                     <button class="button button-red">
+                     Discard Changes 
+                     </button>
+                     <a href="#" class="button-link">Cancel</a>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
       <script src="js/ckeditor.js"></script>
       <script>ClassicEditor
@@ -1544,38 +1537,38 @@
          crossorigin="anonymous"
          ></script>
       <script src="js/app.min.js" defer></script>
-       <script type="text/javascript">
-           $(document).ready(function(){
-               $(document).on("keyup", "#wpPer", function(){
-                  var wpValue = 100 * $(this).val()/100;
-                  $("#wpValue").html(wpValue);
-               });
-               $(document).on("keyup", "#ibPer", function(){
-                  var ibValue = 100 * $(this).val()/100;
-                  $("#ibValue").html(ibValue);
-               })
-           })
-        </script>
-        <script>
-       "use strict";
-        function dragNdrop(event) {
-            var fileName = URL.createObjectURL(event.target.files[0]);
-            var preview = document.getElementById("preview");
-            var previewImg = document.createElement("img");
-            previewImg.setAttribute("src", fileName);
-            preview.innerHTML = "";
-            preview.appendChild(previewImg);
-            $("#preview").css("display", "block");
-        }
-        function drag() {
-            document.getElementById('uploadFile').parentNode.className = 'draging dragBox';
-        }
-        function drop() {
-            document.getElementById('uploadFile').parentNode.className = 'dragBox';
-        }
-       </script>
-        <style>
-            .getting-paid-step-b,.getting-paid-step-c,.getting-paid-step-d,.getting-paid-step-e{display: none}
-       </style>
+      <script type="text/javascript">
+         $(document).ready(function(){
+             $(document).on("keyup", "#wpPer", function(){
+                var wpValue = 100 * $(this).val()/100;
+                $("#wpValue").html(wpValue);
+             });
+             $(document).on("keyup", "#ibPer", function(){
+                var ibValue = 100 * $(this).val()/100;
+                $("#ibValue").html(ibValue);
+             })
+         })
+      </script>
+      <script>
+         "use strict";
+          function dragNdrop(event) {
+              var fileName = URL.createObjectURL(event.target.files[0]);
+              var preview = document.getElementById("preview");
+              var previewImg = document.createElement("img");
+              previewImg.setAttribute("src", fileName);
+              preview.innerHTML = "";
+              preview.appendChild(previewImg);
+              $("#preview").css("display", "block");
+          }
+          function drag() {
+              document.getElementById('uploadFile').parentNode.className = 'draging dragBox';
+          }
+          function drop() {
+              document.getElementById('uploadFile').parentNode.className = 'dragBox';
+          }
+      </script>
+      <style>
+         .getting-paid-step-b,.getting-paid-step-c,.getting-paid-step-d,.getting-paid-step-e{display: none}
+      </style>
    </body>
 </html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Email Notification: Notification on updated quantity of unfulfilled items</title>
+      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+      <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="order-recipt">
+         <div class="container">
+            <div class="card">
+               <div class="card-header">
+                  <img src="images/logo.png" alt="shopdot logo" class="logo" />
+               </div>
+               <div class="card-body">
+                  <div class="table-responsive-sm">
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td class="left">
+                                 <p>Hi <span>[Brand Name]</span>,</p>
+                                 <p>Order <span>{ShopDot Order ID displayed in Brand Portal}</span> has been updated by <span>{Retailer Store Name}</span> </p>
+                                  <p>Customer Order ID: <span>{ShopDot Order ID displayed in Retailer Portal}</span><br/>
+                                  <i>reference this order ID when communicating with your retailer</i>
+                                  </p>
+                                  <p class="mt">Order Date: <span>{Order Date}</span></p>
+                                 <p class="mt"><a href="">[View order in ShopDot]</a></p>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

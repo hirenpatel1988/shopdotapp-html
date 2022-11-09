@@ -1,0 +1,1720 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Brands - My Retailers profile</title>
+      <link
+         rel="icon"
+         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
+         />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap"
+         rel="stylesheet"
+         />
+      <link media="all" rel="stylesheet" href="./css/vendor.min.css" />
+      <link media="all" rel="stylesheet" href="./css/styles.min.css" />
+       <link media="all" rel="stylesheet" href="../brand-product/css/styles.min.css" />
+      <link media="all" rel="stylesheet" href="./css/media.css" />
+             <style>
+     .my_list-table tr.extra-actions.active{display:table-cell;background:white;width:100%;position:absolute;left:0;z-index:999;border-bottom:1px solid #e0e0e0}
+.my_list-table tr.extra-actions.active td{border-bottom:none}
+.button-sky-blue .icon{height:1.3rem}
+.action-row{margin-bottom:10px}
+.sticky-thead{position:sticky;top:0;background:#fff;z-index:9}
+.datalist-table td,.datalist-table th{border-bottom:1px solid var(--color-grey-5)}
+          .extra-actions .actions .button{height: 32px;}
+      </style>
+   </head>
+   <body class="brands-single-page">
+      <div class="wrapper">
+         <header class="header mp-header">
+            <div class="header_block header_block-top mp-header_block-top">
+               <div class="header_container">
+                  <!--header logo-->
+                  <div class="header_logo">
+                     <a href="index.html" class="logo">
+                        <picture><img src="images/logo.svg" alt="" /></picture>
+                     </a>
+                  </div>
+                  <!--header menu-->
+                  <div class="header_menu-wrap">
+                     <ul class="header_menu menu">
+                        <li class="menu_item"><a href="#" class="menu_link">Dashboard</a></li>
+                        <li class="menu_item">
+                           <a href="#" class="menu_link">Products</a>
+                        </li>
+                        <li class="menu_item">
+                           <div class="dropdown">
+                              <div class="dropdown_header">
+                                 <div class="">
+                                    <a href="#" class="menu_link active">My Retailers</a>
+                                 </div>
+                                 <div class="dropdown_header-chevron">
+                                    <svg class="icon">
+                                       <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                    </svg>
+                                 </div>
+                              </div>
+                              <div class="dropdown_body">
+                                 <div class="dropdown_inner">
+                                    <ul>
+                                       <li><a href="#">Approved Retailers</a></li>
+                                       <li><a href="#">Requests for Access</a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="menu_item"><a href="#" class="menu_link">Orders</a></li>
+                     </ul>
+                  </div>
+                  <!--header search-->
+                  <div class="header_search search">
+                     <form action="#" class="search_form">
+                        <div class="search_form-input">
+                           <input type="text" placeholder="Search…" />
+                        </div>
+                        <button type="cancel" class="search_form-button">
+                           <svg class="icon">
+                              <use xlink:href="images/sprite.svg#icon-clear"></use>
+                           </svg>
+                        </button>
+                        <button type="submit"></button>
+                        <svg class="icon">
+                           <use xlink:href="images/sprite.svg#icon-search"></use>
+                        </svg>
+                     </form>
+                  </div>
+                  <!--header actions-->
+                  <div class="header_actions">
+                     <div class="header_usermenu">
+                        <div class="dropdown">
+                           <div class="dropdown_header">
+                              <div class="dropdown_header-text">
+                                 Hi, <span class="username">Jane</span>
+                              </div>
+                              <div class="dropdown_header-icon">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-retailers"></use>
+                                 </svg>
+                              </div>
+                              <div class="dropdown_header-chevron">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                 </svg>
+                              </div>
+                           </div>
+                           <div class="dropdown_body">
+                              <div class="dropdown_inner">
+                                 <ul>
+                                    <li><a href="#">Settings</a></li>
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">Sign out</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <button class="header_action header_action-mails">
+                        <svg class="icon">
+                           <use xlink:href="images/sprite.svg#icon-mail"></use>
+                        </svg>
+                        <div class="text visible">5</div>
+                     </button>
+                     <button class="header_action header_action-notifications">
+                        <!--Changed icon to dropdown, to show list of 'updates'-->
+                        <div class="dropdown">
+                           <div class="dropdown_header">
+                              <svg class="icon">
+                                 <use xlink:href="images/sprite.svg#icon-notification"></use>
+                              </svg>
+                           </div>
+                           <div class="dropdown_body">
+                              <div class="dropdown_inner">
+                                 <ul>
+                                    <li>
+                                       <span>Summer Activities Chips for Kids</span> <br>
+                                       updated Dec.15, 2021, 07:56 PM
+                                    </li>
+                                    <li>
+                                       <span>Summer Activities Chips for Kids</span> <br>
+                                       updated Dec.15, 2021, 07:56 PM
+                                    </li>
+                                    <li>
+                                       <span>Summer Activities Chips for Kids</span> <br>
+                                       updated Dec.15, 2021, 07:56 PM
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="text visible">1</div>
+                     </button>
+                     <div class="header_action header_action-invite">
+                        <button class="button invite-retailer">Invite Retailers</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <main class="content mp-content">
+            <section class="section brand-single">
+               <div class="brand-single_head">
+                  <ul class="breadcrumbs">
+                     <li> <a href="#">Home</a></li>
+                     <li> <a href="#">Approved Retailers</a></li>
+                     <li> <span>A Schuler Bookst</span></li>
+                  </ul>
+                  <div class="brand-single_head-content">
+                     <a href="#" class="back">
+                        <svg class="icon">
+                           <use xlink:href="images/sprite.svg#icon-arrow--left"></use>
+                        </svg>
+                     </a>
+                     <div class="title">
+                        <h1>A Schuler Bookst</h1>
+                        <div class="product_status">
+                           <div class="product-status product-status--connected">
+                              <div class="icon_wrap">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-connected"></use>
+                                 </svg>
+                              </div>
+                              Approved
+                              <!--Here added tooltip-->
+                              <div class="tooltip">
+                                 <div class="tooltip-icon tooltip-icon-info">
+                                    <svg class="icon">
+                                       <use xlink:href="images/sprite.svg#icon-info"></use>
+                                    </svg>
+                                 </div>
+                                 <div class="tooltip_text tooltip-white">
+                                    <p><strong>Approved:</strong>August 9, 2021</p>
+                                    <p><strong>Requested:</strong>August 5, 2021</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="buttons">
+                        <button disabled class="button button-grey">Save</button>
+                        <button class="button button-red">Decline</button>
+                        <button class="button message-brand">Message Retailer</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="brand-single_wrap">
+                  <div class="brand-single_content">
+                     <div class="brand-single_content-head">
+                        <div class="brand-single_content-head-bg">
+                           <picture><img src="images/brand-single-decor.jpg" alt="" /></picture>
+                        </div>
+                        <div class="brand-single_image">
+                           <div class="image image--cover image--1-1">
+                              <picture><img src="images/brand.jfif" alt="" /></picture>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="brand-single_content-body">
+                        <div class="brand-single_about">
+                           <div class="brand-single_about-content">
+                              <div class="brand-single_about-title">
+                                 <h2>A Schuler Bookst</h2>
+                              </div>
+                              <div class="brand-single_about-items">
+                                 <div class="brand-single_about-item">
+                                    <p><strong>Website: </strong><a href="">www.ideasports-abcd.com</a></p>
+                                    <p><strong>Location: </strong>Wilsonville, Oregon</p>
+                                 </div>
+                                 <div class="brand-single_about-item">
+                                    <div class="brand-single_about-item-title">
+                                       Retailer Category:
+                                    </div>
+                                    <div class="brand-single_about-item-wrap">
+                                       <a href="#">Apparel Boutique</a>
+                                       <a href="#">Kids & Toy Store</a>
+                                       <a href="#">Gift Store</a>
+                                    </div>
+                                 </div>
+                                 <div class="brand-single_about-item">
+                                    <div class="brand-single_about-item-title">Retailer Values:</div>
+                                    <div class="brand-single_about-item-wrap">
+                                       <a href="#">Handmade</a>
+                                       <a href="#">Made in USA</a>
+                                       <a href="#">Small Batch</a>
+                                       <a href="#">Women Owned</a>
+                                    </div>
+                                 </div>
+                                 <div class="brand-single_about-item">
+                                    <div class="brand-single_about-item-title">
+                                       Product Categories:
+                                    </div>
+                                    <div class="brand-single_about-item-wrap">
+                                       <a href="#">Baby & Kids</a>
+                                       <a href="#">Men</a>
+                                       <a href="#">Women</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="brand-single_about-item">
+                                 <p><strong>Products Assigned: </strong>340 / 340</p>
+                                 <p><strong>Products Pushed: </strong>240</p>
+                                 <p><strong>All Time Sales: </strong>10000 USD</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="brand-single_info">
+                           <div class="brand-single_block">
+                              <h2>Retailer Story</h2>
+                              <h3>
+                                 We are a company that seeks to cure “I’m Retailer” in kids by creating covertly educational activities.
+                              </h3>
+                              <p>
+                                 Thousands of boxes of open-ended fun have been sold worldwide. With wholesale products in every US State, The Idea Box Kids has been featured in Country Living, American Farmhouse, MaryJanes Farm, and on sites like Fodor’s Travel, The Week, Cafe Mom, Simply Real Moms and more.
+                              </p>
+                              <p>
+                                 We have been a business owner for 23 years with 16 of those in ecommerce. We are passionate advocate for all things handmade wholesale, for both the sellers that create and the buyers that buy.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="brand-single_wrap retail-config" id="PageFocus">
+                  <div class="brand-single_content">
+                     <h2 class="rc-title">Retailer Configuration </h2>
+                     <div class="brand-single_content-body pt-5">
+                        <div class="brand-single_info">
+                           <div class="brand-single_block">
+                              <h2 class="mb-2">Product Access</h2>
+                              <p class="rc-line">
+                                 Please choose products you want the retailer to have access to. They will be able to list them and push to store.
+                              </p>
+                              <div class="section products products--style-1 rc-filter">
+                                 <aside class="filters">
+                                    <div class="filters_wrap">
+                                       <!--filters head-->
+                                       <div class="filters_block filters_block-head">
+                                          <!--filters close/unclose filters-->
+                                          <button class="filters_hide-and-show">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-arrow--left"></use>
+                                             </svg>
+                                          </button>
+                                          <!--filters clearn-->
+                                          <a href="#" class="filters-clear">Clear Filters</a>
+                                       </div>
+                                       <div class="filters_block filters_block-body">
+                                          <div class="filter open filter-by-products filter-bdr-none">
+                                             <div class="filter_body">
+                                                <!--single filter subfilters-->
+                                                <div class="subfilters">
+                                                   <div class="subfilter">
+                                                      <div class="subfilter_head">Product Category</div>
+                                                      <div class="subfilter_body">
+                                                          <div class="filter_form-items-scroll">
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="pc-1"
+                                                               >
+                                                               <input type="checkbox" id="pc-1" name="product" />
+                                                               <div class="checkbox-text">Baby & Kids</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="pc-2"
+                                                               >
+                                                               <input type="checkbox" id="pc-2" name="product" />
+                                                               <div class="checkbox-text">Men</div>
+                                                            </label>
+                                                         </div>
+                                                         <div class="checkbox checkbox--no-decor">
+                                                            <label for="pc-3"
+                                                               >
+                                                               <input type="checkbox" id="pc-3" name="product" />
+                                                               <div class="checkbox-text">Women</div>
+                                                            </label>
+                                                         </div>
+                                                          <div class="checkbox checkbox--no-decor">
+                                                        <label for="pc-4"
+                                                           >
+                                                           <input type="checkbox" id="pc-4" name="product" />
+                                                           <div class="checkbox-text">Women</div>
+                                                        </label>
+                                                     </div>
+                                                          <div class="checkbox checkbox--no-decor">
+                                                        <label for="pc-5"
+                                                           >
+                                                           <input type="checkbox" id="pc-5" name="product" />
+                                                           <div class="checkbox-text">Women</div>
+                                                        </label>
+                                                     </div>
+                                                          <div class="checkbox checkbox--no-decor">
+                                                        <label for="pc-6"
+                                                           >
+                                                           <input type="checkbox" id="pc-6" name="product" />
+                                                           <div class="checkbox-text">Women</div>
+                                                        </label>
+                                                     </div>
+                                                          <div class="checkbox checkbox--no-decor">
+                                                        <label for="pc-7"
+                                                           >
+                                                           <input type="checkbox" id="pc-7" name="product" />
+                                                           <div class="checkbox-text">Women</div>
+                                                        </label>
+                                                     </div>
+                                                          <div class="checkbox checkbox--no-decor">
+                                                        <label for="pc-8"
+                                                           >
+                                                           <input type="checkbox" id="pc-8" name="product" />
+                                                           <div class="checkbox-text">Women</div>
+                                                        </label>
+                                                     </div>
+                                                          <div class="checkbox checkbox--no-decor">
+                                                        <label for="pc-9"
+                                                           >
+                                                           <input type="checkbox" id="pc-9" name="product" />
+                                                           <div class="checkbox-text">Women</div>
+                                                        </label>
+                                                     </div>
+                                                          <div class="checkbox checkbox--no-decor">
+                                                        <label for="pc-10"
+                                                           >
+                                                           <input type="checkbox" id="pc-10" name="product" />
+                                                           <div class="checkbox-text">Women</div>
+                                                        </label>
+                                                     </div>
+                                                      </div>
+                                                          </div>
+                                                   </div>
+                                                   <div class="subfilter">
+                                                      <div class="subfilter_head">Product tag</div>
+                                                      <div class="subfilter_body">
+                                                         <form action="#" class="filter_form search_form mb-3">
+                                                            <div class="search_form-input">
+                                                               <input type="text" placeholder="Search">
+                                                            </div>
+                                                            <button type="cancel" class="search_form-button">
+                                                               <svg class="icon">
+                                                                  <use xlink:href="images/sprite.svg#icon-clear"></use>
+                                                               </svg>
+                                                            </button>
+                                                            <button type="submit"></button>
+                                                            <svg class="icon">
+                                                               <use xlink:href="images/sprite.svg#icon-search"></use>
+                                                            </svg>
+                                                         </form>
+                                                         <div class="filter_form-items">
+                                                            <div class="checkbox checkbox--no-decor">
+                                                               <label for="product-tag-1"
+                                                                  >
+                                                                  <input type="checkbox" id="product-tag-1" name="product-tag" />
+                                                                  <div class="checkbox-text">chips</div>
+                                                               </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox--no-decor">
+                                                               <label for="product-tag-2"
+                                                                  >
+                                                                  <input type="checkbox" id="product-tag-2" name="product-tag" />
+                                                                  <div class="checkbox-text">Summer</div>
+                                                               </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox--no-decor">
+                                                               <label for="product-tag-3"
+                                                                  >
+                                                                  <input type="checkbox" id="product-tag-3" name="product-tag" />
+                                                                  <div class="checkbox-text">Summer Activities</div>
+                                                               </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox--no-decor">
+                                                               <label for="product-tag-4"
+                                                                  >
+                                                                  <input type="checkbox" id="product-tag-4" name="product-tag" />
+                                                                  <div class="checkbox-text">Summer</div>
+                                                               </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox--no-decor">
+                                                               <label for="product-tag-5"
+                                                                  >
+                                                                  <input type="checkbox" id="product-tag-5" name="product-tag" />
+                                                                  <div class="checkbox-text">Summer Toys</div>
+                                                               </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox--no-decor">
+                                                               <label for="product-tag-6"
+                                                                  >
+                                                                  <input type="checkbox" id="product-tag-6" name="product-tag" />
+                                                                  <div class="checkbox-text">Footwear Men</div>
+                                                               </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox--no-decor">
+                                                               <label for="product-tag-7"
+                                                                  >
+                                                                  <input type="checkbox" id="product-tag-7" name="product-tag" />
+                                                                  <div class="checkbox-text">Summer</div>
+                                                               </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox--no-decor">
+                                                               <label for="product-tag-8"
+                                                                  >
+                                                                  <input type="checkbox" id="product-tag-8" name="product-tag" />
+                                                                  <div class="checkbox-text">Footwear </div>
+                                                               </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox--no-decor">
+                                                               <label for="product-tag-9"
+                                                                  >
+                                                                  <input type="checkbox" id="product-tag-9" name="product-tag" />
+                                                                  <div class="checkbox-text">Footwear Women</div>
+                                                               </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox--no-decor">
+                                                               <label for="product-tag-10"
+                                                                  >
+                                                                  <input type="checkbox" id="product-tag-10" name="product-tag" />
+                                                                  <div class="checkbox-text">Footwear Baby & Kids</div>
+                                                               </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox--no-decor">
+                                                               <label for="product-tag-11"
+                                                                  >
+                                                                  <input type="checkbox" id="product-tag-11" name="product-tag" />
+                                                                  <div class="checkbox-text">Women</div>
+                                                               </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox--no-decor">
+                                                               <label for="product-tag-12"
+                                                                  >
+                                                                  <input type="checkbox" id="product-tag-12" name="product-tag" />
+                                                                  <div class="checkbox-text">Books</div>
+                                                               </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox--no-decor">
+                                                               <label for="product-tag-13"
+                                                                  >
+                                                                  <input type="checkbox" id="product-tag-13" name="product-tag" />
+                                                                  <div class="checkbox-text">jewelry</div>
+                                                               </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox--no-decor">
+                                                               <label for="product-tag-6"
+                                                                  >
+                                                                  <input type="checkbox" id="product-tag-6" name="product-tag" />
+                                                                  <div class="checkbox-text">Footwear Men</div>
+                                                               </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox--no-decor">
+                                                               <label for="product-tag-7"
+                                                                  >
+                                                                  <input type="checkbox" id="product-tag-7" name="product-tag" />
+                                                                  <div class="checkbox-text">Summer</div>
+                                                               </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox--no-decor">
+                                                               <label for="product-tag-8"
+                                                                  >
+                                                                  <input type="checkbox" id="product-tag-8" name="product-tag" />
+                                                                  <div class="checkbox-text">Footwear </div>
+                                                               </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox--no-decor">
+                                                               <label for="product-tag-9"
+                                                                  >
+                                                                  <input type="checkbox" id="product-tag-9" name="product-tag" />
+                                                                  <div class="checkbox-text">Footwear Women</div>
+                                                               </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox--no-decor">
+                                                               <label for="product-tag-10"
+                                                                  >
+                                                                  <input type="checkbox" id="product-tag-10" name="product-tag" />
+                                                                  <div class="checkbox-text">Footwear Baby & Kids</div>
+                                                               </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox--no-decor">
+                                                               <label for="product-tag-11"
+                                                                  >
+                                                                  <input type="checkbox" id="product-tag-11" name="product-tag" />
+                                                                  <div class="checkbox-text">Women</div>
+                                                               </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox--no-decor">
+                                                               <label for="product-tag-12"
+                                                                  >
+                                                                  <input type="checkbox" id="product-tag-12" name="product-tag" />
+                                                                  <div class="checkbox-text">Books</div>
+                                                               </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox--no-decor">
+                                                               <label for="product-tag-13"
+                                                                  >
+                                                                  <input type="checkbox" id="product-tag-13" name="product-tag" />
+                                                                  <div class="checkbox-text">jewelry</div>
+                                                               </label>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </aside>
+                                 <div class="products_content">
+                                    <div class="products_head products_head--style-1 p-0">
+                                       <div class="products_head-content">
+                                          <div class="retailers-tab">
+                                             <div class="pc_tabs tabs">
+                                                <div class="tab_wrap">
+                                                   <div class="pc_tabs-menu tab_menu">
+                                                      <button data-link="unassigned" class="tab-link active">Unassigned Products</button>
+                                                      <button data-link="assigned" class="tab-link">Assigned Products</button>
+                                                   </div>
+                                                </div>
+                                               
+                                                <div class="pc_tabs-content tabs_body">
+                                                    <div class="tab active" data-target="unassigned">
+                                                      <div class="tab_inner">
+                                                         <div class="tab_inner-text">
+                                                            <div class="products_head-content">
+                                                               <div class="products_head-search">
+                                                                  <form action="#" class="search_form">
+                                                                     <div class="search_form-input">
+                                                                        <input type="text" placeholder="Search product…">
+                                                                     </div>
+                                                                     <button type="cancel" class="search_form-button">
+                                                                        <svg class="icon">
+                                                                           <use xlink:href="images/sprite.svg#icon-clear"></use>
+                                                                        </svg>
+                                                                     </button>
+                                                                     <button type="submit"></button>
+                                                                     <svg class="icon">
+                                                                        <use xlink:href="images/sprite.svg#icon-search"></use>
+                                                                     </svg>
+                                                                  </form>
+                                                               </div>
+                                                            </div>
+                                                            <div class="products_body-content">
+                                                               <div class="product-selected"><span>Select all 500 products</span></div>
+                                                            </div>
+                                                            <div class="content_area overflow-auto retailer-table">
+                                                               <table class="my_list-table">
+                                                                  <thead class="nodark-bg">
+                                                                     <tr>
+                                                                        <th>
+                                                                           <div class="check-all title">
+                                                                               <label for="check-all" class="checkbox">
+                                                                                 <input type="checkbox" name="check-all" id="check-all" />
+                                                                                 <div class="checkbox-text"></div>
+                                                                              </label>
+                                                                              <div class="check-all_dropdown dropdown">
+                                                                                 <div class="dropdown_header">
+                                                                                    <button class="sort">
+                                                                                       <svg class="icon">
+                                                                                          <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                                       </svg>
+                                                                                    </button>
+                                                                                 </div>
+                                                                                 <div class="dropdown_body">
+                                                                                    <div class="dropdown_inner">
+                                                                                       <ul>
+                                                                                          <li><button>Ready for Store Items</button></li>
+                                                                                          <li><button>Pushed to Store Items</button></li>
+                                                                                          <li><button>All Items In My List</button></li>
+                                                                                       </ul>
+                                                                                    </div>
+                                                                                 </div>
+                                                                              </div>
+                                                                           </div>
+                                                                        <th>
+                                                                           <div class="title">
+                                                                              Product Name
+                                                                              <!--Add class 'active' to sort, when it active-->
+                                                                              <button class="sort">
+                                                                                 <svg class="icon">
+                                                                                    <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                                 </svg>
+                                                                              </button>
+                                                                           </div>
+                                                                        </th>
+                                                                        <th>
+                                                                           <div class="title">
+                                                                              Category
+                                                                              <!--Add class 'active' to sort, when it active-->
+                                                                              <button class="sort">
+                                                                                 <svg class="icon">
+                                                                                    <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                                 </svg>
+                                                                              </button>
+                                                                           </div>
+                                                                        </th>
+                                                                        <th>
+                                                                           <div class="title my_list-product-tag-head">
+                                                                              Tag
+                                                                              <!--Add class 'active' to sort, when it active-->
+                                                                              <button class="sort">
+                                                                                 <svg class="icon">
+                                                                                    <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                                 </svg>
+                                                                              </button>
+                                                                           </div>
+                                                                        </th>
+                                                                        
+                                                                      
+                                                                        <th>
+                                                                           <div class="title">
+                                                                              Stock
+                                                                              <!--Add class 'active' to sort, when it active-->
+                                                                              <button class="sort">
+                                                                                 <svg class="icon">
+                                                                                    <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                                 </svg>
+                                                                              </button>
+                                                                           </div>
+                                                                        </th>
+                                                                        <th>
+                                                                           <div class="title">
+                                                                              WSP 
+                                                                              <div class="tooltip">
+                                                                                 <div class="tooltip-icon tooltip-icon-info">
+                                                                                    <svg class="icon">
+                                                                                       <use xlink:href="images/sprite.svg#icon-info"></use>
+                                                                                    </svg>
+                                                                                 </div>
+                                                                                 <div class="tooltip_text tt-right">
+                                                                                    <p>The WSP is an approximate wholesale pricing and can change during brand connect approval</p>
+                                                                                 </div>
+                                                                              </div>
+                                                                           </div>
+                                                                        </th>
+                                                                     </tr>
+                                                                  </thead>
+                                                                  <tbody>
+                                                                     <tr>
+                                                                        <td>
+                                                                           <label for="check-1" class="checkbox">
+                                                                              <input type="checkbox" name="check-1" id="check-1" checked />
+                                                                              <div class="checkbox-text"></div>
+                                                                           </label>
+                                                                        </td>
+                                                                        <td>
+                                                                           <div class="my_list-product">
+                                                                              <div class="my_list-product-image">
+                                                                                 <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                                                              </div>
+                                                                              <a href="#" class="my_list-product-title">
+                                                                              Summer Activities 
+                                                                              </a>
+                                                                           </div>
+                                                                        </td>
+                                                                        <td>
+                                                                           <div>Baby & Kids</div>
+                                                                        </td>
+                                                                          <td>
+                                                                           <div class="my_list-product-tag">Chips</div>
+                                                                        </td>
+                                                                        <td>
+                                                                           <div>155</div>
+                                                                        </td>
+                                                                        <td>
+                                                                           <div class="text-bold">$5.00-$7.50</div>
+                                                                        </td>
+                                                                     </tr>
+                                                                     <tr>
+                                                                        <td>
+                                                                           <label for="check-2" class="checkbox">
+                                                                              <input type="checkbox" name="check-2" id="check-2" />
+                                                                              <div class="checkbox-text"></div>
+                                                                           </label>
+                                                                        </td>
+                                                                        <td>
+                                                                           <div class="my_list-product">
+                                                                              <div class="my_list-product-image">
+                                                                                 <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                                                              </div>
+                                                                              <a href="#" class="my_list-product-title">
+                                                                              Summer Activities Chips for Kids, 4 variants
+                                                                              </a>
+                                                                           </div>
+                                                                        </td>
+                                                                        <td>
+                                                                           <div>Baby & Kids</div>
+                                                                        </td>
+                                                                          <td>
+                                                                           <div class="my_list-product-tag">Chips, Summer,  Summer Activities, Summer Toys</div>
+                                                                        </td>
+                                                                        <td>
+                                                                           <div>999</div>
+                                                                        </td>
+                                                                        
+                                                                       
+                                                                        <td>
+                                                                           <div class="text-bold">$5.00-$7.50</div>
+                                                                        </td>
+                                                                     </tr>
+                                                                     <tr>
+                                                                        <td>
+                                                                           <label for="check-3" class="checkbox">
+                                                                              <input type="checkbox" name="check-3" id="check-3" />
+                                                                              <div class="checkbox-text"></div>
+                                                                           </label>
+                                                                        </td>
+                                                                        <td>
+                                                                           <div class="my_list-product">
+                                                                              <div class="my_list-product-image">
+                                                                                 <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                                                              </div>
+                                                                              <a href="#" class="my_list-product-title">
+                                                                              Summer Activities Chips for Kids, 4 variants
+                                                                              </a>
+                                                                           </div>
+                                                                        </td>
+                                                                        <td>
+                                                                           <div>Baby & Kids</div>
+                                                                        </td>
+                                                                           <td>
+                                                                           <div class="my_list-product-tag">Chips, Summer,  Summer Activities, Summer Toys</div>
+                                                                        </td>
+                                                                        <td>
+                                                                           <div>999</div>
+                                                                        </td>
+                                                                       
+                                                                       
+                                                                        <td>
+                                                                           <div class="text-bold">$5.00-$7.50</div>
+                                                                        </td>
+                                                                     </tr>
+                                                                      
+                                                                  </tbody>
+                                                               </table>
+                                                               <div class="pagination_wrap mt-0">
+                                                                  <div class="pagination">
+                                                                     <div class="pagination_per">
+                                                                        <select name="per" id="per">
+                                                                           <option value="10">10</option>
+                                                                           <option value="20" selected="">20</option>
+                                                                           <option value="50">50</option>
+                                                                           <option value="100">100</option>
+                                                                        </select>
+                                                                        <div class="pagination-title">items per page</div>
+                                                                     </div>
+                                                                     <div class="pagination_nav">
+                                                                        <button class="pagination-arrow pagination-arrow-prev">
+                                                                           <svg class="icon">
+                                                                              <use href="images/sprite.svg#icon-chevron--left"></use>
+                                                                           </svg>
+                                                                        </button>
+                                                                        <div class="pagination-current">
+                                                                           <input type="text" value="1">
+                                                                        </div>
+                                                                        <button class="pagination-arrow pagination-arrow-next">
+                                                                           <svg class="icon">
+                                                                              <use href="images/sprite.svg#icon-chevron--right"></use>
+                                                                           </svg>
+                                                                        </button>
+                                                                        <div class="pagination-title">of 10 pages</div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="tab" data-target="assigned">
+                                                      <div class="tab_inner">
+                                                         <div class="tab_inner-text">
+                                                            <div class="products_head-content">
+                                                               <div class="title">
+                                                                  <h3 class="p-assigned-title">25 products assigned</h3>
+                                                               </div>
+                                                               <div class="products_head-search">
+                                                                  <form action="#" class="search_form">
+                                                                     <div class="search_form-input">
+                                                                        <input type="text" placeholder="Search product…">
+                                                                     </div>
+                                                                     <button type="cancel" class="search_form-button">
+                                                                        <svg class="icon">
+                                                                           <use xlink:href="images/sprite.svg#icon-clear"></use>
+                                                                        </svg>
+                                                                     </button>
+                                                                     <button type="submit"></button>
+                                                                     <svg class="icon">
+                                                                        <use xlink:href="images/sprite.svg#icon-search"></use>
+                                                                     </svg>
+                                                                  </form>
+                                                               </div>
+                                                            </div>
+                                                            <div class="products_body-content">
+                                                               <div class="product-selected"><span>Select all 500 products</span></div>
+                                                            </div>
+                                                            <div class="content_area overflow-auto retailer-table">
+                                                               <table class="my_list-table fixed-tablebody">
+                                                                  <thead class="sticky-thead">
+                    <tr>
+                      <th>
+                        <!--Add class 'active' to 'check-all' for 'grey background'-->
+                        <div class="check-all">
+                          <label for="check-all" class="checkbox">
+                            <input type="checkbox" name="check-all" id="check-all">
+                            <div class="checkbox-text"></div>
+                          </label>
+                          <div class="check-all_dropdown dropdown">
+                            <div class="dropdown_header">
+                              <svg class="icon">
+                                <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                              </svg>
+                            </div>
+                            <div class="dropdown_body">
+                              <div class="dropdown_inner">
+                                <ul>
+                                  <li><button>All items in this page</button></li>
+                                  <li><button>All my products</button></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </th>
+                      <th class="procuct-column">
+                        <div class="txt">
+                          Product Name
+                          <!--Add class 'active' to sort, when it active-->
+                          <button class="sort">
+                            <svg class="icon">
+                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </th>
+                      <th>
+                        <div class="txt brand-status">
+                          Status
+                          <!--Add class 'active' to sort, when it active-->
+                          <button class="sort info">
+                            <svg class="icon stroke-unset">
+                              <use xlink:href="images/sprite.svg#icon-info-blue"></use>
+                            </svg>
+                          </button>
+                          <button class="sort">
+                            <svg class="icon">
+                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </th>
+                      <th>
+                        <div class="txt">
+                          Category
+                          <!--Add class 'active' to sort, when it active-->
+                          <button class="sort">
+                            <svg class="icon">
+                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </th>
+                      <th>
+                        <div class="txt">Tags</div>
+                      </th>
+                      <th>
+                        <div class="txt">
+                          Stock
+                          <!--Add class 'active' to sort, when it active-->
+                          <div class="tooltip">
+                            <div class="tooltip-icon tooltip-icon-info">
+                              <svg class="icon stroke-unset">
+                                <use xlink:href="images/sprite.svg#icon-sync"></use>
+                              </svg>
+                            </div>
+                            <div class="tooltip_text"><p>Stock level is not editable if Stock Sync is turned ON in the Setings section. Turn it off of you want to edit stock level and manage that manually</p></div>
+                          </div>
+                          <button class="sort">
+                            <svg class="icon">
+                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </th>
+                      <th>
+                        <div class="txt sales">
+                          Sales
+                          <!--Add class 'active' to sort, when it active-->
+                          <div class="check-all_dropdown dropdown">
+                            <div class="dropdown_header">
+                              <svg class="icon">
+                                <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                              </svg>
+                            </div>
+                            <div class="dropdown_body">
+                              <div class="dropdown_inner">
+                                <ul>
+                                  <li><button><svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-most"></use>
+                                  </svg> Most Sales First ($)</button></li>
+                                  <li><button><svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-least"></use>
+                                  </svg>Least Sales First ($)</button></li>
+                                  <li><button> <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-most"></use>
+                                  </svg>Most Units Sold First</button></li>
+                                  <li><button><svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-least"></use>
+                                  </svg>Least Units Sold First</button></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </th>
+                      <th>
+                        <div class="txt">
+                          Retailers
+                          <!--Add class 'active' to sort, when it active-->
+                          <button class="sort">
+                            <svg class="icon">
+                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </th>
+                      <th>
+                        <div class="txt">
+                          Last Synced
+                          <!--Add class 'active' to sort, when it active-->
+                          <button class="sort">
+                            <svg class="icon">
+                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </th>
+                      <th>
+                        <div class="txt">
+                          Added
+                          <!--Add class 'active' to sort, when it active-->
+                          <button class="sort">
+                            <svg class="icon">
+                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </th>
+                      <th>
+                        <div class="action-button">
+                          <button class="left">
+                            <svg class="icon">
+                              <use xlink:href="images/sprite.svg#icon-chevron--left"></use>
+                            </svg>
+                          </button>
+                          <button class="right active">
+                            <svg class="icon">
+                              <use xlink:href="images/sprite.svg#icon-chevron--right"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </th>
+                    </tr>
+                      
+                  </thead>
+                                                                  <tbody>
+                    <tr class="notify">
+                      <td>
+                       1
+                      </td>
+                      <td>
+                       2
+                      </td>
+                      <td>
+                          3
+                      </td>
+                      <td>
+                         4
+                      </td>
+                      <td>
+                         5
+                      </td>
+                      <td>
+                       6
+                      </td>
+                      <td>
+                         7
+                      </td>
+                      <td>
+                        8
+                      </td>
+                      <td>
+                        9
+                      </td>
+                      <td>
+                       10
+                      </td>
+                      <td>
+                        11
+                      </td>
+                    </tr>
+
+                                                                       <tr class="notify">
+                      <td>
+                       1
+                      </td>
+                      <td>
+                       2
+                      </td>
+                      <td>
+                          3
+                      </td>
+                      <td>
+                         4
+                      </td>
+                      <td>
+                         5
+                      </td>
+                      <td>
+                       6
+                      </td>
+                      <td>
+                         7
+                      </td>
+                      <td>
+                        8
+                      </td>
+                      <td>
+                        9
+                      </td>
+                      <td>
+                       10
+                      </td>
+                      <td>
+                        11
+                      </td>
+                    </tr>
+                                                                       <tr class="notify">
+                      <td>
+                       1
+                      </td>
+                      <td>
+                       2
+                      </td>
+                      <td>
+                          3
+                      </td>
+                      <td>
+                         4
+                      </td>
+                      <td>
+                         5
+                      </td>
+                      <td>
+                       6
+                      </td>
+                      <td>
+                         7
+                      </td>
+                      <td>
+                        8
+                      </td>
+                      <td>
+                        9
+                      </td>
+                      <td>
+                       10
+                      </td>
+                      <td>
+                        11
+                      </td>
+                    </tr>
+                                                                       <tr class="notify">
+                      <td>
+                       1
+                      </td>
+                      <td>
+                       2
+                      </td>
+                      <td>
+                          3
+                      </td>
+                      <td>
+                         4
+                      </td>
+                      <td>
+                         5
+                      </td>
+                      <td>
+                       6
+                      </td>
+                      <td>
+                         7
+                      </td>
+                      <td>
+                        8
+                      </td>
+                      <td>
+                        9
+                      </td>
+                      <td>
+                       10
+                      </td>
+                      <td>
+                        11
+                      </td>
+                    </tr>
+                                                                       <tr class="notify">
+                      <td>
+                       1
+                      </td>
+                      <td>
+                       2
+                      </td>
+                      <td>
+                          3
+                      </td>
+                      <td>
+                         4
+                      </td>
+                      <td>
+                         5
+                      </td>
+                      <td>
+                       6
+                      </td>
+                      <td>
+                         7
+                      </td>
+                      <td>
+                        8
+                      </td>
+                      <td>
+                        9
+                      </td>
+                      <td>
+                       10
+                      </td>
+                      <td>
+                        11
+                      </td>
+                    </tr>
+                                                                       <tr class="notify">
+                      <td>
+                       1
+                      </td>
+                      <td>
+                       2
+                      </td>
+                      <td>
+                          3
+                      </td>
+                      <td>
+                         4
+                      </td>
+                      <td>
+                         5
+                      </td>
+                      <td>
+                       6
+                      </td>
+                      <td>
+                         7
+                      </td>
+                      <td>
+                        8
+                      </td>
+                      <td>
+                        9
+                      </td>
+                      <td>
+                       10
+                      </td>
+                      <td>
+                        11
+                      </td>
+                    </tr>
+                                                                       <tr class="notify">
+                      <td>
+                       1
+                      </td>
+                      <td>
+                       2
+                      </td>
+                      <td>
+                          3
+                      </td>
+                      <td>
+                         4
+                      </td>
+                      <td>
+                         5
+                      </td>
+                      <td>
+                       6
+                      </td>
+                      <td>
+                         7
+                      </td>
+                      <td>
+                        8
+                      </td>
+                      <td>
+                        9
+                      </td>
+                      <td>
+                       10
+                      </td>
+                      <td>
+                        11
+                      </td>
+                    </tr>
+                                                                       <tr class="notify">
+                      <td>
+                       1
+                      </td>
+                      <td>
+                       2
+                      </td>
+                      <td>
+                          3
+                      </td>
+                      <td>
+                         4
+                      </td>
+                      <td>
+                         5
+                      </td>
+                      <td>
+                       6
+                      </td>
+                      <td>
+                         7
+                      </td>
+                      <td>
+                        8
+                      </td>
+                      <td>
+                        9
+                      </td>
+                      <td>
+                       10
+                      </td>
+                      <td>
+                        11
+                      </td>
+                    </tr>
+                                                                       <tr class="notify">
+                      <td>
+                       1
+                      </td>
+                      <td>
+                       2
+                      </td>
+                      <td>
+                          3
+                      </td>
+                      <td>
+                         4
+                      </td>
+                      <td>
+                         5
+                      </td>
+                      <td>
+                       6
+                      </td>
+                      <td>
+                         7
+                      </td>
+                      <td>
+                        8
+                      </td>
+                      <td>
+                        9
+                      </td>
+                      <td>
+                       10
+                      </td>
+                      <td>
+                        11
+                      </td>
+                    </tr>
+                                                                       <tr class="notify">
+                      <td>
+                       1
+                      </td>
+                      <td>
+                       2
+                      </td>
+                      <td>
+                          3
+                      </td>
+                      <td>
+                         4
+                      </td>
+                      <td>
+                         5
+                      </td>
+                      <td>
+                       6
+                      </td>
+                      <td>
+                         7
+                      </td>
+                      <td>
+                        8
+                      </td>
+                      <td>
+                        9
+                      </td>
+                      <td>
+                       10
+                      </td>
+                      <td>
+                        11
+                      </td>
+                    </tr>
+                                                                       <tr class="notify">
+                      <td>
+                       1
+                      </td>
+                      <td>
+                       2
+                      </td>
+                      <td>
+                          3
+                      </td>
+                      <td>
+                         4
+                      </td>
+                      <td>
+                         5
+                      </td>
+                      <td>
+                       6
+                      </td>
+                      <td>
+                         7
+                      </td>
+                      <td>
+                        8
+                      </td>
+                      <td>
+                        9
+                      </td>
+                      <td>
+                       10
+                      </td>
+                      <td>
+                        11
+                      </td>
+                    </tr>
+                                                                       <tr class="notify">
+                      <td>
+                       1
+                      </td>
+                      <td>
+                       2
+                      </td>
+                      <td>
+                          3
+                      </td>
+                      <td>
+                         4
+                      </td>
+                      <td>
+                         5
+                      </td>
+                      <td>
+                       6
+                      </td>
+                      <td>
+                         7
+                      </td>
+                      <td>
+                        8
+                      </td>
+                      <td>
+                        9
+                      </td>
+                      <td>
+                       10
+                      </td>
+                      <td>
+                        11
+                      </td>
+                    </tr>
+                                                                       <tr class="notify">
+                      <td>
+                       1
+                      </td>
+                      <td>
+                       2
+                      </td>
+                      <td>
+                          3
+                      </td>
+                      <td>
+                         4
+                      </td>
+                      <td>
+                         5
+                      </td>
+                      <td>
+                       6
+                      </td>
+                      <td>
+                         7
+                      </td>
+                      <td>
+                        8
+                      </td>
+                      <td>
+                        9
+                      </td>
+                      <td>
+                       10
+                      </td>
+                      <td>
+                        11
+                      </td>
+                    </tr>
+                                                                       <tr class="notify">
+                      <td>
+                       1
+                      </td>
+                      <td>
+                       2
+                      </td>
+                      <td>
+                          3
+                      </td>
+                      <td>
+                         4
+                      </td>
+                      <td>
+                         5
+                      </td>
+                      <td>
+                       6
+                      </td>
+                      <td>
+                         7
+                      </td>
+                      <td>
+                        8
+                      </td>
+                      <td>
+                        9
+                      </td>
+                      <td>
+                       10
+                      </td>
+                      <td>
+                        11
+                      </td>
+                    </tr>
+                                                                       <tr class="notify">
+                      <td>
+                       1
+                      </td>
+                      <td>
+                       2
+                      </td>
+                      <td>
+                          3
+                      </td>
+                      <td>
+                         4
+                      </td>
+                      <td>
+                         5
+                      </td>
+                      <td>
+                       6
+                      </td>
+                      <td>
+                         7
+                      </td>
+                      <td>
+                        8
+                      </td>
+                      <td>
+                        9
+                      </td>
+                      <td>
+                       10
+                      </td>
+                      <td>
+                        11
+                      </td>
+                    </tr>
+                                                                       <tr class="notify">
+                      <td>
+                       1
+                      </td>
+                      <td>
+                       2
+                      </td>
+                      <td>
+                          3
+                      </td>
+                      <td>
+                         4
+                      </td>
+                      <td>
+                         5
+                      </td>
+                      <td>
+                       6
+                      </td>
+                      <td>
+                         7
+                      </td>
+                      <td>
+                        8
+                      </td>
+                      <td>
+                        9
+                      </td>
+                      <td>
+                       10
+                      </td>
+                      <td>
+                        11
+                      </td>
+                    </tr>
+                                                                       <tr class="notify">
+                      <td>
+                       1
+                      </td>
+                      <td>
+                       2
+                      </td>
+                      <td>
+                          3
+                      </td>
+                      <td>
+                         4
+                      </td>
+                      <td>
+                         5
+                      </td>
+                      <td>
+                       6
+                      </td>
+                      <td>
+                         7
+                      </td>
+                      <td>
+                        8
+                      </td>
+                      <td>
+                        9
+                      </td>
+                      <td>
+                       10
+                      </td>
+                      <td>
+                        11
+                      </td>
+                    </tr>
+                                                                       <tr class="notify">
+                      <td>
+                       1
+                      </td>
+                      <td>
+                       2
+                      </td>
+                      <td>
+                          3
+                      </td>
+                      <td>
+                         4
+                      </td>
+                      <td>
+                         5
+                      </td>
+                      <td>
+                       6
+                      </td>
+                      <td>
+                         7
+                      </td>
+                      <td>
+                        8
+                      </td>
+                      <td>
+                        9
+                      </td>
+                      <td>
+                       10
+                      </td>
+                      <td>
+                        11
+                      </td>
+                    </tr>
+                                                                      
+                   
+                  </tbody>
+                                                               </table>
+<!--
+                                                               <div class="pagination_wrap mt-0 border-top">
+                                                                  <div class="pagination">
+                                                                     <div class="pagination_per">
+                                                                        <select name="per" id="per">
+                                                                           <option value="10">10</option>
+                                                                           <option value="20" selected="">20</option>
+                                                                           <option value="50">50</option>
+                                                                           <option value="100">100</option>
+                                                                        </select>
+                                                                        <div class="pagination-title">items per page</div>
+                                                                     </div>
+                                                                     <div class="pagination_nav">
+                                                                        <button class="pagination-arrow pagination-arrow-prev">
+                                                                           <svg class="icon">
+                                                                              <use href="images/sprite.svg#icon-chevron--left"></use>
+                                                                           </svg>
+                                                                        </button>
+                                                                        <div class="pagination-current">
+                                                                           <input type="text" value="1">
+                                                                        </div>
+                                                                        <button class="pagination-arrow pagination-arrow-next">
+                                                                           <svg class="icon">
+                                                                              <use href="images/sprite.svg#icon-chevron--right"></use>
+                                                                           </svg>
+                                                                        </button>
+                                                                        <div class="pagination-title">of 10 pages</div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+-->
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                   
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </main>
+         <footer class="footer">
+         </footer>
+      </div>
+      <script src="./js/vendor.min.js" defer></script>
+      <script
+         src="https://code.jquery.com/jquery-3.6.0.min.js"
+         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+         crossorigin="anonymous"
+         ></script>
+      <script src="../brand-product/js/app.min.js" defer></script>
+   </body>
+</html>

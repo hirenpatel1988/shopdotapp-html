@@ -14,75 +14,82 @@
 
   <link media="all" rel="stylesheet" href="./css/vendor.min.css">
   <link media="all" rel="stylesheet" href="./css/styles.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bcryptjs@2.4.3/dist/bcrypt.js"></script>
+
 </head>
 
 
 <body class="sign-page">
-<div class="wrapper">
-  <header class="header">
+  <div class="wrapper">
+    <header class="header">
 
-    <div class="container header-container">
-      <div class="text-center">
-        <h1>Sign In</h1>
-      </div>
-    </div>
-
-    <div class="header__logo">
-      <picture><img src="images/logos/logo-main.png" alt="Shop Dot"></picture>
-    </div>
-
-  </header>
-
-  <main class="content">
-    <section class="section sign sign-@@cls">
-      <div class="container">
-        <div class="sign__content">
-          
-
-          
-          
-          
-
-          <form action="#" class="sign__form form">
-            <div class="form__field form__field--floating-label">
-              <input type="email" name="email" id="email" placeholder="Email address" required>
-              <label for="email">Email address</label>
-            </div>
-            <div class="form__field form__field--floating-label">
-              <input class="password" type="password" name="password" id="password" placeholder="Create password" required>
-              <label for="password">Enter password</label>
-              <!--for show password-message add class 'show'-->
-              <div class="password-message">Password is <span>strong!</span></div>
-              <span class="password-show"></span>
-            </div>
-            <div class="form__field buttons">
-              <!--disabled by default, remove it when do validation-->
-              <button type="submit" class="button">Sign In</button>
-            </div>
-            <div class="form__field helpers">
-              <div class="forgot text-center">
-                <a href="sign-reset.html">Forgot Password</a>
-              </div>
-            </div>
-          </form>
-          
-          
-
-          
-
-          
-
-          
+      <div class="container header-container">
+        <div class="text-center">
+          <h1>Sign In</h1>
         </div>
       </div>
-    </section>
 
-  </main>
-  <footer class="footer"></footer>
-</div>
+      <div class="header__logo">
+        <picture><img src="images/logos/logo-main.png" alt="Shop Dot"></picture>
+      </div>
 
-<script src="./js/vendor.min.js" defer></script>
-<script src="./js/app.min.js" defer></script>
+    </header>
+
+    <main class="content">
+      <section class="section sign sign-@@cls">
+        <div class="container">
+          <div class="sign__content">
+            <form class="sign__form form" onsubmit="return false;">
+              <!-- <div class="form__field form__field--floating-label">
+                <input type="email" name="email" id="email" placeholder="Email address" required>
+                <label for="email">Email address</label>
+              </div> -->
+              <div class="form__field form__field--floating-label">
+                <input class="password" type="password" name="password" id="password" placeholder="Create password"
+                  required>
+                <label for="password">Enter password</label>
+                <!--for show password-message add class 'show'-->
+                <div class="password-message">Password is <span>strong!</span></div>
+                <span class="password-show"></span>
+              </div>
+              <div class="form__field buttons">
+                <!--disabled by default, remove it when do validation-->
+                <button type="submit" class="button" onclick="handleLogin()">Sign In</button>
+              </div>
+              <div class="form__field helpers">
+                <div class="forgot text-center">
+                  <a href="sign-reset.html">Forgot Password</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer"></footer>
+  </div>
+
+  <script src="./js/vendor.min.js" defer></script>
+  <script src="./js/app.min.js" defer></script>
+  <script>
+    const handleLogin = async () => {
+      const pass = document.getElementById('password').value;
+      if (pass && pass.trim().length > 0) {
+        const bcrypt = dcodeIO.bcrypt;
+        const salt = bcrypt.genSaltSync(10);
+        /** Encrypt password */
+        const passHash = await bcrypt.hash(pass, salt);
+        const obj = {
+          pass: passHash
+        }
+        sessionStorage.setItem('shopdotAdmin', JSON.stringify(obj))
+        window.location.href = "http://vadgamachetan.com/shopdot/";
+      } else {
+        alert("Password is required")
+      }
+    }
+  </script>
 
 </body>
 
