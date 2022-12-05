@@ -3,7 +3,7 @@
    <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Brand Setting - Add User</title>
+      <title>Retailer Setting - Add User</title>
       <link
          rel="icon"
          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
@@ -24,6 +24,7 @@
          <header class="header mp-header">
             <div class="header_block header_block-top mp-header_block-top">
                <div class="header_container">
+                   <div class="h-left">
                   <!--header logo-->
                   <div class="header_logo">
                      <a href="index.html" class="logo">
@@ -40,27 +41,12 @@
                     <li class="menu_item">
                       <a href="products-all.html" class="menu_link ">Products</a>
                     </li>
-                    <li class="menu_item"><a href="#" class="menu_link">My List</a></li>
+                    
                     <li class="menu_item"><a href="#" class="menu_link">Orders</a></li>
                   </ul>
                 </div>
                   <!--header search-->
-                  <div class="header_search search">
-                     <form action="#" class="search_form">
-                        <div class="search_form-input">
-                           <input type="text" placeholder="Search…" />
-                        </div>
-                        <button type="cancel" class="search_form-button">
-                           <svg class="icon">
-                              <use xlink:href="images/sprite.svg#icon-clear"></use>
-                           </svg>
-                        </button>
-                        <button type="submit"></button>
-                        <svg class="icon">
-                           <use xlink:href="images/sprite.svg#icon-search"></use>
-                        </svg>
-                     </form>
-                  </div>
+                   </div>
                   <!--header actions-->
                   <div class="header_actions">
                      <div class="header_usermenu">
@@ -69,11 +55,7 @@
                               <div class="dropdown_header-text">
                                  Hi, <span class="username">Jane</span>
                               </div>
-                              <div class="dropdown_header-icon">
-                                 <svg class="icon">
-                                    <use xlink:href="images/sprite.svg#icon-retailers"></use>
-                                 </svg>
-                              </div>
+                            
                               <div class="dropdown_header-chevron">
                                  <svg class="icon">
                                     <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
@@ -91,41 +73,7 @@
                            </div>
                         </div>
                      </div>
-                     <button class="header_action header_action-mails">
-                        <svg class="icon">
-                           <use xlink:href="images/sprite.svg#icon-mail"></use>
-                        </svg>
-                        <div class="text visible">5</div>
-                     </button>
-                     <button class="header_action header_action-notifications">
-                        <!--Changed icon to dropdown, to show list of 'updates'-->
-                        <div class="dropdown">
-                           <div class="dropdown_header">
-                              <svg class="icon">
-                                 <use xlink:href="images/sprite.svg#icon-notification"></use>
-                              </svg>
-                           </div>
-                           <div class="dropdown_body">
-                              <div class="dropdown_inner">
-                                 <ul>
-                                    <li>
-                                       <span>Summer Activities Chips for Kids</span> <br>
-                                       updated Dec.15, 2021, 07:56 PM
-                                    </li>
-                                    <li>
-                                       <span>Summer Activities Chips for Kids</span> <br>
-                                       updated Dec.15, 2021, 07:56 PM
-                                    </li>
-                                    <li>
-                                       <span>Summer Activities Chips for Kids</span> <br>
-                                       updated Dec.15, 2021, 07:56 PM
-                                    </li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="text visible">1</div>
-                     </button>
+                 
                      <div class="header_action header_action-invite">
                         <button class="button invite-retailer">Invite Brand</button>
                      </div>
@@ -139,8 +87,8 @@
                 <aside class="filters mp-filter">
                   <div class="filters_wrap">
                      <div class="filters_block filters_block-body">
-                        <div class="filter open filter-by-products">
-                           <div class="filter_body filter_body_custom">
+                        <div class="filter-by-products">
+                            <div class="link-sidebar">
                               <div class="tab_wrap">
                                  <div class="setting-tab-title">
                                     Setting
@@ -151,13 +99,15 @@
                                     <span class="line line2"></span>
                                     <span class="line line3"></span>
                                  </div>
-                                 <div class="pc_tabs-menu tab_menu">
-                                      <a href="#" data-link="Account" class="tab-links">Retailer Profile</a>
-                                     <a href="#" data-link="Billing" class="tab-links">Billing</a>
-                                     <a href="#" data-link="Integration" class="tab-links">Integration</a>
+                                <div class="pc_tabs-menu tab_menu">
+                                    <a href="#" data-link="Account" class="tab-links required">Retailer Profile</a>
+                                     <div class="tooltip_text not-available-tooltip">
+                                       <p>This is a mandatory setting that is part of the onboarding process.</p>
+                                    </div>
+                                    <a href="#" data-link="Billing" class="tab-links">Billing</a>
                                     <a href="#" data-link="Users" class="tab-links active">Users</a>
-                                     <a href="#" data-link="Security" class="tab-links">Security</a>
-                                    <a href="#" data-link="EmailPreferences" class="tab-links">Alerts and Notifications</a>
+                                    <a href="#" data-link="Security" class="tab-links">Security</a>
+                                    <a href="#" data-link="EmailPreferences" class="tab-links">Notifications</a>
                                  </div>
                               </div>
                            </div>
@@ -185,16 +135,17 @@
                                     <h2>User Info</h2>
                                     <div class="form-area">
                                       <div class="form-input">
-                                         <label for="" class="form-label">First name</label>
-                                         <input type="text" class="form-control" id="" placeholder="Enter user first name">
+                                         <label for="" class="form-label">First name <span class="asterisk-red">*</span></label>
+                                         <input type="text" class="form-control" id="" placeholder="">
                                       </div>
                                       <div class="form-input">
-                                         <label for="" class="form-label">Last name</label>
-                                         <input type="text" class="form-control" id="" placeholder="Enter user last name">
+                                         <label for="" class="form-label">Last name <span class="asterisk-red">*</span></label>
+                                         <input type="text" class="form-control" id="" placeholder="">
                                       </div>
-                                       <div class="form-input">
-                                          <label for="" class="form-label">Email address</label>
-                                          <input type="email" class="form-control" id="" placeholder="Enter user email address">
+                                       <div class="form-input mb-4">
+                                          <label for="" class="form-label">Email address <span class="asterisk-red">*</span></label>
+                                          <input type="email" class="form-control mb-0 is-invalid" id="" placeholder="">
+                                           <small class="invalid-feedback mb-0">Email address already exists</small>
                                        </div>
                                         <div class="form-input form-submit">
                                           <button class="button button-grey cancel">Cancel</button>
@@ -232,6 +183,31 @@
                    </div>
                   <div class="action-footer">
                      <button class="button px-6">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+          
+          <div class="popup setting-popup delete-user-modal">
+            <div class="popup_wrapper">
+               <div class="popup_content">
+                  <div class="popup-close">
+                     <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-close"></use>
+                     </svg>
+                  </div>
+                  <div class="popup-flex">
+                     <div class="icon-center">
+                        <svg class="icon">
+                           <use xlink:href="images/sprite.svg#confirmtation-round"></use>
+                        </svg>
+                     </div>
+                     <h1>Confirmation Required</h1>
+                      <p>Are you sure you want to remove <a href="#" class="link-text">john@jondoe.com</a>? He will lose access to your account in ShopDot.</p>
+                  </div>
+                  <div class="action-footer">
+                     <button class="button button-dark px-6">Cancel</button>
+                     <button class="button px-6 button-red">Yes</button>
                   </div>
                </div>
             </div>

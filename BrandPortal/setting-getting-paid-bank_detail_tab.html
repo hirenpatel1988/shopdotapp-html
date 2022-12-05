@@ -41,7 +41,7 @@
                      <ul class="header_menu menu">
                         <li class="menu_item"><a href="#" class="menu_link">Dashboard</a></li>
                         <li class="menu_item ">
-                           <a href="#" class="menu_link">My Products</a>
+                           <a href="#" class="menu_link">Products</a>
                         </li>
                         <li class="menu_item">
                            <div class="dropdown">
@@ -60,7 +60,7 @@
                               <div class="dropdown_body">
                                  <div class="dropdown_inner">
                                     <ul>
-                                       <li><a href="#">Approved Retailers</a></li>
+                                       <li><a href="#">Connected Retailers</a></li>
                                        <li><a href="#">Requests for Access</a></li>
                                     </ul>
                                  </div>
@@ -165,21 +165,21 @@
                <aside class="filters mp-filter">
                   <div class="filters_wrap">
                      <div class="filters_block filters_block-body">
-                        <div class="filter open filter-by-products">
-                           <div class="filter_body">
+                        <div class="filter-by-products">
+                           <div class="link-sidebar">
                               <div class="tab_wrap">
                                  <div class="setting-tab-title">
                                     Setting
                                  </div>
-                                 <div class="pc_tabs-menu tab_menu">
-                                   <a href="#" data-link="Integration" class="tab-links checked">Integration</a>
-                                    <a href="#" data-link="Account" class="tab-links required">Brand Profile</a>
+                                <div class="pc_tabs-menu tab_menu">
+                                    <a href="#" data-link="Account" class="tab-links checked">Brand Profile</a>
                                     <a href="#" data-link="Preferences" class="tab-links required">Preferences</a>
-                                    <a href="#" data-link="GettingPaid" class="tab-links required active">Getting Paid</a>
+                                    <a href="#" data-link="GettingPaid" class="tab-links active">Getting Paid</a>
                                     <a href="#" data-link="Shipping" class="tab-links required">Shipping</a>
+                                     <a href="#" data-link="Integration" class="tab-links">Integration</a>
                                     <a href="#" data-link="Users" class="tab-links">Users</a>
                                     <a href="#" data-link="Security" class="tab-links">Security</a>
-                                    <a href="#" data-link="AlertsNotifications" class="tab-links">Alerts and Notifications</a>
+                                    <a href="#" data-link="AlertsNotifications" class="tab-links">Notifications</a>
                                  </div>
                               </div>
                            </div>
@@ -230,14 +230,14 @@
                            <div class="products_head-content">
                               <div class="title">
                                  <h1>
-                                    Alerts and Notifications
+                                    Notifications
                                  </h1>
                               </div>
                            </div>
                         </div>
                         <div class="products_body">
                            <div class="content_area">
-                              Alerts and Notifications Data
+                              Notifications Data
                            </div>
                         </div>
                      </div>
@@ -291,12 +291,12 @@
                                        <div class="gp-left">
                                           <h4>Add Business Info</h4>
                                           <div class="gp-link-area">
-                                              <a href="setting-getting-paid-business_detail.html">Business details</a>
-                                             <a href="setting-getting-paid-business_representative.html">Business representative</a>
+                                              <a href="setting-getting-paid-business_detail.html">Business Details</a>
+                                             <a href="setting-getting-paid-business_representative.html">Business Representative</a>
                                           </div>
                                           <h4 class="mt-5">ADD YOUR BANK</h4>
                                           <div class="gp-link-area">
-                                             <a href="#" class="active">Bank details</a>
+                                             <a href="#" class="active">Bank Details</a>
                                           </div>
                                           <h4 class="mt-5">REVIEW AND FINISH</h4>
                                           <div class="gp-link-area">
@@ -304,56 +304,53 @@
                                           </div>
                                        </div>
                                        <div class="gp-right">
-                                          <h3 class="heading">Bank Details <span class="asterisk-red">*</span></h3>
+                                          <h3 class="heading">Bank Details</h3>
                                            <p>Link your account to seamlessly receive payouts </p>
                                           <div class="form-area">
                                             
                                              <div class="form-input mb-4">
-                                                <label for="" class="form-label">Name of the bank account holder</label>
+                                                <label for="" class="form-label">Name of the bank account holder <span class="asterisk-red">*</span></label>
                                                 <input type="text" class="form-control mb-0" id="" placeholder="">
                                              </div>
                                            
                                              <div class="form-input mb-4">
-                                                <label for="" class="form-label">Bank Account Type </label>
+                                                <label for="" class="form-label">Bank account type <span class="asterisk-red">*</span></label>
                                                 <select name="" id="">
-                                                   <option value="">Savings</option>
                                                    <option value="">Checking</option>
+                                                   <option value="">Savings</option>
                                                 </select>
                                              </div>
                                               
                                               <div class="form-input mb-4">
-                                                <label for="" class="form-label">Purpose</label>
+                                                <label for="" class="form-label">Purpose <span class="asterisk-red">*</span></label>
                                                 <select name="" id="">
-                                                   <option value="">Personal</option>
                                                    <option value="">Business</option>
+                                                   <option value="">Personal</option>
                                                 </select>
                                              </div>
                                               
                                              <div class="form-input mb-4">
-                                                <label for="" class="form-label">Account Number </label>
+                                                <label for="" class="form-label">Account number <span class="asterisk-red">*</span></label>
                                                 <input type="text" class="form-control mb-0" id="" placeholder="">
                                              </div>
                                               
                                                <div class="form-input mb-4">
-                                                <label for="" class="form-label">Routing Number</label>
+                                                <label for="" class="form-label">Routing number <span class="asterisk-red">*</span></label>
                                                 <input type="text" class="form-control mb-0" id="" placeholder="">
-                                                   <small>9-digit Routing Number of the account used for ACH transactions</small>
+                                                   <small>9-digit Routing number of the account used for ACH transactions</small>
                                              </div>
                                           </div>
                                           <div class="form-area">
                                              <div class="form-input form-submit">
-                                                <button class="button button-grey cancel">
-                                                   <svg class="icon arrow-dir rev">
-                                                      <use xlink:href="images/sprite.svg#arrow-right"></use>
-                                                   </svg>
+                                                 <a href="setting-getting-paid-business_representative.html" class="button button-grey cancel">
                                                    Back 
-                                                </button>
-                                                <button class="button">
+                                                 </a>
+                                                <a href="setting-getting-paid-review-confirm-summary.html" class="button">
                                                    Save and Next 
                                                    <svg class="icon arrow-dir">
                                                       <use xlink:href="images/sprite.svg#arrow-right"></use>
                                                    </svg>
-                                                </button>
+                                                </a>
                                              </div>
                                           </div>
                                        </div>

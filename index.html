@@ -15,7 +15,6 @@
    <link media="all" rel="stylesheet" href="assets/css/styles.min.css" />
    <script src="https://cdn.jsdelivr.net/npm/bcryptjs@2.4.3/dist/bcrypt.js"></script>
    <script src="assets/js/script.js"></script>
-
 </head>
 
 <body>
@@ -30,37 +29,8 @@
                   </a>
                </div>
                <!--header menu-->
-               <div class="header_menu-wrap">
-                  <ul class="header_menu menu">
-                     <li class="menu_item"><a href="#" class="menu_link">Home</a></li>
-                     <li class="menu_item">
-                        <a href="brands-all.html" class="menu_link ">Brands</a>
-                     </li>
-                     <li class="menu_item">
-                        <a href="products-all.html" class="menu_link ">Products</a>
-                     </li>
-                     <li class="menu_item"><a href="#" class="menu_link @@m">My List</a></li>
-                     <li class="menu_item"><a href="#" class="menu_link">Orders</a></li>
-                  </ul>
-               </div>
-               <!--header search-->
-               <div class="header_search search">
-                  <form action="#" class="search_form">
-                     <div class="search_form-input">
-                        <input type="text" placeholder="Search…" />
-                     </div>
-                     <button type="cancel" class="search_form-button">
-                        <svg class="icon">
-                           <use xlink:href="images/sprite.svg#icon-clear"></use>
-                        </svg>
-                     </button>
-                     <button type="submit"></button>
-                     <svg class="icon">
-                        <use xlink:href="images/sprite.svg#icon-search"></use>
-                     </svg>
-                  </form>
-               </div>
-               <!--header actions-->
+               
+              
                
             </div>
          </div>
@@ -85,31 +55,19 @@
                <li><a href="RetailerPortal/products-all.html" target="_blank">Products all</a></li>
                <li><a href="RetailerPortal/products-all--empty.html" target="_blank">Products all - empty</a></li>
                <li><a href="RetailerPortal/product-single.html" target="_blank">Product Single</a></li>
+<!--
                <li class="mb-5"><a href="RetailerPortal/product-single--added.html" target="_blank">Product Single -
                      added popup</a></li>
-
-               <!--
-                   <li><a href="RetailerPortal/update-products-all.html" target="_blank">Updated Products all</a></li>
-                   <li class="mb-5"><a href="RetailerPortal/update-product-single.html" target="_blank">Updated Product Single</a></li>
 -->
-
-               <b>Retailers Portal - My List</b>
-               <li><a href="RetailerPortal/my_list.html" target="_blank">My List</a></li>
-               <li><a href="RetailerPortal/my_list--empty.html" target="_blank">My List - Empty</a></li>
-               <li><a href="RetailerPortal/my_list-confirm-updates.html" target="_blank">My List - Confirm Updates</a>
-               </li>
-               <li><a href="RetailerPortal/my_list-confirm-push.html" target="_blank">My List - Confirm Push</a></li>
-               <li><a href="RetailerPortal/my_list-confirm-remove.html" target="_blank">My List - Confirm Remove</a>
-               </li>
-               <li><a href="RetailerPortal/my_list-bottom-notify.html" target="_blank">My List - Bottom Notify</a></li>
-               <li><a href="RetailerPortal/my_list-actions-show.html" target="_blank">My List - Extra actions showed</a>
-               </li>
             </ul>
             <ul>
                <b>Retailers Portal - Setting</b>
                <li><a href="RetailerPortal/retailer-setting.html" target="_blank">Setting Page</a></li>
                <li><a href="RetailerPortal/retailer-setting-add-billing.html" target="_blank">Setting Page Add
                      Billing</a></li>
+                <li><a href="RetailerPortal/retailer-setting-billing-disabled.html" target="_blank">Setting Page Billing Disabled</a></li>
+                 <li><a href="RetailerPortal/retailer-setting-add-billing-step.html" target="_blank">Setting Page Add
+                     Billing Step</a></li>
                <li class="mb-5"><a href="RetailerPortal/retailer-setting-add-user.html" target="_blank">Setting Page Add
                      User</a></li>
                <b>Retailer Portal - Orders</b>
@@ -121,10 +79,19 @@
                <li class="mb-5"><a href="RetailerPortal/cart-checkout.html" target="_blank">Checkout and Payment</a>
                </li>
 
-               <b>Onboarding Create Shopdot Account</b>
+               <b>Sign in/Sign up - Onboarding</b>
+               <li><a href="onboarding/sign-in.html" target="_blank">Sign in</a></li>
                <li><a href="onboarding/onboarding-create_account.html" target="_blank">Sign Up</a></li>
-               <li><a href="onboarding/sign-in.html" target="_blank">Sign In</a></li>
                <li><a href="onboarding/onboarding-verify_email.html" target="_blank">Verify Email</a></li>
+                <li><a href="onboarding/forgot-password.html" target="_blank">Forgot Password</a></li>
+                <li><a href="onboarding/forgot-password-sent.html" target="_blank">Forgot Password Sent</a></li>
+                
+                <li><a href="onboarding/reset-password.html" target="_blank">Reset Password</a></li>
+                <li><a href="onboarding/reset-password-error.html" target="_blank">Reset Password Error</a></li>
+                <li><a href="onboarding/reset-password-success.html" target="_blank">Reset Password Success</a></li>
+                <li><a href="onboarding/user-info.html" target="_blank">User Info</a></li>
+                <li><a href="onboarding/create_account-disable-email.html" target="_blank">Create Account Disable Email</a></li>
+                
                <li><a href="onboarding/onboarding-personalize.html" target="_blank">Personalize</a></li>
                <li><a href="onboarding/onboarding-personalize-not-supported.html" target="_blank">Personalize Not
                      Supported</a></li>
@@ -133,11 +100,13 @@
                <li class="mb-5"><a href="BrandPortal/onboarding-brand-confirm_your_settings.html" target="_blank">Brand
                      Onboarding</a></li>
                 
-                 <b>Sign in/Sign up</b>
-               <li><a href="signin/sign-in.html" target="_blank">Sign in</a></li>
-               <li><a href="signin/sign-up.html" target="_blank">Sign up</a></li>
+                 <b>Validation</b>
+               <li><a href="signin/sign-in.html" target="_blank">Validation Root</a></li>
+<!--               <li><a href="signin/sign-up.html" target="_blank">Validation page</a></li>-->
+<!--
                <li><a href="signin/forgto-password.html" target="_blank">Forgot Password</a></li>
                <li><a href="signin/sign-create.html" target="_blank">Create New Password</a></li> 
+-->
                 
              
             </ul>
@@ -202,13 +171,15 @@
             <ul>
                <b>Brand Portal - Products</b>
                <li><a href="BrandPortal/mp-product-list.html" target="_blank">List Products</a></li>
-               <li><a href="BrandPortal/mp-archived-product.html" target="_blank">Archived Products</a></li>
+<!--               <li><a href="BrandPortal/mp-archived-product.html" target="_blank">Archived Products</a></li>-->
                <li><a href="BrandPortal/mp-product-empty.html" target="_blank">No Data Products</a></li>
-               <li><a href="BrandPortal/mp-bottom-notify.html" target="_blank">Bottom Notify</a></li>
+<!--               <li><a href="BrandPortal/mp-bottom-notify.html" target="_blank">Bottom Notify</a></li>-->
                <li><a href="BrandPortal/mp-category-tag-modal.html" target="_blank">Category & Tag Modal</a></li>
                <li><a href="BrandPortal/mp-product-details.html" target="_blank">Product Details</a></li>
+<!--
                <li><a href="BrandPortal/mp-product-details-retailer.html" target="_blank">Product Details as
                      retailer</a></li>
+-->
                <li><a href="BrandPortal/mp-variants-stocks-modal.html" target="_blank">Variants Stocks Modal</a></li>
                <li><a href="BrandPortal/mp-assign-retailers-to-a-product.html" target="_blank">Allow Product for
                      Retailer Modal</a></li>
@@ -249,11 +220,20 @@
                <li><a href="email-notification/en-notification-on-removed-unfulfilled-items-from-order.html" target="_blank">On Removed Unfulfilled Items from Order</a></li>
                <li><a href="email-notification/en-notification-on-payout.html" target="_blank">On Payout</a></li>
                <li><a href="email-notification/en-notification-on-new-items-added-to-order.html" target="_blank">On new items added to order</a></li>
-               <li class="mb-5"><a href="email-notification/verification-email.html" target="_blank">Verification Email</a></li>
+               <li><a href="email-notification/verification-email.html" target="_blank">Verification Email</a></li>
+               <li><a href="email-notification/en-notification-when-an-inactive-product-was-purchased.html" target="_blank">Inactive product was purchased</a></li>
+               <li><a href="email-notification/en-notification-cancelled-order-whole-order.html" target="_blank">Cancelled Order</a></li>
+               <li><a href="email-notification/en-for-being-added-at-shopdot.html" target="_blank">On being added at ShopDot</a></li>
+                <li class="mb-5"><a href="email-notification/en-on-reset-password.html" target="_blank">Reset Password</a></li>
                 
+                <li><a href="email-notification/shopify.html" target="_blank">Sales Channel Shopify</a></li>
+<!--                <li class="mb-5"><a href="email-notification/en-request-for-connect-to-brand-email-inline.html" target="_blank">Version - Inline</a></li>-->
+                
+<!--
                <li><a href="email-notification/en-request-for-connect-to-brand-email-1.html" target="_blank">Version - 1</a></li>
                <li><a href="email-notification/en-request-for-connect-to-brand-email-2.html" target="_blank">Version - 2</a></li>
                <li><a href="email-notification/en-request-for-connect-to-brand-email-3.html" target="_blank">Version - 3</a></li>
+-->
                 
              
             </ul>

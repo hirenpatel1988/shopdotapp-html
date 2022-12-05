@@ -7,7 +7,64 @@
       <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
       <link rel="icon" href="images/favicon.ico" type="image/x-icon">
       <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap" rel="stylesheet">
-      <link href="css/style.css" rel="stylesheet">
+                   <style>
+.container{width:100%;margin-right:auto;margin-left:auto}
+@media (min-width:576px) {
+.container{max-width:540px}
+}
+@media (min-width:768px) {
+.container{max-width:959px}
+}
+body{font-family:'Mulish',sans-serif;font-weight:500;margin:0;font-size:14px;line-height:20px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:#333333;background:#FFFFFF;font-weight:500;overflow-anchor:none}
+.container{position:relative;z-index:1}
+.card-header{background-color:#fff;margin-bottom:20px;border:none}
+.card-body{-ms-flex:1 1 auto;flex:1 1 auto;padding:0;border:none}
+.card-footer{padding-top:80px}
+.logo {height: 80px;width: 96px;max-height: 80px;min-height: 80px;min-width: 96px;max-width: 96px;}
+.card{padding:15px;background:#fff}
+.left{text-align:left}
+.right{text-align:right}
+a{color:#3366CC}
+a:hover{color:#3366CC;text-decoration:none}
+.center{text-align:center}
+.mb{margin-bottom:20px}
+.mt{margin-top:20px}
+.mb-0{margin-bottom:0}
+.list li{list-style-type:none;line-height:20px;margin-bottom:7px}
+.list{padding-left:15px;margin-top:5px}
+.mt-1{margin-top:5px}
+.mt-0{margin-top:0}
+.fs-12{font-size:12px}
+.table-responsive-sm table{width:100%}
+.fw-bold{font-weight:700}
+.customer_table{padding:15px;border:1px solid #e9ecef;margin:15px 0}
+.order-table{width:100%;max-width:100%;margin-bottom:1rem;border:1px solid #e9ecef;border-collapse:collapse}
+.order-table th,.order-table td{padding:.75rem;vertical-align:top;border:1px solid #e9ecef}
+.table-clear{border:none;margin-bottom:0}
+.table-clear td{border:none;padding:.5rem .75rem}
+.grand-total td{padding:.5rem .75rem;color:#333333;font-weight:700}
+.subtotal-table{width:100%}
+.left-subtotal{width:70%}
+.right-subtotal{width:30%}
+.ws-nwp{white-space: nowrap}
+.d-flex{display: flex;justify-content: flex-end;}
+.mt-4{margin-top: 30px;}
+body{background-color:#fff}
+.card-header{background-color:#FBF5F0;padding:15px 0}
+.card-header,.center{text-align:center}
+.center-link{text-decoration:none;color:#3366CC;padding:0;border-radius:0;margin:10px 0;display:inline-block}
+
+.card{padding:0}
+.card-f{padding:10px 0;text-align:center;background-color:#FBF5F0;font-size:12px;margin-top:20px}
+@media (max-width:576px) {
+.left-subtotal{width:10%}
+.right-subtotal{width:90%}
+body{font-size:10px;line-height:14px}
+.fs-12{font-size:8px}
+.table-clear td{padding:.25rem .5rem}
+.customer_table{padding:10px}
+}
+       </style>
    </head>
    <body>
       <div class="order-recipt">
@@ -28,12 +85,15 @@
                                   <i>reference this order ID when communicating with your retailer</i>
                                   </p>
                                   <p class="mt">Order Date: <span>{Order Date}</span></p>
-                                 <p class="mt"><a href="">[View order in ShopDot]</a></p>
+                                  <p class="mt"><a href="" class="center-link">[View order in ShopDot]</a></p>
                               </td>
                            </tr>
                         </tbody>
                      </table>
                   </div>
+               </div>
+                <div class="card-footer card-f">
+                  <span>© 2022 ShopDot. All rights reserved</span>
                </div>
             </div>
          </div>

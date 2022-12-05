@@ -34,32 +34,32 @@
                              
                               <div class="category-form-input">
                                  <div class="form-input">
-                                    <input type="text" class="form-control is-invalid" id="" placeholder="Email address*">
+                                    <input type="text" class="form-control is-invalid" id="" placeholder="Email address">
                                      <small class="invalid-feedback">Email address must be in correct format</small>
 <!--                                     <small class="invalid-feedback">Email address is already registered. Please try again</small>-->
                                  </div>
                               </div>
-                              <div class="category-form-input">
-                                 <div class="form-input form-password">
-                                    <input type="password" class="form-control" id="password" placeholder="Enter password*">
-<!--
-                                    <input type="text" class="form-control is-invalid" id="" placeholder="Create password">
-                                     <small class="invalid-feedback">Must be at least 8 characters. Should have at least 1 numeric character and 1 special character</small>
--->
-                                     <span class="pwd-indicator" style="display: none">Password is strong!</span>
-                                    <a href="#" onclick="PwdFunction()">
-                                       <svg class="icon-eye">
-                                          <use xlink:href="images/sprite.svg#eye"></use>
-                                       </svg>
-                                    </a>
+                              <div class="category-form-input mb-4">
+                                 <div class="form-input">
+                                    <input type="password" class="form-control password mb-0" id="password" placeholder="Create password">
+<!--                                     <span class="pwd-indicator">Password is strong!</span>-->
+                                   <span class="password-show"></span>
                                  </div>
                               </div>
+                               
+                              <div class="form-input text-left">
+                                <a href="forgot-password.html">Forgot Password</a>
+                               </div>
                               
                              <div class="form-input mt-5 ">
                                  <a href="onboarding-verify_email.html" class="button w-100 large">
                                     Sign In
                                  </a>
                               </div>
+                               
+                                <div class="form-input mt-4">
+                               <small>Don't have a ShopDot account? Register <a href="onboarding-create_account.html">here</a></small>
+                               </div>
                            </div>
                         </div>
                      </form>

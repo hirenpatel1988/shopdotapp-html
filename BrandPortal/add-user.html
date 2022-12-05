@@ -35,7 +35,7 @@
                      <ul class="header_menu menu">
                         <li class="menu_item"><a href="#" class="menu_link">Dashboard</a></li>
                         <li class="menu_item ">
-                           <a href="#" class="menu_link">My Products</a>
+                           <a href="#" class="menu_link">Products</a>
                         </li>
                         <li class="menu_item">
                            <div class="dropdown">
@@ -52,7 +52,7 @@
                               <div class="dropdown_body">
                                  <div class="dropdown_inner">
                                     <ul>
-                                       <li><a href="#">Approved Retailers</a></li>
+                                       <li><a href="#">Connected Retailers</a></li>
                                        <li><a href="#">Requests for Access</a></li>
                                     </ul>
                                  </div>
@@ -171,13 +171,13 @@
                                  </div>
                                  <div class="pc_tabs-menu tab_menu">
                                    <a href="#" data-link="Integration" class="tab-links">Integration</a>
-                                    <a href="#" data-link="Account" class="tab-links active">Brand Profile</a>
+                                    <a href="#" data-link="Account" class="tab-links">Brand Profile</a>
                                      <a href="#" data-link="Preferences" class="tab-links">Preferences</a>
-                                     <a href="#" data-link="GettingPaid" class="tab-links active">Getting Paid</a>
+                                     <a href="#" data-link="GettingPaid" class="tab-links">Getting Paid</a>
                                      <a href="#" data-link="Shipping" class="tab-links">Shipping</a>
-                                    <a href="#" data-link="Users" class="tab-links">Users</a>
+                                    <a href="#" data-link="Users" class="tab-links active">Users</a>
                                      <a href="#" data-link="Security" class="tab-links">Security</a>
-                                    <a href="#" data-link="AlertsNotifications" class="tab-links">Alerts and Notifications</a>
+                                    <a href="#" data-link="AlertsNotifications" class="tab-links">Notifications</a>
                                  </div>
                               </div>
                            </div>
@@ -217,20 +217,18 @@
                                     <h2>User Info</h2>
                                     <div class="form-area">
                                       <div class="form-input">
-                                         <label for="" class="form-label">First name</label>
-                                         <input type="text" class="form-control" id="" placeholder="Enter user first name">
+                                         <label for="" class="form-label">First name <span class="asterisk-red">*</span></label>
+                                         <input type="text" class="form-control" id="" placeholder="">
                                       </div>
                                       <div class="form-input">
-                                         <label for="" class="form-label">Last name</label>
-                                         <input type="text" class="form-control" id="" placeholder="Enter user last name">
+                                         <label for="" class="form-label">Last name <span class="asterisk-red">*</span></label>
+                                         <input type="text" class="form-control" id="" placeholder="">
                                       </div>
-                                       <div class="form-input">
-                                          <label for="" class="form-label">Email address</label>
-                                          <input type="email" class="form-control" id="" placeholder="Enter user email address">
+                                       <div class="form-input mb-4">
+                                          <label for="" class="form-label">Email address <span class="asterisk-red">*</span></label>
+                                          <input type="email" class="form-control mb-0 is-invalid" id="" placeholder="">
+                                           <small class="invalid-feedback mb-0">Email address already exists</small>
                                        </div>
-                                        <div class="form-validation">
-                                        The email address is already existing.
-                                        </div>
                                         <div class="form-input form-submit">
                                           <button class="button button-grey cancel">Cancel</button>
                                           <button class="button user-added">Save</button>
@@ -249,7 +247,7 @@
                            <div class="products_head-content">
                               <div class="title">
                                  <h1>
-                                    Alerts and Notifications
+                                    Notifications
                                  </h1>
                               </div>
                            </div>

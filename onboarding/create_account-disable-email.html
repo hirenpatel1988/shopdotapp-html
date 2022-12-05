@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Create Your ShopDot Account</title>
+      <link
+         rel="icon"
+         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
+         />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap"
+         rel="stylesheet"
+         />
+      <link media="all" rel="stylesheet" href="./css/vendor.min.css" />
+      <link media="all" rel="stylesheet" href="./css/styles.min.css" />
+      <link media="all" rel="stylesheet" href="./css/media.css" />
+      <link media="all" rel="stylesheet" href="./css/ckeditor.css" />
+   </head>
+   <body>
+      <div class="wrapper onbording">
+         <main>
+            <section>
+               <div class="ob-head">
+                  <img src="http://vadgamachetan.com/shopdot/email-notification/logo.png" class="logo-round" alt="logo">
+                  <h1>Create Your ShopDot Account</h1>
+               </div>
+               <div class="ob-body">
+                  <div class="form-wrapper">
+                     <form action="#" class="form" id="">
+                        <div class="form-area">
+                           <div class="form-group">
+                              <div class="category-form-input">
+                                 <div class="form-input">
+                                    <input type="text" class="form-control" id="" placeholder="First name">
+                                 </div>
+                                 <div class="form-input">
+                                    <input type="text" class="form-control" id="" placeholder="Last name">
+                                 </div>
+                              </div>
+                              <div class="category-form-input">
+                                 <div class="form-input">
+                                    <input type="text" class="form-control pointer-none" id="" placeholder="janedoe@janehut.com">
+<!--                                     <small class="invalid-feedback">Email address is already registered. Please try again</small>-->
+                                 </div>
+                              </div>
+                              <div class="category-form-input password-tooltip">
+                                  
+                                  <div class="form-input mb-4">
+                                          <input type="password" class="form-control password mb-0" id="" placeholder="Create password">
+                                      <span class="password-show"></span>
+                                      <div class="tooltip">
+                                                <div class="tooltip-icon">
+                                                 
+                                                </div>
+                                                <div class="tooltip_text">
+                                                        <div class="tooltip-arrow"></div>
+                                                        <div class="pwd-info-title">Password must:</div>
+                                                       <div class="pwd-info">
+                                                           <label>- have at least 1 number</label>
+                                                           <label>- have at least 1 uppercase character</label>
+                                                           <label>- have at least 1 lowercase character</label>
+                                                           <label>- have at least 1 special character</label>
+                                                           <label>- have 8 characters minimum</label>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                       </div>
+                                  
+                              </div>
+                              <div class="check-box">
+                                 <label for="check-b" class="checkbox">
+                                    <input type="checkbox" name="check-b" id="check-b">
+                                    <div class="checkbox-text"><span>By signing up for ShopDot, you are agreeing to our <a href="ShopDot-Online-Business-Services-Agreement-09-01-2022.pdf" target="_blank">Terms</a> and <a href="ShopDot-Privacy-Policy-09.01.2022.pdf" target="_blank">Privacy Policy.</a></span></div>
+                                 </label>
+                              </div>
+                              <div class="form-input mt-5">
+                                 <a href="onboarding-verify_email.html" class="button w-100 large">
+                                    Sign Up
+                                 </a>
+                              </div>
+                               
+                               <div class="form-input mt-4">
+                               <small>Already have an account? Sign in <a href="sign-in.html">here</a></small>
+                               </div>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </section>
+         </main>
+      </div>
+      <script src="./js/vendor.min.js" defer></script>
+      <script
+         src="https://code.jquery.com/jquery-3.6.0.min.js"
+         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+         crossorigin="anonymous"
+         ></script>
+      <script src="js/app.min.js" defer></script>
+       <script>
+        function PwdFunction() {
+          var x = document.getElementById("password");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+        </script>
+   </body>
+</html>

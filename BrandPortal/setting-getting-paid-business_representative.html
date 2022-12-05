@@ -41,7 +41,7 @@
                      <ul class="header_menu menu">
                         <li class="menu_item"><a href="#" class="menu_link">Dashboard</a></li>
                         <li class="menu_item ">
-                           <a href="#" class="menu_link">My Products</a>
+                           <a href="#" class="menu_link">Products</a>
                         </li>
                         <li class="menu_item">
                            <div class="dropdown">
@@ -60,7 +60,7 @@
                               <div class="dropdown_body">
                                  <div class="dropdown_inner">
                                     <ul>
-                                       <li><a href="#">Approved Retailers</a></li>
+                                       <li><a href="#">Connected Retailers</a></li>
                                        <li><a href="#">Requests for Access</a></li>
                                     </ul>
                                  </div>
@@ -165,21 +165,21 @@
                <aside class="filters mp-filter">
                   <div class="filters_wrap">
                      <div class="filters_block filters_block-body">
-                        <div class="filter open filter-by-products">
-                           <div class="filter_body">
+                        <div class="filter-by-products">
+                           <div class="link-sidebar">
                               <div class="tab_wrap">
                                  <div class="setting-tab-title">
                                     Setting
                                  </div>
                                  <div class="pc_tabs-menu tab_menu">
-                                    <a href="#" data-link="Integration" class="tab-links checked">Integration</a>
-                                    <a href="#" data-link="Account" class="tab-links required">Brand Profile</a>
+                                    <a href="#" data-link="Account" class="tab-links checked">Brand Profile</a>
                                     <a href="#" data-link="Preferences" class="tab-links required">Preferences</a>
-                                    <a href="#" data-link="GettingPaid" class="tab-links required active">Getting Paid</a>
+                                    <a href="#" data-link="GettingPaid" class="tab-links active">Getting Paid</a>
                                     <a href="#" data-link="Shipping" class="tab-links required">Shipping</a>
+                                     <a href="#" data-link="Integration" class="tab-links">Integration</a>
                                     <a href="#" data-link="Users" class="tab-links">Users</a>
                                     <a href="#" data-link="Security" class="tab-links">Security</a>
-                                    <a href="#" data-link="AlertsNotifications" class="tab-links">Alerts and Notifications</a>
+                                    <a href="#" data-link="AlertsNotifications" class="tab-links">Notifications</a>
                                  </div>
                               </div>
                            </div>
@@ -230,14 +230,14 @@
                            <div class="products_head-content">
                               <div class="title">
                                  <h1>
-                                    Alerts and Notifications
+                                    Notifications
                                  </h1>
                               </div>
                            </div>
                         </div>
                         <div class="products_body">
                            <div class="content_area">
-                              Alerts and Notifications Data
+                              Notifications Data
                            </div>
                         </div>
                      </div>
@@ -303,12 +303,12 @@
                                        <div class="gp-left">
                                           <h4>Add Business Info</h4>
                                           <div class="gp-link-area">
-                                              <a href="setting-getting-paid-business_detail.html">Business details</a>
-                                             <a href="setting-getting-paid-business_representative.html" class="active">Business representative</a>
+                                              <a href="setting-getting-paid-business_detail.html">Business Details</a>
+                                             <a href="setting-getting-paid-business_representative.html" class="active">Business Representative</a>
                                           </div>
                                           <h4 class="mt-5">ADD YOUR BANK</h4>
                                           <div class="gp-link-area">
-                                             <a href="setting-getting-paid-bank_detail_tab.html">Bank details</a>
+                                             <a href="setting-getting-paid-bank_detail_tab.html">Bank Details</a>
                                           </div>
                                           <h4 class="mt-5">REVIEW AND FINISH</h4>
                                           <div class="gp-link-area">
@@ -316,11 +316,11 @@
                                           </div>
                                        </div>
                                        <div class="gp-right">
-                                          <h3 class="heading">Business Representative <span class="asterisk-red">*</span></h3>
+                                          <h3 class="heading">Business Representative</h3>
                                           <div class="form-area">
                                              <div class="category-form-input">
                                                 <div class="form-input">
-                                                   <label for="" class="form-label">Legal name of person</label>
+                                                   <label for="" class="form-label">Legal name of person <span class="asterisk-red">*</span></label>
                                                    <input type="text" class="form-control" id="" placeholder="First name">
                                                 </div>
                                                 <div class="form-input">
@@ -328,70 +328,95 @@
                                                    <input type="text" class="form-control" id="" placeholder="Last name">
                                                 </div>
                                              </div>
+                                               <div class="form-input mb-4">
+                                                <label for="" class="form-label">Phone number <span class="asterisk-red">*</span></label>
+                                                <input type="text" class="form-control mb-0" id="" placeholder="">
+                                             </div>
                                              <div class="form-input mb-4">
-                                                <label for="" class="form-label">SSN</label>
-                                                <input type="text" class="form-control mb-0" id="" placeholder="555-50-1234">
+                                                <label for="" class="form-label">SSN <span class="asterisk-red">*</span></label>
+                                                <input type="text" class="form-control mb-0" id="" placeholder="">
                                              </div>
                                              <div class="form-input">
-                                                <label for="" class="form-label">Date of birth</label>
-                                                <input type="date" class="form-control" name="p-from" placeholder="MM-DD-YY">
+                                                <label for="" class="form-label">Date of birth <span class="asterisk-red">*</span></label>
+                                                <input type="date" class="form-control" name="" placeholder="MM-DD-YY">
                                              </div>
-                                             <div class="form-input mb-4">
-                                                <label for="" class="form-label">Address</label>
-                                                <select name="" id="">
+                                              <div class="form-input">
+                                                <label for="" class="form-label">Address line 1 <span class="asterisk-red">*</span></label>
+                                                <input type="text" class="form-control" name="" placeholder="">
+                                             </div>
+                                              <div class="form-input">
+                                                <label for="" class="form-label">Address line 2 <span class="asterisk-red">*</span></label>
+                                                <input type="text" class="form-control" name="" placeholder="">
+                                             </div>
+                                              
+                                              <div class="category-form-input mb-4">
+                                                <div class="form-input">
+                                                    <label for="" class="form-label">Country <span class="asterisk-red">*</span></label>
+                                                   <select name="" id="">
                                                    <option value="">United States</option>
-                                                   <option value="">India</option>
+                                                   <option value="">Canada</option>
                                                 </select>
-                                                <input type="text" class="form-control mb-2" id="" placeholder="Address Line 1">
-                                                <input type="text" class="form-control mb-2" id="" placeholder="Address Line 2">
-                                                <input type="text" class="form-control mb-2" id="" placeholder="City">
-                                                <div class="form-input mb-2">
-                                                   <select name="" id="" class="mt-0">
-                                                      <option value="0">Alaska</option>
-                                                      <option value="1">New York</option>
-                                                   </select>
                                                 </div>
-                                                <input type="text" class="form-control mb-2" id="" placeholder="ZIP">
+                                               <div class="form-input">
+                                                    <label for="" class="form-label">State <span class="asterisk-red">*</span></label>
+                                                   <select name="" id="">
+                                                   <option value="">Alaska</option>
+                                                   <option value="">New York</option>
+                                                </select>
+                                                </div>
                                              </div>
+                                              <div class="category-form-input">
+                                                <div class="form-input">
+                                                   <label for="" class="form-label">City <span class="asterisk-red">*</span></label>
+                                                   <input type="text" class="form-control" id="" placeholder="">
+                                                </div>
+                                                <div class="form-input">
+                                                   <label for="" class="form-label">ZIP <span class="asterisk-red">*</span></label>
+                                                   <input type="text" class="form-control" id="" placeholder="">
+                                                </div>
+                                             </div>
+<!--
+                                              <div class="form-input mb-4">
+                                                <label for="" class="form-label">Work Phone</label>
+                                                <input type="text" class="form-control" name="p-from" placeholder="">
+                                             </div>
+-->
                                              <div class="form-input mb-4 secondary_identification">
-                                                <label for="" class="form-label">Secondary Identification</label>
+                                                <label for="" class="form-label">Secondary identification <span class="asterisk-red">*</span></label>
                                                 <select name="" id="">
-                                                   <option>Select</option>
+                                                   <option>Identification type</option>
+                                                    
                                                    <option value="si_license">Driver’s License</option>
                                                    <option value="si_passport">Passport</option>
                                                    <option value="si_passport">Alien Registration Card</option>
                                                 </select>
                                                 <div class="form-input mb-2 country_issuance mt-4">
-                                                   <label for="" class="form-label">Country of Issuance</label>
+                                                   <label for="" class="form-label">Country of issuance <span class="asterisk-red">*</span></label>
                                                    <select name="" id="">
                                                       <option value="">United States</option>
-                                                      <option value="">India</option>
+                                                      <option value="">Canada</option>
                                                    </select>
                                                 </div>
-                                                <div class="form-input mb-2 state_issuance mt-4">
-                                                   <label for="" class="form-label">State of Issuance</label>
+                                                <div class="form-input mb-2 state_issuance mt-0">
                                                    <select name="" id="">
                                                       <option value="0">Alaska</option>
                                                       <option value="1">New York</option>
                                                    </select>
-                                                </div>
-                                                <input type="text" class="form-control mb-2" id="" placeholder="ID Number">
+                                                </div> 
+                                                 <input type="text" class="form-control mb-2" id="" placeholder="ID Number">
                                              </div>
                                           </div>
                                           <div class="form-area">
                                              <div class="form-input form-submit">
-                                                <button class="button button-grey cancel">
-                                                   <svg class="icon arrow-dir rev">
-                                                      <use xlink:href="images/sprite.svg#arrow-right"></use>
-                                                   </svg>
+                                                 <a href="setting-getting-paid-business_detail.html" class="button button-grey cancel">
                                                    Back 
-                                                </button>
-                                                <button class="button">
+                                                 </a>
+                                                <a href="setting-getting-paid-bank_detail_tab.html" class="button">
                                                    Save and Next 
                                                    <svg class="icon arrow-dir">
                                                       <use xlink:href="images/sprite.svg#arrow-right"></use>
                                                    </svg>
-                                                </button>
+                                                </a>
                                              </div>
                                           </div>
                                        </div>

@@ -3,7 +3,7 @@
    <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Create Account </title>
+      <title>Create Your ShopDot Account</title>
       <link
          rel="icon"
          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
@@ -34,33 +34,41 @@
                            <div class="form-group">
                               <div class="category-form-input">
                                  <div class="form-input">
-                                    <input type="text" class="form-control" id="" placeholder="First name*">
+                                    <input type="text" class="form-control" id="" placeholder="First name">
                                  </div>
                                  <div class="form-input">
-                                    <input type="text" class="form-control" id="" placeholder="Last name*">
+                                    <input type="text" class="form-control" id="" placeholder="Last name">
                                  </div>
                               </div>
                               <div class="category-form-input">
                                  <div class="form-input">
-                                    <input type="text" class="form-control is-invalid" id="" placeholder="Email address*">
-                                     <small class="invalid-feedback">Email address must be in correct format</small>
+                                    <input type="text" class="form-control" id="" placeholder="Email address">
 <!--                                     <small class="invalid-feedback">Email address is already registered. Please try again</small>-->
                                  </div>
                               </div>
-                              <div class="category-form-input">
-                                 <div class="form-input form-password">
-                                    <input type="password" class="form-control" id="password" placeholder="Create password*">
-<!--
-                                    <input type="text" class="form-control is-invalid" id="" placeholder="Create password">
-                                     <small class="invalid-feedback">Must be at least 8 characters. Should have at least 1 numeric character and 1 special character</small>
--->
-                                     <span class="pwd-indicator" style="display: none">Password is strong!</span>
-                                    <a href="#" onclick="PwdFunction()">
-                                       <svg class="icon-eye">
-                                          <use xlink:href="images/sprite.svg#eye"></use>
-                                       </svg>
-                                    </a>
-                                 </div>
+                              <div class="category-form-input password-tooltip">
+                                  
+                                  <div class="form-input mb-4">
+                                          <input type="password" class="form-control password mb-0" id="" placeholder="Create password">
+                                      <span class="password-show"></span>
+                                      <div class="tooltip">
+                                                <div class="tooltip-icon">
+                                                 
+                                                </div>
+                                                <div class="tooltip_text">
+                                                        <div class="tooltip-arrow"></div>
+                                                        <div class="pwd-info-title">Password must:</div>
+                                                       <div class="pwd-info">
+                                                           <label>- have at least 1 number</label>
+                                                           <label>- have at least 1 uppercase character</label>
+                                                           <label>- have at least 1 lowercase character</label>
+                                                           <label>- have at least 1 special character</label>
+                                                           <label>- have 8 characters minimum</label>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                       </div>
+                                  
                               </div>
                               <div class="check-box">
                                  <label for="check-b" class="checkbox">
@@ -73,6 +81,10 @@
                                     Sign Up
                                  </a>
                               </div>
+                               
+                               <div class="form-input mt-4">
+                               <small>Already have an account? Sign in <a href="sign-in.html">here</a></small>
+                               </div>
                            </div>
                         </div>
                      </form>

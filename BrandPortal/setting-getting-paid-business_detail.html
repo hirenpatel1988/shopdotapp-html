@@ -45,7 +45,7 @@
                      <ul class="header_menu menu">
                         <li class="menu_item"><a href="#" class="menu_link">Dashboard</a></li>
                         <li class="menu_item ">
-                           <a href="#" class="menu_link">My Products</a>
+                           <a href="#" class="menu_link">Products</a>
                         </li>
                         <li class="menu_item">
                            <div class="dropdown">
@@ -64,7 +64,7 @@
                               <div class="dropdown_body">
                                  <div class="dropdown_inner">
                                     <ul>
-                                       <li><a href="#">Approved Retailers</a></li>
+                                       <li><a href="#">Connected Retailers</a></li>
                                        <li><a href="#">Requests for Access</a></li>
                                     </ul>
                                  </div>
@@ -170,20 +170,20 @@
                   <div class="filters_wrap">
                      <div class="filters_block filters_block-body">
                         <div class="filter open filter-by-products">
-                           <div class="filter_body">
+                            <div class="link-sidebar">
                               <div class="tab_wrap">
                                  <div class="setting-tab-title">
                                     Setting
                                  </div>
                                  <div class="pc_tabs-menu tab_menu">
-                                   <a href="#" data-link="Integration" class="tab-links checked">Integration</a>
-                                    <a href="#" data-link="Account" class="tab-links required">Brand Profile</a>
+                                    <a href="#" data-link="Account" class="tab-links checked">Brand Profile</a>
                                     <a href="#" data-link="Preferences" class="tab-links required">Preferences</a>
-                                    <a href="#" data-link="GettingPaid" class="tab-links required active">Getting Paid</a>
+                                    <a href="#" data-link="GettingPaid" class="tab-links active">Getting Paid</a>
                                     <a href="#" data-link="Shipping" class="tab-links required">Shipping</a>
+                                     <a href="#" data-link="Integration" class="tab-links">Integration</a>
                                     <a href="#" data-link="Users" class="tab-links">Users</a>
                                     <a href="#" data-link="Security" class="tab-links">Security</a>
-                                    <a href="#" data-link="AlertsNotifications" class="tab-links">Alerts and Notifications</a>
+                                    <a href="#" data-link="AlertsNotifications" class="tab-links">Notifications</a>
                                  </div>
                               </div>
                            </div>
@@ -234,14 +234,14 @@
                            <div class="products_head-content">
                               <div class="title">
                                  <h1>
-                                    Alerts and Notifications
+                                    Notifications
                                  </h1>
                               </div>
                            </div>
                         </div>
                         <div class="products_body">
                            <div class="content_area">
-                              Alerts and Notifications Data
+                              Notifications Data
                            </div>
                         </div>
                      </div>
@@ -295,12 +295,12 @@
                                        <div class="gp-left">
                                           <h4>Add Business Info</h4>
                                           <div class="gp-link-area">
-                                             <a href="setting-getting-paid-bank_detail.html" class="active">Business details</a>
-                                             <a href="setting-getting-paid-business_representative.html">Business representative</a>
+                                             <a href="setting-getting-paid-bank_detail.html" class="active">Business Details</a>
+                                             <a href="setting-getting-paid-business_representative.html">Business Representative</a>
                                           </div>
                                           <h4 class="mt-5">ADD YOUR BANK</h4>
                                           <div class="gp-link-area">
-                                             <a href="setting-getting-paid-bank_detail_tab.html">Bank details</a>
+                                             <a href="setting-getting-paid-bank_detail_tab.html">Bank Details</a>
                                           </div>
                                           <h4 class="mt-5">REVIEW AND FINISH</h4>
                                           <div class="gp-link-area">
@@ -308,21 +308,22 @@
                                           </div>
                                        </div>
                                        <div class="gp-right">
-                                          <h3 class="heading">Business Details <span class="asterisk-red">*</span></h3>
-                                          <p>The information Priority Holdings collects about your business helps them meet requirements from regulators, and their <a href="" class="link-text">Terms and Conditions</a> </p>
+                                          <h3 class="heading">Business Details</h3>
+                                          <p>The information Priority Holdings collects about your business helps them meet requirements from regulators, and their <a href="" class="link-text">Terms and Conditions</a>. </p>
                                           <div class="form-area">
                                              <div class="form-input">
-                                                <label for="" class="form-label">Legal business name</label>
+                                                <label for="" class="form-label">Legal business name <span class="asterisk-red">*</span></label>
                                                 <input type="text" class="form-control" id="" placeholder="">
                                              </div>
                                              <div class="form-input mb-4">
-                                                <label for="" class="form-label">Doing business as</label>
+                                                <label for="" class="form-label">Doing business as </label>
                                                 <input type="text" class="form-control mb-0" id="" placeholder="">
                                                 <small>The operating name of your company, if it's different than the legal name. </small>
                                              </div>
                                              <div class="form-input mb-4 business_category">
-                                                <label for="" class="form-label">Business Category</label>
+                                                <label for="" class="form-label">Business category <span class="asterisk-red">*</span></label>
                                                 <select name="" id="">
+                                                   <option value="" selected></option>
                                                    <option value="signle_member_llc">Single Member LLC</option>
                                                    <option value="ssn_display">Sole Proprietor</option>
                                                    <option value="ein_display_p">LLC</option>
@@ -332,38 +333,38 @@
                                                    <option value="ein_display_p">S_CORP</option>
                                                    <option value="ein_display_p">Government Organization</option>
                                                    <option value="ein_display_p">Non Profit</option>
-                                                   <option value="ein_display_p" selected>Tax Exempt</option>
+                                                   <option value="ein_display_p">Tax Exempt</option>
                                                 </select>
                                              </div>
                                              <div class="form-input mb-4 signle_member_llc">
-                                                <label for="" class="form-label">Tax ID Type</label>
+                                                <label for="" class="form-label">Tax ID type <span class="asterisk-red">*</span></label>
                                                 <select name="" id="">
-                                                    <option>select</option>
-                                                   <option value="ein">Employer Identification Number (EIN)</option>
+                                                    <option value="" selected></option>
+                                                   <option value="ein">Employer identification number (EIN)</option>
                                                    <option value="ssn">Social Security Number (SSN)</option>
                                                 </select>
                                              </div>
                                              <div class="form-input mb-4 ein">
-                                                <label for="" class="form-label">Employer Identification Number (EIN)</label>
-                                                <input type="text" class="form-control mb-0" id="" placeholder="12-3456789">
+                                                <label for="" class="form-label">Employer identification number (EIN) <span class="asterisk-red">*</span></label>
+                                                <input type="text" class="form-control mb-0" id="" placeholder="">
                                              </div>
                                              <div class="form-input mb-4 ssn">
-                                                <label for="" class="form-label">Social Security Number (SSN)</label>
-                                                <input type="text" class="form-control mb-0" id="" placeholder="12-3456789">
+                                                <label for="" class="form-label">Social Security Number (SSN) <span class="asterisk-red">*</span></label>
+                                                <input type="text" class="form-control mb-0" id="" placeholder="">
                                              </div>
                                              <div class="form-input mb-4">
-                                                <label for="" class="form-label">State of Incorporation</label>
+                                                <label for="" class="form-label">State of incorporation <span class="asterisk-red">*</span></label>
                                                 <select name="" id="">
                                                    <option value="0">Alaska</option>
                                                    <option value="1">New York</option>
                                                 </select>
                                              </div>
                                              <div class="form-input">
-                                                <label for="" class="form-label">Date of Incorporation</label>
+                                                <label for="" class="form-label">Date of incorporation <span class="asterisk-red">*</span></label>
                                                 <input type="date" class="form-control" name="p-from" placeholder="MMDDYYYY">
                                              </div>
                                              <div class="form-input return_select-item mb-4">
-                                                <p class="mb-0">Prior Bankruptcy</p>
+                                                <p class="mb-0">Prior bankruptcy <span class="asterisk-red">*</span></p>
                                                 <div class="pe_radio mt-2">
                                                    <label for="radio-return" class="radiobox">
                                               <input type="radio" name="radio-filter" id="radio-return" value="1">
@@ -377,28 +378,27 @@
                                                     
                                                     <div class="radio-data-info mt-3">
                                                         <div class="form-input">
-                                                        <label for="" class="form-label">Date of Discharge</label>
+                                                        <label for="" class="form-label">Date of discharge <span class="asterisk-red">*</span></label>
                                                         <input type="date" class="form-control" name="p-from" placeholder="MMDDYYYY">
                                                      </div>
                                                     </div>
                                                 </div>
                                              </div>
                                              <div class="form-input mb-4">
-                                                <label for="" class="form-label">Estimated Average Sales Volume on ShopDot (Monthly)</label>
-                                                <div class="wp-right">
-                                                   <span class="doller-lbl">$</span>
-                                                   <input type="text" class="form-control mb-0" id="" placeholder="100,000">
-                                                </div>
+                                                <label for="" class="form-label">Estimated average sales volume on ShopDot (Monthly) <span class="asterisk-red">*</span></label>
+                                                
+                                                   
+                                                   <input type="text" class="form-control mb-0" id="" placeholder="">
+                                               
                                              </div>
                                              <div class="form-input mb-4">
-                                                <label for="" class="form-label">Estimated Average Sale Price on ShopDot</label>
-                                                <div class="wp-right">
-                                                   <span class="doller-lbl">$</span>
-                                                   <input type="text" class="form-control mb-0" id="" placeholder="100,000">
-                                                </div>
+                                                <label for="" class="form-label">Estimate average wholesale price on ShopDot <span class="asterisk-red">*</span></label>
+                                               
+                                                   <input type="text" class="form-control mb-0" id="" placeholder="">
+                                               
                                              </div>
                                              <div class="form-input mb-4">
-                                                <label for="" class="form-label">Average Delivery Time</label>
+                                                <label for="" class="form-label">Average delivery time <span class="asterisk-red">*</span></label>
                                                 <select name="" id="">
                                                    <option value="0">Week</option>
                                                    <option value="1">2 Weeks</option>
@@ -408,37 +408,34 @@
                                                 </select>
                                              </div>
                                              <div class="form-input mb-4">
-                                                <label for="" class="form-label">Merchant Category Code</label>
+                                                <label for="" class="form-label">Merchant category code <span class="asterisk-red">*</span></label>
                                                 <select name="" id="">
                                                    <option value="5099">5099 (Durable goods - not else classified)</option>
                                                    <option value="5199">5199 (Nondurable goods - not else classified) </option>
                                                 </select>
                                              </div>
                                              <div class="form-input mb-4">
-                                                <label for="" class="form-label">Sales Method</label>
+                                                <label for="" class="form-label">Sales method <span class="asterisk-red">*</span></label>
                                                 <select name="" id="">
-                                                   <option value="0">Fully on eCommerce</option>
+                                                   <option value="0">100% Digital Transaction</option>
                                                 </select>
                                              </div>
                                              <div class="form-input mb-4">
-                                                <label for="" class="form-label">Product Description</label>
+                                                <label for="" class="form-label">Product description <span class="asterisk-red">*</span></label>
                                                 <textarea name="message" class="textarea-item" id="message" rows="3" cols="5" required="" placeholder=""></textarea>
                                              </div>
                                           </div>
                                           <div class="form-area">
                                              <div class="form-input form-submit">
-                                                <button class="button button-grey cancel">
-                                                   <svg class="icon arrow-dir rev">
-                                                      <use xlink:href="images/sprite.svg#arrow-right"></use>
-                                                   </svg>
+                                                 <a href="setting-index.html" class="button button-grey cancel">
                                                    Back 
-                                                </button>
-                                                <button class="button">
+                                                 </a>
+                                                <a href="setting-getting-paid-business_representative.html" class="button">
                                                    Save and Next 
                                                    <svg class="icon arrow-dir">
                                                       <use xlink:href="images/sprite.svg#arrow-right"></use>
                                                    </svg>
-                                                </button>
+                                                </a>
                                              </div>
                                           </div>
                                        </div>
@@ -564,7 +561,7 @@
        
 
       <style>
-         .tax_id,.sole_proprietor,.signle_member_llc,.ssn,.radio-data-info{display: none}
+         .tax_id,.sole_proprietor,.signle_member_llc,.ssn,.radio-data-info,.ein{display: none}
       </style>
        
        <div class="popup popup-confirm popup-confirm-push">

@@ -27,6 +27,7 @@
       <header class="header">
         <div class="header_block header_block-top">
           <div class="header_container">
+              <div class="h-left">
             <!--header logo-->
             <div class="header_logo">
               <a href="index.html" class="logo">
@@ -43,27 +44,12 @@
                 <li class="menu_item">
                   <a href="products-all.html" class="menu_link ">Products</a>
                 </li>
-                <li class="menu_item"><a href="#" class="menu_link @@m">My List</a></li>
+                
                 <li class="menu_item"><a href="#" class="menu_link">Orders</a></li>
               </ul>
             </div>
             <!--header search-->
-            <div class="header_search search">
-              <form action="#" class="search_form">
-                <div class="search_form-input">
-                  <input type="text" placeholder="Search…" />
-                </div>
-                <button type="cancel" class="search_form-button">
-                  <svg class="icon">
-                    <use xlink:href="images/sprite.svg#icon-clear"></use>
-                  </svg>
-                </button>
-                <button type="submit"></button>
-                <svg class="icon">
-                  <use xlink:href="images/sprite.svg#icon-search"></use>
-                </svg>
-              </form>
-            </div>
+              </div>
             <!--header actions-->
             <div class="header_actions">
               <div class="header_usermenu">
@@ -72,11 +58,7 @@
                     <div class="dropdown_header-text">
                       Hi, <span class="username">Jane</span>
                     </div>
-                    <div class="dropdown_header-icon">
-                      <svg class="icon">
-                        <use xlink:href="images/sprite.svg#icon-retailers"></use>
-                      </svg>
-                    </div>
+                   
                     <div class="dropdown_header-chevron">
                       <svg class="icon">
                         <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
@@ -86,14 +68,7 @@
                   <div class="dropdown_body">
                     <div class="dropdown_inner">
                       <ul>
-                        <li>
-                          <a href="#"
-                            >Switch to Brand
-                            <svg class="icon">
-                              <use xlink:href="images/sprite.svg#icon-brands"></use>
-                            </svg>
-                          </a>
-                        </li>
+                      
                         <li><a href="#">Settings</a></li>
                         <li><a href="#">Help Center</a></li>
                         <li><a href="#">Sign out</a></li>
@@ -102,41 +77,7 @@
                   </div>
                 </div>
               </div>
-              <button class="header_action header_action-mails">
-                <svg class="icon">
-                  <use xlink:href="images/sprite.svg#icon-mail"></use>
-                </svg>
-                <div class="text visible">5</div>
-              </button>
-              <button class="header_action header_action-notifications">
-                <!--Changed icon to dropdown, to show list of 'updates'-->
-                <div class="dropdown">
-                  <div class="dropdown_header">
-                    <svg class="icon">
-                      <use xlink:href="images/sprite.svg#icon-notification"></use>
-                    </svg>
-                  </div>
-                  <div class="dropdown_body">
-                    <div class="dropdown_inner">
-                      <ul>
-                        <li>
-                          <span>Summer Activities Chips for Kids</span> <br>
-                          updated Dec.15, 2021, 07:56 PM
-                        </li>
-                        <li>
-                          <span>Summer Activities Chips for Kids</span> <br>
-                          updated Dec.15, 2021, 07:56 PM
-                        </li>
-                        <li>
-                          <span>Summer Activities Chips for Kids</span> <br>
-                          updated Dec.15, 2021, 07:56 PM
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="text visible">1</div>
-              </button>
+          
               <div class="header_action header_action-invite">
                 <button class="button invite-brand">Invite Brands</button>
               </div>
@@ -723,7 +664,7 @@
                         </div>
   
                         <div class="subfilter">
-                          <div class="subfilter_head">Total Shipping Time</div>
+                          <div class="subfilter_head">Days to Fulfill</div>
                           <div class="subfilter_body">
                             <div class="checkbox checkbox--no-decor">
                               <label for="ship-time-1"

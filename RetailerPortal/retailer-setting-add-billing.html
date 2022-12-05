@@ -3,7 +3,7 @@
    <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Retailer Setting</title>
+      <title>Retailer Setting - Billing</title>
       <link
          rel="icon"
          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
@@ -17,12 +17,14 @@
       <link media="all" rel="stylesheet" href="./css/vendor.min.css" />
       <link media="all" rel="stylesheet" href="./css/styles.min.css" />
       <link media="all" rel="stylesheet" href="./css/media.css" />
+       <link media="all" rel="stylesheet" href="./css/dropdown.css" />
    </head>
    <body>
       <div class="wrapper">
          <header class="header mp-header">
             <div class="header_block header_block-top mp-header_block-top">
                <div class="header_container">
+                   <div class="h-left">
                   <!--header logo-->
                   <div class="header_logo">
                      <a href="index.html" class="logo">
@@ -39,27 +41,12 @@
                     <li class="menu_item">
                       <a href="products-all.html" class="menu_link ">Products</a>
                     </li>
-                    <li class="menu_item"><a href="#" class="menu_link">My List</a></li>
+                    
                     <li class="menu_item"><a href="#" class="menu_link">Orders</a></li>
                   </ul>
                 </div>
                   <!--header search-->
-                  <div class="header_search search">
-                     <form action="#" class="search_form">
-                        <div class="search_form-input">
-                           <input type="text" placeholder="Search…" />
-                        </div>
-                        <button type="cancel" class="search_form-button">
-                           <svg class="icon">
-                              <use xlink:href="images/sprite.svg#icon-clear"></use>
-                           </svg>
-                        </button>
-                        <button type="submit"></button>
-                        <svg class="icon">
-                           <use xlink:href="images/sprite.svg#icon-search"></use>
-                        </svg>
-                     </form>
-                  </div>
+                   </div>
                   <!--header actions-->
                   <div class="header_actions">
                      <div class="header_usermenu">
@@ -68,11 +55,7 @@
                               <div class="dropdown_header-text">
                                  Hi, <span class="username">Jane</span>
                               </div>
-                              <div class="dropdown_header-icon">
-                                 <svg class="icon">
-                                    <use xlink:href="images/sprite.svg#icon-retailers"></use>
-                                 </svg>
-                              </div>
+                            
                               <div class="dropdown_header-chevron">
                                  <svg class="icon">
                                     <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
@@ -90,41 +73,7 @@
                            </div>
                         </div>
                      </div>
-                     <button class="header_action header_action-mails">
-                        <svg class="icon">
-                           <use xlink:href="images/sprite.svg#icon-mail"></use>
-                        </svg>
-                        <div class="text visible">5</div>
-                     </button>
-                     <button class="header_action header_action-notifications">
-                        <!--Changed icon to dropdown, to show list of 'updates'-->
-                        <div class="dropdown">
-                           <div class="dropdown_header">
-                              <svg class="icon">
-                                 <use xlink:href="images/sprite.svg#icon-notification"></use>
-                              </svg>
-                           </div>
-                           <div class="dropdown_body">
-                              <div class="dropdown_inner">
-                                 <ul>
-                                    <li>
-                                       <span>Summer Activities Chips for Kids</span> <br>
-                                       updated Dec.15, 2021, 07:56 PM
-                                    </li>
-                                    <li>
-                                       <span>Summer Activities Chips for Kids</span> <br>
-                                       updated Dec.15, 2021, 07:56 PM
-                                    </li>
-                                    <li>
-                                       <span>Summer Activities Chips for Kids</span> <br>
-                                       updated Dec.15, 2021, 07:56 PM
-                                    </li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="text visible">1</div>
-                     </button>
+                   
                      <div class="header_action header_action-invite">
                         <button class="button invite-retailer">Invite Brand</button>
                      </div>
@@ -138,8 +87,8 @@
                <aside class="filters mp-filter">
                   <div class="filters_wrap">
                      <div class="filters_block filters_block-body">
-                        <div class="filter open filter-by-products">
-                           <div class="filter_body filter_body_custom">
+                        <div class="filter-by-products">
+                           <div class="link-sidebar">
                               <div class="tab_wrap">
                                  <div class="setting-tab-title">
                                     Setting
@@ -151,12 +100,14 @@
                                     <span class="line line3"></span>
                                  </div>
                                  <div class="pc_tabs-menu tab_menu">
-                                <a href="#" data-link="Account" class="tab-links">Retailer Profile</a>
-                                     <a href="#" data-link="Billing" class="tab-links active">Billing</a>
-                                     <a href="#" data-link="Integration" class="tab-links">Integration</a>
+                                    <a href="#" data-link="Account" class="tab-links required">Retailer Profile</a>
+                                     <div class="tooltip_text not-available-tooltip">
+                                       <p>This is a mandatory setting that is part of the onboarding process.</p>
+                                    </div>
+                                    <a href="#" data-link="Billing" class="tab-links active">Billing</a>
                                     <a href="#" data-link="Users" class="tab-links">Users</a>
-                                     <a href="#" data-link="Security" class="tab-links">Security</a>
-                                    <a href="#" data-link="EmailPreferences" class="tab-links">Alerts and Notifications</a>
+                                    <a href="#" data-link="Security" class="tab-links">Security</a>
+                                    <a href="#" data-link="EmailPreferences" class="tab-links">Notifications</a>
                                  </div>
                               </div>
                            </div>
@@ -173,7 +124,7 @@
                            <div class="content_area">
                               <div id="billing">
                                  <div class="billing_info">
-                                    <h2 class="heading">Billing</h2>
+                                    <h2 class="heading">Add New Credit Card</h2>
                                      <div class="alert alert-error sd_alert-error" role="alert">
                                          <svg class="icon">
                                             <use xlink:href="images/sprite.svg#exclamation-red"></use>
@@ -184,46 +135,171 @@
                                       </div>
                                     <div class="form-area">
                                      <div class="form-input return_select-item">
-                                        <div class="pe_radio">
-                                           <label for="radio-credit" class="radiobox radio-click">
-                                              <input type="radio" name="radio-filter-billing" id="radio-credit">
-                                              <div class="radiobox-text"><span>Credit Card</span></div>
-                                           </label>
+                                       
+                                          
                                             
                                             <div class="radio-data-info">
                                                 
                                                
                                                <div class="form-input">
                                                   <label for="" class="form-label">
-                                                     Card Number
+                                                     Card number
                                                   </label>
                                                   <input type="text" class="form-control" id="" placeholder="4242424242424242">
                                                </div>
+                                                
                                                 <div class="category-form-input">
-                                                  <div class="form-input">
-                                                     <label for="" class="form-label">cvv</label>
-                                                     <input type="text" class="form-control" id="" placeholder="100">
-                                                  </div>
-                                                  <div class="form-input input-relative">
-                                                     <label for="" class="form-label">Card Type</label>
-                                                     <input type="text" class="form-control" id="" placeholder="VISA">
-                                                      <div class="card-type">
-                                                      <img src="images/credit-card.png">
-                                                          </div>
+                                                 
+                                               <div class="ui-dropdown">
+                                                   <label for="" class="form-label">Expiry month</label>
+                                                  <div class="select_wrap sd-select">
+                                                     <ul class="default_option">
+                                                        <li>
+                                                           <div class="option">
+                                                              <p>Choose month</p>
+                                                           </div>
+                                                        </li>
+                                                     </ul>
+                                                      <ul class="select_ul">
+                                                       <li>
+                                                           <div class="option">
+                                                              <p>01</p>
+                                                           </div>
+                                                        </li>
+                                                        <li>
+                                                           <div class="option">
+                                                              <p>02</p>
+                                                           </div>
+                                                        </li>
+                                                        <li>
+                                                           <div class="option">
+                                                              <p>03</p>
+                                                           </div>
+                                                        </li>
+                                                         <li>
+                                                           <div class="option">
+                                                              <p>04</p>
+                                                           </div>
+                                                        </li>
+                                                         <li>
+                                                           <div class="option">
+                                                              <p>05</p>
+                                                           </div>
+                                                        </li>
+                                                         <li>
+                                                           <div class="option">
+                                                              <p>06</p>
+                                                           </div>
+                                                        </li>
+                                                         <li>
+                                                           <div class="option">
+                                                              <p>07</p>
+                                                           </div>
+                                                        </li>
+                                                         <li>
+                                                           <div class="option">
+                                                              <p>08</p>
+                                                           </div>
+                                                        </li>
+                                                         <li>
+                                                           <div class="option">
+                                                              <p>09</p>
+                                                           </div>
+                                                        </li>
+                                                         <li>
+                                                           <div class="option">
+                                                              <p>10</p>
+                                                           </div>
+                                                        </li>
+                                                         <li>
+                                                           <div class="option">
+                                                              <p>11</p>
+                                                           </div>
+                                                        </li>
+                                                         <li>
+                                                           <div class="option">
+                                                              <p>12</p>
+                                                           </div>
+                                                        </li>
+                                                     </ul>
+<!--
+                                                     <ul class="select_ul">
+                                                       <li>
+                                                           <div class="option">
+                                                              <p>Janaury</p>
+                                                           </div>
+                                                        </li>
+                                                        <li>
+                                                           <div class="option">
+                                                              <p>February</p>
+                                                           </div>
+                                                        </li>
+                                                        <li>
+                                                           <div class="option">
+                                                              <p>March</p>
+                                                           </div>
+                                                        </li>
+                                                         <li>
+                                                           <div class="option">
+                                                              <p>April</p>
+                                                           </div>
+                                                        </li>
+                                                         <li>
+                                                           <div class="option">
+                                                              <p>May</p>
+                                                           </div>
+                                                        </li>
+                                                         <li>
+                                                           <div class="option">
+                                                              <p>June</p>
+                                                           </div>
+                                                        </li>
+                                                         <li>
+                                                           <div class="option">
+                                                              <p>July</p>
+                                                           </div>
+                                                        </li>
+                                                         <li>
+                                                           <div class="option">
+                                                              <p>August</p>
+                                                           </div>
+                                                        </li>
+                                                         <li>
+                                                           <div class="option">
+                                                              <p>September</p>
+                                                           </div>
+                                                        </li>
+                                                         <li>
+                                                           <div class="option">
+                                                              <p>October</p>
+                                                           </div>
+                                                        </li>
+                                                         <li>
+                                                           <div class="option">
+                                                              <p>November</p>
+                                                           </div>
+                                                        </li>
+                                                         <li>
+                                                           <div class="option">
+                                                              <p>December</p>
+                                                           </div>
+                                                        </li>
+                                                     </ul>
+-->
+                                                      
                                                   </div>
                                                </div>
-                                                <div class="category-form-input">
                                                   <div class="form-input">
-                                                     <label for="" class="form-label">Expiry Month</label>
-                                                     <input type="text" class="form-control" id="" placeholder="12">
-                                                  </div>
-                                                  <div class="form-input">
-                                                     <label for="" class="form-label">Expiry Year</label>
+                                                     <label for="" class="form-label">Expiry year</label>
                                                      <input type="text" class="form-control" id="" placeholder="2022">
+                                                  </div>
+                                                     <div class="form-input">
+                                                     <label for="" class="form-label">CVV</label>
+                                                     <input type="text" class="form-control" id="" placeholder="100">
                                                   </div>
                                                </div>
                                                 <div class="form-input">
-                                                  <label for="" class="form-label">Holder Name</label>
+                                                  <label for="" class="form-label">Name on card</label>
                                                   <input type="text" class="form-control" id="" placeholder="Jack">
                                                </div>
                                                 <div class="form-input">
@@ -248,52 +324,21 @@
                                                </div>
                                             
                                             </div>
-                                            </div>
+                                           
                                             
-                                            <div class="pe_radio">
-                                           <label for="radio-bank" class="radiobox radio-click">
-                                              <input type="radio" name="radio-filter-billing" id="radio-bank">
-                                              <div class="radiobox-text"><span>Direct from bank account (ACH)</span>
-                                               </div>
-                                           </label>
-                                                
-                                                <div class="radio-data-info">
-                                               
-                                                <div class="category-form-input">
-                                                  <div class="form-input">
-                                                     <label for="" class="form-label">Name</label>
-                                                     <input type="text" class="form-control" id="" placeholder="Consumer John Doe">
-                                                  </div>
-                                                  <div class="form-input">
-                                                     <label for="" class="form-label">Account Number</label>
-                                                     <input type="text" class="form-control" id="" placeholder="084339231638309">
-                                                  </div>
-                                               </div>
-                                                <div class="category-form-input">
-                                                  <div class="form-input">
-                                                     <label for="" class="form-label">Routing Number</label>
-                                                     <input type="text" class="form-control" id="" placeholder="121122676">
-                                                  </div>
-                                                  <div class="form-input disabled">
-                                                     <label for="" class="form-label">Purpose</label>
-                                                     <input type="text" class="form-control" id="" placeholder="CORPORATE">
-                                                  </div>
-                                               </div>
-                                                <div class="form-input disabled">
-                                                  <label for="" class="form-label">Account Type</label>
-                                                  <input type="text" class="form-control" id="" placeholder="SAVINGS">
-                                               </div>
-                                            </div>
-                                        </div>
+                                            
                                      </div>
                                         
                                       </div>
+                                     
+                                     
                                      <div class="form-area">
-                                     <div class="form-input form-submit mt-4">
-                                        <button class="button button-grey cancel">Cancel</button>
-                                        <button class="button">Submit</button>
-                                     </div>
-                                  </div>
+                                       <div class="form-input form-submit">
+                                          <button class="button button-grey cancel">Cancel</button>
+                                          <button class="button confirmation-window-modal-action">Save</button>
+                                       </div>
+                                    </div>
+                                     
                                  </div>
                               </div>
                            </div>
@@ -382,5 +427,6 @@
          crossorigin="anonymous"
          ></script>
       <script src="js/app.min.js" defer></script>
+       <script src="js/dropdown.js"></script>
    </body>
 </html>

@@ -10,7 +10,7 @@ body{font-family:'Mulish',sans-serif;font-weight:500;margin:0;font-size:14px;lin
 .card-header{background-color:#fff;margin-bottom:20px;border:none}
 .card-body{-ms-flex:1 1 auto;flex:1 1 auto;padding:0;border:none}
 .card-footer{padding-top:80px}
-.logo {height: 80px;width: 95px;}
+.logo {height: 80px;width: 96px;max-height: 80px;min-height: 80px;min-width: 96px;max-width: 96px;}
 .card{padding:15px;background:#fff}
 .left{text-align:left}
 .right{text-align:right}

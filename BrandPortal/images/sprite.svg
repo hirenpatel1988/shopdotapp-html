@@ -429,6 +429,21 @@
 <path d="M9 2C5.136 2 2 5.136 2 9C2 12.864 5.136 16 9 16C12.864 16 16 12.864 16 9C16 5.136 12.864 2 9 2ZM9.7 12.5H8.3V8.3H9.7V12.5ZM9.7 6.9H8.3V5.5H9.7V6.9Z" fill="white"/>
 </svg>
     
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" id="gp-edit-account">
+<path d="M-0.000732422 12.0009H2.49927L9.8726 4.6276L7.3726 2.1276L-0.000732422 9.50093V12.0009ZM1.3326 10.0543L7.3726 4.01427L7.98593 4.6276L1.94593 10.6676H1.3326V10.0543Z" fill="white"/>
+<path d="M10.2459 0.194268C9.98593 -0.0657324 9.56593 -0.0657324 9.30593 0.194268L8.08593 1.41427L10.5859 3.91427L11.8059 2.69427C12.0659 2.43427 12.0659 2.01427 11.8059 1.75427L10.2459 0.194268Z" stroke="none"/>
+</svg>
+    
+        <symbol width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="product-editing-title-new">
+<path d="M20 11H7.83L13.42 5.41L12 4L4 12L12 20L13.41 18.59L7.83 13H20V11Z" fill="#C9632B"/>
+</symbol>
+    
+
+    <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg" id="order-receipt">
+<path d="M14 0H6L0 6V18C0 19.1 0.9 20 2 20H14C15.1 20 16 19.1 16 18V2C16 0.9 15.1 0 14 0ZM14 2V18H2V6.83L6.83 2H14Z" fill="#283B49"/>
+<path d="M12 11L8 15L4 11L5.41 9.59L7 11.17V7.02L9 7V11.17L10.59 9.58L12 11Z" fill="#283B49"/>
+</svg>
+    
 </svg>
 
 

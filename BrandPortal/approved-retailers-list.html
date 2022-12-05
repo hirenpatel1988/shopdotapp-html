@@ -59,7 +59,7 @@
                               <div class="dropdown_body">
                                  <div class="dropdown_inner">
                                     <ul>
-                                       <li><a href="#">Approved Retailers</a></li>
+                                       <li><a href="#">Connected Retailers</a></li>
                                        <li><a href="#">Requests for Access</a></li>
                                     </ul>
                                  </div>
@@ -177,7 +177,7 @@
                      <div class="filters_block filters_block-body">
                         <!--single filter head-->
                         <div class="filter open filter-by-products">
-                           <div class="filter_body pt-3">
+                           <div class="filter_body pt-3 pb-5">
                               <!--single filter subfilters-->
                               <div class="subfilters">
                                  <div class="subfilter">
@@ -209,51 +209,7 @@
                                        </div>
                                     </div>
                                  </div>
-                                 <div class="subfilter">
-                                    <div class="subfilter_head mb-2">
-                                       Product Category
-                                       <div class="tooltip">
-                                          <div class="tooltip-icon tooltip-icon-info">
-                                             <svg class="icon">
-                                                <use xlink:href="images/sprite.svg#icon-info"></use>
-                                             </svg>
-                                          </div>
-                                          <div class="tooltip_text">
-                                             <p>These are the categories of all ShopDot products that the retailer pushed to store.</p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="multiselect">
-                                       <div class="selectBox" onclick="showCheckboxes('productCategory')">
-                                          <select>
-                                             <option>Select Product Category</option>
-                                          </select>
-                                          <div class="overSelect" data-selectId="productCategory"></div>
-                                       </div>
-                                       <div id="productCategory" class="select-list select-options hide">
-                                          <label for="pc0">
-                                          <input type="checkbox" id="pc0" />Food & Drinks
-                                          <span></span>
-                                          </label>
-                                          <label for="pc4">
-                                          <input type="checkbox" id="pc4" />Home & Garden
-                                          <span></span>
-                                          </label>
-                                          <label for="pc5">
-                                          <input type="checkbox" id="pc5" />Jewelry
-                                          <span></span>
-                                          </label>
-                                          <label for="pc6">
-                                          <input type="checkbox" id="pc6" />Men
-                                          <span></span>
-                                          </label>
-                                          <label for="pc7">
-                                          <input type="checkbox" id="pc7" />Women
-                                          <span></span>
-                                          </label>
-                                       </div>
-                                    </div>
-                                 </div>
+                                
                                  <div class="subfilter">
                                     <div class="subfilter_head mb-2">
                                        state
@@ -282,16 +238,7 @@
                                  <div class="subfilter">
                                     <div class="subfilter_head mb-2">
                                        All Time Sales 
-                                       <div class="tooltip">
-                                          <div class="tooltip-icon tooltip-icon-info">
-                                             <svg class="icon">
-                                                <use xlink:href="images/sprite.svg#icon-info"></use>
-                                             </svg>
-                                          </div>
-                                          <div class="tooltip_text">
-                                             <p>This is the current all time sales of the retailer on your product</p>
-                                          </div>
-                                       </div>
+                                       
                                     </div>
                                     <div class="subfilter_body">
                                        <div class="min-max-slider mt-0">
@@ -312,32 +259,7 @@
                                        </div>
                                     </div>
                                  </div>
-                                 <div class="subfilter">
-                                    <div class="subfilter_head mb-2">
-                                       Products Pushed
-                                       <div class="tooltip">
-                                          <div class="tooltip-icon tooltip-icon-info">
-                                             <svg class="icon">
-                                                <use xlink:href="images/sprite.svg#icon-info"></use>
-                                             </svg>
-                                          </div>
-                                          <div class="tooltip_text">
-                                             <p>This the current count of your products that the retailer has pushed to store.</p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="subfilter_body">
-                                       <div class="min-max mt-2">
-                                          <div class="mm-input">
-                                             <input type="text" name="min-price-wsp" id="min-price-wsp" placeholder="Min">
-                                          </div>
-                                          <span class="spacer">-</span>
-                                          <div class="mm-input">
-                                             <input type="text" name="max-price-wsp" id="max-price-wsp" placeholder="Max">
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
+                               
                               </div>
                            </div>
                         </div>
@@ -349,12 +271,12 @@
                      <div class="breadcrumbs_wrap">
                         <ul class="breadcrumbs">
                            <li> <a href="#">Home</a></li>
-                           <li> <span>Approved Retailers</span></li>
+                           <li> <span>Connected Retailers</span></li>
                         </ul>
                      </div>
                      <div class="products_head-content">
                         <div class="title">
-                           <h1>Approved Retailers</h1>
+                           <h1>Connected Retailers</h1>
                            <div class="number">90</div>
                         </div>
                         <div class="products_head-search">
@@ -377,13 +299,13 @@
                   </div>
                   <div class="products_body">
                      <div class="content_area">
-                        <div class="datalist-table_wrap">
+                        <div class="datalist-table_wrap wide-scroll dynamic_height">
                            <table class="table datalist-table">
-                              <thead class="nodark-bg">
+                              <thead class="nodark-bg sticky-thead">
                                  <tr>
                                     <th>
                                        <div class="title">
-                                          Retailer name
+                                          Retailer Name
                                           <svg class="icon">
                                              <use href="images/sprite.svg#icon-chevron--down"></use>
                                           </svg>
@@ -397,37 +319,11 @@
                                           </svg>
                                        </div>
                                     </th>
-                                    <th>
-                                       <div class="title">
-                                          Products Published
-                                          <div class="tooltip">
-                                             <div class="tooltip-icon tooltip-icon-info">
-                                                <svg class="icon">
-                                                   <use xlink:href="images/sprite.svg#icon-info"></use>
-                                                </svg>
-                                             </div>
-                                             <div class="tooltip_text">
-                                                <p>This is the current count of your products that the retailer has published to store</p>
-                                             </div>
-                                          </div>
-                                          <svg class="icon">
-                                             <use href="images/sprite.svg#icon-chevron--down"></use>
-                                          </svg>
-                                       </div>
-                                    </th>
+                                    
                                     <th>
                                        <div class="title">
                                           All Time Sales
-                                          <div class="tooltip">
-                                             <div class="tooltip-icon tooltip-icon-info">
-                                                <svg class="icon">
-                                                   <use xlink:href="images/sprite.svg#icon-info"></use>
-                                                </svg>
-                                             </div>
-                                             <div class="tooltip_text">
-                                                <p>This the current all Time Sales of the retailer on your product.</p>
-                                             </div>
-                                          </div>
+                                          
                                           <svg class="icon">
                                              <use href="images/sprite.svg#icon-chevron--down"></use>
                                           </svg>
@@ -441,24 +337,7 @@
                                           </svg>
                                        </div>
                                     </th>
-                                    <th>
-                                       <div class="title">
-                                          Product Category
-                                          <div class="tooltip">
-                                             <div class="tooltip-icon tooltip-icon-info">
-                                                <svg class="icon">
-                                                   <use xlink:href="images/sprite.svg#icon-info"></use>
-                                                </svg>
-                                             </div>
-                                             <div class="tooltip_text">
-                                                <p>These are the categories of all ShopDot products that the retailer published to store</p>
-                                             </div>
-                                          </div>
-                                          <svg class="icon">
-                                             <use href="images/sprite.svg#icon-chevron--down"></use>
-                                          </svg>
-                                       </div>
-                                    </th>
+                                   
                                     <th>
                                        <div class="title">
                                           State
@@ -480,35 +359,27 @@
                                     <td>
                                        <div class="store">
                                           <div class="number_wrap">
-                                             <div class="number">1</div>
+                                             <a href="#" class="number">
+                                              <img src="images/pc-slider-temp.jfif" class="avtar-img">
+                                              </a>
                                           </div>
                                           <div class="retailer_web_link">
                                              <a href="#">Walker Pharmacy</a>
-                                             <span class="rw-link">www.walker-pharmacy.com</span>
+                                             
                                           </div>
                                        </div>
                                     </td>
                                     <td>
                                        <div>60</div>
                                     </td>
-                                    <td>
-                                       <div>55</div>
-                                    </td>
+                                  
                                     <td>
                                        <div>7000 USD</div>
                                     </td>
                                     <td>
                                        Home Decor
                                     </td>
-                                    <td>
-                                       <div class="txt tooltip-tbl flex-column">
-                                          Home &amp; Garden, 
-                                          <div class="tooltip">
-                                             <span class="more">+ 2 more</span>
-                                             <div class="tooltip_text"><label>Home &amp; Garden</label><label>Home &amp; Garden</label></div>
-                                          </div>
-                                       </div>
-                                    </td>
+                                    
                                     <td>
                                        Oregon
                                     </td>
@@ -546,31 +417,21 @@
                                           </div>
                                           <div class="retailer_web_link">
                                              <a href="#">Walker Pharmacy</a>
-                                             <span class="rw-link">www.walker-pharmacy.com</span>
+                                             
                                           </div>
                                        </div>
                                     </td>
                                     <td>
                                        <div>60</div>
                                     </td>
-                                    <td>
-                                       <div>55</div>
-                                    </td>
+                                   
                                     <td>
                                        <div>7000 USD</div>
                                     </td>
                                     <td>
                                        Home Decor
                                     </td>
-                                    <td>
-                                       <div class="txt tooltip-tbl flex-column">
-                                          Home &amp; Garden, 
-                                          <div class="tooltip">
-                                             <span class="more">+ 2 more</span>
-                                             <div class="tooltip_text"><label>Home &amp; Garden</label><label>Home &amp; Garden</label></div>
-                                          </div>
-                                       </div>
-                                    </td>
+                                   
                                     <td>
                                        Oregon
                                     </td>
@@ -608,31 +469,21 @@
                                           </div>
                                           <div class="retailer_web_link">
                                              <a href="#">Walker Pharmacy</a>
-                                             <span class="rw-link">www.walker-pharmacy.com</span>
+                                             
                                           </div>
                                        </div>
                                     </td>
                                     <td>
                                        <div>60</div>
                                     </td>
-                                    <td>
-                                       <div>55</div>
-                                    </td>
+                                    
                                     <td>
                                        <div>7000 USD</div>
                                     </td>
                                     <td>
                                        Home Decor
                                     </td>
-                                    <td>
-                                       <div class="txt tooltip-tbl flex-column">
-                                          Home &amp; Garden, 
-                                          <div class="tooltip">
-                                             <span class="more">+ 2 more</span>
-                                             <div class="tooltip_text"><label>Home &amp; Garden</label><label>Home &amp; Garden</label></div>
-                                          </div>
-                                       </div>
-                                    </td>
+                                    
                                     <td>
                                        Oregon
                                     </td>
@@ -670,31 +521,21 @@
                                           </div>
                                           <div class="retailer_web_link">
                                              <a href="#">Walker Pharmacy</a>
-                                             <span class="rw-link">www.walker-pharmacy.com</span>
+                                             
                                           </div>
                                        </div>
                                     </td>
                                     <td>
                                        <div>60</div>
                                     </td>
-                                    <td>
-                                       <div>55</div>
-                                    </td>
+                                   
                                     <td>
                                        <div>7000 USD</div>
                                     </td>
                                     <td>
                                        Home Decor
                                     </td>
-                                    <td>
-                                       <div class="txt tooltip-tbl flex-column">
-                                          Home &amp; Garden, 
-                                          <div class="tooltip">
-                                             <span class="more">+ 2 more</span>
-                                             <div class="tooltip_text"><label>Home &amp; Garden</label><label>Home &amp; Garden</label></div>
-                                          </div>
-                                       </div>
-                                    </td>
+                                    
                                     <td>
                                        Oregon
                                     </td>
@@ -732,31 +573,177 @@
                                           </div>
                                           <div class="retailer_web_link">
                                              <a href="#">Walker Pharmacy</a>
-                                             <span class="rw-link">www.walker-pharmacy.com</span>
+                                             
                                           </div>
                                        </div>
                                     </td>
                                     <td>
                                        <div>60</div>
                                     </td>
-                                    <td>
-                                       <div>55</div>
-                                    </td>
+                                    
                                     <td>
                                        <div>7000 USD</div>
                                     </td>
                                     <td>
                                        Home Decor
                                     </td>
+                                    
                                     <td>
-                                       <div class="txt tooltip-tbl flex-column">
-                                          Home &amp; Garden, 
-                                          <div class="tooltip">
-                                             <span class="more">+ 2 more</span>
-                                             <div class="tooltip_text"><label>Home &amp; Garden</label><label>Home &amp; Garden</label></div>
+                                       Oregon
+                                    </td>
+                                    <td>
+                                       <span class="status-pill pill_connected w-auto">
+                                            Connected
+                                        </span>
+                                    </td>
+                                    <td>
+                                      <div class="actions">
+                                       <div class="dropdown">
+                                          <div class="dropdown_header">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-more"></use>
+                                             </svg>
+                                          </div>
+                                          <div class="dropdown_body left-open">
+                                             <div class="dropdown_inner">
+                                                <ul>
+                                                   <li><a href="#">View/Edit</a></li>
+                                                   <li><a href="#">Message</a></li>
+                                                   <li><a href="#">Decline</a></li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    </td>
+                                 </tr>
+                                  <tr>
+                                    <td>
+                                       <div class="store">
+                                          <div class="number_wrap">
+                                             <div class="number">C</div>
+                                          </div>
+                                          <div class="retailer_web_link">
+                                             <a href="#">Walker Pharmacy</a>
+                                             
                                           </div>
                                        </div>
                                     </td>
+                                    <td>
+                                       <div>60</div>
+                                    </td>
+
+                                    <td>
+                                       <div>7000 USD</div>
+                                    </td>
+                                    <td>
+                                       Home Decor
+                                    </td>
+                                    
+                                    <td>
+                                       Oregon
+                                    </td>
+                                    <td>
+                                        <span class="status-pill pill_connected w-auto">
+                                            Connected
+                                        </span>
+                                    </td>
+                                   <td>
+                                      <div class="actions">
+                                       <div class="dropdown">
+                                          <div class="dropdown_header">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-more"></use>
+                                             </svg>
+                                          </div>
+                                          <div class="dropdown_body left-open">
+                                             <div class="dropdown_inner">
+                                                <ul>
+                                                   <li><a href="#">View/Edit</a></li>
+                                                   <li><a href="#">Message</a></li>
+                                                   <li><a href="#">Decline</a></li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <div class="store">
+                                          <div class="number_wrap">
+                                             <div class="number">1</div>
+                                          </div>
+                                          <div class="retailer_web_link">
+                                             <a href="#">Walker Pharmacy</a>
+                                             
+                                          </div>
+                                       </div>
+                                    </td>
+                                    <td>
+                                       <div>60</div>
+                                    </td>
+                                  
+                                    <td>
+                                       <div>7000 USD</div>
+                                    </td>
+                                    <td>
+                                       Home Decor
+                                    </td>
+                                    
+                                    <td>
+                                       Oregon
+                                    </td>
+                                    <td>
+                                        <span class="status-pill pill_connected w-auto">
+                                            Connected
+                                        </span>
+                                    </td>
+                                    <td>
+                                      <div class="actions">
+                                       <div class="dropdown">
+                                          <div class="dropdown_header">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-more"></use>
+                                             </svg>
+                                          </div>
+                                          <div class="dropdown_body left-open">
+                                             <div class="dropdown_inner">
+                                                <ul>
+                                                   <li><a href="#">View/Edit</a></li>
+                                                   <li><a href="#">Message</a></li>
+                                                   <li><a href="#">Decline</a></li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <div class="store">
+                                          <div class="number_wrap">
+                                             <div class="number">1</div>
+                                          </div>
+                                          <div class="retailer_web_link">
+                                             <a href="#">Walker Pharmacy</a>
+                                             
+                                          </div>
+                                       </div>
+                                    </td>
+                                    <td>
+                                       <div>60</div>
+                                    </td>
+                                   
+                                    <td>
+                                       <div>7000 USD</div>
+                                    </td>
+                                    <td>
+                                       Home Decor
+                                    </td>
+                                    
                                     <td>
                                        Oregon
                                     </td>
@@ -794,31 +781,21 @@
                                           </div>
                                           <div class="retailer_web_link">
                                              <a href="#">Walker Pharmacy</a>
-                                             <span class="rw-link">www.walker-pharmacy.com</span>
+                                             
                                           </div>
                                        </div>
                                     </td>
                                     <td>
                                        <div>60</div>
                                     </td>
-                                    <td>
-                                       <div>55</div>
-                                    </td>
+                                   
                                     <td>
                                        <div>7000 USD</div>
                                     </td>
                                     <td>
                                        Home Decor
                                     </td>
-                                    <td>
-                                       <div class="txt tooltip-tbl flex-column">
-                                          Home &amp; Garden, 
-                                          <div class="tooltip">
-                                             <span class="more">+ 2 more</span>
-                                             <div class="tooltip_text"><label>Home &amp; Garden</label><label>Home &amp; Garden</label></div>
-                                          </div>
-                                       </div>
-                                    </td>
+                                    
                                     <td>
                                        Oregon
                                     </td>
@@ -856,31 +833,21 @@
                                           </div>
                                           <div class="retailer_web_link">
                                              <a href="#">Walker Pharmacy</a>
-                                             <span class="rw-link">www.walker-pharmacy.com</span>
+                                             
                                           </div>
                                        </div>
                                     </td>
                                     <td>
                                        <div>60</div>
                                     </td>
-                                    <td>
-                                       <div>55</div>
-                                    </td>
+                                   
                                     <td>
                                        <div>7000 USD</div>
                                     </td>
                                     <td>
                                        Home Decor
                                     </td>
-                                    <td>
-                                       <div class="txt tooltip-tbl flex-column">
-                                          Home &amp; Garden, 
-                                          <div class="tooltip">
-                                             <span class="more">+ 2 more</span>
-                                             <div class="tooltip_text"><label>Home &amp; Garden</label><label>Home &amp; Garden</label></div>
-                                          </div>
-                                       </div>
-                                    </td>
+                                    
                                     <td>
                                        Oregon
                                     </td>
@@ -918,31 +885,21 @@
                                           </div>
                                           <div class="retailer_web_link">
                                              <a href="#">Walker Pharmacy</a>
-                                             <span class="rw-link">www.walker-pharmacy.com</span>
+                                             
                                           </div>
                                        </div>
                                     </td>
                                     <td>
                                        <div>60</div>
                                     </td>
-                                    <td>
-                                       <div>55</div>
-                                    </td>
+                                   
                                     <td>
                                        <div>7000 USD</div>
                                     </td>
                                     <td>
                                        Home Decor
                                     </td>
-                                    <td>
-                                       <div class="txt tooltip-tbl flex-column">
-                                          Home &amp; Garden, 
-                                          <div class="tooltip">
-                                             <span class="more">+ 2 more</span>
-                                             <div class="tooltip_text"><label>Home &amp; Garden</label><label>Home &amp; Garden</label></div>
-                                          </div>
-                                       </div>
-                                    </td>
+                                    
                                     <td>
                                        Oregon
                                     </td>
@@ -977,42 +934,38 @@
                         </div>
                         <!--products pagination-->
                         <div class="pagination_wrap mt-0">
-                           <div class="pagination">
-                              <div class="pagination_per">
-                                 <select name="per" id="per">
-                                    <option value="10">10</option>
-                                    <option value="20" selected>20</option>
-                                    <option value="50">50</option>
-                                    <option value="100">100</option>
-                                 </select>
-                                 <div class="pagination-title">items per page</div>
-                              </div>
-                              <div class="pagination_actions">
-                                 <a href="#" class="button button-grey-3 bordered" download="">
-                                    <svg class="icon">
-                                       <use xlink:href="images/sprite.svg#icon-download"></use>
-                                    </svg>
-                                    Download Approved Retailers
-                                 </a>
-                              </div>
-                              <div class="pagination_nav">
-                                 <button class="pagination-arrow pagination-arrow-prev">
-                                    <svg class="icon">
-                                       <use href="images/sprite.svg#icon-chevron--left"></use>
-                                    </svg>
-                                 </button>
-                                 <div class="pagination-current">
-                                    <input type="text" value="1" />
-                                 </div>
-                                 <button class="pagination-arrow pagination-arrow-next">
-                                    <svg class="icon">
-                                       <use href="images/sprite.svg#icon-chevron--right"></use>
-                                    </svg>
-                                 </button>
-                                 <div class="pagination-title">of 10 pages</div>
-                              </div>
+                        <div class="pagination br-top-none">
+                           <div class="pagination_per">
+                              <select name="per" id="per">
+                                 <option value="20" selected="">20</option>
+                                 <option value="50">50</option>
+                                 <option value="100">100</option>
+                              </select>
+                              <div class="pagination-title">per page | 20 of 30 items</div>
+                           </div>
+                           <div class="pagination_nav">
+                               <div class="pagination-title">page</div>
+                               <select name="per" id="per">
+                                 <option value="1" selected="">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                              </select>
+                               <div class="pagination-title">of 2</div>
+                              <button class="pagination-arrow pagination-arrow-prev">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-chevron--left"></use>
+                                 </svg>
+                              </button>
+                              <button class="pagination-arrow pagination-arrow-next">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-chevron--right"></use>
+                                 </svg>
+                              </button>
+                              
                            </div>
                         </div>
+                     </div>
                      </div>
                   </div>
                </div>
@@ -1022,7 +975,21 @@
          </footer>
           
 
-          <div class="bottom-notify active">
+          
+           <div class="bottom-notify">
+          <div class="container">
+              <div class="bottom-notify_text notify-center">
+                  <p>A Schuler Bookst has been revoked access to your products</p>
+              </div>
+          </div>
+          <div class="bottom-notify-close">
+              <svg class="icon">
+                  <use xlink:href="images/sprite.svg#icon-close"></use>
+              </svg>
+          </div>
+        </div>
+          
+          <div class="bottom-notify">
           <div class="container">
               <div class="bottom-notify_text notify-center">
                   <p>&lt;Retailer Name&gt;  has no longer access to your products.</p>
@@ -1079,3 +1046,13 @@
      sliderTrack.style.background = `linear-gradient(to right, #D0D0D0 ${percent1}% , #BD6F34 ${percent1}% , #BD6F34 ${percent2}%, #D0D0D0 ${percent2}%)`;
    }
 </script>
+
+        <script>
+       $(document).ready(function(){
+           var otherDivs = 
+               $(".header").outerHeight() + 
+               $(".products_head").outerHeight() + 
+               $(".pagination").outerHeight() + 
+               ($('.products_body').innerHeight() - $('.products_body').height());$('.dynamic_height').height($(window).height() - otherDivs - 0);
+        });
+       </script>

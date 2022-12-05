@@ -22,9 +22,10 @@
          <header class="header">
             <div class="header_block header_block-top">
                <div class="header_container">
+                   <div class="h-left">
                   <!--header logo-->
                   <div class="header_logo">
-                     <a href="index.html" class="logo">
+                     <a href="#" class="logo">
                         <picture><img src="images/logo.svg" alt="" /></picture>
                      </a>
                   </div>
@@ -38,27 +39,12 @@
                         <li class="menu_item">
                            <a href="products-all.html" class="menu_link active">Products</a>
                         </li>
-                        <li class="menu_item"><a href="#" class="menu_link @@m">My List</a></li>
+                        
                         <li class="menu_item"><a href="#" class="menu_link">Orders</a></li>
                      </ul>
                   </div>
                   <!--header search-->
-                  <div class="header_search search">
-                     <form action="#" class="search_form">
-                        <div class="search_form-input">
-                           <input type="text" placeholder="Search…" />
-                        </div>
-                        <button type="cancel" class="search_form-button">
-                           <svg class="icon">
-                              <use xlink:href="images/sprite.svg#icon-clear"></use>
-                           </svg>
-                        </button>
-                        <button type="submit"></button>
-                        <svg class="icon">
-                           <use xlink:href="images/sprite.svg#icon-search"></use>
-                        </svg>
-                     </form>
-                  </div>
+                   </div>
                   <!--header actions-->
                   <div class="header_actions">
                      <div class="header_usermenu">
@@ -67,11 +53,7 @@
                               <div class="dropdown_header-text">
                                  Hi, <span class="username">Jane</span>
                               </div>
-                              <div class="dropdown_header-icon">
-                                 <svg class="icon">
-                                    <use xlink:href="images/sprite.svg#icon-retailers"></use>
-                                 </svg>
-                              </div>
+                            
                               <div class="dropdown_header-chevron">
                                  <svg class="icon">
                                     <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
@@ -81,15 +63,7 @@
                            <div class="dropdown_body">
                               <div class="dropdown_inner">
                                  <ul>
-                                    <li>
-                                       <a href="#"
-                                          >
-                                          Switch to Brand
-                                          <svg class="icon">
-                                             <use xlink:href="images/sprite.svg#icon-brands"></use>
-                                          </svg>
-                                       </a>
-                                    </li>
+                                   
                                     <li><a href="#">Settings</a></li>
                                     <li><a href="#">Help Center</a></li>
                                     <li><a href="#">Sign out</a></li>
@@ -98,41 +72,7 @@
                            </div>
                         </div>
                      </div>
-                     <button class="header_action header_action-mails">
-                        <svg class="icon">
-                           <use xlink:href="images/sprite.svg#icon-mail"></use>
-                        </svg>
-                        <div class="text visible">5</div>
-                     </button>
-                     <button class="header_action header_action-notifications">
-                        <!--Changed icon to dropdown, to show list of 'updates'-->
-                        <div class="dropdown">
-                           <div class="dropdown_header">
-                              <svg class="icon">
-                                 <use xlink:href="images/sprite.svg#icon-notification"></use>
-                              </svg>
-                           </div>
-                           <div class="dropdown_body">
-                              <div class="dropdown_inner">
-                                 <ul>
-                                    <li>
-                                       <span>Summer Activities Chips for Kids</span> <br>
-                                       updated Dec.15, 2021, 07:56 PM
-                                    </li>
-                                    <li>
-                                       <span>Summer Activities Chips for Kids</span> <br>
-                                       updated Dec.15, 2021, 07:56 PM
-                                    </li>
-                                    <li>
-                                       <span>Summer Activities Chips for Kids</span> <br>
-                                       updated Dec.15, 2021, 07:56 PM
-                                    </li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="text visible">1</div>
-                     </button>
+                    
                      <div class="header_action header_action-invite">
                         <button class="button invite-brand">Invite Brands</button>
                      </div>
@@ -421,7 +361,7 @@
                               <!--single filter form-->
                               <form action="#" class="filter_form search_form">
                                  <div class="search_form-input">
-                                    <input type="text" placeholder="Search" />
+                                    <input type="text" placeholder="Search brand.." />
                                  </div>
                                  <button type="cancel" class="search_form-button">
                                     <svg class="icon">
@@ -435,113 +375,79 @@
                               </form>
                               <!--single filter form results-->
                               <div class="filter_form-results">
-                                 <div class="filter_form-title">12 Brands Found</div>
+                               
                                  <div class="filter_form-items">
                                     <div class="checkbox checkbox--no-decor">
                                        <label for="sr-0"
                                           >
-                                          <input type="checkbox" id="sr-0" name="sr" />
-                                          <div class="checkbox-text"><strong>Alpha</strong> 0</div>
+                                          <input type="checkbox" id="sr-0" name="sr" checked />
+                                          <div class="checkbox-text"><strong>Alpha </strong>One</div>
                                        </label>
                                     </div>
                                     <div class="checkbox checkbox--no-decor">
                                        <label for="sr-1"
                                           >
                                           <input type="checkbox" id="sr-1" name="sr" />
-                                          <div class="checkbox-text"><strong>Alpha</strong> 1</div>
+                                          <div class="checkbox-text"><strong>Alpha </strong>Two</div>
                                        </label>
                                     </div>
                                     <div class="checkbox checkbox--no-decor">
                                        <label for="sr-2"
                                           >
                                           <input type="checkbox" id="sr-2" name="sr" />
-                                          <div class="checkbox-text"><strong>Alpha</strong> 2</div>
+                                          <div class="checkbox-text"><strong>Alpha </strong>Three</div>
                                        </label>
                                     </div>
                                     <div class="checkbox checkbox--no-decor">
                                        <label for="sr-3"
                                           >
                                           <input type="checkbox" id="sr-3" name="sr" />
-                                          <div class="checkbox-text"><strong>Alpha</strong> 3</div>
+                                          <div class="checkbox-text"><strong>Alpha </strong> Four</div>
                                        </label>
                                     </div>
                                     <div class="checkbox checkbox--no-decor">
                                        <label for="sr-4"
                                           >
                                           <input type="checkbox" id="sr-4" name="sr" />
-                                          <div class="checkbox-text"><strong>Alpha</strong> 4</div>
+                                          <div class="checkbox-text"><strong>Alpha </strong> Five</div>
                                        </label>
                                     </div>
                                     <div class="checkbox checkbox--no-decor">
                                        <label for="sr-5"
                                           >
                                           <input type="checkbox" id="sr-5" name="sr" />
-                                          <div class="checkbox-text"><strong>Alpha</strong> 5</div>
+                                          <div class="checkbox-text"><strong>Alpha </strong> Six</div>
                                        </label>
                                     </div>
                                     <div class="checkbox checkbox--no-decor">
                                        <label for="sr-6"
                                           >
                                           <input type="checkbox" id="sr-6" name="sr" />
-                                          <div class="checkbox-text"><strong>Alpha</strong> 6</div>
+                                          <div class="checkbox-text"><strong>Alpha</strong> Seven</div>
                                        </label>
                                     </div>
                                     <div class="checkbox checkbox--no-decor">
                                        <label for="sr-7"
                                           >
                                           <input type="checkbox" id="sr-7" name="sr" />
-                                          <div class="checkbox-text"><strong>Alpha</strong> 7</div>
+                                          <div class="checkbox-text"><strong>Alpha</strong> Eight</div>
                                        </label>
                                     </div>
                                     <div class="checkbox checkbox--no-decor">
                                        <label for="sr-8"
                                           >
                                           <input type="checkbox" id="sr-8" name="sr" />
-                                          <div class="checkbox-text"><strong>Alpha</strong> 8</div>
+                                          <div class="checkbox-text"><strong>Alpha</strong> Nine</div>
                                        </label>
                                     </div>
                                     <div class="checkbox checkbox--no-decor">
                                        <label for="sr-9"
                                           >
                                           <input type="checkbox" id="sr-9" name="sr" />
-                                          <div class="checkbox-text"><strong>Alpha</strong> 9</div>
+                                          <div class="checkbox-text"><strong>Alpha</strong> Ten</div>
                                        </label>
                                     </div>
-                                    <div class="checkbox checkbox--no-decor">
-                                       <label for="sr-10"
-                                          >
-                                          <input type="checkbox" id="sr-10" name="sr" />
-                                          <div class="checkbox-text"><strong>Alpha</strong> 10</div>
-                                       </label>
-                                    </div>
-                                    <div class="checkbox checkbox--no-decor">
-                                       <label for="sr-11"
-                                          >
-                                          <input type="checkbox" id="sr-11" name="sr" />
-                                          <div class="checkbox-text"><strong>Alpha</strong> 11</div>
-                                       </label>
-                                    </div>
-                                    <div class="checkbox checkbox--no-decor">
-                                       <label for="sr-12"
-                                          >
-                                          <input type="checkbox" id="sr-12" name="sr" />
-                                          <div class="checkbox-text"><strong>Alpha</strong> 12</div>
-                                       </label>
-                                    </div>
-                                    <div class="checkbox checkbox--no-decor">
-                                       <label for="sr-13"
-                                          >
-                                          <input type="checkbox" id="sr-13" name="sr" />
-                                          <div class="checkbox-text"><strong>Alpha</strong> 13</div>
-                                       </label>
-                                    </div>
-                                    <div class="checkbox checkbox--no-decor">
-                                       <label for="sr-14"
-                                          >
-                                          <input type="checkbox" id="sr-14" name="sr" />
-                                          <div class="checkbox-text"><strong>Alpha</strong> 14</div>
-                                       </label>
-                                    </div>
+                                   
                                  </div>
                               </div>
                               <!--single filter subfilters-->
@@ -619,44 +525,8 @@
                                        </div>
                                     </div>
                                  </div>
-                                 <div class="subfilter subfilter-new filter-new-items mb-3">
-                                    <div class="subfilter_head flex-column mb-1">
-                                       <strong>Published Status</strong>
-                                       <p>Products published to your eCommerce store</p>
-                                    </div>
-                                 </div>
-                                 <div class="subfilter_body">
-                                    <div class="tabs">
-                                       <div class="tabs_body">
-                                          <div class="tab active">
-                                             <div class="tab_inner">
-                                                <div class="checkbox checkbox--no-decor">
-                                                   <label for=""
-                                                      >
-                                                      <input
-                                                         type="checkbox"
-                                                         id=""
-                                                         name=""
-                                                         />
-                                                      <div class="checkbox-text">Published Products</div>
-                                                   </label>
-                                                </div>
-                                                <div class="checkbox checkbox--no-decor">
-                                                   <label for=""
-                                                      >
-                                                      <input
-                                                         type="checkbox"
-                                                         id=""
-                                                         name=""
-                                                         />
-                                                      <div class="checkbox-text">Not Published Products</div>
-                                                   </label>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
+                                
+                                 
                                  <div class="subfilter mt-5">
                                     <div class="subfilter_head">Price</div>
                                     <div class="subfilter_body">
@@ -674,7 +544,8 @@
                                                          <input
                                                             type="checkbox"
                                                             id="price-wsp-1"
-                                                            name="price-wsp"
+                                                            name="price-wsp" checked
+                                                        
                                                             />
                                                          <div class="checkbox-text">$1 - $99</div>
                                                       </label>
@@ -685,7 +556,7 @@
                                                          <input
                                                             type="checkbox"
                                                             id="price-wsp-2"
-                                                            name="price-wsp"
+                                                            name="price-wsp" 
                                                             />
                                                          <div class="checkbox-text">$100 - $499</div>
                                                       </label>
@@ -748,7 +619,7 @@
                                                          <input
                                                             type="checkbox"
                                                             id="price-msrp-2"
-                                                            name="price-msrp"
+                                                            name="price-msrp" checked
                                                             />
                                                          <div class="checkbox-text">$100 - $499</div>
                                                       </label>
@@ -802,8 +673,8 @@
                                        <div class="checkbox checkbox--no-decor">
                                           <label for="stock-1"
                                              >
-                                             <input type="checkbox" id="stock-1" name="stock" />
-                                             <div class="checkbox-text">﹤10 units in stock</div>
+                                             <input type="checkbox" id="stock-1" name="stock" checked />
+                                             <div class="checkbox-text">&lt; 10 units in stock</div>
                                           </label>
                                        </div>
                                        <div class="checkbox checkbox--no-decor">
@@ -823,7 +694,7 @@
                                     </div>
                                  </div>
                                  <div class="subfilter">
-                                    <div class="subfilter_head">Total Shipping Time</div>
+                                    <div class="subfilter_head">Days to Fulfill</div>
                                     <div class="subfilter_body">
                                        <div class="checkbox checkbox--no-decor">
                                           <label for="ship-time-1"
@@ -835,7 +706,7 @@
                                        <div class="checkbox checkbox--no-decor">
                                           <label for="ship-time-2"
                                              >
-                                             <input type="checkbox" id="ship-time-2" name="ship-time" />
+                                             <input type="checkbox" id="ship-time-2" name="ship-time" checked />
                                              <div class="checkbox-text">4-6 days</div>
                                           </label>
                                        </div>
@@ -876,7 +747,7 @@
                         <div class="products_head-search">
                            <form action="#" class="search_form">
                               <div class="search_form-input">
-                                 <input type="text" placeholder="Search product…" />
+                                 <input type="text" placeholder="Search product" />
                               </div>
                               <button type="cancel" class="search_form-button">
                                  <svg class="icon">
@@ -894,13 +765,50 @@
                   <div class="products_body">
                      <div class="products_active-filters">
                         <div class="products_active-filter">
-                           <div class="txt">Alpha One</div>
+                           <div class="txt"><b>Brand:</b> Alpha One</div>
                            <button class="products_active-remove">
                               <svg class="icon">
                                  <use xlink:href="images/sprite.svg#icon-close"></use>
                               </svg>
                            </button>
                         </div>
+                         
+                         <div class="products_active-filter">
+                           <div class="txt"><b>WSP:</b> $1 - $99</div>
+                           <button class="products_active-remove">
+                              <svg class="icon">
+                                 <use xlink:href="images/sprite.svg#icon-close"></use>
+                              </svg>
+                           </button>
+                        </div>
+                         
+                         <div class="products_active-filter">
+                           <div class="txt"><b>MSRP:</b> $100 - $499</div>
+                           <button class="products_active-remove">
+                              <svg class="icon">
+                                 <use xlink:href="images/sprite.svg#icon-close"></use>
+                              </svg>
+                           </button>
+                        </div>
+                         
+                         <div class="products_active-filter">
+                           <div class="txt"><b>Stock:</b> &lt; 10 units in stock </div>
+                           <button class="products_active-remove">
+                              <svg class="icon">
+                                 <use xlink:href="images/sprite.svg#icon-close"></use>
+                              </svg>
+                           </button>
+                        </div>
+                         
+                         <div class="products_active-filter">
+                           <div class="txt"><b>Days to Fulfill:</b> 4-6 days</div>
+                           <button class="products_active-remove">
+                              <svg class="icon">
+                                 <use xlink:href="images/sprite.svg#icon-close"></use>
+                              </svg>
+                           </button>
+                        </div>
+                         
                         <button class="products_active-remove-all">Clear Filters</button>
                      </div>
                      <!--product card-->
@@ -912,22 +820,16 @@
                                  Connected
                                  </span>
                               </div>
-                              <div class="pc_bookmark">
-                                 <a href="#" class="bookmark-line">
-                                    <svg class="icon">
-                                       <use xlink:href="images/sprite.svg#bookmark-line"></use>
-                                    </svg>
-                                 </a>
-                                 <a href="#" class="bookmark-fill" style="display: none">
-                                    <svg class="icon">
-                                       <use xlink:href="images/sprite.svg#bookmark-fill"></use>
-                                    </svg>
-                                 </a>
-                              </div>
+                              
+                              
+                                     
+                                  
+                                   
+                                 
                            </div>
                            <div class="pc_body">
                               <div class="pc_slider">
-                                 <div class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events">
+                                 <a href="product-single.html" class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events">
                                     <div class="swiper-wrapper" id="swiper-wrapper-18101d3e503fbb7ff" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
                                        <!--This slider items need duplicate for popup slider-->
                                        <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 3" style="width: 234px;">
@@ -959,8 +861,9 @@
                                     </div>
                                     <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
                                     <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                                 </div>
-                                 <div class="pc_links">
+                                 </a>
+                                  
+                                  <div class="pc_links">
                                     <a href="product-single.html" class="pc_links-product">
                                        <svg class="icon">
                                           <use xlink:href="images/sprite.svg#icon-link"></use>
@@ -991,12 +894,13 @@
                                  </div>
                               </div>
                               <div class="pc_brand-item">
-                                 <img src="images/product-stock.png">
-                                 <label>The Idea Box Kids The Idea Box KidsThe Idea Box KidsThe Idea Box Kids Box Kids</label>
+                                 <a href="brand-single.html"><img src="images/product-stock.png">
+                                 <span class="brand-name">The Idea Box Kids The Idea Box KidsThe Idea Box KidsThe Idea Box Kids Box Kids</span></a>
                               </div>
                            </div>
                         </div>
                      </div>
+                      
                      <div class="pc">
                         <div class="pc_main">
                            <div class="pc_head">
@@ -1005,22 +909,17 @@
                                  Pending
                                  </span>
                               </div>
-                              <div class="pc_bookmark">
-                                 <a href="#" class="bookmark-line" style="display: none">
-                                    <svg class="icon">
-                                       <use xlink:href="images/sprite.svg#bookmark-line"></use>
-                                    </svg>
-                                 </a>
-                                 <a href="#" class="bookmark-fill">
-                                    <svg class="icon">
-                                       <use xlink:href="images/sprite.svg#bookmark-fill"></use>
-                                    </svg>
-                                 </a>
-                              </div>
+                             
+                             
+                                  
+                                  
+                                 
+                                        
+                                        
                            </div>
                            <div class="pc_body">
                               <div class="pc_slider">
-                                 <div class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events">
+                                 <div href="product-single.html" class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events">
                                     <div class="swiper-wrapper" id="swiper-wrapper-18101d3e503fbb7ff" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
                                        <!--This slider items need duplicate for popup slider-->
                                        <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 3" style="width: 234px;">
@@ -1053,7 +952,7 @@
                                     <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
                                     <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                                  </div>
-                                 <div class="pc_links">
+                                  <div class="pc_links">
                                     <a href="product-single.html" class="pc_links-product">
                                        <svg class="icon">
                                           <use xlink:href="images/sprite.svg#icon-link"></use>
@@ -1065,6 +964,7 @@
                                        </svg>
                                     </a>
                                  </div>
+                                 
                               </div>
                            </div>
                            <div class="pc_footer">
@@ -1083,9 +983,9 @@
                                     <label class="black-text">$ 30-50</label>
                                  </div>
                               </div>
-                              <div class="pc_brand-item">
-                                 <img src="images/product-stock.png">
-                                 <label>The Idea Box Kids The Idea Box KidsThe Idea Box KidsThe Idea Box Kids Box Kids</label>
+                               <div class="pc_brand-item">
+                                 <a href="brand-single.html"><img src="images/product-stock.png">
+                                 <span class="brand-name">The Idea Box Kids The Idea Box KidsThe Idea Box KidsThe Idea Box Kids Box Kids</span></a>
                               </div>
                            </div>
                         </div>
@@ -1098,22 +998,11 @@
                                  Not Connected
                                  </span>
                               </div>
-                              <div class="pc_bookmark">
-                                 <a href="#" class="bookmark-line" style="display: none">
-                                    <svg class="icon">
-                                       <use xlink:href="images/sprite.svg#bookmark-line"></use>
-                                    </svg>
-                                 </a>
-                                 <a href="#" class="bookmark-fill">
-                                    <svg class="icon">
-                                       <use xlink:href="images/sprite.svg#bookmark-fill"></use>
-                                    </svg>
-                                 </a>
-                              </div>
+                             
                            </div>
                            <div class="pc_body">
                               <div class="pc_slider">
-                                 <div class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events">
+                                  <a href="product-single.html" class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events">
                                     <div class="swiper-wrapper" id="swiper-wrapper-18101d3e503fbb7ff" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
                                        <!--This slider items need duplicate for popup slider-->
                                        <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 3" style="width: 234px;">
@@ -1145,8 +1034,8 @@
                                     </div>
                                     <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
                                     <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                                 </div>
-                                 <div class="pc_links">
+                                 </a>
+                                  <div class="pc_links">
                                     <a href="product-single.html" class="pc_links-product">
                                        <svg class="icon">
                                           <use xlink:href="images/sprite.svg#icon-link"></use>
@@ -1158,6 +1047,7 @@
                                        </svg>
                                     </a>
                                  </div>
+                                
                               </div>
                            </div>
                            <div class="pc_footer">
@@ -1176,9 +1066,9 @@
                                     <label class="black-text">$ 30-50</label>
                                  </div>
                               </div>
-                              <div class="pc_brand-item">
-                                 <img src="images/product-stock.png">
-                                 <label>The Idea Box Kids The Idea Box KidsThe Idea Box KidsThe Idea Box Kids Box Kids</label>
+                               <div class="pc_brand-item">
+                                 <a href="brand-single.html"><img src="images/product-stock.png">
+                                 <span class="brand-name">The Idea Box Kids The Idea Box KidsThe Idea Box KidsThe Idea Box Kids Box Kids</span></a>
                               </div>
                            </div>
                         </div>
@@ -1191,22 +1081,11 @@
                                  Declined
                                  </span>
                               </div>
-                              <div class="pc_bookmark">
-                                 <a href="#" class="bookmark-line" style="display: none">
-                                    <svg class="icon">
-                                       <use xlink:href="images/sprite.svg#bookmark-line"></use>
-                                    </svg>
-                                 </a>
-                                 <a href="#" class="bookmark-fill">
-                                    <svg class="icon">
-                                       <use xlink:href="images/sprite.svg#bookmark-fill"></use>
-                                    </svg>
-                                 </a>
-                              </div>
+                              
                            </div>
                            <div class="pc_body">
                               <div class="pc_slider">
-                                 <div class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events">
+                                  <a href="product-single.html" class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events">
                                     <div class="swiper-wrapper" id="swiper-wrapper-18101d3e503fbb7ff" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
                                        <!--This slider items need duplicate for popup slider-->
                                        <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 3" style="width: 234px;">
@@ -1238,8 +1117,8 @@
                                     </div>
                                     <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
                                     <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                                 </div>
-                                 <div class="pc_links">
+                                 </a>
+                                  <div class="pc_links">
                                     <a href="product-single.html" class="pc_links-product">
                                        <svg class="icon">
                                           <use xlink:href="images/sprite.svg#icon-link"></use>
@@ -1251,6 +1130,7 @@
                                        </svg>
                                     </a>
                                  </div>
+                                 
                               </div>
                            </div>
                            <div class="pc_footer">
@@ -1269,13 +1149,101 @@
                                     <label class="black-text">$ 30-50</label>
                                  </div>
                               </div>
-                              <div class="pc_brand-item">
-                                 <img src="images/product-stock.png">
-                                 <label>The Idea Box Kids The Idea Box KidsThe Idea Box KidsThe Idea Box Kids Box Kids</label>
+                               <div class="pc_brand-item">
+                                 <a href="brand-single.html"><img src="images/product-stock.png">
+                                 <span class="brand-name">The Idea Box Kids The Idea Box KidsThe Idea Box KidsThe Idea Box Kids Box Kids</span></a>
                               </div>
                            </div>
                         </div>
+                         
                      </div>
+                      <div class="pc">
+                        <div class="pc_main not-available">
+                           <div class="pc_head">
+                              <div class="pc_head-item">
+                                <span class="status-pill pill_connected">
+                                 Connected
+                                 </span>
+                              </div>
+                              
+                           </div>
+                           <div class="pc_body">
+                              <div class="pc_slider">
+                                  <a href="product-single.html" class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events">
+                                    <div class="swiper-wrapper" id="swiper-wrapper-18101d3e503fbb7ff" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
+                                       <!--This slider items need duplicate for popup slider-->
+                                       <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 3" style="width: 234px;">
+                                          <div class="image">
+                                             <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                          </div>
+                                       </div>
+                                       <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 3" style="width: 234px;">
+                                          <div class="image">
+                                             <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                          </div>
+                                       </div>
+                                       <div class="swiper-slide" role="group" aria-label="3 / 3" style="width: 234px;">
+                                          <div class="image">
+                                             <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                          </div>
+                                       </div>
+                                       <!--end duplicate-->
+                                    </div>
+                                    <div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-18101d3e503fbb7ff" aria-disabled="true">
+                                       <svg class="icon">
+                                          <use xlink:href="images/sprite.svg#icon-chevron--left"></use>
+                                       </svg>
+                                    </div>
+                                    <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-18101d3e503fbb7ff" aria-disabled="false">
+                                       <svg class="icon">
+                                          <use xlink:href="images/sprite.svg#icon-chevron--right"></use>
+                                       </svg>
+                                    </div>
+                                    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
+                                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                                 </a>
+                                  <div class="pc_links">
+                                    <a href="product-single.html" class="pc_links-product">
+                                       <svg class="icon">
+                                          <use xlink:href="images/sprite.svg#icon-link"></use>
+                                       </svg>
+                                    </a>
+                                    <a href="#" class="pc_links-gallery" data-target="pg1">
+                                       <svg class="icon">
+                                          <use xlink:href="images/sprite.svg#icon-zoom"></use>
+                                       </svg>
+                                    </a>
+                                 </div>
+                                 
+                              </div>
+                           </div>
+                           <div class="pc_footer">
+                              <div class="pc-title">Activities Chips for Kids ps for Kids
+                                 <span class="status-pill pill_new">
+                                 New
+                                 </span>
+                              </div>
+                              <div class="pc_price-area">
+                                 <div class="pc_price-item">
+                                    <label>WSP</label>
+                                    <label class="red-text">$ 10-15</label>
+                                 </div>
+                                 <div class="pc_price-item">
+                                    <label>MSRP</label>
+                                    <label class="black-text">$ 30-50</label>
+                                 </div>
+                              </div>
+                               <div class="pc_brand-item">
+                                 <a href="brand-single.html"><img src="images/product-stock.png">
+                                 <span class="brand-name">The Idea Box Kids The Idea Box KidsThe Idea Box KidsThe Idea Box Kids Box Kids</span></a>
+                              </div>
+                           </div>
+                        </div>
+                         <div class="tooltip_text not-available-tooltip">
+                                       <p>Product Not Available.</p>
+                                    </div>
+                     </div>
+                      
                       
                      <!--products pagination-->
                      <div class="pagination_wrap mt-0">
@@ -1458,6 +1426,7 @@
                   $(this).parents(".pc_main").find(".bookmark-line").show();
                   $(this).parents(".pc_main").find(".bookmark-fill").hide(); 
                   $(document).find("#alert-added").find("span").html("Removed from list");
+                   $(document).find("#alert-added").addClass('remove-my-list');
                   closeAlert();
                });
             });

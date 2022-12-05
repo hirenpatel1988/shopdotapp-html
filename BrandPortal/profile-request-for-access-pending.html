@@ -59,7 +59,7 @@
                               <div class="dropdown_body">
                                  <div class="dropdown_inner">
                                     <ul>
-                                       <li><a href="#">Approved Retailers</a></li>
+                                       <li><a href="#">Connected Retailers</a></li>
                                        <li><a href="#">Requests for Access</a></li>
                                     </ul>
                                  </div>
@@ -180,7 +180,7 @@
                                  </span>
                      </div>
                      <div class="buttons">
-                          <button disabled="" class="button button-grey">Approve</button>
+                          <button class="button button-grey">Approve</button>
                         <button class="button button-red">Decline</button>
                         <button class="button message-brand">
                                 <svg class="icon">
@@ -194,7 +194,7 @@
                    <svg class="icon">
                           <use xlink:href="images/sprite.svg#info"></use>
                         </svg>
-                       <p>You must assign at least one product to the retailer before approving this request</p>
+                       <p>You must assign at least one product to the retailer before approving this request. See below to assign products to retailer.</p>
                    </div>
                    
                </div>
@@ -240,16 +240,7 @@
                                        <a href="#">Women Owned</a>
                                     </div>
                                  </div>
-                                 <div class="brand-single_about-item">
-                                    <div class="brand-single_about-item-title">
-                                       Product Categories:
-                                    </div>
-                                    <div class="brand-single_about-item-wrap">
-                                       <a href="#">Baby & Kids</a>
-                                       <a href="#">Men</a>
-                                       <a href="#">Women</a>
-                                    </div>
-                                 </div>
+                                 
                               </div>
                              
                            </div>
@@ -525,7 +516,7 @@
                                                                <div class="products_head-search">
                                                                   <form action="#" class="search_form">
                                                                      <div class="search_form-input">
-                                                                        <input type="text" placeholder="Search product…">
+                                                                        <input type="text" placeholder="Search product">
                                                                      </div>
                                                                      <button type="cancel" class="search_form-button">
                                                                         <svg class="icon">
@@ -539,20 +530,8 @@
                                                                   </form>
                                                                </div>
                                                             </div>
-                                                            <div class="align-filter-checkbox">
-                                                                <div class="products_active-filters my-1" id="unassignedSelectedFilter">
-                                                                    <div class="products_body-content">
-                                                                        <div class="my_list-table">
-                                                                            <label for="check-all-unassigned" class="checkbox">
-                                                                                <input type="checkbox" name="check-all-unassigned" id="check-all-unassigned" onclick="selectAllProducts(this)">
-                                                                                <div class="checkbox-text">Select all&nbsp;<span id="unassign_total_count">24</span>&nbsp;products</div>
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                            <div class="content_area overflow-auto retailer-table">
+                                                       
+                                                            <div class="content_area overflow-auto retailer-table mt-4">
                                                                <table class="my_list-table">
                                                                   <thead class="nodark-bg">
                                                                      <tr>
@@ -575,7 +554,7 @@
                                                                                        <ul>
                                                                                           <li><button>Ready for store Items</button></li>
                                                                                           <li><button>Published to store Items</button></li>
-                                                                                          <li><button>All Items In My List</button></li>
+                                                                                          
                                                                                        </ul>
                                                                                     </div>
                                                                                  </div>
@@ -637,7 +616,7 @@
                                                                                     </svg>
                                                                                  </div>
                                                                                  <div class="tooltip_text tt-right">
-                                                                                    <p>The WSP is an approximate wholesale pricing and can change during brand connect approval</p>
+                                                                                    <p>WSP stands for Wholesale Price. This is the price that retailers pay brands.</p>
                                                                                  </div>
                                                                               </div>
                                                                            </div>
@@ -777,13 +756,11 @@
                                                       <div class="tab_inner">
                                                          <div class="tab_inner-text">
                                                             <div class="products_head-content">
-                                                               <div class="title">
-                                                                  <h3 class="p-assigned-title">25 products assigned</h3>
-                                                               </div>
+                                                               
                                                                <div class="products_head-search">
                                                                   <form action="#" class="search_form">
                                                                      <div class="search_form-input">
-                                                                        <input type="text" placeholder="Search product…">
+                                                                        <input type="text" placeholder="Search product">
                                                                      </div>
                                                                      <button type="cancel" class="search_form-button">
                                                                         <svg class="icon">
@@ -797,11 +774,7 @@
                                                                   </form>
                                                                </div>
                                                             </div>
-<!--
-                                                            <div class="products_body-content">
-                                                               <div class="product-selected"><span>Select all 500 products</span></div>
-                                                            </div>
--->
+
                                                              
                                                              <div class="align-filter-checkbox">
                                                                    <div class="products_active-filter">
@@ -821,9 +794,9 @@
                       </svg>
                     </button>
                                                                    </div>
-                                                                 <button class="products_active-remove-all">Select all 25 products</button>
+                                                                 
                                                                 </div>
-                                                            <div class="content_area overflow-auto retailer-table">
+                                                            <div class="content_area overflow-auto retailer-table mt-4">
                                                                <table class="my_list-table">
                                                                   <thead class="nodark-bg">
                                                                      <tr>
@@ -846,7 +819,7 @@
                                                                                        <ul>
                                                                                           <li><button>Ready for store Items</button></li>
                                                                                           <li><button>Published to store Items</button></li>
-                                                                                          <li><button>All Items In My List</button></li>
+                                                                                          
                                                                                        </ul>
                                                                                     </div>
                                                                                  </div>
@@ -928,7 +901,7 @@
                                                                                     </svg>
                                                                                  </div>
                                                                                  <div class="tooltip_text tt-right">
-                                                                                    <p>The WSP is an approximate wholesale pricing and can change during brand connect approval</p>
+                                                                                    <p>WSP stands for Wholesale Price. This is the price that retailers pay brands.</p>
                                                                                  </div>
                                                                               </div>
                                                                            </div>
@@ -962,9 +935,7 @@
                                                                         <td>
                                                                            <div>Chips, Summer,  Summer Activities, Summer Toys</div>
                                                                         </td>
-                                                                        <td>
-                                                                           <div>01/14/22</div>
-                                                                        </td>
+                                                                       
                                                                         <td>
                                                                            <div>10000</div>
                                                                         </td>
@@ -998,9 +969,7 @@
                                                                         <td>
                                                                            <div>Chips, Summer,  Summer Activities, Summer Toys</div>
                                                                         </td>
-                                                                        <td>
-                                                                           <div>01/14/22</div>
-                                                                        </td>
+                                                                        
                                                                         <td>
                                                                            <div>10000</div>
                                                                         </td>
@@ -1034,9 +1003,7 @@
                                                                         <td>
                                                                            <div>Chips, Summer,  Summer Activities, Summer Toys</div>
                                                                         </td>
-                                                                        <td>
-                                                                           <div>01/14/22</div>
-                                                                        </td>
+                                                                       
                                                                         <td>
                                                                            <div>10000</div>
                                                                         </td>

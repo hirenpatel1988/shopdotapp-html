@@ -33,6 +33,7 @@ Find
       <header class="header">
         <div class="header_block header_block-top">
           <div class="header_container">
+              <div class="h-left">
             <!--header logo-->
             <div class="header_logo">
               <a href="index.html" class="logo">
@@ -49,27 +50,12 @@ Find
                 <li class="menu_item">
                   <a href="products-all.html" class="menu_link active">Products</a>
                 </li>
-                <li class="menu_item"><a href="#" class="menu_link @@m">My List</a></li>
+                
                 <li class="menu_item"><a href="#" class="menu_link">Orders</a></li>
               </ul>
             </div>
             <!--header search-->
-            <div class="header_search search">
-              <form action="#" class="search_form">
-                <div class="search_form-input">
-                  <input type="text" placeholder="Search…" />
-                </div>
-                <button type="cancel" class="search_form-button">
-                  <svg class="icon">
-                    <use xlink:href="images/sprite.svg#icon-clear"></use>
-                  </svg>
-                </button>
-                <button type="submit"></button>
-                <svg class="icon">
-                  <use xlink:href="images/sprite.svg#icon-search"></use>
-                </svg>
-              </form>
-            </div>
+              </div>
             <!--header actions-->
             <div class="header_actions">
               <div class="header_usermenu">
@@ -78,11 +64,7 @@ Find
                     <div class="dropdown_header-text">
                       Hi, <span class="username">Jane</span>
                     </div>
-                    <div class="dropdown_header-icon">
-                      <svg class="icon">
-                        <use xlink:href="images/sprite.svg#icon-retailers"></use>
-                      </svg>
-                    </div>
+                  
                     <div class="dropdown_header-chevron">
                       <svg class="icon">
                         <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
@@ -92,14 +74,7 @@ Find
                   <div class="dropdown_body">
                     <div class="dropdown_inner">
                       <ul>
-                        <li>
-                          <a href="#"
-                            >Switch to Brand
-                            <svg class="icon">
-                              <use xlink:href="images/sprite.svg#icon-brands"></use>
-                            </svg>
-                          </a>
-                        </li>
+                       
                         <li><a href="#">Settings</a></li>
                         <li><a href="#">Help Center</a></li>
                         <li><a href="#">Sign out</a></li>
@@ -108,43 +83,8 @@ Find
                   </div>
                 </div>
               </div>
-<!--
-              <button class="header_action header_action-mails">
-                <svg class="icon">
-                  <use xlink:href="images/sprite.svg#icon-mail"></use>
-                </svg>
-                <div class="text visible">5</div>
-              </button>
--->
-              <button class="header_action header_action-notifications">
-                <!--Changed icon to dropdown, to show list of 'updates'-->
-                <div class="dropdown">
-                  <div class="dropdown_header">
-                    <svg class="icon">
-                      <use xlink:href="images/sprite.svg#icon-notification"></use>
-                    </svg>
-                  </div>
-                  <div class="dropdown_body">
-                    <div class="dropdown_inner">
-                      <ul>
-                        <li>
-                          <span>Summer Activities Chips for Kids</span> <br>
-                          updated Dec.15, 2021, 07:56 PM
-                        </li>
-                        <li>
-                          <span>Summer Activities Chips for Kids</span> <br>
-                          updated Dec.15, 2021, 07:56 PM
-                        </li>
-                        <li>
-                          <span>Summer Activities Chips for Kids</span> <br>
-                          updated Dec.15, 2021, 07:56 PM
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="text visible">1</div>
-              </button>
+
+          
                <button class="header_action header_action-cart">
                 <svg class="icon">
                   <use xlink:href="images/sprite.svg#icon-cart"></use>
@@ -433,12 +373,14 @@ Find
               </div>
             </div>
             
-            <button class="button button-dark bordered large view-list">
-              <svg class="icon">
-                <use xlink:href="images/sprite.svg#icon-list"></use>
-              </svg>
-              View My List
-            </button>
+            <div class="buttons">
+                <button class="button button-dark">Connect</button>
+                <button class="button message-brand">
+                                <svg class="icon">
+                                    <use href="images/sprite.svg#message-white"></use>
+                                  </svg>
+                              </button>
+              </div>
           </div>
           <div class="product_details open">
             <div class="product_details-block">
@@ -457,14 +399,15 @@ Find
                 <div class="product-detail_info">
                   <div  class="ttl">
                     9 in stock
-                    <div class="tooltip">
-                      <div class="tooltip-icon tooltip-icon-orange">
-                        <svg class="icon">
-                          <use xlink:href="images/sprite.svg#icon-danger"></use>
-                        </svg>
+                      <div class="tooltip">
+                        <div class="tooltip-icon tooltip-icon-info ic-if-blue">
+                          <svg class="icon">
+                            <use xlink:href="images/sprite.svg#icon-info-blue-2"></use>
+                          </svg>
+                        </div>
+                        <div class="tooltip_text"><p>The inventory published within ShopDot is based on the inventory from your Shopify store x the inventory buffer that you set under Settings-Preferences.</p></div>
                       </div>
-                      <div class="tooltip_text"><p>Some text</p></div>
-                    </div>
+                    
 
                   </div>
                   <p class="txt">4 variants</p>
@@ -473,7 +416,14 @@ Find
               <div class="product-detail product-detail--wsp">
                   <div class="product-detail_info">
                     <div  class="ttl">
-                      WSP
+                      WSP <div class="tooltip">
+  <div class="tooltip-icon tooltip-icon-info">
+    <svg class="icon">
+      <use xlink:href="images/sprite.svg#icon-info-blue-2"></use>
+    </svg>
+  </div>
+  <div class="tooltip_text"><p>WSP stands for Wholesale Price. This is the price that retailers pay brands.</p></div>
+</div>
                     </div>
                     <p class="txt">$5.00-$7.50</p>
                   </div>
@@ -485,10 +435,10 @@ Find
                       <div class="tooltip">
                         <div class="tooltip-icon tooltip-icon-info">
                           <svg class="icon">
-                            <use xlink:href="images/sprite.svg#icon-info"></use>
+                            <use xlink:href="images/sprite.svg#icon-info-blue-2"></use>
                           </svg>
                         </div>
-                        <div class="tooltip_text"><p>Total shipping time is the number of business days for the supplier to process, ship and deliver product.</p></div>
+                        <div class="tooltip_text"><p>Days to Fulfill is the number of business days for the supplier to process, ship and deliver product.</p></div>
                       </div>
 
                     </div>
@@ -498,27 +448,10 @@ Find
                 <div class="product-detail product-detail--mspr">
                   <div class="product-detail_info">
                     <div  class="ttl">
-                      MSRP Price
+                      MSRP
 
                     </div>
                     <p class="txt">$15.00-$17.50</p>
-                  </div>
-                </div>
-                <div class="product-detail product-detail--profit">
-                  <div class="product-detail_info">
-                    <div  class="ttl">
-                      Profit
-                      <div class="tooltip">
-                        <div class="tooltip-icon tooltip-icon-info">
-                          <svg class="icon">
-                            <use xlink:href="images/sprite.svg#icon-info"></use>
-                          </svg>
-                        </div>
-                        <div class="tooltip_text"><p>This is the difference after WSP & shipping cost are deducted from the MSRP</p></div>
-                      </div>
-
-                    </div>
-                    <p class="txt">$5.00</p>
                   </div>
                 </div>
                 <div class="product-detail product-detail--ship-from">
@@ -530,24 +463,7 @@ Find
                   </div>
                 </div>
                 <!--Added latest detail-->
-                <div class="product-detail product-detail--ship-from">
-                  <div class="product-detail_info">
-                    <div  class="ttl">
-                      Latest Update by Brand
-                    </div>
-                    <div class="txt">Dec.6, 2021, 07:56 PM <span class="indicator">
-                      <div class="tooltip">
-                        <div class="tooltip-icon tooltip-icon-info">
-                          <svg class="icon">
-                            <use xlink:href="images/sprite.svg#icon-info"></use>
-                          </svg>
-                        </div>
-                        <div class="tooltip_text"><p><strong>List of Updates:</strong></p><p><ul><li>Product Title</li><li>Product Image</li><li>Product Description</li><li>Product Category</li><li>Pricing (WSP/MSRP)</li><li>Shipping & Processing</li><li>Dropship Eligibility</li><li>Return & Refund </li></ul></div>
-                      </div>
-
-                    </span></div>
-                  </div>
-                </div>
+                
                 <!--Added latest detail end-->
             </div>
 <!--
@@ -609,19 +525,69 @@ Find
                     
                     <div class="swiper-slide">
                       <div class="image">
-                        <picture><img src="images/pc-slider-temp.jfif" alt="" /></picture>
+                        <picture><img src="images/slider/1.jpeg" alt="" /></picture>
                       </div>
                     </div>
                     
                     <div class="swiper-slide">
                       <div class="image">
-                        <picture><img src="images/pc-slider-temp.jfif" alt="" /></picture>
+                        <picture><img src="images/slider/2.jpeg" alt="" /></picture>
                       </div>
                     </div>
                     
                     <div class="swiper-slide">
                       <div class="image">
-                        <picture><img src="images/pc-slider-temp.jfif" alt="" /></picture>
+                        <picture><img src="images/slider/3.jpeg" alt="" /></picture>
+                      </div>
+                    </div>
+                      
+                      <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/slider/4.jpeg" alt="" /></picture>
+                      </div>
+                    </div>
+                      
+                       <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/slider/5.webp" alt="" /></picture>
+                      </div>
+                    </div>
+                      
+                       <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/slider/6.webp" alt="" /></picture>
+                      </div>
+                    </div>
+                      
+                       <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/slider/7.webp" alt="" /></picture>
+                      </div>
+                    </div>
+                      
+                       <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/slider/8.webp" alt="" /></picture>
+                      </div>
+                    </div>
+                      
+                       <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/slider/9.webp" alt="" /></picture>
+                      </div>
+                    </div>
+                      
+                      
+                       <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/slider/10.webp" alt="" /></picture>
+                      </div>
+                    </div>
+                      
+                      
+                       <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/slider/11.webp" alt="" /></picture>
                       </div>
                     </div>
                     
@@ -632,24 +598,73 @@ Find
                 <div class="swiper-container gallery-main">
                   <div class="swiper-wrapper">
                     
-                    <div class="swiper-slide">
+                     <div class="swiper-slide">
                       <div class="image">
-                        <picture><img src="images/pc-slider-temp.jfif" alt="" /></picture>
+                        <picture><img src="images/slider/1.jpeg" alt="" /></picture>
                       </div>
                     </div>
                     
                     <div class="swiper-slide">
                       <div class="image">
-                        <picture><img src="images/pc-slider-temp.jfif" alt="" /></picture>
+                        <picture><img src="images/slider/2.jpeg" alt="" /></picture>
                       </div>
                     </div>
                     
                     <div class="swiper-slide">
                       <div class="image">
-                        <picture><img src="images/pc-slider-temp.jfif" alt="" /></picture>
+                        <picture><img src="images/slider/3.jpeg" alt="" /></picture>
                       </div>
                     </div>
-                    
+                      
+                      <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/slider/4.jpeg" alt="" /></picture>
+                      </div>
+                    </div>
+                      
+                       <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/slider/5.webp" alt="" /></picture>
+                      </div>
+                    </div>
+                      
+                       <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/slider/6.webp" alt="" /></picture>
+                      </div>
+                    </div>
+                      
+                       <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/slider/7.webp" alt="" /></picture>
+                      </div>
+                    </div>
+                      
+                       <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/slider/8.webp" alt="" /></picture>
+                      </div>
+                    </div>
+                      
+                       <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/slider/9.webp" alt="" /></picture>
+                      </div>
+                    </div>
+                      
+                      
+                       <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/slider/10.webp" alt="" /></picture>
+                      </div>
+                    </div>
+                      
+                      
+                       <div class="swiper-slide">
+                      <div class="image">
+                        <picture><img src="images/slider/11.webp" alt="" /></picture>
+                      </div>
+                    </div>                    
                   </div>
                   <div class="swiper-button-prev">
                     <svg class="icon">
@@ -710,16 +725,7 @@ Find
                     <p>Product will be shipped by <span>Fusion</span> within <span>1-3 days</span></p>
                 </div>
                 
-              <div class="product_info-buttons">
-                 <button class="button button-green large connect-product">Add to My List</button> 
-<!--                 <button class="button button-red large connect-product">Remove from My List</button> -->
-                <a href="#vars" class="button button-grey scroll"
-                  >View Product Variants
-                  <svg class="icon">
-                    <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
-                  </svg>
-                </a>
-              </div>
+             
             </div>
 
             <div class="product_vars" id="vars">
@@ -735,7 +741,7 @@ Find
                           Barcode <div class="tooltip">
   <div class="tooltip-icon tooltip-icon-info">
     <svg class="icon">
-      <use xlink:href="images/sprite.svg#icon-info"></use>
+      <use xlink:href="images/sprite.svg#icon-info-blue-2"></use>
     </svg>
   </div>
   <div class="tooltip_text"><p>ISBN, UPC, GTIN, …</p></div>
@@ -743,10 +749,27 @@ Find
 
                         </div>
                       </th>
-                      <th><div class="txt">Stock</div></th>
+                      <th><div class="txt">Stock
+                          <div class="tooltip">
+                        <div class="tooltip-icon tooltip-icon-info ic-if-blue">
+                          <svg class="icon">
+                            <use xlink:href="images/sprite.svg#icon-info-blue-2"></use>
+                          </svg>
+                        </div>
+                        <div class="tooltip_text"><p>The inventory published within ShopDot is based on the inventory from your Shopify store x the inventory buffer that you set under Settings-Preferences.</p></div>
+                      </div>
+                          
+                          </div></th>
                       <th>
                         <div class="txt">
-                          WSP 
+                          WSP <div class="tooltip">
+  <div class="tooltip-icon tooltip-icon-info">
+    <svg class="icon">
+      <use xlink:href="images/sprite.svg#icon-info-blue-2"></use>
+    </svg>
+  </div>
+  <div class="tooltip_text"><p>WSP stands for Wholesale Price. This is the price that retailers pay brands.</p></div>
+</div>
 
                         </div>
                       </th>
@@ -756,31 +779,17 @@ Find
                           Shipping <div class="tooltip">
   <div class="tooltip-icon tooltip-icon-info">
     <svg class="icon">
-      <use xlink:href="images/sprite.svg#icon-info"></use>
+      <use xlink:href="images/sprite.svg#icon-info-blue-2"></use>
     </svg>
   </div>
-  <div class="tooltip_text"><p>Total shipping time is the number of business days for the supplier to process, ship and deliver product.</p></div>
+  <div class="tooltip_text"><p>Days to Fulfill is the number of business days for the supplier to process, ship and deliver product.</p></div>
 </div>
 
                         </div>
                       </th>
                         <th>
                           <div class="txt">
-                            MSRP Price
-
-                          </div>
-                        </th>
-                        <th>
-                          <div class="txt">
-                            Profit
-                            <div class="tooltip">
-                              <div class="tooltip-icon tooltip-icon-info">
-                                <svg class="icon">
-                                  <use xlink:href="images/sprite.svg#icon-info"></use>
-                                </svg>
-                              </div>
-                              <div class="tooltip_text"><p>This is the difference after WSP & shipping cost are deducted from the MSRP</p></div>
-                            </div>
+                            MSRP
 
                           </div>
                         </th>
@@ -827,9 +836,7 @@ Find
                     <td>
                       <div class="txt">$15.00-$17.50</div>
                     </td>
-                    <td>
-                      <div class="txt">+ $5.00</div>
-                    </td>
+                    
                       <td>
                       <div class="txt">
                           <button class="pc-status-button pc-status-button--add-list">
@@ -877,14 +884,135 @@ Find
                     <td>
                       <div class="txt">$15.00-$17.50</div>
                     </td>
-                    <td>
-                      <div class="txt">+ $5.00</div>
-                    </td>
+                    
                       <td>
                       <div class="txt">
+                           <div class="tooltip btn-tooltip">
+                              <div class="tooltip-icon tooltip-icon-info">
                           <button class="pc-status-button pc-status-button--add-list" disabled>
                       Add to Cart
-                    </button>
+                              
+                                 </button>
+                               
+                                  
+                              </div>
+                              <div class="tooltip_text"><p>You are not connected with the brand.</p></div>
+                            </div>
+                
+                          </div>
+                    </td>
+                  </tr>
+                     <tr>
+                    <td>
+                      <div class="image image--cover image--1-1">
+                        <picture><img src="images/pc-slider-temp.jfif" alt="" /></picture>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="txt">Wood</div>
+                    </td>
+                    <td>
+                      <div class="txt">Blue</div>
+                    </td>
+                    <td>
+                      <div class="txt">V1N-071A-0122-01</div>
+                    </td>
+                    <td>
+                      <div class="txt">813687021196</div>
+                    </td>
+                    <td>
+                      <div class="txt">
+                        <!--Red color for icon by default, orange with class icon--orange, add class to '.txt"'-->
+            0
+                        <div class="tooltip-icon-danger">
+                            <svg class="icon">
+                              <use xlink:href="images/sprite.svg#icon-danger"></use>
+                            </svg>
+                          </div>
+
+                      </div>
+                    </td>
+                    <td>
+                      <div class="txt">$5.00-$7.50</div>
+                    </td>
+                    <td>
+                      <div class="txt">$5.00</div>
+                    </td>
+                    <td>
+                      <div class="txt">$15.00-$17.50</div>
+                    </td>
+                    
+                      <td>
+                      <div class="txt">
+                           <div class="tooltip btn-tooltip">
+                              <div class="tooltip-icon tooltip-icon-info">
+                          <button class="pc-status-button pc-status-button--add-list" disabled>
+                      Add to Cart
+                              
+                                 </button>
+                               
+                                  
+                              </div>
+                              <div class="tooltip_text"><p>No stock available.</p></div>
+                            </div>
+                
+                          </div>
+                    </td>
+                  </tr>
+                     <tr>
+                    <td>
+                      <div class="image image--cover image--1-1">
+                        <picture><img src="images/pc-slider-temp.jfif" alt="" /></picture>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="txt">Wood</div>
+                    </td>
+                    <td>
+                      <div class="txt">Blue</div>
+                    </td>
+                    <td>
+                      <div class="txt">V1N-071A-0122-01</div>
+                    </td>
+                    <td>
+                      <div class="txt">813687021196</div>
+                    </td>
+                    <td>
+                      <div class="txt">
+                        <!--Red color for icon by default, orange with class icon--orange, add class to '.txt"'-->
+            0
+                        <div class="tooltip-icon-danger">
+                            <svg class="icon">
+                              <use xlink:href="images/sprite.svg#icon-danger"></use>
+                            </svg>
+                          </div>
+
+                      </div>
+                    </td>
+                    <td>
+                      <div class="txt">$5.00-$7.50</div>
+                    </td>
+                    <td>
+                      <div class="txt">$5.00</div>
+                    </td>
+                    <td>
+                      <div class="txt">$15.00-$17.50</div>
+                    </td>
+                    
+                      <td>
+                      <div class="txt">
+                           <div class="tooltip btn-tooltip">
+                              <div class="tooltip-icon tooltip-icon-info">
+                          <button class="pc-status-button pc-status-button--add-list" disabled>
+                      Add to Cart
+                              
+                                 </button>
+                               
+                                  
+                              </div>
+                              <div class="tooltip_text"><p>Product not available.</p></div>
+                            </div>
+                
                           </div>
                     </td>
                   </tr>
@@ -894,58 +1022,22 @@ Find
 
             <div class="product_extra product_shipping">
               <div class="product_extra-head">
-                <h3>Total Shipping Time</h3>
+                <h3>Shipping & Processing: </h3>
               </div>
               <div class="product_extra-body">
                 <div class="row">
-                  <div class="col-md-6">
-                    <div class="product_extra-text">
-                      <p>
-                        Estimated total shipping time is <strong>8-16</strong> days. Ships
-                        from Wilsonville, Oregon, United States. No international shipping.
-                      </p>
-                      <p>
-                        Ships product for <strong>$4.95</strong> flat rate plus
-                        <strong>$1</strong> for each additional item in the same order.
-                      </p>
+                  <div class="col-md-12">
+                   <div class="product_extra-text">
+                        <p>Estimated days to fulfill is <strong>[Range]</strong>. Product ships from <strong>[Shipping City]</strong>, <strong>[Shipping State]</strong>.</p>
+                        <p>Shipping costs will be a flat rate of <strong>[$Shipping Costs]</strong> for the first product and <strong>[$Incremental Fee]</strong> for each additional product within the same order.</p>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="product_extra-text">
-                      <h4>
-                        <svg class="icon">
-                          <use xlink:href="images/sprite.svg#icon-question"></use>
-                        </svg>
-                        Notes
-                      </h4>
-                      <p>
-                        Total shipping time is the number of business days for the supplier
-                        to process, ship and deliver product.
-                      </p>
-                    </div>
-                  </div>
+                 
                 </div>
               </div>
             </div>
 
-            <div class="product_extra product_return">
-              <div class="product_extra-head">
-                <h3>Return & Refund</h3>
-              </div>
-              <div class="product_extra-body">
-                <div class="row">
-                  <div class="col-12">
-                    <div class="product_extra-text">
-                      <h4>Return & Refund Policy</h4>
-                      <p>
-                        Returns and refunds are accepted on a case-by-case basis. Message
-                        Brand to see if an order is eligible for a return or refund.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+      
 
             <div class="product_about">
               <div class="row">
@@ -986,13 +1078,32 @@ Find
                         </div>
                       </div>
                     </div>
-                    <div class="product_about-buttons">
+                      
+                      <div class="brand-single_about-msrp">
+                      <!--here 3 icons - icon-msrp--up.svg, icon-msrp--flex.svg, icon-msrp--dollar.svg-->
+                      <div class="dollar"><picture><img src="images/icon-msrp--dollar.svg" alt=""></picture></div>
+                      The brand enforces MSRP.
+                    </div>
+                      
+                      <div class="mt-5">
+                      <p><span class="fw-700">Return and Refund Policy </span><br>
+                          Returns and refunds are accepted on a case-by-case basis.</p>
+                      </div>
+                      
+                      <div class="mt-5">
+                          <p><span class="fw-700">Requirements for retailers who want to connect to with your brand </span><br/>
+                          Retailer has to have an online store.</p>
+                      </div>
+                      
+                    <div class="product_about-buttons mt-5">
                       <!-- <a href="#" class="button button-dark large"
                         >View All Products (31)</a
                       > -->
-                      <a href="#" class="button button-dark large message-brand">VIew All Products (31)</a>
+                      <a href="#" class="button button-dark large message-brand">Connect</a>
                       <a href="#" class="button large message-brand">Message Brand</a>
                     </div>
+                      
+                      
                   </div>
                 </div>
                 <div class="col-lg-8">
@@ -1166,7 +1277,6 @@ Find
             </div>
 
     </div>
-
     <script src="./js/vendor.min.js" defer></script>
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"

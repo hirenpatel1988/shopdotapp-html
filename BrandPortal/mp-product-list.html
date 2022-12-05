@@ -51,7 +51,7 @@ Notes Find:
                      <ul class="header_menu menu">
                         <li class="menu_item"><a href="#" class="menu_link">Dashboard</a></li>
                         <li class="menu_item ">
-                           <a href="#" class="menu_link">Products</a>
+                           <a href="#" class="menu_link active">Products</a>
                         </li>
                         <li class="menu_item">
                            <div class="dropdown">
@@ -70,7 +70,7 @@ Notes Find:
                               <div class="dropdown_body">
                                  <div class="dropdown_inner">
                                     <ul>
-                                       <li><a href="#">Approved Retailers</a></li>
+                                       <li><a href="#">Connected Retailers</a></li>
                                        <li><a href="#">Requests for Access</a></li>
                                     </ul>
                                  </div>
@@ -119,6 +119,7 @@ Notes Find:
                            <div class="dropdown_body">
                               <div class="dropdown_inner">
                                  <ul>
+                                    <li><a href="#">Payout history</a></li>
                                     <li><a href="#">Settings</a></li>
                                     <li><a href="#">Help Center</a></li>
                                     <li><a href="#">Sign out</a></li>
@@ -210,7 +211,7 @@ Notes Find:
                                        <div class="checkbox checkbox--no-decor">
                                           <label for="p-cat-3"
                                              >
-                                             <input type="radio" id="p-cat-3" name="p-cat" />
+                                             <input type="radio" id="p-cat-3" name="p-cat" checked />
                                              <div class="checkbox-text">Women</div>
                                           </label>
                                        </div>
@@ -275,53 +276,7 @@ Notes Find:
                                        </div>
                                     </div>
                                  </div>
-                                 <div class="subfilter">
-                                    <div class="subfilter_head">
-                                       <div class="filter-label">Last sync</div>
-                                    </div>
-                                    <div class="subfilter_body">
-                                     
-                                            
-                                               
-                                                   <div class="checkbox checkbox--no-decor">
-                                                      <label for="p-1"
-                                                         >
-                                                         <input type="checkbox" id="p-1" name="p" />
-                                                         <div class="checkbox-text">Today</div>
-                                                      </label>
-                                                   </div>
-                                                   <div class="checkbox checkbox--no-decor">
-                                                      <label for="p-2"
-                                                         >
-                                                         <input type="checkbox" id="p-2" name="p" />
-                                                         <div class="checkbox-text">This week</div>
-                                                      </label>
-                                                   </div>
-                                                   <div class="checkbox checkbox--no-decor">
-                                                      <label for="p-3"
-                                                         >
-                                                         <input type="checkbox" id="p-3" name="p" />
-                                                         <div class="checkbox-text">This month</div>
-                                                      </label>
-                                                   </div>
-                                                   <div class="date-from-to">
-                                                        <div class="date-area">
-                                                            <small>From</small>
-                                                            <input type="date" name="p-from" />
-                                                            
-                                                        </div>
-                                                       <div class="date-area">
-                                                            <small>To</small>
-                                                            <input type="date" placeholder="To" name="p-to" />
-                                                           
-                                                        </div>
-                                                    </div>
-                                                
-                                            
-                                             
-                                        
-                                    </div>
-                                 </div>
+                                 
                               </div>
                            </div>
                         </div>
@@ -384,16 +339,14 @@ Notes Find:
                               </svg>
                            </button>
                         </div>
-<!--
                         <div class="products_active-filter">
-                           <div class="txt">Summer Activities</div>
+                           <div class="txt">Women</div>
                            <button class="products_active-remove">
                               <svg class="icon">
                                  <use xlink:href="images/sprite.svg#icon-close"></use>
                               </svg>
                            </button>
                         </div>
--->
                         <button class="products_active-remove-all">Clear Filters</button>
                      </div>
                       
@@ -519,24 +472,19 @@ Notes Find:
                                     <div class="txt">Tags</div>
                                  </th>
                                  <th>
-                                    <div class="txt">
+                                    <div class="txt brand-status">
                                        Stock
                                        <!--Add class 'active' to sort, when it active-->
                                         
                                         <!--When Sync is ON-->
-                                       <div class="tooltip link-tooltip">
-                                          <div class="tooltip-icon tooltip-icon-info sync-icon">
-                                             <svg class="icon">
-                                                <use xlink:href="images/sprite.svg#icon-sync"></use>
-                                             </svg>
-                                          </div>
-                                            <div class="tooltip_text">
-                                              <div class="tooltip-data">
-                                             <p>Stock Sync is ON. Turn it off if you want to edit stock levels and manage them manually in ShopDot. Your changes will not be overridden.</p>
-                                             <a href="#" class="tooltip-setting">settings</a>          
+                                       <div class="tooltip">
+                                                <div class="tooltip-icon tooltip-icon-info">
+                                                  <svg class="icon">
+                                                    <use xlink:href="images/sprite.svg#icon-info-blue"></use>
+                                                  </svg>
+                                                </div>
+                                                <div class="tooltip_text"><p>The inventory published within ShopDot is based on the inventory from your Shopify store x the inventory buffer that you set under Settings-Preferences.</p></div>
                                               </div>
-                                          </div>
-                                       </div>
                                         
                                         <!--When Sync is OFF-->
 <!--
@@ -563,14 +511,8 @@ Notes Find:
                                  </th>
                                  <th>
                                     <div class="txt sales">
-                                            <!--Before selected sales dropdown-->
-                                            <!--<span class="head-label">Sales</span>-->
-                                        
-                                            <!--After Selected sales dropdown-->
                                        <span class="head-label">
-                                           Sales</span>
-                                       
-                                       <!--Add class 'active' to sort, when it active-->
+                                           Total Sales</span>
                                        <div class="check-all_dropdown dropdown">
                                           <div class="dropdown_header">
                                              <svg class="icon sales-dropdown-arrow">
@@ -585,17 +527,6 @@ Notes Find:
                                  <th>
                                     <div class="txt">
                                        Retailers
-                                       <!--Add class 'active' to sort, when it active-->
-                                       <button class="sort">
-                                          <svg class="icon">
-                                             <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
-                                          </svg>
-                                       </button>
-                                    </div>
-                                 </th>
-                                 <th>
-                                    <div class="txt">
-                                       Last Sync
                                        <!--Add class 'active' to sort, when it active-->
                                        <button class="sort">
                                           <svg class="icon">
@@ -622,13 +553,207 @@ Notes Find:
                                  <td>
                                     <div class="my_list-product">
                                        <div class="my_list-product-image">
-                                          <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                           <a href="#" class="number"> <picture><img src="images/pc-slider-temp.jfif" alt=""></picture></a>
                                        </div>
                                        <div>
                                           <a href="#" class="my_list-product-title">
                                           Summer Chips for Kids
                                           </a>
-                                          <a href="#" class="my_list-product-variants variants-modal-action">
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <div class="my-toggle-btn-wrapper tooltip">
+                                          <div class="my-toggle-btn">
+                                             <input type="checkbox" id="checkbox1">
+                                             <label for="checkbox1">
+                                             <span class="on" title="Active">Active</span>
+                                             <span class="off" title="Inactive">Inactive</span>
+                                             </label>
+                                             <!--                                Tooltip for all state:
+                                                Active: Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.
+                                                Inactive: By activating, your product will be visible to all retailers who are sourcing products on ShopDot.
+                                                Disabled: To activate a product please add billing information, assign category, and fill in all required fields.
+                                                more info screenshot: https://prnt.sc/JupyNsuyrkOP
+                                                End Tooltip for all state-->
+                                             <div class="tooltip_text">
+                                                <p>To activate, complete the onboarding flow in the Getting Started section and fill out required fields by going to Edit Products under Actions.</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                                <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="add-item-label add-category">
+                                       <span>+</span> Category
+                                       </a>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="value_added">
+                                       Chips, +4…
+                                       </a>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                     <span>999</span>
+                                       
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       $0 <br/>
+                                      
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="add-item-label add-retailer">
+                                       <span>+</span> Retailer
+                                       </a>
+                                    </div>
+                                 </td>
+                               
+                                
+                                 <td>
+                                    <div class="actions">
+                                       <div class="dropdown">
+                                          <div class="dropdown_header">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-more"></use>
+                                             </svg>
+                                          </div>
+                                          <div class="dropdown_body">
+                                             <div class="dropdown_inner">
+                                                <ul>
+                                                   <li><a href="#">View Product</a></li>
+                                                   <li><button class="edit-product">Edit Product</button></li>
+                                                   <li><button class="sync-product">Sync Product</button></li>
+                                                   <li><button class="assign-retailr">Assign Retailers</button></li>
+                                                   <li><button class="view-store">View in Store</button></li>
+<!--                                                   <li><button class="archive-product">Archive Product</button></li>-->
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                              </tr>
+                               <tr>
+                                 <td>
+                                    <label for="check-1" class="checkbox">
+                                       <input type="checkbox" name="check-1" id="check-1" />
+                                       <div class="checkbox-text"></div>
+                                    </label>
+                                 </td>
+                                  <td>
+                                    <div class="my_list-product">
+                                       <div class="my_list-product-image">
+                                           <a href="#" class="number"> <picture><img src="images/pc-slider-temp.jfif" alt=""></picture></a>
+                                       </div>
+                                       <div>
+                                          <a href="#" class="my_list-product-title">
+                                          Summer Chips for Kids
+                                          </a><a href="#" class="my_list-product-variants variants-modal-action">
+                                          4 Variants
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <div class="my-toggle-btn-wrapper tooltip">
+                                          <div class="my-toggle-btn">
+                                             <input type="checkbox" id="checkbox4">
+                                             <label for="checkbox4">
+                                             <span class="on" title="Active">Active</span>
+                                             <span class="off" title="Inactive">Inactive</span>
+                                             </label>
+                                             <div class="tooltip_text">
+                                                <p>By activating, you are making the product discoverable for all retailers within ShopDot.</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="value_added">
+                                       Baby &amp; Kids
+                                       </a>
+                                    </div>
+                                 </td>
+                                <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="value_added">
+                                       Chips, +4…
+                                       </a>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                     <span>999</span>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       $4,000,000 <br/>
+                                      
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="value_added">
+                                       2 assigned
+                                       </a>
+                                    </div>
+                                 </td>
+                                
+                                
+                                 <td>
+                                    <div class="actions">
+                                       <div class="dropdown">
+                                          <div class="dropdown_header">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-more"></use>
+                                             </svg>
+                                          </div>
+                                          <div class="dropdown_body">
+                                             <div class="dropdown_inner">
+                                                <ul>
+                                                   <li><a href="#">View Product</a></li>
+                                                   <li><button class="edit-product">Edit Product</button></li>
+                                                   <li><button class="sync-product">Sync Product</button></li>
+                                                   <li><button class="assign-retailr">Assign Retailers</button></li>
+                                                   <li><button class="view-store">View in Store</button></li>
+<!--                                                   <li><button class="archive-product">Archive Product</button></li>-->
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                              </tr>
+                                <tr>
+                                 <td>
+                                    <label for="check-1" class="checkbox">
+                                       <input type="checkbox" name="check-1" id="check-1" />
+                                       <div class="checkbox-text"></div>
+                                    </label>
+                                 </td>
+                                 <td>
+                                    <div class="my_list-product">
+                                       <div class="my_list-product-image">
+                                           <a href="#" class="number"> <picture><img src="images/pc-slider-temp.jfif" alt=""></picture></a>
+                                       </div>
+                                       <div>
+                                          <a href="#" class="my_list-product-title">
+                                          Summer Chips for Kids
+                                          </a><a href="#" class="my_list-product-variants variants-modal-action">
                                           4 Variants
                                           </a>
                                        </div>
@@ -641,7 +766,7 @@ Notes Find:
                                              <input type="checkbox" id="checkbox1">
                                              <label for="checkbox1">
                                              <span class="on" title="Active">Active</span>
-                                             <span class="off" title="Inctive">Inactive</span>
+                                             <span class="off" title="Inactive">Inactive</span>
                                              </label>
                                              <!--                                Tooltip for all state:
                                                 Active: Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.
@@ -650,27 +775,27 @@ Notes Find:
                                                 more info screenshot: https://prnt.sc/JupyNsuyrkOP
                                                 End Tooltip for all state-->
                                              <div class="tooltip_text">
-                                                <p>By activating, your product will be visible to all retailers who are sourcing products on ShopDot.</p>
+                                                <p>Product is no longer in Active status and/or in the ShopDot sales channel in your Shopify store. To activate, update the product status in your Shopify store.</p>
                                              </div>
                                           </div>
                                        </div>
                                     </div>
                                  </td>
-                                 <td>
+                                <td>
                                     <div class="txt">
-                                       <a href="javascript:void(0)" class="add-item-label add-category">
-                                       <span>+</span> Category
+                                       <a href="javascript:void(0)" class="value_added">
+                                       Baby &amp; Kids
                                        </a>
                                     </div>
                                  </td>
-                                 <td>
+                                <td>
                                     <div class="txt">
-                                       <a href="javascript:void(0)" class="add-item-label add-tags">
-                                       <span>+</span> Tags
+                                       <a href="javascript:void(0)" class="value_added">
+                                       Chips, +4…
                                        </a>
                                     </div>
                                  </td>
-                                 <td>
+                                <td>
                                     <div class="txt red">
                                      <span>0</span>
                                        <div class="tooltip-icon tooltip-icon-danger">
@@ -682,8 +807,8 @@ Notes Find:
                                  </td>
                                  <td>
                                     <div class="txt">
-                                       $0 <br/>
-                                       0 sold
+                                       $4,000,000 <br/>
+                                      
                                     </div>
                                  </td>
                                  <td>
@@ -693,9 +818,7 @@ Notes Find:
                                        </a>
                                     </div>
                                  </td>
-                                 <td>
-                                    <div class="txt">01/14/22</div>
-                                 </td>
+                               
                                 
                                  <td>
                                     <div class="actions">
@@ -731,531 +854,12 @@ Notes Find:
                                  <td>
                                     <div class="my_list-product">
                                        <div class="my_list-product-image">
-                                          <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                           <a href="#" class="number"> <picture><img src="images/pc-slider-temp.jfif" alt=""></picture></a>
                                        </div>
                                        <div>
                                           <a href="#" class="my_list-product-title">
                                           Summer Chips for Kids
-                                          </a>
-                                         <a href="#" class="my_list-product-variants variants-modal-action">
-                                          4 Variants
-                                          </a>
-                                       </div>
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">
-                                       <div class="my-toggle-btn-wrapper tooltip">
-                                          <div class="my-toggle-btn">
-                                             <input type="checkbox" id="checkbox4" checked="">
-                                             <label for="checkbox4">
-                                             <span class="on" title="Active">Active</span>
-                                             <span class="off" title="Inactive">Inactive</span>
-                                             </label>
-                                             <div class="tooltip_text">
-                                                <p>Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.</p>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">
-                                       <a href="javascript:void(0)" class="value_added">
-                                       Baby &amp; Kids
-                                       </a>
-                                    </div>
-                                 </td>
-                                <td>
-                                    <div class="txt">
-                                       <a href="javascript:void(0)" class="value_added">
-                                       Chips, +4…
-                                       </a>
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt red">
-                                     <span>0</span>
-                                       <div class="tooltip-icon tooltip-icon-danger">
-                                          <svg class="icon">
-                                             <use xlink:href="images/sprite.svg#icon-danger"></use>
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">
-                                       $4,000,000 <br/>
-                                       1,001 sold
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">
-                                       <a href="javascript:void(0)" class="value_added">
-                                       2 assigned
-                                       </a>
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">01/14/22</div>
-                                 </td>
-                                
-                                 <td>
-                                    <div class="actions">
-                                       <div class="dropdown">
-                                          <div class="dropdown_header">
-                                             <svg class="icon">
-                                                <use xlink:href="images/sprite.svg#icon-more"></use>
-                                             </svg>
-                                          </div>
-                                          <div class="dropdown_body">
-                                             <div class="dropdown_inner">
-                                                <ul>
-                                                   <li><a href="#">View Product</a></li>
-                                                   <li><button class="edit-product">Edit Product</button></li>
-                                                   <li><button class="sync-product">Sync Product</button></li>
-                                                   <li><button class="assign-retailr">Assign Retailers</button></li>
-                                                   <li><button class="view-store">View in Store</button></li>
-<!--                                                   <li><button class="archive-product">Archive Product</button></li>-->
-                                                </ul>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </td>
-                              </tr>
-                                <tr>
-                                 <td>
-                                    <label for="check-17" class="checkbox">
-                                       <input type="checkbox" name="check-17" id="check-17" />
-                                       <div class="checkbox-text"></div>
-                                    </label>
-                                 </td>
-                                 <td>
-                                    <div class="my_list-product">
-                                       <div class="my_list-product-image">
-                                          <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
-                                       </div>
-                                       <div>
-                                          <a href="#" class="my_list-product-title">
-                                          Summer Chips for Kids
-                                          </a>
-                                          <a href="#" class="my_list-product-variants variants-modal-action">
-                                          4 Variants
-                                          </a>
-                                       </div>
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">
-                                       <div class="my-toggle-btn-wrapper tooltip">
-                                          <div class="my-toggle-btn">
-                                             <input type="checkbox" id="checkbox3">
-                                             <label for="checkbox3">
-                                             <span class="on" title="Active">Active</span>
-                                             <span class="off" title="Inctive">Inactive</span>
-                                             </label>
-                                             <!--                                Tooltip for all state:
-                                                Active: Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.
-                                                Inactive: By activating, your product will be visible to all retailers who are sourcing products on ShopDot.
-                                                Disabled: To activate a product please add billing information, assign category, and fill in all required fields.
-                                                more info screenshot: https://prnt.sc/JupyNsuyrkOP
-                                                End Tooltip for all state-->
-                                             <div class="tooltip_text">
-                                                <p>By activating, your product will be visible to all retailers who are sourcing products on ShopDot.</p>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">
-                                       <a href="javascript:void(0)" class="add-item-label add-category">
-                                       <span>+</span> Category
-                                       </a>
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">
-                                       <a href="javascript:void(0)" class="add-item-label add-tags">
-                                       <span>+</span> Tags
-                                       </a>
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <!--'orange' class for normal quantity, 'red' class for small-->
-                                    <div class="txt orange">
-                                       <span>9</span>
-                                       <div class="tooltip-icon tooltip-icon-orange">
-                                          <svg class="icon">
-                                             <use xlink:href="images/sprite.svg#icon-danger"></use>
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">
-                                       $0 <br/>
-                                       0 sold
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">
-                                       <a href="javascript:void(0)" class="add-item-label add-retailer">
-                                       <span>+</span> Retailer
-                                       </a>
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">01/14/22</div>
-                                 </td>
-                                
-                                 <td>
-                                    <div class="actions">
-                                       <div class="dropdown">
-                                          <div class="dropdown_header">
-                                             <svg class="icon">
-                                                <use xlink:href="images/sprite.svg#icon-more"></use>
-                                             </svg>
-                                          </div>
-                                          <div class="dropdown_body">
-                                             <div class="dropdown_inner">
-                                                <ul>
-                                                   <li><a href="#">View Product</a></li>
-                                                   <li><button class="edit-product">Edit Product</button></li>
-                                                   <li><button class="sync-product">Sync Product</button></li>
-                                                   <li><button class="assign-retailr">Assign Retailers</button></li>
-                                                   <li><button class="view-store">View in Store</button></li>
-<!--                                                   <li><button class="archive-product">Archive Product</button></li>-->
-                                                </ul>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </td>
-                              </tr>
-                               <tr>
-                                 <td>
-                                    <label for="check-13" class="checkbox">
-                                       <input type="checkbox" name="check-13" id="check-13" />
-                                       <div class="checkbox-text"></div>
-                                    </label>
-                                 </td>
-                                 <td>
-                                    <div class="my_list-product">
-                                       <div class="my_list-product-image">
-                                          <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
-                                       </div>
-                                       <div>
-                                          <a href="#" class="my_list-product-title">
-                                          Summer Chips for Kids
-                                          </a>
-                                          <a href="#" class="my_list-product-variants variants-modal-action">
-                                          4 Variants
-                                          </a>
-                                       </div>
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">
-                                       <div class="my-toggle-btn-wrapper tooltip">
-                                          <div class="my-toggle-btn">
-                                             <input type="checkbox" id="checkbox6" checked="">
-                                             <label for="checkbox6">
-                                             <span class="on" title="Active">Active</span>
-                                             <span class="off" title="Inactive">Inactive</span>
-                                             </label>
-                                             <div class="tooltip_text">
-                                                <p>Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.</p>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">
-                                       <a href="javascript:void(0)" class="value_added">
-                                       Baby &amp; Kids
-                                       </a>
-                                    </div>
-                                 </td>
-                                <td>
-                                    <div class="txt">
-                                       <a href="javascript:void(0)" class="value_added">
-                                       Chips, +4…
-                                       </a>
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">
-                                       <span>999</span>
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">
-                                       $4,000,000 <br/>
-                                       1,001 sold
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">
-                                       <a href="javascript:void(0)" class="value_added">
-                                       2 assigned
-                                       </a>
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">01/14/22</div>
-                                 </td>
-                                
-                                 <td>
-                                    <div class="actions">
-                                       <div class="dropdown">
-                                          <div class="dropdown_header">
-                                             <svg class="icon">
-                                                <use xlink:href="images/sprite.svg#icon-more"></use>
-                                             </svg>
-                                          </div>
-                                          <div class="dropdown_body">
-                                             <div class="dropdown_inner">
-                                                <ul>
-                                                   <li><a href="#">View Product</a></li>
-                                                   <li><button class="edit-product">Edit Product</button></li>
-                                                   <li><button class="sync-product">Sync Product</button></li>
-                                                   <li><button class="assign-retailr">Assign Retailers</button></li>
-                                                   <li><button class="view-store">View in Store</button></li>
-<!--                                                   <li><button class="archive-product">Archive Product</button></li>-->
-                                                </ul>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </td>
-                              </tr>
-                                <tr>
-                                 <td>
-                                    <label for="check-10" class="checkbox">
-                                       <input type="checkbox" name="check-10" id="check-10" />
-                                       <div class="checkbox-text"></div>
-                                    </label>
-                                 </td>
-                                 <td>
-                                    <div class="my_list-product">
-                                       <div class="my_list-product-image">
-                                          <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
-                                       </div>
-                                       <div>
-                                          <a href="#" class="my_list-product-title">
-                                          Summer Chips for Kids
-                                          </a>
-                                          <a href="#" class="my_list-product-variants variants-modal-action">
-                                          4 Variants
-                                          </a>
-                                       </div>
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">
-                                       <div class="my-toggle-btn-wrapper tooltip">
-                                          <div class="my-toggle-btn">
-                                             <input type="checkbox" id="checkbox7">
-                                             <label for="checkbox7">
-                                             <span class="on" title="Active">Active</span>
-                                             <span class="off" title="Inctive">Inactive</span>
-                                             </label>
-                                             <!--                                Tooltip for all state:
-                                                Active: Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.
-                                                Inactive: By activating, your product will be visible to all retailers who are sourcing products on ShopDot.
-                                                Disabled: To activate a product please add billing information, assign category, and fill in all required fields.
-                                                more info screenshot: https://prnt.sc/JupyNsuyrkOP
-                                                End Tooltip for all state-->
-                                             <div class="tooltip_text">
-                                                <p>By activating, your product will be visible to all retailers who are sourcing products on ShopDot.</p>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">
-                                       <a href="javascript:void(0)" class="add-item-label add-category">
-                                       <span>+</span> Category
-                                       </a>
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">
-                                       <a href="javascript:void(0)" class="add-item-label add-tags">
-                                       <span>+</span> Tags
-                                       </a>
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt red">
-                                     <span>0</span>
-                                       <div class="tooltip-icon tooltip-icon-danger">
-                                          <svg class="icon">
-                                             <use xlink:href="images/sprite.svg#icon-danger"></use>
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">
-                                       $0 <br/>
-                                       0 sold
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">
-                                       <a href="javascript:void(0)" class="add-item-label add-retailer">
-                                       <span>+</span> Retailer
-                                       </a>
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">01/14/22</div>
-                                 </td>
-                                
-                                 <td>
-                                    <div class="actions">
-                                       <div class="dropdown">
-                                          <div class="dropdown_header">
-                                             <svg class="icon">
-                                                <use xlink:href="images/sprite.svg#icon-more"></use>
-                                             </svg>
-                                          </div>
-                                          <div class="dropdown_body">
-                                             <div class="dropdown_inner">
-                                                <ul>
-                                                   <li><a href="#">View Product</a></li>
-                                                   <li><button class="edit-product">Edit Product</button></li>
-                                                   <li><button class="sync-product">Sync Product</button></li>
-                                                   <li><button class="assign-retailr">Assign Retailers</button></li>
-                                                   <li><button class="view-store">View in Store</button></li>
-<!--                                                   <li><button class="archive-product">Archive Product</button></li>-->
-                                                </ul>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </td>
-                              </tr>
-                               <tr>
-                                 <td>
-                                    <label for="check-11" class="checkbox">
-                                       <input type="checkbox" name="check-11" id="check-11" />
-                                       <div class="checkbox-text"></div>
-                                    </label>
-                                 </td>
-                                 <td>
-                                    <div class="my_list-product">
-                                       <div class="my_list-product-image">
-                                          <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
-                                       </div>
-                                       <div>
-                                          <a href="#" class="my_list-product-title">
-                                          Summer Chips for Kids
-                                          </a>
-                                          <a href="#" class="my_list-product-variants variants-modal-action">
-                                          4 Variants
-                                          </a>
-                                       </div>
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">
-                                       <div class="my-toggle-btn-wrapper tooltip">
-                                          <div class="my-toggle-btn">
-                                             <input type="checkbox" id="checkbox48" checked="">
-                                             <label for="checkbox48">
-                                             <span class="on" title="Active">Active</span>
-                                             <span class="off" title="Inactive">Inactive</span>
-                                             </label>
-                                             <div class="tooltip_text">
-                                                <p>Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.</p>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">
-                                       <a href="javascript:void(0)" class="value_added">
-                                       Baby &amp; Kids
-                                       </a>
-                                    </div>
-                                 </td>
-                                <td>
-                                    <div class="txt">
-                                       <a href="javascript:void(0)" class="value_added">
-                                       Chips, +4…
-                                       </a>
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">
-                                       <span>999</span>
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">
-                                       $4,000,000 <br/>
-                                       1,001 sold
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">
-                                       <a href="javascript:void(0)" class="value_added">
-                                       2 assigned
-                                       </a>
-                                    </div>
-                                 </td>
-                                 <td>
-                                    <div class="txt">01/14/22</div>
-                                 </td>
-                                
-                                 <td>
-                                    <div class="actions">
-                                       <div class="dropdown">
-                                          <div class="dropdown_header">
-                                             <svg class="icon">
-                                                <use xlink:href="images/sprite.svg#icon-more"></use>
-                                             </svg>
-                                          </div>
-                                          <div class="dropdown_body">
-                                             <div class="dropdown_inner">
-                                                <ul>
-                                                   <li><a href="#">View Product</a></li>
-                                                   <li><button class="edit-product">Edit Product</button></li>
-                                                   <li><button class="sync-product">Sync Product</button></li>
-                                                   <li><button class="assign-retailr">Assign Retailers</button></li>
-                                                   <li><button class="view-store">View in Store</button></li>
-<!--                                                   <li><button class="archive-product">Archive Product</button></li>-->
-                                                </ul>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </td>
-                              </tr>
-                                <tr>
-                                 <td>
-                                    <label for="check-1" class="checkbox">
-                                       <input type="checkbox" name="check-1" id="check-1" />
-                                       <div class="checkbox-text"></div>
-                                    </label>
-                                 </td>
-                                 <td>
-                                    <div class="my_list-product">
-                                       <div class="my_list-product-image">
-                                          <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
-                                       </div>
-                                       <div>
-                                          <a href="#" class="my_list-product-title">
-                                          Summer Chips for Kids
-                                          </a>
-                                          <a href="#" class="my_list-product-variants variants-modal-action">
+                                          </a><a href="#" class="my_list-product-variants variants-modal-action">
                                           4 Variants
                                           </a>
                                        </div>
@@ -1268,7 +872,7 @@ Notes Find:
                                              <input type="checkbox" id="checkbox1">
                                              <label for="checkbox1">
                                              <span class="on" title="Active">Active</span>
-                                             <span class="off" title="Inctive">Inactive</span>
+                                             <span class="off" title="Inactive">Inactive</span>
                                              </label>
                                              <!--                                Tooltip for all state:
                                                 Active: Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.
@@ -1277,7 +881,201 @@ Notes Find:
                                                 more info screenshot: https://prnt.sc/JupyNsuyrkOP
                                                 End Tooltip for all state-->
                                              <div class="tooltip_text">
-                                                <p>By activating, your product will be visible to all retailers who are sourcing products on ShopDot.</p>
+                                                <p>To activate, complete all required fields by going to Edit Products under Actions.</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                               <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="add-item-label add-category">
+                                       <span>+</span> Category
+                                       </a>
+                                    </div>
+                                 </td>
+                               <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="add-item-label add-tags">
+                                       <span>+</span> Tags
+                                       </a>
+                                    </div>
+                                 </td>
+                                <td>
+                                    <div class="txt">
+                                     <span>999</span>
+                                       
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       $55
+                                      
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="value_added">
+                                       2 assigned
+                                       </a>
+                                    </div>
+                                 </td>
+                               
+                                
+                                 <td>
+                                    <div class="actions">
+                                       <div class="dropdown">
+                                          <div class="dropdown_header">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-more"></use>
+                                             </svg>
+                                          </div>
+                                          <div class="dropdown_body">
+                                             <div class="dropdown_inner">
+                                                <ul>
+                                                   <li><a href="#">View Product</a></li>
+                                                   <li><button class="edit-product">Edit Product</button></li>
+                                                   <li><button class="sync-product">Sync Product</button></li>
+                                                   <li><button class="assign-retailr">Assign Retailers</button></li>
+                                                   <li><button class="view-store">View in Store</button></li>
+<!--                                                   <li><button class="archive-product">Archive Product</button></li>-->
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                              </tr>
+                                <tr>
+                                 <td>
+                                    <label for="check-1" class="checkbox">
+                                       <input type="checkbox" name="check-1" id="check-1" />
+                                       <div class="checkbox-text"></div>
+                                    </label>
+                                 </td>
+                                 <td>
+                                    <div class="my_list-product">
+                                       <div class="my_list-product-image">
+                                           <a href="#" class="number"> <picture><img src="images/pc-slider-temp.jfif" alt=""></picture></a>
+                                       </div>
+                                       <div>
+                                          <a href="#" class="my_list-product-title">
+                                          Summer Chips for Kids
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <div class="my-toggle-btn-wrapper tooltip">
+                                          <div class="my-toggle-btn">
+                                             <input type="checkbox" id="checkbox1" checked>
+                                             <label for="checkbox1">
+                                             <span class="on" title="Active">Active</span>
+                                             <span class="off" title="Inactive">Inactive</span>
+                                             </label>
+                                             <!--                                Tooltip for all state:
+                                                Active: Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.
+                                                Inactive: By activating, your product will be visible to all retailers who are sourcing products on ShopDot.
+                                                Disabled: To activate a product please add billing information, assign category, and fill in all required fields.
+                                                more info screenshot: https://prnt.sc/JupyNsuyrkOP
+                                                End Tooltip for all state-->
+                                             <div class="tooltip_text">
+                                                <p>Deactivating the product will make the product not discoverable or sellable on ShopDot.</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                                <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="add-item-label add-category">
+                                       <span>+</span> Category
+                                       </a>
+                                    </div>
+                                 </td>
+                                <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="add-item-label add-tags">
+                                       <span>+</span> Tags
+                                       </a>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                     <span>999</span>
+                                       
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       $2
+                                      
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="add-item-label add-retailer">
+                                       <span>+</span> Retailer
+                                       </a>
+                                    </div>
+                                 </td>
+                               
+                                
+                                 <td>
+                                    <div class="actions">
+                                       <div class="dropdown">
+                                          <div class="dropdown_header">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-more"></use>
+                                             </svg>
+                                          </div>
+                                          <div class="dropdown_body">
+                                             <div class="dropdown_inner">
+                                                <ul>
+                                                   <li><a href="#">View Product</a></li>
+                                                   <li><button class="edit-product">Edit Product</button></li>
+                                                   <li><button class="sync-product">Sync Product</button></li>
+                                                   <li><button class="assign-retailr">Assign Retailers</button></li>
+                                                   <li><button class="view-store">View in Store</button></li>
+<!--                                                   <li><button class="archive-product">Archive Product</button></li>-->
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                              </tr>
+                               <tr class="greyed-tr">
+                                 <td>
+                                    <label for="check-1" class="checkbox">
+                                       <input type="checkbox" name="check-1" id="check-1" />
+                                       <div class="checkbox-text"></div>
+                                    </label>
+                                 </td>
+                                 <td>
+                                    <div class="my_list-product">
+                                       <div class="my_list-product-image">
+                                           <a href="#" class="number"> <picture><img src="images/pc-slider-temp.jfif" alt=""></picture></a>
+                                       </div>
+                                       <div>
+                                          <a href="#" class="my_list-product-title">
+                                          Summer Chips for Kids
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <div class="my-toggle-btn-wrapper tooltip">
+                                          <div class="my-toggle-btn">
+                                             <input type="checkbox" id="checkbox4">
+                                             <label for="checkbox4">
+                                             <span class="on" title="Active">Active</span>
+                                             <span class="off" title="Inactive">Inactive</span>
+                                             </label>
+                                             <div class="tooltip_text">
+                                                <p>Product is no longer in Active status and/or in the ShopDot sales channel in your Shopify store. To activate, update the product status in your Shopify store.</p>
                                              </div>
                                           </div>
                                        </div>
@@ -1285,15 +1083,15 @@ Notes Find:
                                  </td>
                                  <td>
                                     <div class="txt">
-                                       <a href="javascript:void(0)" class="add-item-label add-category">
-                                       <span>+</span> Category
+                                       <a href="javascript:void(0)" class="value_added">
+                                       Baby &amp; Kids
                                        </a>
                                     </div>
                                  </td>
-                                 <td>
+                                <td>
                                     <div class="txt">
-                                       <a href="javascript:void(0)" class="add-item-label add-tags">
-                                       <span>+</span> Tags
+                                       <a href="javascript:void(0)" class="value_added">
+                                       Chips, +4…
                                        </a>
                                     </div>
                                  </td>
@@ -1309,8 +1107,110 @@ Notes Find:
                                  </td>
                                  <td>
                                     <div class="txt">
-                                       $0 <br/>
-                                       0 sold
+                                       $4,000,000 
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="value_added">
+                                       2 assigned
+                                       </a>
+                                    </div>
+                                 </td>
+                                
+                                
+                                 <td>
+                                    <div class="actions">
+                                       <div class="dropdown">
+                                          <div class="dropdown_header">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-more"></use>
+                                             </svg>
+                                          </div>
+                                          <div class="dropdown_body">
+                                             <div class="dropdown_inner">
+                                                <ul>
+                                                   <li><a href="#">View Product</a></li>
+                                                   <li><button class="edit-product">Edit Product</button></li>
+                                                   <li><button class="sync-product">Sync Product</button></li>
+                                                   <li><button class="assign-retailr">Assign Retailers</button></li>
+                                                   <li><button class="view-store">View in Store</button></li>
+<!--                                                   <li><button class="archive-product">Archive Product</button></li>-->
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                              </tr>
+                               
+                               <tr>
+                                 <td>
+                                    <label for="check-1" class="checkbox">
+                                       <input type="checkbox" name="check-1" id="check-1" />
+                                       <div class="checkbox-text"></div>
+                                    </label>
+                                 </td>
+                                 <td>
+                                    <div class="my_list-product">
+                                       <div class="my_list-product-image">
+                                           <a href="#" class="number"> <picture><img src="images/pc-slider-temp.jfif" alt=""></picture></a>
+                                       </div>
+                                       <div>
+                                          <a href="#" class="my_list-product-title">
+                                          Summer Chips for Kids
+                                          </a>
+                                           <a href="#" class="my_list-product-variants variants-modal-action">
+                                          4 Variants
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <div class="my-toggle-btn-wrapper tooltip">
+                                          <div class="my-toggle-btn">
+                                             <input type="checkbox" id="checkbox1">
+                                             <label for="checkbox1">
+                                             <span class="on" title="Active">Active</span>
+                                             <span class="off" title="Inactive">Inactive</span>
+                                             </label>
+                                             <!--                                Tooltip for all state:
+                                                Active: Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.
+                                                Inactive: By activating, your product will be visible to all retailers who are sourcing products on ShopDot.
+                                                Disabled: To activate a product please add billing information, assign category, and fill in all required fields.
+                                                more info screenshot: https://prnt.sc/JupyNsuyrkOP
+                                                End Tooltip for all state-->
+                                             <div class="tooltip_text">
+                                                <p>By activating, you are making the product discoverable for all retailers within ShopDot.</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                                <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="add-item-label add-category">
+                                       <span>+</span> Category
+                                       </a>
+                                    </div>
+                                 </td>
+                                <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="add-item-label add-tags">
+                                       <span>+</span> Tags
+                                       </a>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                     <span>999</span>
+                                       
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       $0 
                                     </div>
                                  </td>
                                  <td>
@@ -1320,9 +1220,7 @@ Notes Find:
                                        </a>
                                     </div>
                                  </td>
-                                 <td>
-                                    <div class="txt">01/14/22</div>
-                                 </td>
+                               
                                 
                                  <td>
                                     <div class="actions">
@@ -1358,13 +1256,13 @@ Notes Find:
                                  <td>
                                     <div class="my_list-product">
                                        <div class="my_list-product-image">
-                                          <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                           <a href="#" class="number"> <picture><img src="images/pc-slider-temp.jfif" alt=""></picture></a>
                                        </div>
                                        <div>
                                           <a href="#" class="my_list-product-title">
                                           Summer Chips for Kids
                                           </a>
-                                         <a href="#" class="my_list-product-variants variants-modal-action">
+                                           <a href="#" class="my_list-product-variants variants-modal-action">
                                           4 Variants
                                           </a>
                                        </div>
@@ -1374,46 +1272,47 @@ Notes Find:
                                     <div class="txt">
                                        <div class="my-toggle-btn-wrapper tooltip">
                                           <div class="my-toggle-btn">
-                                             <input type="checkbox" id="checkbox4" checked="">
-                                             <label for="checkbox4">
+                                             <input type="checkbox" id="checkbox1">
+                                             <label for="checkbox1">
                                              <span class="on" title="Active">Active</span>
                                              <span class="off" title="Inactive">Inactive</span>
                                              </label>
+                                             <!--                                Tooltip for all state:
+                                                Active: Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.
+                                                Inactive: By activating, your product will be visible to all retailers who are sourcing products on ShopDot.
+                                                Disabled: To activate a product please add billing information, assign category, and fill in all required fields.
+                                                more info screenshot: https://prnt.sc/JupyNsuyrkOP
+                                                End Tooltip for all state-->
                                              <div class="tooltip_text">
-                                                <p>Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.</p>
+                                                <p>By activating, you are making the product discoverable for all retailers within ShopDot.</p>
                                              </div>
                                           </div>
                                        </div>
                                     </div>
                                  </td>
-                                 <td>
+                                <td>
                                     <div class="txt">
-                                       <a href="javascript:void(0)" class="value_added">
-                                       Baby &amp; Kids
+                                       <a href="javascript:void(0)" class="add-item-label add-category">
+                                       <span>+</span> Category
                                        </a>
                                     </div>
                                  </td>
                                 <td>
                                     <div class="txt">
-                                       <a href="javascript:void(0)" class="value_added">
-                                       Chips, +4…
+                                       <a href="javascript:void(0)" class="add-item-label add-tags">
+                                       <span>+</span> Tags
                                        </a>
                                     </div>
                                  </td>
                                  <td>
-                                    <div class="txt red">
-                                     <span>0</span>
-                                       <div class="tooltip-icon tooltip-icon-danger">
-                                          <svg class="icon">
-                                             <use xlink:href="images/sprite.svg#icon-danger"></use>
-                                          </svg>
-                                       </div>
+                                    <div class="txt">
+                                     <span>999</span>
+                                       
                                     </div>
                                  </td>
                                  <td>
                                     <div class="txt">
-                                       $4,000,000 <br/>
-                                       1,001 sold
+                                       $0 
                                     </div>
                                  </td>
                                  <td>
@@ -1423,9 +1322,7 @@ Notes Find:
                                        </a>
                                     </div>
                                  </td>
-                                 <td>
-                                    <div class="txt">01/14/22</div>
-                                 </td>
+                               
                                 
                                  <td>
                                     <div class="actions">
@@ -1451,23 +1348,23 @@ Notes Find:
                                     </div>
                                  </td>
                               </tr>
+                               
                                 <tr>
                                  <td>
-                                    <label for="check-17" class="checkbox">
-                                       <input type="checkbox" name="check-17" id="check-17" />
+                                    <label for="check-1" class="checkbox">
+                                       <input type="checkbox" name="check-1" id="check-1" />
                                        <div class="checkbox-text"></div>
                                     </label>
                                  </td>
                                  <td>
                                     <div class="my_list-product">
                                        <div class="my_list-product-image">
-                                          <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                           <a href="#" class="number"> <picture><img src="images/pc-slider-temp.jfif" alt=""></picture></a>
                                        </div>
                                        <div>
                                           <a href="#" class="my_list-product-title">
                                           Summer Chips for Kids
-                                          </a>
-                                          <a href="#" class="my_list-product-variants variants-modal-action">
+                                          </a><a href="#" class="my_list-product-variants variants-modal-action">
                                           4 Variants
                                           </a>
                                        </div>
@@ -1477,10 +1374,10 @@ Notes Find:
                                     <div class="txt">
                                        <div class="my-toggle-btn-wrapper tooltip">
                                           <div class="my-toggle-btn">
-                                             <input type="checkbox" id="checkbox3">
-                                             <label for="checkbox3">
+                                             <input type="checkbox" id="checkbox1">
+                                             <label for="checkbox1">
                                              <span class="on" title="Active">Active</span>
-                                             <span class="off" title="Inctive">Inactive</span>
+                                             <span class="off" title="Inactive">Inactive</span>
                                              </label>
                                              <!--                                Tooltip for all state:
                                                 Active: Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.
@@ -1489,16 +1386,117 @@ Notes Find:
                                                 more info screenshot: https://prnt.sc/JupyNsuyrkOP
                                                 End Tooltip for all state-->
                                              <div class="tooltip_text">
-                                                <p>By activating, your product will be visible to all retailers who are sourcing products on ShopDot.</p>
+                                                <p>By activating, you are making the product discoverable for all retailers within ShopDot.</p>
                                              </div>
                                           </div>
                                        </div>
                                     </div>
                                  </td>
-                                 <td>
+                                <td>
                                     <div class="txt">
                                        <a href="javascript:void(0)" class="add-item-label add-category">
                                        <span>+</span> Category
+                                       </a>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="value_added">
+                                       Chips, +4…
+                                       </a>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                     <span>999</span>
+                                       
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       $0 
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="add-item-label add-retailer">
+                                       <span>+</span> Retailer
+                                       </a>
+                                    </div>
+                                 </td>
+                               
+                                
+                                 <td>
+                                    <div class="actions">
+                                       <div class="dropdown">
+                                          <div class="dropdown_header">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-more"></use>
+                                             </svg>
+                                          </div>
+                                          <div class="dropdown_body">
+                                             <div class="dropdown_inner">
+                                                <ul>
+                                                   <li><a href="#">View Product</a></li>
+                                                   <li><button class="edit-product">Edit Product</button></li>
+                                                   <li><button class="sync-product">Sync Product</button></li>
+                                                   <li><button class="assign-retailr">Assign Retailers</button></li>
+                                                   <li><button class="view-store">View in Store</button></li>
+<!--                                                   <li><button class="archive-product">Archive Product</button></li>-->
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                              </tr>
+                               <tr>
+                                 <td>
+                                    <label for="check-1" class="checkbox">
+                                       <input type="checkbox" name="check-1" id="check-1" />
+                                       <div class="checkbox-text"></div>
+                                    </label>
+                                 </td>
+                                 <td>
+                                    <div class="my_list-product">
+                                       <div class="my_list-product-image">
+                                           <a href="#" class="number"> <picture><img src="images/pc-slider-temp.jfif" alt=""></picture></a>
+                                       </div>
+                                       <div>
+                                          <a href="#" class="my_list-product-title">
+                                          Summer Chips for Kids
+                                          </a><a href="#" class="my_list-product-variants variants-modal-action">
+                                          4 Variants
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <div class="my-toggle-btn-wrapper tooltip">
+                                          <div class="my-toggle-btn">
+                                             <input type="checkbox" id="checkbox1">
+                                             <label for="checkbox1">
+                                             <span class="on" title="Active">Active</span>
+                                             <span class="off" title="Inactive">Inactive</span>
+                                             </label>
+                                             <!--                                Tooltip for all state:
+                                                Active: Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.
+                                                Inactive: By activating, your product will be visible to all retailers who are sourcing products on ShopDot.
+                                                Disabled: To activate a product please add billing information, assign category, and fill in all required fields.
+                                                more info screenshot: https://prnt.sc/JupyNsuyrkOP
+                                                End Tooltip for all state-->
+                                             <div class="tooltip_text">
+                                                <p>By activating, you are making the product discoverable for all retailers within ShopDot.</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                                <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="value_added">
+                                       Baby &amp; Kids
                                        </a>
                                     </div>
                                  </td>
@@ -1509,7 +1507,7 @@ Notes Find:
                                        </a>
                                     </div>
                                  </td>
-                                 <td>
+                                <td>
                                     <!--'orange' class for normal quantity, 'red' class for small-->
                                     <div class="txt orange">
                                        <span>9</span>
@@ -1522,8 +1520,7 @@ Notes Find:
                                  </td>
                                  <td>
                                     <div class="txt">
-                                       $0 <br/>
-                                       0 sold
+                                       $4,000,000 
                                     </div>
                                  </td>
                                  <td>
@@ -1533,9 +1530,7 @@ Notes Find:
                                        </a>
                                     </div>
                                  </td>
-                                 <td>
-                                    <div class="txt">01/14/22</div>
-                                 </td>
+                               
                                 
                                  <td>
                                     <div class="actions">
@@ -1561,24 +1556,22 @@ Notes Find:
                                     </div>
                                  </td>
                               </tr>
+                               
                                <tr>
                                  <td>
-                                    <label for="check-13" class="checkbox">
-                                       <input type="checkbox" name="check-13" id="check-13" />
+                                    <label for="check-1" class="checkbox">
+                                       <input type="checkbox" name="check-1" id="check-1" />
                                        <div class="checkbox-text"></div>
                                     </label>
                                  </td>
                                  <td>
                                     <div class="my_list-product">
                                        <div class="my_list-product-image">
-                                          <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                           <a href="#" class="number"> <picture><img src="images/pc-slider-temp.jfif" alt=""></picture></a>
                                        </div>
                                        <div>
                                           <a href="#" class="my_list-product-title">
                                           Summer Chips for Kids
-                                          </a>
-                                          <a href="#" class="my_list-product-variants variants-modal-action">
-                                          4 Variants
                                           </a>
                                        </div>
                                     </div>
@@ -1587,26 +1580,32 @@ Notes Find:
                                     <div class="txt">
                                        <div class="my-toggle-btn-wrapper tooltip">
                                           <div class="my-toggle-btn">
-                                             <input type="checkbox" id="checkbox6" checked="">
-                                             <label for="checkbox6">
+                                             <input type="checkbox" id="checkbox1" checked>
+                                             <label for="checkbox1">
                                              <span class="on" title="Active">Active</span>
                                              <span class="off" title="Inactive">Inactive</span>
                                              </label>
+                                             <!--                                Tooltip for all state:
+                                                Active: Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.
+                                                Inactive: By activating, your product will be visible to all retailers who are sourcing products on ShopDot.
+                                                Disabled: To activate a product please add billing information, assign category, and fill in all required fields.
+                                                more info screenshot: https://prnt.sc/JupyNsuyrkOP
+                                                End Tooltip for all state-->
                                              <div class="tooltip_text">
-                                                <p>Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.</p>
+                                                <p>By activating, you are making the product discoverable for all retailers within ShopDot.</p>
                                              </div>
                                           </div>
                                        </div>
                                     </div>
                                  </td>
-                                 <td>
+                                <td>
                                     <div class="txt">
-                                       <a href="javascript:void(0)" class="value_added">
-                                       Baby &amp; Kids
+                                       <a href="javascript:void(0)" class="add-item-label add-category">
+                                       <span>+</span> Category
                                        </a>
                                     </div>
                                  </td>
-                                <td>
+                                 <td>
                                     <div class="txt">
                                        <a href="javascript:void(0)" class="value_added">
                                        Chips, +4…
@@ -1615,25 +1614,23 @@ Notes Find:
                                  </td>
                                  <td>
                                     <div class="txt">
-                                       <span>999</span>
+                                     <span>999</span>
+                                       
                                     </div>
                                  </td>
                                  <td>
                                     <div class="txt">
-                                       $4,000,000 <br/>
-                                       1,001 sold
+                                       $4
                                     </div>
                                  </td>
                                  <td>
                                     <div class="txt">
-                                       <a href="javascript:void(0)" class="value_added">
-                                       2 assigned
+                                       <a href="javascript:void(0)" class="add-item-label add-retailer">
+                                       <span>+</span> Retailer
                                        </a>
                                     </div>
                                  </td>
-                                 <td>
-                                    <div class="txt">01/14/22</div>
-                                 </td>
+                               
                                 
                                  <td>
                                     <div class="actions">
@@ -1661,22 +1658,19 @@ Notes Find:
                               </tr>
                                 <tr>
                                  <td>
-                                    <label for="check-10" class="checkbox">
-                                       <input type="checkbox" name="check-10" id="check-10" />
+                                    <label for="check-1" class="checkbox">
+                                       <input type="checkbox" name="check-1" id="check-1" />
                                        <div class="checkbox-text"></div>
                                     </label>
                                  </td>
                                  <td>
                                     <div class="my_list-product">
                                        <div class="my_list-product-image">
-                                          <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                           <a href="#" class="number"> <picture><img src="images/pc-slider-temp.jfif" alt=""></picture></a>
                                        </div>
                                        <div>
                                           <a href="#" class="my_list-product-title">
                                           Summer Chips for Kids
-                                          </a>
-                                          <a href="#" class="my_list-product-variants variants-modal-action">
-                                          4 Variants
                                           </a>
                                        </div>
                                     </div>
@@ -1685,10 +1679,10 @@ Notes Find:
                                     <div class="txt">
                                        <div class="my-toggle-btn-wrapper tooltip">
                                           <div class="my-toggle-btn">
-                                             <input type="checkbox" id="checkbox7">
-                                             <label for="checkbox7">
+                                             <input type="checkbox" id="checkbox1" checked>
+                                             <label for="checkbox1">
                                              <span class="on" title="Active">Active</span>
-                                             <span class="off" title="Inctive">Inactive</span>
+                                             <span class="off" title="Inactive">Inactive</span>
                                              </label>
                                              <!--                                Tooltip for all state:
                                                 Active: Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.
@@ -1697,20 +1691,20 @@ Notes Find:
                                                 more info screenshot: https://prnt.sc/JupyNsuyrkOP
                                                 End Tooltip for all state-->
                                              <div class="tooltip_text">
-                                                <p>By activating, your product will be visible to all retailers who are sourcing products on ShopDot.</p>
+                                                <p>By activating, you are making the product discoverable for all retailers within ShopDot.</p>
                                              </div>
                                           </div>
                                        </div>
                                     </div>
                                  </td>
-                                 <td>
+                                <td>
                                     <div class="txt">
                                        <a href="javascript:void(0)" class="add-item-label add-category">
                                        <span>+</span> Category
                                        </a>
                                     </div>
                                  </td>
-                                 <td>
+                                <td>
                                     <div class="txt">
                                        <a href="javascript:void(0)" class="add-item-label add-tags">
                                        <span>+</span> Tags
@@ -1718,19 +1712,14 @@ Notes Find:
                                     </div>
                                  </td>
                                  <td>
-                                    <div class="txt red">
-                                     <span>0</span>
-                                       <div class="tooltip-icon tooltip-icon-danger">
-                                          <svg class="icon">
-                                             <use xlink:href="images/sprite.svg#icon-danger"></use>
-                                          </svg>
-                                       </div>
+                                    <div class="txt">
+                                     <span>999</span>
+                                       
                                     </div>
                                  </td>
                                  <td>
                                     <div class="txt">
-                                       $0 <br/>
-                                       0 sold
+                                       $0 
                                     </div>
                                  </td>
                                  <td>
@@ -1740,9 +1729,7 @@ Notes Find:
                                        </a>
                                     </div>
                                  </td>
-                                 <td>
-                                    <div class="txt">01/14/22</div>
-                                 </td>
+                               
                                 
                                  <td>
                                     <div class="actions">
@@ -1770,21 +1757,21 @@ Notes Find:
                               </tr>
                                <tr>
                                  <td>
-                                    <label for="check-11" class="checkbox">
-                                       <input type="checkbox" name="check-11" id="check-11" />
+                                    <label for="check-1" class="checkbox">
+                                       <input type="checkbox" name="check-1" id="check-1" />
                                        <div class="checkbox-text"></div>
                                     </label>
                                  </td>
                                  <td>
                                     <div class="my_list-product">
                                        <div class="my_list-product-image">
-                                          <picture><img src="images/pc-slider-temp.jfif" alt=""></picture>
+                                           <a href="#" class="number"> <picture><img src="images/pc-slider-temp.jfif" alt=""></picture></a>
                                        </div>
                                        <div>
                                           <a href="#" class="my_list-product-title">
                                           Summer Chips for Kids
                                           </a>
-                                          <a href="#" class="my_list-product-variants variants-modal-action">
+                                           <a href="#" class="my_list-product-variants variants-modal-action">
                                           4 Variants
                                           </a>
                                        </div>
@@ -1794,53 +1781,57 @@ Notes Find:
                                     <div class="txt">
                                        <div class="my-toggle-btn-wrapper tooltip">
                                           <div class="my-toggle-btn">
-                                             <input type="checkbox" id="checkbox48" checked="">
-                                             <label for="checkbox48">
+                                             <input type="checkbox" id="checkbox1" checked>
+                                             <label for="checkbox1">
                                              <span class="on" title="Active">Active</span>
                                              <span class="off" title="Inactive">Inactive</span>
                                              </label>
+                                             <!--                                Tooltip for all state:
+                                                Active: Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.
+                                                Inactive: By activating, your product will be visible to all retailers who are sourcing products on ShopDot.
+                                                Disabled: To activate a product please add billing information, assign category, and fill in all required fields.
+                                                more info screenshot: https://prnt.sc/JupyNsuyrkOP
+                                                End Tooltip for all state-->
                                              <div class="tooltip_text">
-                                                <p>Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.</p>
+                                                <p>By activating, you are making the product discoverable for all retailers within ShopDot.</p>
                                              </div>
                                           </div>
                                        </div>
                                     </div>
                                  </td>
-                                 <td>
+                                <td>
                                     <div class="txt">
-                                       <a href="javascript:void(0)" class="value_added">
-                                       Baby &amp; Kids
+                                       <a href="javascript:void(0)" class="add-item-label add-category">
+                                       <span>+</span> Category
                                        </a>
                                     </div>
                                  </td>
                                 <td>
                                     <div class="txt">
-                                       <a href="javascript:void(0)" class="value_added">
-                                       Chips, +4…
+                                       <a href="javascript:void(0)" class="add-item-label add-tags">
+                                       <span>+</span> Tags
                                        </a>
                                     </div>
                                  </td>
                                  <td>
                                     <div class="txt">
-                                       <span>999</span>
+                                     <span>999</span>
+                                       
                                     </div>
                                  </td>
                                  <td>
                                     <div class="txt">
-                                       $4,000,000 <br/>
-                                       1,001 sold
+                                       $10 
                                     </div>
                                  </td>
                                  <td>
                                     <div class="txt">
-                                       <a href="javascript:void(0)" class="value_added">
-                                       2 assigned
+                                       <a href="javascript:void(0)" class="add-item-label add-retailer">
+                                       <span>+</span> Retailer
                                        </a>
                                     </div>
                                  </td>
-                                 <td>
-                                    <div class="txt">01/14/22</div>
-                                 </td>
+                               
                                 
                                  <td>
                                     <div class="actions">
@@ -1866,6 +1857,211 @@ Notes Find:
                                     </div>
                                  </td>
                               </tr>
+                               <tr>
+                                 <td>
+                                    <label for="check-1" class="checkbox">
+                                       <input type="checkbox" name="check-1" id="check-1" />
+                                       <div class="checkbox-text"></div>
+                                    </label>
+                                 </td>
+                                 <td>
+                                    <div class="my_list-product">
+                                       <div class="my_list-product-image">
+                                           <a href="#" class="number"> <picture><img src="images/pc-slider-temp.jfif" alt=""></picture></a>
+                                       </div>
+                                       <div>
+                                          <a href="#" class="my_list-product-title">
+                                          Summer Chips for Kids
+                                          </a>
+                                           <a href="#" class="my_list-product-variants variants-modal-action">
+                                          4 Variants
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <div class="my-toggle-btn-wrapper tooltip">
+                                          <div class="my-toggle-btn">
+                                             <input type="checkbox" id="checkbox1" checked>
+                                             <label for="checkbox1">
+                                             <span class="on" title="Active">Active</span>
+                                             <span class="off" title="Inactive">Inactive</span>
+                                             </label>
+                                             <!--                                Tooltip for all state:
+                                                Active: Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.
+                                                Inactive: By activating, your product will be visible to all retailers who are sourcing products on ShopDot.
+                                                Disabled: To activate a product please add billing information, assign category, and fill in all required fields.
+                                                more info screenshot: https://prnt.sc/JupyNsuyrkOP
+                                                End Tooltip for all state-->
+                                             <div class="tooltip_text">
+                                                <p>By activating, you are making the product discoverable for all retailers within ShopDot.</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                                <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="add-item-label add-category">
+                                       <span>+</span> Category
+                                       </a>
+                                    </div>
+                                 </td>
+                                <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="add-item-label add-tags">
+                                       <span>+</span> Tags
+                                       </a>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                     <span>999</span>
+                                       
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       $890 
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="value_added">
+                                       2 assigned
+                                       </a>
+                                    </div>
+                                 </td>
+                               
+                                
+                                 <td>
+                                    <div class="actions">
+                                       <div class="dropdown">
+                                          <div class="dropdown_header">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-more"></use>
+                                             </svg>
+                                          </div>
+                                          <div class="dropdown_body">
+                                             <div class="dropdown_inner">
+                                                <ul>
+                                                   <li><a href="#">View Product</a></li>
+                                                   <li><button class="edit-product">Edit Product</button></li>
+                                                   <li><button class="sync-product">Sync Product</button></li>
+                                                   <li><button class="assign-retailr">Assign Retailers</button></li>
+                                                   <li><button class="view-store">View in Store</button></li>
+<!--                                                   <li><button class="archive-product">Archive Product</button></li>-->
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                              </tr>
+                               
+                                <tr>
+                                 <td>
+                                    <label for="check-1" class="checkbox">
+                                       <input type="checkbox" name="check-1" id="check-1" />
+                                       <div class="checkbox-text"></div>
+                                    </label>
+                                 </td>
+                                 <td>
+                                    <div class="my_list-product">
+                                       <div class="my_list-product-image">
+                                           <a href="#" class="number"> <picture><img src="images/pc-slider-temp.jfif" alt=""></picture></a>
+                                       </div>
+                                       <div>
+                                          <a href="#" class="my_list-product-title">
+                                          Summer Chips for Kids
+                                          </a><a href="#" class="my_list-product-variants variants-modal-action">
+                                          4 Variants
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <div class="my-toggle-btn-wrapper tooltip">
+                                          <div class="my-toggle-btn">
+                                             <input type="checkbox" id="checkbox1" checked>
+                                             <label for="checkbox1">
+                                             <span class="on" title="Active">Active</span>
+                                             <span class="off" title="Inactive">Inactive</span>
+                                             </label>
+                                             <!--                                Tooltip for all state:
+                                                Active: Deactivating a product will render it unviewable and unsearchable to all retailers who are sourcing products on ShopDot.
+                                                Inactive: By activating, your product will be visible to all retailers who are sourcing products on ShopDot.
+                                                Disabled: To activate a product please add billing information, assign category, and fill in all required fields.
+                                                more info screenshot: https://prnt.sc/JupyNsuyrkOP
+                                                End Tooltip for all state-->
+                                             <div class="tooltip_text">
+                                                <p>By activating, you are making the product discoverable for all retailers within ShopDot.</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                                <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="add-item-label add-category">
+                                       <span>+</span> Category
+                                       </a>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="value_added">
+                                       Chips, +4…
+                                       </a>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                     <span>999</span>
+                                       
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       $150
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="txt">
+                                       <a href="javascript:void(0)" class="add-item-label add-retailer">
+                                       <span>+</span> Retailer
+                                       </a>
+                                    </div>
+                                 </td>
+                               
+                                
+                                 <td>
+                                    <div class="actions">
+                                       <div class="dropdown">
+                                          <div class="dropdown_header">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-more"></use>
+                                             </svg>
+                                          </div>
+                                          <div class="dropdown_body">
+                                             <div class="dropdown_inner">
+                                                <ul>
+                                                   <li><a href="#">View Product</a></li>
+                                                   <li><button class="edit-product">Edit Product</button></li>
+                                                   <li><button class="sync-product">Sync Product</button></li>
+                                                   <li><button class="assign-retailr">Assign Retailers</button></li>
+                                                   <li><button class="view-store">View in Store</button></li>
+<!--                                                   <li><button class="archive-product">Archive Product</button></li>-->
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                              </tr>
+                              
                              
                            </tbody>
                         </table>

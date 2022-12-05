@@ -92,15 +92,7 @@ Notes Find:
                            <div class="dropdown_body">
                               <div class="dropdown_inner">
                                  <ul>
-                                    <li>
-                                       <a href="#"
-                                          >
-                                          Switch to Brand
-                                          <svg class="icon">
-                                             <use xlink:href="images/sprite.svg#icon-brands"></use>
-                                          </svg>
-                                       </a>
-                                    </li>
+                                    
                                     <li><a href="#">Settings</a></li>
                                     <li><a href="#">Help Center</a></li>
                                     <li><a href="#">Sign out</a></li>
@@ -195,7 +187,7 @@ Notes Find:
                                              </label>
                                                 <div class="bg-toggle"></div>
                                              <div class="tooltip_text">
-                                                <p>To activate a product, please add billing information, assign category, and fill in all required fields.</p>
+                                                <p>Product is no longer in Active status and/or in the ShopDot sales channel in your Shopify store. To activate, update the product status in your Shopify store.</p>
                                              </div>
                                                 <!--If toggle active mode-->
 <!--
@@ -274,19 +266,14 @@ Notes Find:
                   
                   <div  class="ttl">
                       Stock
-                       <div class="tooltip link-tooltip">
-                                          <div class="tooltip-icon-info sync-icon">
-                                             <svg class="icon">
-                                                <use xlink:href="images/sprite.svg#icon-sync"></use>
-                                             </svg>
-                                          </div>
-                                            <div class="tooltip_text">
-                                              <div class="tooltip-data">
-                                             <p>Stock Sync is ON. Turn it off if you want to edit stock levels and manage them manually in ShopDot. Your changes will not be overridden.</p>
-                                             <a href="#" class="tooltip-setting">settings</a>          
-                                              </div>
-                                          </div>
-                                       </div>
+                        <div class="tooltip">
+                        <div class="tooltip-icon tooltip-icon-info ic-if-blue">
+                          <svg class="icon">
+                            <use xlink:href="images/sprite.svg#icon-info-blue-2"></use>
+                          </svg>
+                        </div>
+                        <div class="tooltip_text"><p>The inventory published within ShopDot is based on the inventory from your Shopify store x the inventory buffer that you set under Settings-Preferences.</p></div>
+                      </div>
                       <!-- Stock: When OFF (sync icon is gray):-->
                       
 <!--
@@ -321,6 +308,14 @@ Notes Find:
                   <div class="product-detail_info">
                     <div  class="ttl">
                       WSP
+                        <div class="tooltip">
+                        <div class="tooltip-icon tooltip-icon-info ic-if-blue">
+                          <svg class="icon">
+                            <use xlink:href="images/sprite.svg#icon-info-blue-2"></use>
+                          </svg>
+                        </div>
+                        <div class="tooltip_text"><p>WSP stands for Wholesale Price. This is the price that retailers pay brands.</p></div>
+                      </div>
                     </div>
                     <p class="txt">$5.00</p>
                   </div>
@@ -404,14 +399,7 @@ Notes Find:
                   </div>
                 </div>
                 <!--Added latest detail-->
-                <div class="product-detail product-detail--ship-from">
-                  <div class="product-detail_info">
-                    <div  class="ttl">
-                      Last Update by Brand
-                    </div>
-                    <div class="txt">Dec.6, 2021 </div>
-                  </div>
-                </div>
+                
                 <!--Added latest detail end-->
             </div>
             
@@ -495,13 +483,13 @@ Notes Find:
               <div class="product-category">
                 <div class="title">Category:</div>
 <!--                  Category Value-->
-<!--
                 <div class="tags">
-                  <div class="tag">Kids’ Toys & Games</div>
+                  <div class="tag">Baby & Kids</div>
+                  <div class="tag">Men</div>
+                  <div class="tag">Women</div>
                 </div>
--->
                  
-                  <div>---</div>
+                  
                 
               </div>
               <h2 class="h1">
@@ -580,7 +568,7 @@ Notes Find:
                             <use xlink:href="images/sprite.svg#icon-info-blue-2"></use>
                           </svg>
                         </div>
-                        <div class="tooltip_text"><p>This is the cost the retailer has to pay brand for shipping</p></div>
+                        <div class="tooltip_text"><p>ISBN, UPC, GTIN, …</p></div>
                       </div>
 
                         </div>
@@ -594,19 +582,14 @@ Notes Find:
                                        <!--Add class 'active' to sort, when it active-->
                                         
                                         <!--When Sync is ON-->
-                                       <div class="tooltip link-tooltip">
-                                          <div class="tooltip-icon tooltip-icon-info sync-icon product-sync-icon">
-                                             <a href="#" class="sync-link"><svg class="icon">
-                                                <use xlink:href="images/sprite.svg#icon-sync"></use>
-                                             </svg></a>
-                                          </div>
-                                            <div class="tooltip_text">
-                                              <div class="tooltip-data">
-                                             <p>Stock Sync is ON. Turn it off if you want to edit stock levels and manage them manually in ShopDot. Your changes will not be overridden.</p>
-                                             <a href="#" class="tooltip-setting">settings</a>          
-                                              </div>
-                                          </div>
-                                       </div>
+                                       <div class="tooltip">
+                        <div class="tooltip-icon tooltip-icon-info ic-if-blue">
+                          <svg class="icon">
+                            <use xlink:href="images/sprite.svg#icon-info-blue-2"></use>
+                          </svg>
+                        </div>
+                        <div class="tooltip_text"><p>The inventory published within ShopDot is based on the inventory from your Shopify store x the inventory buffer that you set under Settings-Preferences.</p></div>
+                      </div>
                                         
                                         <!--When Sync is OFF-->
 
@@ -634,7 +617,14 @@ Notes Find:
                         
                         <th>
                         <div class="txt">
-                          WSP  <button class="sort">
+                          WSP <div class="tooltip">
+                        <div class="tooltip-icon tooltip-icon-info ic-if-blue">
+                          <svg class="icon">
+                            <use xlink:href="images/sprite.svg#icon-info-blue-2"></use>
+                          </svg>
+                        </div>
+                        <div class="tooltip_text"><p>WSP stands for Wholesale Price. This is the price that retailers pay brands.</p></div>
+                      </div>  <button class="sort">
                                           <svg class="icon">
                                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
                                           </svg>
@@ -728,6 +718,148 @@ Notes Find:
                    
                    
                   </tr>
+                    <tr>
+                    <td>
+                      <div class="image image--cover image--1-1">
+                        <picture><img src="images/pc-slider-temp.jfif" alt="" /></picture>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="txt">Wood</div>
+                    </td>
+                    <td>
+                      <div class="txt">Blue</div>
+                    </td>
+                    <td>
+                      <div class="txt">V1N-071A-0122-01</div>
+                    </td>
+                    <td>
+                      <div class="txt">813687021196</div>
+                    </td>
+                      <td>
+                      <div class="txt">500</div>
+                      </td>
+                      <td>
+                      <div class="txt">$10.95</div>
+                    </td>
+                      
+                      <td>
+                      <div class="txt">$5.00</div>
+                    </td>
+                      <td>
+                      <div class="txt">$15.95</div>
+                    </td>
+                     
+                   
+                   
+                  </tr>
+                    <tr class="greyed-tr">
+                    <td>
+                      <div class="image image--cover image--1-1">
+                        <picture><img src="images/pc-slider-temp.jfif" alt="" /></picture>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="txt">Wood</div>
+                    </td>
+                    <td>
+                      <div class="txt">Blue</div>
+                    </td>
+                    <td>
+                      <div class="txt">V1N-071A-0122-01</div>
+                    </td>
+                    <td>
+                      <div class="txt">813687021196</div>
+                    </td>
+                      <td>
+                      <div class="txt">500</div>
+                      </td>
+                      <td>
+                      <div class="txt">$10.95</div>
+                    </td>
+                      
+                      <td>
+                      <div class="txt">$5.00</div>
+                    </td>
+                      <td>
+                      <div class="txt">$15.95</div>
+                    </td>
+                     
+                   
+                   
+                  </tr>
+                    
+                    <tr>
+                    <td>
+                      <div class="image image--cover image--1-1">
+                        <picture><img src="images/pc-slider-temp.jfif" alt="" /></picture>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="txt">Wood</div>
+                    </td>
+                    <td>
+                      <div class="txt">Blue</div>
+                    </td>
+                    <td>
+                      <div class="txt">V1N-071A-0122-01</div>
+                    </td>
+                    <td>
+                      <div class="txt">813687021196</div>
+                    </td>
+                      <td>
+                      <div class="txt">500</div>
+                      </td>
+                      <td>
+                      <div class="txt">$10.95</div>
+                    </td>
+                      
+                      <td>
+                      <div class="txt">$5.00</div>
+                    </td>
+                      <td>
+                      <div class="txt">$15.95</div>
+                    </td>
+                     
+                   
+                   
+                  </tr>
+                    
+                    <tr>
+                    <td>
+                      <div class="image image--cover image--1-1">
+                        <picture><img src="images/pc-slider-temp.jfif" alt="" /></picture>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="txt">Wood</div>
+                    </td>
+                    <td>
+                      <div class="txt">Blue</div>
+                    </td>
+                    <td>
+                      <div class="txt">V1N-071A-0122-01</div>
+                    </td>
+                    <td>
+                      <div class="txt">813687021196</div>
+                    </td>
+                      <td>
+                      <div class="txt">500</div>
+                      </td>
+                      <td>
+                      <div class="txt">$10.95</div>
+                    </td>
+                      
+                      <td>
+                      <div class="txt">$5.00</div>
+                    </td>
+                      <td>
+                      <div class="txt">$15.95</div>
+                    </td>
+                     
+                   
+                   
+                  </tr>
                    
                 </tbody>
               </table>
@@ -735,51 +867,17 @@ Notes Find:
 
             <div class="product_extra product_shipping">
               <div class="product_extra-head">
-                <h3>Total Shipping Time</h3>
+                <h3>Shipping & Processing: </h3>
               </div>
               <div class="product_extra-body">
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-12">
                     <div class="product_extra-text">
-                        <p>Estimated total shipping time is <strong>21 days or more</strong>. Ships from Wilsonville, Oregon, United States. No international shipping. </p>
-
-<p>Ships product for <strong>$5.00</strong> flat rate plus <strong>$1</strong> for each additional item in the same order.</p>
-                        
-                       
+                        <p>Estimated days to fulfill is <strong>[Range]</strong>. Product ships from <strong>[Shipping City]</strong>, <strong>[Shipping State]</strong>.</p>
+                        <p>Shipping costs will be a flat rate of <strong>[$Shipping Costs]</strong> for the first product and <strong>[$Incremental Fee]</strong> for each additional product within the same order.</p>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="product_extra-text">
-                      <h4>
-                        <svg class="icon">
-                          <use xlink:href="images/sprite.svg#icon-question"></use>
-                        </svg>
-                        Notes
-                      </h4>
-                      <p>
-                        Total shipping time is the number of business days for the supplier to process, ship and deliver product.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="product_extra product_return">
-              <div class="product_extra-head">
-                <h3>Return & Refund</h3>
-              </div>
-              <div class="product_extra-body">
-                <div class="row">
-                  <div class="col-12">
-                    <div class="product_extra-text">
-                      <h4>Return & Refund Policy</h4>
-                      <p>
-                        Returns and refunds are accepted on a case-by-case basis. Message
-                        Brand to see if an order is eligible for a return or refund.
-                      </p>
-                    </div>
-                  </div>
+                  
                 </div>
               </div>
             </div>

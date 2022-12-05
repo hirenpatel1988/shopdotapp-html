@@ -42,7 +42,7 @@
                      <ul class="header_menu menu">
                         <li class="menu_item"><a href="#" class="menu_link">Dashboard</a></li>
                         <li class="menu_item ">
-                           <a href="#" class="menu_link">My Products</a>
+                           <a href="#" class="menu_link">Products</a>
                         </li>
                         <li class="menu_item">
                            <div class="dropdown">
@@ -61,7 +61,7 @@
                               <div class="dropdown_body">
                                  <div class="dropdown_inner">
                                     <ul>
-                                       <li><a href="#">Approved Retailers</a></li>
+                                       <li><a href="#">Connected Retailers</a></li>
                                        <li><a href="#">Requests for Access</a></li>
                                     </ul>
                                  </div>
@@ -177,7 +177,7 @@
                         <a href="#" class="filters-clear">Clear Filters</a>
                      </div>
                      <div class="filters_block filters_block-body">
-                        <div class="filter open filter-by-brand">
+                        <div class="filter-by-brand">
                            <div class="filter_body">
                               <div class="subfilters">
                                  <div class="subfilter">
@@ -250,31 +250,6 @@
                                     </div>
                                  </div>
                                  <div class="subfilter">
-                                    <div class="subfilter_head">Payment Status</div>
-                                    <div class="subfilter_body">
-                                       <div class="filter_form-items">
-                                          <div class="checkbox checkbox--no-decor">
-                                             <label for="ps-11">
-                                                <input type="checkbox" id="ps-11" name="ps">
-                                                <div class="checkbox-text">Paid</div>
-                                             </label>
-                                          </div>
-                                          <div class="checkbox checkbox--no-decor">
-                                             <label for="ps-12">
-                                                <input type="checkbox" id="ps-12" name="ps">
-                                                <div class="checkbox-text">Refunded</div>
-                                             </label>
-                                          </div>
-                                          <div class="checkbox checkbox--no-decor">
-                                             <label for="ps-13">
-                                                <input type="checkbox" id="ps-13" name="ps">
-                                                <div class="checkbox-text">Pending Refund</div>
-                                             </label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                  <div class="subfilter">
                                     <div class="subfilter_head">Fulfillment Status</div>
                                     <div class="subfilter_body">
                                        <div class="filter_form-items">
@@ -294,6 +269,31 @@
                                              <label for="ps-131">
                                                 <input type="checkbox" id="ps-131" name="ps">
                                                 <div class="checkbox-text">Cancelled</div>
+                                             </label>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="subfilter">
+                                    <div class="subfilter_head">Payment Status</div>
+                                    <div class="subfilter_body">
+                                       <div class="filter_form-items">
+                                          <div class="checkbox checkbox--no-decor">
+                                             <label for="ps-11">
+                                                <input type="checkbox" id="ps-11" name="ps" checked>
+                                                <div class="checkbox-text">Paid</div>
+                                             </label>
+                                          </div>
+                                          <div class="checkbox checkbox--no-decor">
+                                             <label for="ps-12">
+                                                <input type="checkbox" id="ps-12" name="ps">
+                                                <div class="checkbox-text">Refunded</div>
+                                             </label>
+                                          </div>
+                                          <div class="checkbox checkbox--no-decor">
+                                             <label for="ps-13">
+                                                <input type="checkbox" id="ps-13" name="ps">
+                                                <div class="checkbox-text">Pending Refund</div>
                                              </label>
                                           </div>
                                        </div>
@@ -329,7 +329,7 @@
                      </div>
                      <div class="products_head-content">
                         <div class="title">
-                           <h1>Order ID</h1>
+                           <h1>Orders</h1>
                            <div class="number">8</div>
                         </div>
                         <div class="products_head-search">
@@ -351,6 +351,19 @@
                      </div>
                   </div>
                   <div class="my_list-body order_table">
+                     <div class="products_active-filters">
+                        <div class="products_active-filter">
+                           <div class="txt">
+                              <b>Payment Status:</b> Paid
+                           </div>
+                           <button class="products_active-remove">
+                              <svg class="icon">
+                                 <use xlink:href="images/sprite.svg#icon-close"></use>
+                              </svg>
+                           </button>
+                        </div>
+                        <button class="products_active-remove-all">Clear Filters</button>
+                     </div>
                      <div class="my_list-table-wrap datalist-table_wrap sticky-header-table">
                         <table class="my_list-table datalist-table my-product-table">
                            <thead class="sticky-thead">
@@ -366,7 +379,7 @@
                                        </button>
                                     </div>
                                  </th>
-                                  <th>
+                                 <th>
                                     <div class="txt">
                                        Retailer Name
                                        <button class="sort">
@@ -396,17 +409,19 @@
                                        </button>
                                     </div>
                                  </th>
+                                 <!--
+                                    <th>
+                                       <div class="txt">
+                                          Source
+                                          <button class="sort">
+                                             <svg class="icon">
+                                                <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                             </svg>
+                                          </button>
+                                       </div>
+                                    </th>
+                                    -->
                                  <th>
-                                    <div class="txt">
-                                       Source
-                                       <button class="sort">
-                                          <svg class="icon">
-                                             <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
-                                          </svg>
-                                       </button>
-                                    </div>
-                                 </th>
-                                  <th>
                                     <div class="txt">
                                        Customer Order ID
                                        <!--Add class 'active' to sort, when it active-->
@@ -418,20 +433,19 @@
                                     </div>
                                  </th>
                                  <th class="black-envelope-action"></th>
-                                  <th></th>
-                                  
+                                 <th></th>
                               </tr>
                            </thead>
                            <tbody class="accordion">
                               <tr class="order_parent_row">
-                                 <td colspan="8">
+                                 <td colspan="7">
                                     <table class="op_table">
                                        <tr class="tr-head linen-bg">
                                           <td>
                                              <div class="text-bolder">#200541</div>
                                           </td>
-                                           <td>
-                                             <div class="text-bolder">Retailer Name A</div>
+                                          <td>
+                                             <div class="text-bolder">Retailer A</div>
                                           </td>
                                           <td>
                                              <div class="text-bolder">Today 01:34 am</div>
@@ -439,21 +453,22 @@
                                           <td>
                                              <div class="text-bolder">Jane Doe</div>
                                           </td>
+                                          <!--
+                                             <td>
+                                                <div>Shopify</div>
+                                             </td>
+                                             -->
                                           <td>
-                                             <div>Shopify</div>
-                                          </td>
-                                           <td>
                                              <div class="text-bolder">#200541</div>
                                           </td>
-                                           <td class="black-envelope-action">
-                                           <a href="mailto:abc@example.com"><svg class="icon black-arrow black-envelope">
-                                                  <use xlink:href="images/sprite.svg#black-message"></use>
-                                               </svg></a>
-                                           </td>
-                                           
-                                            
+                                          <td class="black-envelope-action">
+                                             <a href="mailto:abc@example.com">
+                                                <svg class="icon black-arrow black-envelope">
+                                                   <use xlink:href="images/sprite.svg#black-message"></use>
+                                                </svg>
+                                             </a>
+                                          </td>
                                           <td>
-                                              
                                              <svg class="icon black-arrow parent-arrow">
                                                 <use xlink:href="images/sprite.svg#black-arrow"></use>
                                              </svg>
@@ -478,7 +493,7 @@
                                                                         </button>
                                                                      </div>
                                                                   </th>
-                                                                    <th>
+                                                                  <th>
                                                                      <div class="txt">
                                                                         Quantity
                                                                         <button class="sort">
@@ -518,19 +533,9 @@
                                                                         </button>
                                                                      </div>
                                                                   </th>
-                                                                    <th>
-                                                                     <div class="txt">
-                                                                        Fulfillment Status
-                                                                        <button class="sort">
-                                                                           <svg class="icon">
-                                                                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
-                                                                           </svg>
-                                                                        </button>
-                                                                     </div>
-                                                                  </th>
                                                                   <th>
                                                                      <div class="txt">
-                                                                        Shipping Fee
+                                                                        Fulfillment Status
                                                                         <button class="sort">
                                                                            <svg class="icon">
                                                                               <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
@@ -577,7 +582,6 @@
                                                                   <td>
                                                                      <div>03</div>
                                                                   </td>
-                                                                   
                                                                   <td>
                                                                      <div><span>$</span>10.00</div>
                                                                   </td>
@@ -585,12 +589,9 @@
                                                                      <div><span>$</span>25.00</div>
                                                                   </td>
                                                                   <td>
-                                                                      <span class="status-pill pill_paid">Paid</span>
+                                                                     <span class="status-pill pill_paid">Paid</span>
                                                                   </td>
-                                                                    <td><span class="status-pill pill_connected">Fulfilled</span></td>
-                                                                  <td>
-                                                                     <div><span>$</span>10.95</div>
-                                                                  </td>
+                                                                  <td><span class="status-pill pill_connected">Fulfilled</span></td>
                                                                   <td>
                                                                      <div>-</div>
                                                                   </td>
@@ -614,7 +615,6 @@
                                                                   <td>
                                                                      <div>03</div>
                                                                   </td>
-                                                                    
                                                                   <td>
                                                                      <div><span>$</span>10.00</div>
                                                                   </td>
@@ -622,24 +622,21 @@
                                                                      <div><span>$</span>25.00</div>
                                                                   </td>
                                                                   <td>
-                                                                      <span class="status-pill pill_paid">Paid</span>
+                                                                     <span class="status-pill pill_paid">Paid</span>
                                                                   </td>
-                                                                    <td><span class="status-pill pill_pending">Unfulfilled</span></td>
-                                                                  <td>
-                                                                     <div><span>$</span>10.95</div>
-                                                                  </td>
+                                                                  <td><span class="status-pill pill_pending">Unfulfilled</span></td>
                                                                   <td>
                                                                      <div>USPS Standard shipping (7-10 business days)</div>
                                                                   </td>
                                                                   <td>
                                                                      <div class="traking-detail">
-                                                                      <span>54554115</span>
-                                                                       <span>54554115</span>
-                                                                         <span>54554115</span>
-                                                                      </div>
+                                                                        <span>54554115</span>
+                                                                        <span>54554115</span>
+                                                                        <span>54554115</span>
+                                                                     </div>
                                                                   </td>
                                                                </tr>
-                                                                <tr>
+                                                               <tr>
                                                                   <td>
                                                                      <div class="my_list-product">
                                                                         <div class="my_list-product-image">
@@ -655,7 +652,6 @@
                                                                   <td>
                                                                      <div>03</div>
                                                                   </td>
-                                                                    
                                                                   <td>
                                                                      <div><span>$</span>10.00</div>
                                                                   </td>
@@ -665,10 +661,7 @@
                                                                   <td>
                                                                      <span class="status-pill pill_refunded">Refunded</span>
                                                                   </td>
-                                                                      <td><span class="status-pill pill_declined">Cancelled</span></td>
-                                                                  <td>
-                                                                     <div><span>$</span>10.95</div>
-                                                                  </td>
+                                                                  <td><span class="status-pill pill_declined">Cancelled</span></td>
                                                                   <td>
                                                                      <div>-</div>
                                                                   </td>
@@ -676,7 +669,7 @@
                                                                      <div>-</div>
                                                                   </td>
                                                                </tr>
-                                                                <tr>
+                                                               <tr>
                                                                   <td>
                                                                      <div class="my_list-product">
                                                                         <div class="my_list-product-image">
@@ -692,7 +685,6 @@
                                                                   <td>
                                                                      <div>03</div>
                                                                   </td>
-                                                                     
                                                                   <td>
                                                                      <div><span>$</span>10.00</div>
                                                                   </td>
@@ -700,12 +692,9 @@
                                                                      <div><span>$</span>25.00</div>
                                                                   </td>
                                                                   <td>
-                                                                      <span class="status-pill pill_pending_refunded">Pending Refund</span>
+                                                                     <span class="status-pill pill_pending_refunded">Pending Refund</span>
                                                                   </td>
-                                                                    <td><span class="status-pill pill_connected">Fulfilled</span></td>
-                                                                  <td>
-                                                                     <div><span>$</span>10.95</div>
-                                                                  </td>
+                                                                  <td><span class="status-pill pill_connected">Fulfilled</span></td>
                                                                   <td>
                                                                      <div>-</div>
                                                                   </td>
@@ -713,7 +702,7 @@
                                                                      <div>-</div>
                                                                   </td>
                                                                </tr>
-                                                                <tr>
+                                                               <tr>
                                                                   <td>
                                                                      <div class="my_list-product">
                                                                         <div class="my_list-product-image">
@@ -729,7 +718,6 @@
                                                                   <td>
                                                                      <div>03</div>
                                                                   </td>
-                                                                     
                                                                   <td>
                                                                      <div><span>$</span>10.00</div>
                                                                   </td>
@@ -737,12 +725,9 @@
                                                                      <div><span>$</span>25.00</div>
                                                                   </td>
                                                                   <td>
-                                                                     <span class="status-pill pill_failed">Failed</span>
+                                                                    <span class="status-pill pill_paid">Paid</span>
                                                                   </td>
-                                                                    <td><span class="status-pill pill_pending">Unfulfilled</span></td>
-                                                                  <td>
-                                                                     <div><span>$</span>10.95</div>
-                                                                  </td>
+                                                                  <td><span class="status-pill pill_pending">Unfulfilled</span></td>
                                                                   <td>
                                                                      <div>-</div>
                                                                   </td>
@@ -750,7 +735,7 @@
                                                                      <div>-</div>
                                                                   </td>
                                                                </tr>
-                                                                <tr>
+                                                               <tr>
                                                                   <td>
                                                                      <div class="my_list-product">
                                                                         <div class="my_list-product-image">
@@ -766,7 +751,6 @@
                                                                   <td>
                                                                      <div>03</div>
                                                                   </td>
-                                                                    
                                                                   <td>
                                                                      <div><span>$</span>10.00</div>
                                                                   </td>
@@ -774,12 +758,9 @@
                                                                      <div><span>$</span>25.00</div>
                                                                   </td>
                                                                   <td>
-                                                                     <span class="status-pill pill_failed">Failed</span>
+                                                                     <span class="status-pill pill_paid">Paid</span>
                                                                   </td>
-                                                                     <td><span class="status-pill pill_declined">Cancelled</span></td>
-                                                                  <td>
-                                                                     <div><span>$</span>10.95</div>
-                                                                  </td>
+                                                                  <td><span class="status-pill pill_declined">Cancelled</span></td>
                                                                   <td>
                                                                      <div>-</div>
                                                                   </td>
@@ -798,15 +779,15 @@
                                     </table>
                                  </td>
                               </tr>
-                               <tr class="order_parent_row">
-                                 <td colspan="8">
+                              <tr class="order_parent_row">
+                                 <td colspan="7">
                                     <table class="op_table">
                                        <tr class="tr-head linen-bg">
                                           <td>
                                              <div class="text-bolder">#200542</div>
                                           </td>
-                                           <td>
-                                             <div class="text-bolder">Retailer Name B</div>
+                                          <td>
+                                             <div class="text-bolder">Retailer B</div>
                                           </td>
                                           <td>
                                              <div class="text-bolder">Today 06:34 PM</div>
@@ -814,21 +795,23 @@
                                           <td>
                                              <div class="text-bolder">Alex </div>
                                           </td>
+                                          <!--
+                                             <td>
+                                                <div>Shopify</div>
+                                             </td>
+                                             -->
                                           <td>
-                                             <div>Shopify</div>
-                                          </td>
-                                           <td>
                                              <div class="text-bolder">#200542</div>
                                           </td>
-                                           <td class="black-envelope-action">
-                                           <a href="mailto:abc@example.com"><svg class="icon black-arrow black-envelope">
-                                                  <use xlink:href="images/sprite.svg#black-message"></use>
-                                               </svg></a>
-                                           </td>
-                                           
-                                            
+                                          <td class="black-envelope-action">
+                                             <a href="mailto:abc@example.com">
+                                                <svg class="icon black-arrow black-envelope">
+                                                   <use xlink:href="images/sprite.svg#black-message"></use>
+                                                </svg>
+                                             </a>
+
+                                          </td>
                                           <td>
-                                              
                                              <svg class="icon black-arrow parent-arrow">
                                                 <use xlink:href="images/sprite.svg#black-arrow"></use>
                                              </svg>
@@ -853,7 +836,7 @@
                                                                         </button>
                                                                      </div>
                                                                   </th>
-                                                                    <th>
+                                                                  <th>
                                                                      <div class="txt">
                                                                         Quantity
                                                                         <button class="sort">
@@ -893,19 +876,9 @@
                                                                         </button>
                                                                      </div>
                                                                   </th>
-                                                                    <th>
-                                                                     <div class="txt">
-                                                                        Fulfillment Status
-                                                                        <button class="sort">
-                                                                           <svg class="icon">
-                                                                              <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
-                                                                           </svg>
-                                                                        </button>
-                                                                     </div>
-                                                                  </th>
                                                                   <th>
                                                                      <div class="txt">
-                                                                        Shipping Fee
+                                                                        Fulfillment Status
                                                                         <button class="sort">
                                                                            <svg class="icon">
                                                                               <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
@@ -952,7 +925,6 @@
                                                                   <td>
                                                                      <div>03</div>
                                                                   </td>
-                                                                   
                                                                   <td>
                                                                      <div><span>$</span>10.00</div>
                                                                   </td>
@@ -960,14 +932,10 @@
                                                                      <div><span>$</span>25.00</div>
                                                                   </td>
                                                                   <td>
-                                                                      <span class="status-pill pill_paid">Paid</span>
+                                                                     <span class="status-pill pill_paid">Paid</span>
                                                                   </td>
-                                                                    <td>
-                                                                     <span class="status-pill pill_connected">Fulfilled</span>
-                                                                  </td>
-                                                                  
                                                                   <td>
-                                                                     <div><span>$</span>10.95</div>
+                                                                     <span class="status-pill pill_connected">Fulfilled</span>
                                                                   </td>
                                                                   <td>
                                                                      <div>-</div>
@@ -992,7 +960,6 @@
                                                                   <td>
                                                                      <div>03</div>
                                                                   </td>
-                                                                    
                                                                   <td>
                                                                      <div><span>$</span>10.00</div>
                                                                   </td>
@@ -1000,26 +967,23 @@
                                                                      <div><span>$</span>25.00</div>
                                                                   </td>
                                                                   <td>
-                                                                      <span class="status-pill pill_paid">Paid</span>
-                                                                  </td>
-                                                                   <td>
-                                                                     <span class="status-pill pill_declined">Cancelled</span>
+                                                                     <span class="status-pill pill_paid">Paid</span>
                                                                   </td>
                                                                   <td>
-                                                                     <div><span>$</span>10.95</div>
+                                                                     <span class="status-pill pill_declined">Cancelled</span>
                                                                   </td>
                                                                   <td>
                                                                      <div>USPS Standard shipping (7-10 business days)</div>
                                                                   </td>
                                                                   <td>
                                                                      <div class="traking-detail">
-                                                                      <span>54554115</span>
-                                                                       <span>54554115</span>
-                                                                         <span>54554115</span>
-                                                                      </div>
+                                                                        <span>54554115</span>
+                                                                        <span>54554115</span>
+                                                                        <span>54554115</span>
+                                                                     </div>
                                                                   </td>
                                                                </tr>
-                                                                <tr>
+                                                               <tr>
                                                                   <td>
                                                                      <div class="my_list-product">
                                                                         <div class="my_list-product-image">
@@ -1035,7 +999,6 @@
                                                                   <td>
                                                                      <div>03</div>
                                                                   </td>
-                                                                    
                                                                   <td>
                                                                      <div><span>$</span>10.00</div>
                                                                   </td>
@@ -1043,13 +1006,10 @@
                                                                      <div><span>$</span>25.00</div>
                                                                   </td>
                                                                   <td>
-                                                                       <span class="status-pill pill_refunded">Refunded</span>
-                                                                  </td>
-                                                                    <td>
-                                                                     <span class="status-pill pill_connected">Fulfilled</span>
+                                                                     <span class="status-pill pill_refunded">Refunded</span>
                                                                   </td>
                                                                   <td>
-                                                                     <div><span>$</span>10.95</div>
+                                                                     <span class="status-pill pill_connected">Fulfilled</span>
                                                                   </td>
                                                                   <td>
                                                                      <div>-</div>
@@ -1058,7 +1018,7 @@
                                                                      <div>-</div>
                                                                   </td>
                                                                </tr>
-                                                                <tr>
+                                                               <tr>
                                                                   <td>
                                                                      <div class="my_list-product">
                                                                         <div class="my_list-product-image">
@@ -1074,7 +1034,6 @@
                                                                   <td>
                                                                      <div>03</div>
                                                                   </td>
-                                                                     
                                                                   <td>
                                                                      <div><span>$</span>10.00</div>
                                                                   </td>
@@ -1084,11 +1043,8 @@
                                                                   <td>
                                                                      <span class="status-pill pill_pending_refunded">Pending Refund</span>
                                                                   </td>
-                                                                    <td>
-                                                                     <span class="status-pill pill_pending">Unfulfilled</span>
-                                                                  </td>
                                                                   <td>
-                                                                     <div><span>$</span>10.95</div>
+                                                                     <span class="status-pill pill_pending">Unfulfilled</span>
                                                                   </td>
                                                                   <td>
                                                                      <div>-</div>
@@ -1097,7 +1053,7 @@
                                                                      <div>-</div>
                                                                   </td>
                                                                </tr>
-                                                                <tr>
+                                                               <tr>
                                                                   <td>
                                                                      <div class="my_list-product">
                                                                         <div class="my_list-product-image">
@@ -1113,7 +1069,6 @@
                                                                   <td>
                                                                      <div>03</div>
                                                                   </td>
-                                                                     
                                                                   <td>
                                                                      <div><span>$</span>10.00</div>
                                                                   </td>
@@ -1121,13 +1076,10 @@
                                                                      <div><span>$</span>25.00</div>
                                                                   </td>
                                                                   <td>
-                                                                     <span class="status-pill pill_failed">Failed</span>
-                                                                  </td>
-                                                                     <td>
-                                                                     <span class="status-pill pill_pending">Unfulfilled</span>
+                                                                    <span class="status-pill pill_paid">Paid</span>
                                                                   </td>
                                                                   <td>
-                                                                     <div><span>$</span>10.95</div>
+                                                                     <span class="status-pill pill_pending">Unfulfilled</span>
                                                                   </td>
                                                                   <td>
                                                                      <div>-</div>
@@ -1136,7 +1088,7 @@
                                                                      <div>-</div>
                                                                   </td>
                                                                </tr>
-                                                                <tr>
+                                                               <tr>
                                                                   <td>
                                                                      <div class="my_list-product">
                                                                         <div class="my_list-product-image">
@@ -1152,7 +1104,6 @@
                                                                   <td>
                                                                      <div>03</div>
                                                                   </td>
-                                                                    
                                                                   <td>
                                                                      <div><span>$</span>10.00</div>
                                                                   </td>
@@ -1160,13 +1111,10 @@
                                                                      <div><span>$</span>25.00</div>
                                                                   </td>
                                                                   <td>
-                                                                     <span class="status-pill pill_failed">Failed</span>
+                                                                     <span class="status-pill pill_paid">Paid</span>
                                                                   </td>
-                                                                     <td>
+                                                                  <td>
                                                                      <span class="status-pill pill_connected">Fulfilled</span>
-                                                                  </td>
-                                                                  <td>
-                                                                     <div><span>$</span>10.95</div>
                                                                   </td>
                                                                   <td>
                                                                      <div>-</div>
@@ -1186,56 +1134,38 @@
                                     </table>
                                  </td>
                               </tr>
-                              
                            </tbody>
                         </table>
                      </div>
-                       <div class="pagination_wrap">
-                <div class="pagination">
-                  <div class="pagination_per">
-                    <select name="per" id="per">
-                      <option value="10">10</option>
-                      <option value="20" selected>20</option>
-                      <option value="50">50</option>
-                      <option value="100">100</option>
-                    </select>
-                    <div class="pagination-title">items per page</div>
-                  </div>
-                  <div class="pagination_nav">
-                    <button class="pagination-arrow pagination-arrow-prev">
-                      <svg class="icon">
-                        <use xlink:href="images/sprite.svg#icon-chevron--left"></use>
-                      </svg>
-                    </button>
-                    <div class="pagination-current">
-                      <input type="text" value="1" />
-                    </div>
-                    <button class="pagination-arrow pagination-arrow-next">
-                      <svg class="icon">
-                        <use xlink:href="images/sprite.svg#icon-chevron--right"></use>
-                      </svg>
-                    </button>
-                    <div class="pagination-title">of 10 pages</div>
-                  </div>
-                </div>
-              </div>
-<!--
                      <div class="pagination_wrap">
                         <div class="pagination">
                            <div class="pagination_per">
-                              <div class="pagination-title">Showing 8 items</div>
+                              <select name="per" id="per">
+                                 <option value="10">10</option>
+                                 <option value="20" selected>20</option>
+                                 <option value="50">50</option>
+                                 <option value="100">100</option>
+                              </select>
+                              <div class="pagination-title">items per page</div>
                            </div>
-                           <div class="pagination_actions">
-                              <a href="#" class="button button-grey-3 bordered" download="">
+                           <div class="pagination_nav">
+                              <button class="pagination-arrow pagination-arrow-prev">
                                  <svg class="icon">
-                                    <use xlink:href="images/sprite.svg#icon-download"></use>
+                                    <use xlink:href="images/sprite.svg#icon-chevron--left"></use>
                                  </svg>
-                                 Download My List
-                              </a>
+                              </button>
+                              <div class="pagination-current">
+                                 <input type="text" value="1" />
+                              </div>
+                              <button class="pagination-arrow pagination-arrow-next">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-chevron--right"></use>
+                                 </svg>
+                              </button>
+                              <div class="pagination-title">of 10 pages</div>
                            </div>
                         </div>
                      </div>
--->
                   </div>
                </div>
             </section>
@@ -1277,8 +1207,8 @@
           });
          });
           $('.black-envelope-action').on('click', function(e){e.stopPropagation();});
-//         $('.order_inner-table-area .order_inner-table-div').hide(1);
+         //         $('.order_inner-table-area .order_inner-table-div').hide(1);
       </script>
-       <script src="js/app.min.js" defer></script>
+      <script src="js/app.min.js" defer></script>
    </body>
 </html>

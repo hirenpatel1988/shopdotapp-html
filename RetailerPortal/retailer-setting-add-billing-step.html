@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Retailer Setting - Billing</title>
+      <link
+         rel="icon"
+         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
+         />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap"
+         rel="stylesheet"
+         />
+      <link media="all" rel="stylesheet" href="./css/vendor.min.css" />
+      <link media="all" rel="stylesheet" href="./css/styles.min.css" />
+      <link media="all" rel="stylesheet" href="./css/media.css" />
+      <link media="all" rel="stylesheet" href="./css/dropdown.css" />
+   </head>
+   <body>
+      <div class="wrapper">
+         <header class="header mp-header">
+            <div class="header_block header_block-top mp-header_block-top">
+               <div class="header_container">
+                  <div class="h-left">
+                     <!--header logo-->
+                     <div class="header_logo">
+                        <a href="index.html" class="logo">
+                           <picture><img src="images/logo.svg" alt="" /></picture>
+                        </a>
+                     </div>
+                     <!--header menu-->
+                     <div class="header_menu-wrap">
+                        <ul class="header_menu menu">
+                           <li class="menu_item"><a href="#" class="menu_link">Home</a></li>
+                           <li class="menu_item">
+                              <a href="brands-all.html" class="menu_link">Brands</a>
+                           </li>
+                           <li class="menu_item">
+                              <a href="products-all.html" class="menu_link ">Products</a>
+                           </li>
+                           
+                           <li class="menu_item"><a href="#" class="menu_link">Orders</a></li>
+                        </ul>
+                     </div>
+                     <!--header search-->
+                  </div>
+                  <!--header actions-->
+                  <div class="header_actions">
+                     <div class="header_usermenu">
+                        <div class="dropdown">
+                           <div class="dropdown_header">
+                              <div class="dropdown_header-text">
+                                 Hi, <span class="username">Jane</span>
+                              </div>
+                              <div class="dropdown_header-chevron">
+                                 <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                 </svg>
+                              </div>
+                           </div>
+                           <div class="dropdown_body">
+                              <div class="dropdown_inner">
+                                 <ul>
+                                    <li><a href="#">Settings</a></li>
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">Sign out</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="header_action header_action-invite">
+                        <button class="button invite-retailer">Invite Brand</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="header_block header_block-bottom mp-header_block-bottom"></div>
+         </header>
+         <main class="content mp-content setting-section">
+            <section class="section products pc_tabs tabs">
+               <aside class="filters mp-filter">
+                  <div class="filters_wrap">
+                     <div class="filters_block filters_block-body">
+                        <div class="filter-by-products">
+                           <div class="link-sidebar">
+                              <div class="tab_wrap">
+                                 <div class="setting-tab-title">
+                                    Setting
+                                 </div>
+                                 <input type="checkbox" name="" id="" class=""/>
+                                 <div class="hamburger-lines tabs-hamburger-lines">
+                                    <span class="line line1"></span>
+                                    <span class="line line2"></span>
+                                    <span class="line line3"></span>
+                                 </div>
+                                <div class="pc_tabs-menu tab_menu">
+                                    <a href="#" data-link="Account" class="tab-links required">Retailer Profile</a>
+                                     <div class="tooltip_text not-available-tooltip">
+                                       <p>This is a mandatory setting that is part of the onboarding process.</p>
+                                    </div>
+                                    <a href="#" data-link="Billing" class="tab-links active">Billing</a>
+                                    <a href="#" data-link="Users" class="tab-links">Users</a>
+                                    <a href="#" data-link="Security" class="tab-links">Security</a>
+                                    <a href="#" data-link="EmailPreferences" class="tab-links">Notifications</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </aside>
+               <div class="pc_tabs-content tabs_body">
+                  <div class="tab active" data-target="Billing">
+                     <div class="products_content">
+                        <div class="products_head mp-head">
+                           <div class="products_head-content">
+                              <div class="title">
+                                 <h1>
+                                    Billing
+                                 </h1>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="products_body">
+                           <div class="content_area">
+                              <div id="billing">
+                                 <div class="user_info">
+                                    <a href="retailer-setting-add-billing.html" class="button button-border add-user">
+                                       <span class="plus-icon-sm">
+                                          <svg class="icon">
+                                             <use xlink:href="images/sprite.svg#plus-icon-sm"></use>
+                                          </svg>
+                                       </span>
+                                       Add New Credit Card
+                                    </a>
+                                    <h2>Billing Method</h2>
+                                    <div class="note-flex">
+                                       <p>Choose a billing method that will be used for order processing.</p>
+                                    </div>
+                                    <div class="content_area">
+                                       <div class="form-area-cstm pe-billing">
+                                          <div class="form-input return_select-item choose-billing-method">
+                                             <div class="billing-method-item">
+                                                <label for="radio-billing-direct" class="radiobox radio-click">
+                                                   <input type="radio" name="radio-billing-method" id="radio-billing-direct" checked>
+                                                   <div class="radiobox-text">
+                                                      <span>Visa card ending with 5487</span>
+                                                      <span class="status-pill pill_black">
+                                                      Default
+                                                      </span>
+                                                   </div>
+                                                </label>
+                                             </div>
+                                             <div class="billing-method-item">
+                                                <label for="radio-billing-card" class="radiobox radio-click">
+                                                   <input type="radio" name="radio-billing-method" id="radio-billing-card">
+                                                   <div class="radiobox-text">
+                                                      <span>Maestro card ending with 5400</span>
+                                                      <a href="#" class="billing-default make-default-action">Set as default</a>
+                                                      <a href="#" class="delete-action card-remove-action">
+                                                         <svg class="icon">
+                                                            <use xlink:href="images/sprite.svg#delete-icon"></use>
+                                                         </svg>
+                                                      </a>
+                                                   </div>
+                                                </label>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </main>
+         <footer class="footer">
+         </footer>
+         <div class="popup setting-popup delete-user-modal make-default-modal">
+            <div class="popup_wrapper">
+               <div class="popup_content">
+                  <div class="popup-close">
+                     <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-close"></use>
+                     </svg>
+                  </div>
+                  <div class="popup-flex">
+                     <div class="icon-center">
+                        <svg class="icon">
+                           <use xlink:href="images/sprite.svg#confirmtation-round"></use>
+                        </svg>
+                     </div>
+                   <h1>Confirmation Required</h1>
+                     <p class="w-100">Are you sure you want to set the billing method below as your default?</p>
+                     <br/>
+                     <p>Visa card ending With <a href="#" class="link-text">5400</a> </p>
+                  </div>
+                  <div class="action-footer">
+                     <button class="button button-dark px-6">Cancel</button>
+                     <button class="button px-6 button-orange">Confirm</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+          <div class="popup setting-popup delete-user-modal delete-card-modal">
+            <div class="popup_wrapper">
+               <div class="popup_content">
+                  <div class="popup-close">
+                     <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-close"></use>
+                     </svg>
+                  </div>
+                  <div class="popup-flex">
+                     <div class="icon-center">
+                        <svg class="icon">
+                           <use xlink:href="images/sprite.svg#confirmtation-round"></use>
+                        </svg>
+                     </div>
+                     <h1>Are you sure to remove?</h1>
+                      <p>You're about to remove your Maestro card ending with <a href="#" class="link-text">5400</a></p>
+                     <br/>
+                     
+                  </div>
+                  <div class="action-footer">
+                     <button class="button button-dark px-6">Cancel</button>
+                     <button class="button px-6 button-red">Yes</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="bottom-notify">
+            <div class="container">
+               <div class="bottom-notify_text">
+                  <p>
+                     Credit card added
+                  </p>
+               </div>
+            </div>
+            <div class="bottom-notify-close">
+               <svg class="icon">
+                  <use xlink:href="images/sprite.svg#icon-close"></use>
+               </svg>
+            </div>
+         </div>
+         <div class="bottom-notify">
+            <div class="container">
+               <div class="bottom-notify_text">
+                  <p>
+                     You have successfully set a default billing method
+                  </p>
+               </div>
+            </div>
+            <div class="bottom-notify-close">
+               <svg class="icon">
+                  <use xlink:href="images/sprite.svg#icon-close"></use>
+               </svg>
+            </div>
+         </div>
+         <div class="bottom-notify">
+            <div class="container">
+               <div class="bottom-notify_text">
+                  <p>
+                     Billing method is successfull removed
+                  </p>
+               </div>
+            </div>
+            <div class="bottom-notify-close">
+               <svg class="icon">
+                  <use xlink:href="images/sprite.svg#icon-close"></use>
+               </svg>
+            </div>
+         </div>
+      </div>
+      <script src="./js/vendor.min.js" defer></script>
+      <script
+         src="https://code.jquery.com/jquery-3.6.0.min.js"
+         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+         crossorigin="anonymous"
+         ></script>
+      <script src="js/app.min.js" defer></script>
+      <script src="js/dropdown.js"></script>
+   </body>
+</html>

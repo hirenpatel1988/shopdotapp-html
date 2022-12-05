@@ -27,6 +27,7 @@
       <header class="header">
         <div class="header_block header_block-top">
           <div class="header_container">
+              <div class="h-left">
             <!--header logo-->
             <div class="header_logo">
               <a href="index.html" class="logo">
@@ -43,27 +44,12 @@
                 <li class="menu_item">
                   <a href="products-all.html" class="menu_link ">Products</a>
                 </li>
-                <li class="menu_item"><a href="#" class="menu_link @@m">My List</a></li>
+                
                 <li class="menu_item"><a href="#" class="menu_link">Orders</a></li>
               </ul>
             </div>
             <!--header search-->
-            <div class="header_search search">
-              <form action="#" class="search_form">
-                <div class="search_form-input">
-                  <input type="text" placeholder="Search…" />
-                </div>
-                <button type="cancel" class="search_form-button">
-                  <svg class="icon">
-                    <use xlink:href="images/sprite.svg#icon-clear"></use>
-                  </svg>
-                </button>
-                <button type="submit"></button>
-                <svg class="icon">
-                  <use xlink:href="images/sprite.svg#icon-search"></use>
-                </svg>
-              </form>
-            </div>
+              </div>
             <!--header actions-->
             <div class="header_actions">
               <div class="header_usermenu">
@@ -72,11 +58,7 @@
                     <div class="dropdown_header-text">
                       Hi, <span class="username">Jane</span>
                     </div>
-                    <div class="dropdown_header-icon">
-                      <svg class="icon">
-                        <use xlink:href="images/sprite.svg#icon-retailers"></use>
-                      </svg>
-                    </div>
+                    
                     <div class="dropdown_header-chevron">
                       <svg class="icon">
                         <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
@@ -86,14 +68,7 @@
                   <div class="dropdown_body">
                     <div class="dropdown_inner">
                       <ul>
-                        <li>
-                          <a href="#"
-                            >Switch to Brand
-                            <svg class="icon">
-                              <use xlink:href="images/sprite.svg#icon-brands"></use>
-                            </svg>
-                          </a>
-                        </li>
+                       
                         <li><a href="#">Settings</a></li>
                         <li><a href="#">Help Center</a></li>
                         <li><a href="#">Sign out</a></li>
@@ -102,41 +77,7 @@
                   </div>
                 </div>
               </div>
-              <button class="header_action header_action-mails">
-                <svg class="icon">
-                  <use xlink:href="images/sprite.svg#icon-mail"></use>
-                </svg>
-                <div class="text visible">5</div>
-              </button>
-              <button class="header_action header_action-notifications">
-                <!--Changed icon to dropdown, to show list of 'updates'-->
-                <div class="dropdown">
-                  <div class="dropdown_header">
-                    <svg class="icon">
-                      <use xlink:href="images/sprite.svg#icon-notification"></use>
-                    </svg>
-                  </div>
-                  <div class="dropdown_body">
-                    <div class="dropdown_inner">
-                      <ul>
-                        <li>
-                          <span>Summer Activities Chips for Kids</span> <br>
-                          updated Dec.15, 2021, 07:56 PM
-                        </li>
-                        <li>
-                          <span>Summer Activities Chips for Kids</span> <br>
-                          updated Dec.15, 2021, 07:56 PM
-                        </li>
-                        <li>
-                          <span>Summer Activities Chips for Kids</span> <br>
-                          updated Dec.15, 2021, 07:56 PM
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="text visible">1</div>
-              </button>
+           
               <div class="header_action header_action-invite">
                 <button class="button invite-brand">Invite Brands</button>
               </div>
@@ -456,16 +397,7 @@
                           <a href="#">Women Owned</a>
                         </div>
                       </div>
-                      <div class="brand-single_about-item">
-                        <div class="brand-single_about-item-title">
-                          Product Categories:
-                        </div>
-                        <div class="brand-single_about-item-wrap">
-                          <a href="#">Baby & Kids</a>
-                          <a href="#">Men</a>
-                          <a href="#">Women</a>
-                        </div>
-                      </div>
+                      
                         
                     </div>
                     <div class="brand-single_about-msrp">
@@ -475,8 +407,13 @@
                     </div>
                       
                       <div class="mt-5">
+                      <p><strong>Return and Refund Policy </strong><br/>
+                          Returns and refunds are accepted on a case-by-case basis.</p>
+                      </div>
+                      
+                      <div class="mt-5">
                       <p><strong>Requirements for retailers who want to connect to with your brand </strong><br/>
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                          Retailer has to have an online store</p>
                       </div>
                     <!-- <div class="brand-single_about-buttons">
                       <a href="#" class="button button-dark large"
@@ -736,7 +673,7 @@
                         </div>
   
                         <div class="subfilter">
-                          <div class="subfilter_head">Total Shipping Time</div>
+                          <div class="subfilter_head">Days to Fulfill</div>
                           <div class="subfilter_body">
                             <div class="checkbox checkbox--no-decor">
                               <label for="ship-time-1"
@@ -780,7 +717,7 @@
                   <div class="products_head-search">
                     <form action="#" class="search_form">
                       <div class="search_form-input">
-                        <input type="text" placeholder="Search product…" />
+                        <input type="text" placeholder="Search Product" />
                       </div>
                       <button type="cancel" class="search_form-button">
                         <svg class="icon">
@@ -797,6 +734,7 @@
               </div>
             <div class="update_products_content">
             <div class="products_body">
+<!--
                      <div class="products_active-filters">
                         <div class="products_active-filter">
                            <div class="txt">Alpha One</div>
@@ -808,6 +746,7 @@
                         </div>
                         <button class="products_active-remove-all">Clear Filters</button>
                      </div>
+-->
                      <!--product card-->
                      <div class="pc">
                         <div class="pc_main">
@@ -817,22 +756,11 @@
                                  Connected
                                  </span>
                               </div>
-                              <div class="pc_bookmark">
-                                 <a href="#" class="bookmark-line">
-                                    <svg class="icon">
-                                       <use xlink:href="images/sprite.svg#bookmark-line"></use>
-                                    </svg>
-                                 </a>
-                                 <a href="#" class="bookmark-fill" style="display: none">
-                                    <svg class="icon">
-                                       <use xlink:href="images/sprite.svg#bookmark-fill"></use>
-                                    </svg>
-                                 </a>
-                              </div>
+                              
                            </div>
                            <div class="pc_body">
                               <div class="pc_slider">
-                                 <div class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events">
+                                 <a href="product-single.html" class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events">
                                     <div class="swiper-wrapper" id="swiper-wrapper-18101d3e503fbb7ff" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
                                        <!--This slider items need duplicate for popup slider-->
                                        <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 3" style="width: 206px;">
@@ -864,7 +792,7 @@
                                     </div>
                                     <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
                                     <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></a>
                                  <div class="pc_links">
                                     <a href="product-single.html" class="pc_links-product">
                                        <svg class="icon">
@@ -896,8 +824,8 @@
                                  </div>
                               </div>
                               <div class="pc_brand-item">
-                                 <img src="images/product-stock.png">
-                                 <label>The Idea Box Kids The Idea Box KidsThe Idea Box KidsThe Idea Box Kids Box Kids</label>
+                                 <a href="brand-single.html"><img src="images/product-stock.png">
+                                 <span class="brand-name">The Idea Box Kids The Idea Box KidsThe Idea Box KidsThe Idea Box Kids Box Kids</span></a>
                               </div>
                            </div>
                         </div>
@@ -910,22 +838,11 @@
                                  Pending
                                  </span>
                               </div>
-                              <div class="pc_bookmark">
-                                 <a href="#" class="bookmark-line" style="display: none">
-                                    <svg class="icon">
-                                       <use xlink:href="images/sprite.svg#bookmark-line"></use>
-                                    </svg>
-                                 </a>
-                                 <a href="#" class="bookmark-fill">
-                                    <svg class="icon">
-                                       <use xlink:href="images/sprite.svg#bookmark-fill"></use>
-                                    </svg>
-                                 </a>
-                              </div>
+                              
                            </div>
                            <div class="pc_body">
                               <div class="pc_slider">
-                                 <div class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events">
+                                 <a href="product-single.html" class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events">
                                     <div class="swiper-wrapper" id="swiper-wrapper-18101d3e503fbb7ff" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
                                        <!--This slider items need duplicate for popup slider-->
                                        <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 3" style="width: 206px;">
@@ -957,7 +874,7 @@
                                     </div>
                                     <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
                                     <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></a>
                                  <div class="pc_links">
                                     <a href="product-single.html" class="pc_links-product">
                                        <svg class="icon">
@@ -989,8 +906,8 @@
                                  </div>
                               </div>
                               <div class="pc_brand-item">
-                                 <img src="images/product-stock.png">
-                                 <label>The Idea Box Kids The Idea Box KidsThe Idea Box KidsThe Idea Box Kids Box Kids</label>
+                                 <a href="brand-single.html"><img src="images/product-stock.png">
+                                 <span class="brand-name">The Idea Box Kids The Idea Box KidsThe Idea Box KidsThe Idea Box Kids Box Kids</span></a>
                               </div>
                            </div>
                         </div>
@@ -1003,22 +920,11 @@
                                  Not Connected
                                  </span>
                               </div>
-                              <div class="pc_bookmark">
-                                 <a href="#" class="bookmark-line" style="display: none">
-                                    <svg class="icon">
-                                       <use xlink:href="images/sprite.svg#bookmark-line"></use>
-                                    </svg>
-                                 </a>
-                                 <a href="#" class="bookmark-fill">
-                                    <svg class="icon">
-                                       <use xlink:href="images/sprite.svg#bookmark-fill"></use>
-                                    </svg>
-                                 </a>
-                              </div>
+                              
                            </div>
                            <div class="pc_body">
                               <div class="pc_slider">
-                                 <div class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events">
+                                 <a href="product-single.html" class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events">
                                     <div class="swiper-wrapper" id="swiper-wrapper-18101d3e503fbb7ff" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
                                        <!--This slider items need duplicate for popup slider-->
                                        <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 3" style="width: 206px;">
@@ -1050,7 +956,7 @@
                                     </div>
                                     <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
                                     <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></a>
                                  <div class="pc_links">
                                     <a href="product-single.html" class="pc_links-product">
                                        <svg class="icon">
@@ -1082,8 +988,8 @@
                                  </div>
                               </div>
                               <div class="pc_brand-item">
-                                 <img src="images/product-stock.png">
-                                 <label>The Idea Box Kids The Idea Box KidsThe Idea Box KidsThe Idea Box Kids Box Kids</label>
+                                 <a href="brand-single.html"><img src="images/product-stock.png">
+                                 <span class="brand-name">The Idea Box Kids The Idea Box KidsThe Idea Box KidsThe Idea Box Kids Box Kids</span></a>
                               </div>
                            </div>
                         </div>
@@ -1096,22 +1002,11 @@
                                  Declined
                                  </span>
                               </div>
-                              <div class="pc_bookmark">
-                                 <a href="#" class="bookmark-line" style="display: none">
-                                    <svg class="icon">
-                                       <use xlink:href="images/sprite.svg#bookmark-line"></use>
-                                    </svg>
-                                 </a>
-                                 <a href="#" class="bookmark-fill">
-                                    <svg class="icon">
-                                       <use xlink:href="images/sprite.svg#bookmark-fill"></use>
-                                    </svg>
-                                 </a>
-                              </div>
+                              
                            </div>
                            <div class="pc_body">
                               <div class="pc_slider">
-                                 <div class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events">
+                                 <a href="product-single.html" class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events">
                                     <div class="swiper-wrapper" id="swiper-wrapper-18101d3e503fbb7ff" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
                                        <!--This slider items need duplicate for popup slider-->
                                        <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 3" style="width: 206px;">
@@ -1143,7 +1038,7 @@
                                     </div>
                                     <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
                                     <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></a>
                                  <div class="pc_links">
                                     <a href="product-single.html" class="pc_links-product">
                                        <svg class="icon">
@@ -1175,8 +1070,8 @@
                                  </div>
                               </div>
                               <div class="pc_brand-item">
-                                 <img src="images/product-stock.png">
-                                 <label>The Idea Box Kids The Idea Box KidsThe Idea Box KidsThe Idea Box Kids Box Kids</label>
+                                 <a href="brand-single.html"><img src="images/product-stock.png">
+                                 <span class="brand-name">The Idea Box Kids The Idea Box KidsThe Idea Box KidsThe Idea Box Kids Box Kids</span></a>
                               </div>
                            </div>
                         </div>
@@ -1269,63 +1164,6 @@
             </div>
 
           </div>
-        </section>
-        <section class="product product--style-1">
-          <div class="product_extra product_shipping product_extra--style-1">
-            <div class="product_extra-head">
-              <h3>Total Shipping Time</h3>
-            </div>
-            <div class="product_extra-body">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="product_extra-text">
-                    <p>
-                      Estimated total shipping time is <strong>8-16</strong> days. Ships
-                      from Wilsonville, Oregon, United States. No international shipping.
-                    </p>
-                    <p>
-                      Ships product for <strong>$4.95</strong> flat rate plus
-                      <strong>$1</strong> for each additional item in the same order.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="product_extra-text">
-                    <h4>
-                      <svg class="icon">
-                        <use xlink:href="images/sprite.svg#icon-question"></use>
-                      </svg>
-                      Notes
-                    </h4>
-                    <p>
-                      Total shipping time is the number of business days for the supplier
-                      to process, ship and deliver product.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="product_extra product_return product_extra--style-1">
-            <div class="product_extra-head">
-              <h3>Return & Refund</h3>
-            </div>
-            <div class="product_extra-body">
-              <div class="row">
-                <div class="col-12">
-                  <div class="product_extra-text">
-                    <h4>Return & Refund Policy</h4>
-                    <p>
-                      Returns and refunds are accepted on a case-by-case basis. Message
-                      Brand to see if an order is eligible for a return or refund.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </section>
       </main>
       <footer class="footer">

@@ -42,7 +42,7 @@
                      <ul class="header_menu menu">
                         <li class="menu_item"><a href="#" class="menu_link">Dashboard</a></li>
                         <li class="menu_item ">
-                           <a href="#" class="menu_link">My Products</a>
+                           <a href="#" class="menu_link active">Products</a>
                         </li>
                         <li class="menu_item">
                            <div class="dropdown">
@@ -61,7 +61,7 @@
                               <div class="dropdown_body">
                                  <div class="dropdown_inner">
                                     <ul>
-                                       <li><a href="#">Approved Retailers</a></li>
+                                       <li><a href="#">Connected Retailers</a></li>
                                        <li><a href="#">Requests for Access</a></li>
                                     </ul>
                                  </div>
@@ -168,9 +168,6 @@
                      <div class="products_head-content">
                         <div class="title">
                            <h1>
-                              <svg class="product-icon">
-                                 <use xlink:href="images/sprite.svg#product-editing-title"></use>
-                              </svg>
                               Editing: Summer Activities Chips for Kids 
 <!--
                               <svg class="shopify-icon">
@@ -181,9 +178,9 @@
                                <button class="button button-sky-blue remove-all-from-my-list large">Sync Product from Shopify</button>
                            </h1>
                         </div>
-                        <button class="button button-dark bordered large view-list">
+                        <a href="mp-product-details.html" class="button button-dark bordered large view-list">
                         Cancel
-                        </button>
+                        </a>
                         <button class="button button-dark large">
                            <svg class="icon mpsave-icon">
                               <use xlink:href="images/sprite.svg#save"></use>
@@ -205,17 +202,20 @@
                                  </div>
                               </div>
                                
-<!--
-                              <div class="alert alert-warning d-flex align-items-center" role="alert">
+                              <div class="alert alert-warning d-flex align-items-start" role="alert">
                                  <svg class="icon">
                                     <use xlink:href="images/sprite.svg#orange-alert"></use>
                                  </svg>
-                                 <div>
+                                <div class="notes">
+                                   <div>
                                     Please fill this required field: <a href="#">Product Category</a>
                                  </div>
+                                    <div>Please sync <a href="#">SKU</a> from your Shopify Store</div>
+                                  <div>Please enter <a href="#">WSP</a></div>
+                                  <div>Please enter <a href="#">MSRP</a></div>
+                                  </div>
                               </div>
                                
--->
                                
                                <div class="alert alert-warning d-flex align-items-center" role="alert">
                                  <div class="alert-warning-title">
@@ -229,6 +229,8 @@
                                      <button class="button button-white close">Go to Settings</button>
                                  </div>
                               </div>
+                               
+                              
                                
                                 
                               <div class="edit-product_tabs">
@@ -511,49 +513,9 @@
                                           </div>
                                        </div>
                                        <div class="product-item-right">
-                                          <div class="product-activation">
-                                             <div class="pa-title">
-                                                <h3 class="light-txt">Set Product as Active</h3>
-                                                <div class="my-toggle-btn">
-                                                   <input type="checkbox" id="checkbox1">
-                                                   <label for="checkbox1">
-                                                   <span class="on" title="Active"></span>
-                                                   <span class="off" title="Inctive"></span>
-                                                   </label>
-                                                </div>
-                                             </div>
-                                             <p class="pa-text mb-0"><span class="asterisk-red">*</span> Required fields in this page must be filled out before activating this product</p>
-<!--
-                                             <ul>
-                                                <li>
-                                                   <span>Complete Brand Profile</span>
-                                                   <svg class="icon ep-icon">
-                                                      <use xlink:href="images/sprite.svg#icon-check-green"></use>
-                                                   </svg>
-                                                </li>
-                                                <li>
-                                                   <span>Add Billing Information</span>
-                                                   <svg class="icon ep-icon">
-                                                      <use xlink:href="images/sprite.svg#exclamation-mark"></use>
-                                                   </svg>
-                                                </li>
-                                                <li>
-                                                   <span class="primary-text">Assign Product Category</span>
-                                                   <svg class="icon ep-icon">
-                                                      <use xlink:href="images/sprite.svg#exclamation-mark"></use>
-                                                   </svg>
-                                                </li>
-                                                <li>
-                                                   <span class="primary-text">Fill All Required Fields</span>
-                                                   <svg class="icon ep-icon">
-                                                      <use xlink:href="images/sprite.svg#exclamation-mark"></use>
-                                                   </svg>
-                                                </li>
-                                             </ul>
--->
-                                          </div>
                                           
-                                          <div class="product-item-list mt-4 pdc-area">
+                                          
+                                          <div class="product-item-list mt-0 pdc-area">
                                              <div class="bd-callout mt-0 mb-2">
                                                 Product Category <span class="asterisk-red">*</span> 
 <!--
@@ -565,14 +527,14 @@
                                                 </div>
 -->
                                              </div>
-                                             <p class="productc-note">Please assign category to activate product.</p>
+                                             <p class="productc-note">Assigning the Product Category will help retailers find your products.</p>
                                              <div class="form-data">
-                                               <select class="category-control category-dropdown" placeholder="Select Category">
-                                                    <option value=""> </option>
-                                                    <option value="1" data-image="./images/category-baby.svg">Baby & Kids</option>
-                                                    <option value="2" data-image="./images/category-men.svg">Men</option>
-                                                    <option value="3" data-image="./images/category-women.svg">Women</option>
-                                                  </select>
+                                               
+                                                 <select name="Select Category" id="child-category-list">
+                                                   <option value="0">Baby & Kids</option>
+                                                   <option value="1">Men</option>
+                                                   <option value="1">Women</option>
+                                                </select>
                                                 <select name="Child Category" id="child-category-list">
                                                    <option value="0">Bath & Safety</option>
                                                    <option value="1">Baby Apparel</option>
@@ -598,7 +560,7 @@
                                                    </div>
 -->
                                                 </div>
-                                                <p class="shipping-note">Please assign shipping & processing.</p>
+                                                <p class="shipping-note">Retailers will be charged a flat shipping fee when they order this product. The Incremental Fee is the fee for each additional unit in the same order.</p>
                                                 <div class="shipping-fee-form">
                                                    <div class="fee-area mb-0">
                                                       <div class="form-input">
@@ -608,10 +570,10 @@
                                                       <div class="form-input mb-3">
                                                          <label for="Productname" class="form-label">Incremental Fee</label>
                                                          <input type="text" class="form-control mb-2" id="Productname" placeholder="USD 1.00">
-                                                          <p class="shipping-note">Incremental fee is the cost of every extra item added to an order.</p>
+                                                         
                                                       </div>
                                                       <div class="form-input radio-input">
-                                                         <label for="Productname" class="form-label">Total Shipping Time (days)</label>
+                                                         <label for="Productname" class="form-label">Days to Fulfill (days)</label>
                                                          <div class="time-radio-group mb-2">
                                                             <div class="category-data">
                                                                <div class="checkbox checkbox--no-decor">
@@ -648,51 +610,13 @@
                                                                </div>
                                                                 
                                                             </div>
-                                                         </div><p class="shipping-note">Total shipping time is the number of business days for the supplier to process, ship and deliver product.</p>
+                                                         </div><p class="shipping-note">Days to Fulfill is the number of business days for the supplier to process, ship and deliver product.</p>
                                                       </div>
                                                    </div>
                                                 </div>
-<!--
-                                                <div class="product_extra">
-                                                   <div class="product_extra-body">
-                                                      <div class="row">
-                                                         <div class="col-md-12">
-                                                            <div class="product_extra-text">
-                                                               <h4 class="mb-1">
-                                                                  <svg class="icon">
-                                                                     <use xlink:href="images/sprite.svg#icon-question"></use>
-                                                                  </svg>
-                                                                  Incremental Fee
-                                                               </h4>
-                                                               <p class="m-0">
-                                                                  Incremental fee is the cost of every extra item added to an order.
-                                                               </p>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                   <div class="product_extra-body mt-3">
-                                                      <div class="row">
-                                                         <div class="col-md-12">
-                                                            <div class="product_extra-text">
-                                                               <h4 class="mb-1">
-                                                                  <svg class="icon">
-                                                                     <use xlink:href="images/sprite.svg#icon-question"></use>
-                                                                  </svg>
-                                                                  Total Shipping Time
-                                                               </h4>
-                                                               <p class="m-0">
-                                                                  Total shipping time is the number of business days for the supplier to process, ship and deliver product.
-                                                               </p>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
--->
                                              </div>
                                           </div>
-                                           <div class="product-tag mb-5">
+                                           <div class="product-tag">
                                              <div class="pa-title">
                                                 <h3>Tags</h3>
                                              </div>
@@ -754,7 +678,7 @@
                                              <use xlink:href="images/sprite.svg#info-blue"></use>
                                           </svg>
                                           <div>
-                                             You must include at least one (1) product variant
+                                             You must include at least one (1) product variant. SKU, WSP, and MSRP are required fields.
                                           </div>
                                        </div>
                                        <div class="v-table pv-update">
@@ -810,37 +734,16 @@
                                                    <th>
                                                       <div class="txt">
                                                          Stock
-                                                         <!--Add class 'active' to sort, when it active-->
-                                                         <!--When Sync is ON-->
-                                                         <div class="tooltip link-tooltip">
-                                                            <div class="tooltip-icon tooltip-icon-info sync-icon">
+                                                        <div class="tooltip">
+                                                            <div class="tooltip-icon tooltip-icon-info ic-if-blue">
                                                                <svg class="icon">
-                                                                  <use xlink:href="images/sprite.svg#icon-sync"></use>
+                                                                  <use xlink:href="images/sprite.svg#icon-info-blue-2"></use>
                                                                </svg>
                                                             </div>
                                                             <div class="tooltip_text">
-                                                               <div class="tooltip-data">
-                                                                  <p>Stock Sync is ON. Turn it off if you want to edit stock levels and manage them manually in ShopDot. Your changes will not be overridden.</p>
-                                                                  <a href="#" class="tooltip-setting">settings</a>          
-                                                               </div>
+                                                               <p>The inventory published within ShopDot is based on the inventory from your Shopify store x the inventory buffer that you set under Settings-Preferences.</p>
                                                             </div>
                                                          </div>
-                                                         <!--When Sync is OFF-->
-                                                         <!--
-                                                            <div class="tooltip link-tooltip">
-                                                               <div class="tooltip-icon tooltip-icon-info sync-icon-off">
-                                                                  <svg class="icon">
-                                                                     <use xlink:href="images/sprite.svg#icon-sync-off"></use>
-                                                                  </svg>
-                                                               </div>
-                                                               <div class="tooltip_text">
-                                                                  <div class="tooltip-data">
-                                                                     <p>Stock Sync is OFF. Turn it on if you want Stock Levels in ShopDot to automatically sync from Shopify. Your previous changes will be overridden</p>
-                                                                     <a href="#" class="tooltip-setting">settings</a>          
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                            -->
                                                          <button class="sort">
                                                             <svg class="icon">
                                                                <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
@@ -851,6 +754,16 @@
                                                    <th>
                                                       <div class="txt">
                                                          WSP  
+                                                          <div class="tooltip">
+                                                            <div class="tooltip-icon tooltip-icon-info ic-if-blue">
+                                                               <svg class="icon">
+                                                                  <use xlink:href="images/sprite.svg#icon-info-blue-2"></use>
+                                                               </svg>
+                                                            </div>
+                                                            <div class="tooltip_text">
+                                                               <p>WSP stands for Wholesale Price. This is the price that retailers pay brands.</p>
+                                                            </div>
+                                                         </div>
                                                          <button class="sort">
                                                             <svg class="icon">
                                                                <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
@@ -868,7 +781,7 @@
                                                                </svg>
                                                             </div>
                                                             <div class="tooltip_text">
-                                                               <p>This is the cost that the retailer has to pay brand for shipping</p>
+                                                               <p>This is the cost the retailer has to pay brand for shipping.</p>
                                                             </div>
                                                          </div>
                                                       </div>
@@ -876,37 +789,7 @@
                                                    <th>
                                                       <div class="txt">
                                                          MSRP
-                                                         <!--Add class 'active' to sort, when it active-->
-                                                         <!--When ON-->
-                                                         <div class="tooltip link-tooltip">
-                                                            <div class="tooltip-icon tooltip-icon-info sync-icon">
-                                                               <svg class="icon">
-                                                                  <use xlink:href="images/sprite.svg#icon-sync"></use>
-                                                               </svg>
-                                                            </div>
-                                                            <div class="tooltip_text">
-                                                               <div class="tooltip-data">
-                                                                  <p>MSRP Sync is ON. MSRP in ShopDot automatically syncs from Shopify. Turn it off to edit the MSRP and manage pricing manually in ShopDot</p>
-                                                                  <a href="#" class="tooltip-setting">settings</a>          
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                         <!--When OFF-->
-                                                         <!--
-                                                            <div class="tooltip link-tooltip">
-                                                               <div class="tooltip-icon tooltip-icon-info sync-icon-off">
-                                                                  <svg class="icon">
-                                                                     <use xlink:href="images/sprite.svg#icon-sync-off"></use>
-                                                                  </svg>
-                                                               </div>
-                                                               <div class="tooltip_text">
-                                                                  <div class="tooltip-data">
-                                                                     <p>MSRP Sync is OFF. Turn it on if you want MSRP in ShopDot to automatically sync from Shopify. Your previous changes will be overridden</p>
-                                                                     <a href="#" class="tooltip-setting">settings</a>          
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                            -->
+                                                         
                                                          <button class="sort">
                                                             <svg class="icon">
                                                                <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
@@ -962,14 +845,16 @@
                                                    </td>
                                                    <td>
                                                       <div class="txt">
-                                                         <input type="text" class="tabel-text" placeholder="$5.00">
+                                                         <input type="text" class="tabel-text is-invalid" placeholder="0.00">
                                                       </div>
                                                    </td>
                                                    <td>
                                                       <div class="txt">$5.00</div>
                                                    </td>
-                                                   <td>
-                                                      <div class="txt">$15.95</div>
+                                                    <td>
+                                                      <div class="txt">
+                                                         <input type="text" class="tabel-text is-invalid" placeholder="0.00">
+                                                      </div>
                                                    </td>
                                                    <td>
                                                       <div class="product-activation">
@@ -1014,7 +899,9 @@
                                                       <div class="txt">$5.00</div>
                                                    </td>
                                                    <td>
-                                                      <div class="txt">$15.95</div>
+                                                      <div class="txt">
+                                                         <input type="text" class="tabel-text" placeholder="$20.00">
+                                                      </div>
                                                    </td>
                                                    <td>
                                                       <div class="product-activation">
@@ -1058,8 +945,10 @@
                                                    <td>
                                                       <div class="txt">$5.00</div>
                                                    </td>
-                                                   <td>
-                                                      <div class="txt">$15.95</div>
+                                                  <td>
+                                                      <div class="txt">
+                                                         <input type="text" class="tabel-text" placeholder="$20.00">
+                                                      </div>
                                                    </td>
                                                    <td>
                                                       <div class="product-activation">
@@ -1103,8 +992,10 @@
                                                    <td>
                                                       <div class="txt">$5.00</div>
                                                    </td>
-                                                   <td>
-                                                      <div class="txt">$15.95</div>
+                                                  <td>
+                                                      <div class="txt">
+                                                         <input type="text" class="tabel-text" placeholder="$20.00">
+                                                      </div>
                                                    </td>
                                                    <td>
                                                       <div class="product-activation">
@@ -1134,6 +1025,21 @@
          </main>
          <footer class="footer">
          </footer>
+          
+            <div class="bottom-notify">
+        <div class="container">
+          <div class="bottom-notify_text">
+            <p>
+              &lt;Product Name&gt; product details updated
+            </p>
+          </div>
+        </div>
+        <div class="bottom-notify-close">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#icon-close"></use>
+          </svg>
+        </div>
+      </div>
           
           <div class="bottom-notify">
         <div class="container">
