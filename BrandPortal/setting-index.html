@@ -10,10 +10,7 @@
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Brand Setting</title>
-      <link
-         rel="icon"
-         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
-         />
+     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
@@ -23,7 +20,6 @@
       <link media="all" rel="stylesheet" href="./css/vendor.min.css" />
       <link media="all" rel="stylesheet" href="./css/styles.min.css" />
       <link media="all" rel="stylesheet" href="./css/media.css" />
-      <link media="all" rel="stylesheet" href="./css/ckeditor.css" />
        <link media="all" rel="stylesheet" href="css/dropdown.css" />
    </head>
    <body>
@@ -134,11 +130,31 @@
                                     <span class="line line3"></span>
                                  </div>
                                  <div class="pc_tabs-menu tab_menu">
-                                    <a href="#" data-link="Account" class="tab-links required active">Brand Profile</a>
-                                    <a href="#" data-link="Preferences" class="tab-links required">Preferences</a>
-                                    <a href="#" data-link="GettingPaid" class="tab-links required">Getting Paid</a>
-                                    <a href="#" data-link="Shipping" class="tab-links required">Shipping</a>
-                                     <a href="#" data-link="Integration" class="tab-links">Integration</a>
+                                    <a href="#" data-link="Account" class="tab-links required active">Brand Profile
+                                     <div class="tooltip_text not-available-tooltip">
+                                       <p>This is a mandatory setting that is part of the onboarding process.</p>
+                                    </div>
+                                     </a>
+                                    <a href="#" data-link="Preferences" class="tab-links required">Preferences
+                                     <div class="tooltip_text not-available-tooltip">
+                                       <p>This is a mandatory setting that is part of the onboarding process.</p>
+                                    </div>
+                                     </a>
+                                    <a href="#" data-link="GettingPaid" class="tab-links required">Getting Paid
+                                     <div class="tooltip_text not-available-tooltip">
+                                       <p>This is a mandatory setting that is part of the onboarding process.</p>
+                                    </div>
+                                     </a>
+                                    <a href="#" data-link="Shipping" class="tab-links required">Shipping
+                                     <div class="tooltip_text not-available-tooltip">
+                                       <p>This is a mandatory setting that is part of the onboarding process.</p>
+                                    </div>
+                                     </a>
+                                     <a href="#" data-link="Integration" class="tab-links required">Integration
+                                     <div class="tooltip_text not-available-tooltip">
+                                       <p>This is a mandatory setting that is part of the onboarding process.</p>
+                                    </div>
+                                     </a>
                                     <a href="#" data-link="Users" class="tab-links">Users</a>
                                     <a href="#" data-link="Security" class="tab-links">Security</a>
                                     <a href="#" data-link="AlertsNotifications" class="tab-links">Notifications</a>
@@ -475,49 +491,13 @@
                                        </div>
                                        <div class="form-input form-story mb-4">
                                           <label for="" class="form-label">About the brand <span class="asterisk-red">*</span></label>
-                                          <div class="content-info-">
-                                             <div data-editor="ClassicEditor" data-collaboration="false" data-revision-history="false">
-                                                <main>
-                                                   <div class="centered">
-                                                      <div class="">
-                                                         <div class="editor-container">
-                                                            <div class="editor">
-                                                               <p>&nbsp;</p>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </main>
-                                             </div>
-                                          </div>
+                                          <textarea name="" id="" rows="8" required="" class="text-area" placeholder=""></textarea>
                                        </div>
                                        <div class="form-input mb-4">
                                           <label for="" class="form-label">Add a Youtube or Vimeo video link</label>
                                           <input type="text" class="form-control is-invalid" id="" placeholder="">
                                            <small class="invalid-feedback mb-0">Please enter a valid website</small>
-<!--                                           <small class="invalid-feedback mb-0">Please enter a valid video link URL</small>-->
                                        </div>
-                                       <!--
-                                          <div class="form-input form-upload mb-4">
-                                             <label for="" class="form-label">Upload a brand photo</label>
-                                             <div class="upload-image-items">
-                                                <p>Drag and drop file here</p>
-                                             </div>
-                                              
-                                              <div class="uploadOuter">
-                                                 
-                                               <span class="dragBox" >
-                                                 Drag and drop file here
-                                               <input type="file" onChange="dragNdrop(event)"  ondragover="drag()" ondrop="drop()" id="uploadFile"  />
-                                               </span>
-                                                   <strong>OR</strong>
-                                                  <label for="uploadFile" class="btn btn-primary">Upload Image</label>
-                                                
-                                               </div>
-                                               <div id="preview"></div>
-                                              
-                                          </div>
-                                          -->
                                        <div class="form-input form-submit">
                                           <button class="button button-grey cancel">Cancel</button>
                                           <button class="button">Save</button>
@@ -668,18 +648,6 @@
                                  <div class="preferences_info mt-4">
                                     <h2>
                                        <span>Return and Refund Policy <span class="asterisk-red">*</span></span> 
-<!--
-                                       <div class="tooltip">
-                                          <div class="tooltip-icon">
-                                             <svg class="icon">
-                                                <use xlink:href="images/sprite.svg#icon-info"></use>
-                                             </svg>
-                                          </div>
-                                          <div class="tooltip_text">
-                                             <p class="mb-0">This return and refund policy is universal and will apply to all of your products.</p>
-                                          </div>
-                                       </div>
--->
                                     </h2>
                                     <div class="form-area form-area-full">
                                        <div class="form-input return_select-item">
@@ -968,7 +936,7 @@
                                                    User Access
                                                 </th>
                                                 <th>
-                                                   Action
+                                                   Actions
                                                 </th>
                                              </tr>
                                           </thead>
@@ -1063,7 +1031,7 @@
                                                    User Access
                                                 </th>
                                                 <th>
-                                                   Action
+                                                   Actions
                                                 </th>
                                              </tr>
                                           </thead>
@@ -1245,7 +1213,7 @@
                                              <input type="checkbox" id="checkbox3" checked>
                                              <label for="checkbox3">
                                              <span class="on" title="Active"></span>
-                                             <span class="off" title="Inctive"></span>
+                                             <span class="off" title="inactive"></span>
                                              </label>
                                           </div>
                                        </div>
@@ -1258,7 +1226,7 @@
                                                 <input type="checkbox" id="checkbox4" checked>
                                                 <label for="checkbox4">
                                                 <span class="on" title="Active"></span>
-                                                <span class="off" title="Inctive"></span>
+                                                <span class="off" title="inactive"></span>
                                                 </label>
                                              </div>
                                           </div>
@@ -1272,7 +1240,7 @@
                                                 <input type="checkbox" id="checkbox4" checked>
                                                 <label for="checkbox4">
                                                 <span class="on" title="Active"></span>
-                                                <span class="off" title="Inctive"></span>
+                                                <span class="off" title="inactive"></span>
                                                 </label>
                                              </div>
                                           </div>
@@ -1556,15 +1524,7 @@
             </div>
          </div>
       </div>
-      <script src="js/ckeditor.js"></script>
-      <script>ClassicEditor
-         .create( document.querySelector( '.editor' ), {
-         	licenseKey: '',
-         } )
-         .then( editor => {
-         	window.editor = editor;
-         } )
-      </script>
+     
       <script src="./js/vendor.min.js" defer></script>
       <script
          src="https://code.jquery.com/jquery-3.6.0.min.js"

@@ -4,11 +4,8 @@
    <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Brands - Retailers profile</title>
-      <link
-         rel="icon"
-         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
-         />
+      <title>Brands - Retailers profile Unassign products Modal</title>
+      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
@@ -21,7 +18,7 @@
    </head>
    <body class="brands-single-page">
       <div class="wrapper">
-                  <header class="header mp-header">
+         <header class="header mp-header">
             <div class="header_block header_block-top mp-header_block-top">
                <div class="header_container">
                   <!--header logo-->
@@ -176,33 +173,17 @@
                      </a>
                      <div class="title">
                         <h1>A Schuler Bookst</h1>
-                        <div class="product_status">
-                           <div class="product-status product-status--connected">
-                              <div class="icon_wrap">
-                                 <svg class="icon">
-                                    <use xlink:href="images/sprite.svg#icon-connected"></use>
-                                 </svg>
-                              </div>
-                              Approved
-                              <!--Here added tooltip-->
-                              <div class="tooltip">
-                                 <div class="tooltip-icon tooltip-icon-info">
-                                    <svg class="icon">
-                                       <use xlink:href="images/sprite.svg#icon-info"></use>
-                                    </svg>
-                                 </div>
-                                 <div class="tooltip_text tooltip-white">
-                                    <p><strong>Approved:</strong>August 9, 2021</p>
-                                    <p><strong>Requested:</strong>August 5, 2021</p>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
+                        <span class="status-pill pill_connected w-auto">
+                        Connected
+                        </span>
                      </div>
                      <div class="buttons">
-                        <button disabled class="button button-grey">Save</button>
                         <button class="button button-red">Decline</button>
-                        <button class="button message-brand">Message Retailer</button>
+                        <button class="button message-brand">
+                           <svg class="icon">
+                              <use href="images/sprite.svg#message-white"></use>
+                           </svg>
+                        </button>
                      </div>
                   </div>
                </div>
@@ -274,7 +255,7 @@
                      </div>
                   </div>
                </div>
-               <div class="brand-single_wrap retail-config" id="PageFocus">
+               <div class="brand-single_wrap retail-config"> 
                   <div class="brand-single_content">
                      <h2 class="rc-title">Retailer Configuration </h2>
                      <div class="brand-single_content-body pt-5">
@@ -282,7 +263,7 @@
                            <div class="brand-single_block">
                               <h2 class="mb-2">Product Access</h2>
                               <p class="rc-line">
-                                 Please choose products you want the retailer to have access to. They will be able to list them and push to store.
+                                 Please choose products you want the retailer to have access to. They will be able to list them and publish to store.
                               </p>
                               <div class="section products products--style-1 rc-filter">
                                  <aside class="filters">
@@ -309,7 +290,7 @@
                                                          <div class="checkbox checkbox--no-decor">
                                                             <label for="pc-1"
                                                                >
-                                                               <input type="checkbox" id="pc-1" name="product" />
+                                                               <input type="checkbox" id="pc-1" name="product" checked />
                                                                <div class="checkbox-text">Baby & Kids</div>
                                                             </label>
                                                          </div>
@@ -510,13 +491,18 @@
                                              <div class="pc_tabs tabs">
                                                 <div class="tab_wrap">
                                                    <div class="pc_tabs-menu tab_menu">
-                                                      <button data-link="unassigned" class="tab-link active">Unassigned Products</button>
-                                                      <button data-link="assigned" class="tab-link">Assigned Products</button>
+                                                      <button data-link="unassigned" class="tab-link">Unassigned Products</button>
+                                                      <button data-link="assigned" class="tab-link active">Assigned Products</button>
                                                    </div>
                                                 </div>
-                                               
+                                                   <div class="ml-auto-action" style="top: 8px;right: 16px;">
+                                                    <button class="button button button-blue">Assign</button>
+                                                    </div> 
+                                                 <div class="ml-auto-action" style="top: 8px;right: 16px;display: none">
+                                                    <button class="button button button-blue">Assign</button>
+                                                    </div> 
                                                 <div class="pc_tabs-content tabs_body">
-                                                    <div class="tab active" data-target="unassigned">
+                                                    <div class="tab" data-target="unassigned">
                                                       <div class="tab_inner">
                                                          <div class="tab_inner-text">
                                                             <div class="products_head-content">
@@ -537,36 +523,48 @@
                                                                   </form>
                                                                </div>
                                                             </div>
-                                                          
+                                                             
+                                                             
+                                                              <div class="align-filter-checkbox">
+                                                                   <div class="products_active-filter">
+                                                                      <div class="txt"><b>Product Category:</b> Baby &amp; Kids</div>
+                                                                      <button class="products_active-remove">
+                                                                         <svg class="icon">
+                                                                            <use xlink:href="images/sprite.svg#icon-close"></use>
+                                                                         </svg>
+                                                                      </button>
+                                                                   </div>
+                                                                   
+                                                                </div>
+                                                             
+                                                             
                                                             <div class="content_area overflow-auto retailer-table mt-4">
                                                                <table class="my_list-table">
                                                                   <thead class="nodark-bg">
                                                                      <tr>
                                                                         <th>
-                                                                           <div class="check-all title">
+                                                                           <div class="check-all">
                                                                                <label for="check-all" class="checkbox">
-                                                                                 <input type="checkbox" name="check-all" id="check-all" />
-                                                                                 <div class="checkbox-text"></div>
-                                                                              </label>
-                                                                              <div class="check-all_dropdown dropdown">
-                                                                                 <div class="dropdown_header">
-                                                                                    <button class="sort">
-                                                                                       <svg class="icon">
-                                                                                          <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
-                                                                                       </svg>
-                                                                                    </button>
-                                                                                 </div>
-                                                                                 <div class="dropdown_body">
-                                                                                    <div class="dropdown_inner">
-                                                                                       <ul>
-                                                                                          <li><button>Ready for Store Items</button></li>
-                                                                                          <li><button>Pushed to Store Items</button></li>
-                                                                                          
-                                                                                       </ul>
-                                                                                    </div>
-                                                                                 </div>
-                                                                              </div>
-                                                                           </div>
+                                                                                  <input type="checkbox" name="check-all" id="check-all">
+                                                                                  <div class="checkbox-text"></div>
+                                                                               </label>
+                                                                               <div class="check-all_dropdown dropdown">
+                                                                                  <div class="dropdown_header">
+                                                                                     <svg class="icon">
+                                                                                        <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                                     </svg>
+                                                                                  </div>
+                                                                                  <div class="dropdown_body db-width">
+                                                                                     <div class="dropdown_inner">
+                                                                                        <ul>
+                                                                                            <li><button>Select All Items
+                                                                                               </button></li>
+                                                                                        </ul>
+                                                                                     </div>
+                                                                                  </div>
+                                                                               </div>
+                                                                            </div>
+                                                                         </th>
                                                                         <th>
                                                                            <div class="title">
                                                                               Product Name
@@ -614,12 +612,12 @@
                                                                            </div>
                                                                         </th>
                                                                         <th>
-                                                                           <div class="title">
+                                                                           <div class="title cstm-gap">
                                                                               WSP 
                                                                               <div class="tooltip">
                                                                                  <div class="tooltip-icon tooltip-icon-info">
                                                                                     <svg class="icon">
-                                                                                       <use xlink:href="images/sprite.svg#icon-info"></use>
+                                                                                       <use xlink:href="images/sprite.svg#info-white"></use>
                                                                                     </svg>
                                                                                  </div>
                                                                                  <div class="tooltip_text tt-right">
@@ -633,8 +631,8 @@
                                                                   <tbody>
                                                                      <tr>
                                                                         <td>
-                                                                           <label for="check-1" class="checkbox">
-                                                                              <input type="checkbox" name="check-1" id="check-1" checked />
+                                                                           <label for="check-1a" class="checkbox">
+                                                                              <input type="checkbox" name="check-1a" id="check-1a" checked />
                                                                               <div class="checkbox-text"></div>
                                                                            </label>
                                                                         </td>
@@ -651,13 +649,13 @@
                                                                         <td>
                                                                            <div>Baby & Kids</div>
                                                                         </td>
-                                                                        <td>
-                                                                           <div>155</div>
-                                                                        </td>
+                                                                       
                                                                         <td>
                                                                            <div>Chips</div>
                                                                         </td>
-                                                                       
+                                                                       <td>
+                                                                           <div>10000</div>
+                                                                        </td>
                                                                         <td>
                                                                            <div class="text-bold">$5.00-$7.50</div>
                                                                         </td>
@@ -682,13 +680,13 @@
                                                                         <td>
                                                                            <div>Baby & Kids</div>
                                                                         </td>
-                                                                        <td>
-                                                                           <div>999</div>
-                                                                        </td>
+                                                                      
                                                                         <td>
                                                                            <div>Chips, Summer,  Summer Activities, Summer Toys</div>
                                                                         </td>
-                                                                       
+                                                                       <td>
+                                                                           <div>10000</div>
+                                                                        </td>
                                                                         <td>
                                                                            <div class="text-bold">$5.00-$7.50</div>
                                                                         </td>
@@ -713,13 +711,13 @@
                                                                         <td>
                                                                            <div>Baby & Kids</div>
                                                                         </td>
-                                                                        <td>
-                                                                           <div>999</div>
-                                                                        </td>
+                                                                       
                                                                         <td>
                                                                            <div>Chips, Summer,  Summer Activities, Summer Toys</div>
                                                                         </td>
-                                                                       
+                                                                       <td>
+                                                                           <div>10000</div>
+                                                                        </td>
                                                                         <td>
                                                                            <div class="text-bold">$5.00-$7.50</div>
                                                                         </td>
@@ -759,7 +757,7 @@
                                                          </div>
                                                       </div>
                                                    </div>
-                                                   <div class="tab" data-target="assigned">
+                                                   <div class="tab active" data-target="assigned">
                                                       <div class="tab_inner">
                                                          <div class="tab_inner-text">
                                                             <div class="products_head-content">
@@ -781,36 +779,45 @@
                                                                   </form>
                                                                </div>
                                                             </div>
-                                                            
+                                                             
+                                                              <div class="align-filter-checkbox">
+                                                                   <div class="products_active-filter">
+                                                                      <div class="txt"><b>Product Category:</b> Baby &amp; Kids</div>
+                                                                      <button class="products_active-remove">
+                                                                         <svg class="icon">
+                                                                            <use xlink:href="images/sprite.svg#icon-close"></use>
+                                                                         </svg>
+                                                                      </button>
+                                                                   </div>
+                                                                   
+                                                                </div>
                                                             <div class="content_area overflow-auto retailer-table mt-4">
                                                                <table class="my_list-table">
                                                                   <thead class="nodark-bg">
                                                                      <tr>
                                                                         <th>
-                                                                           <div class="check-all title">
-                                                                               <label for="check-all" class="checkbox">
-                                                                                 <input type="checkbox" name="check-all" id="check-all" />
-                                                                                 <div class="checkbox-text"></div>
-                                                                              </label>
-                                                                              <div class="check-all_dropdown dropdown">
-                                                                                 <div class="dropdown_header">
-                                                                                    <button class="sort">
-                                                                                       <svg class="icon">
-                                                                                          <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
-                                                                                       </svg>
-                                                                                    </button>
-                                                                                 </div>
-                                                                                 <div class="dropdown_body">
-                                                                                    <div class="dropdown_inner">
-                                                                                       <ul>
-                                                                                          <li><button>Ready for Store Items</button></li>
-                                                                                          <li><button>Pushed to Store Items</button></li>
-                                                                                          
-                                                                                       </ul>
-                                                                                    </div>
-                                                                                 </div>
-                                                                              </div>
-                                                                           </div>
+                                                                           <div class="check-all">
+                                                                               <label for="check-allp" class="checkbox">
+                                                                                  <input type="checkbox" name="check-allp" id="check-allp">
+                                                                                  <div class="checkbox-text"></div>
+                                                                               </label>
+                                                                               <div class="check-all_dropdown dropdown">
+                                                                                  <div class="dropdown_header">
+                                                                                     <svg class="icon">
+                                                                                        <use xlink:href="images/sprite.svg#icon-chevron--down"></use>
+                                                                                     </svg>
+                                                                                  </div>
+                                                                                  <div class="dropdown_body db-width">
+                                                                                     <div class="dropdown_inner">
+                                                                                        <ul>
+                                                                                            <li><button>Select All Items
+                                                                                               </button></li>
+                                                                                        </ul>
+                                                                                     </div>
+                                                                                  </div>
+                                                                               </div>
+                                                                            </div>
+                                                                         </th>
                                                                         <th>
                                                                            <div class="title">
                                                                               Product Name
@@ -844,7 +851,8 @@
                                                                               </button>
                                                                            </div>
                                                                         </th>
-                                                                       
+                                                                        
+                                                                      
                                                                         <th>
                                                                            <div class="title">
                                                                               Stock
@@ -857,12 +865,12 @@
                                                                            </div>
                                                                         </th>
                                                                         <th>
-                                                                           <div class="title">
+                                                                           <div class="title cstm-gap">
                                                                               WSP 
                                                                               <div class="tooltip">
                                                                                  <div class="tooltip-icon tooltip-icon-info">
                                                                                     <svg class="icon">
-                                                                                       <use xlink:href="images/sprite.svg#icon-info"></use>
+                                                                                       <use xlink:href="images/sprite.svg#info-white"></use>
                                                                                     </svg>
                                                                                  </div>
                                                                                  <div class="tooltip_text tt-right">
@@ -876,8 +884,8 @@
                                                                   <tbody>
                                                                      <tr>
                                                                         <td>
-                                                                           <label for="check-1" class="checkbox">
-                                                                              <input type="checkbox" name="check-1" id="check-1" />
+                                                                           <label for="check-1d" class="checkbox">
+                                                                              <input type="checkbox" name="check-1d" id="check-1d" />
                                                                               <div class="checkbox-text"></div>
                                                                            </label>
                                                                         </td>
@@ -894,9 +902,7 @@
                                                                         <td>
                                                                            <div>Baby & Kids</div>
                                                                         </td>
-                                                                        <td>
-                                                                           <div>999</div>
-                                                                        </td>
+                                                                       
                                                                         <td>
                                                                            <div>Chips, Summer,  Summer Activities, Summer Toys</div>
                                                                         </td>
@@ -910,8 +916,8 @@
                                                                      </tr>
                                                                      <tr>
                                                                         <td>
-                                                                           <label for="check-2" class="checkbox">
-                                                                              <input type="checkbox" name="check-2" id="check-2" />
+                                                                           <label for="check-2c" class="checkbox">
+                                                                              <input type="checkbox" name="check-2c" id="check-2c" />
                                                                               <div class="checkbox-text"></div>
                                                                            </label>
                                                                         </td>
@@ -928,9 +934,7 @@
                                                                         <td>
                                                                            <div>Baby & Kids</div>
                                                                         </td>
-                                                                        <td>
-                                                                           <div>999</div>
-                                                                        </td>
+                                                                      
                                                                         <td>
                                                                            <div>Chips, Summer,  Summer Activities, Summer Toys</div>
                                                                         </td>
@@ -944,8 +948,8 @@
                                                                      </tr>
                                                                      <tr>
                                                                         <td>
-                                                                           <label for="check-3" class="checkbox">
-                                                                              <input type="checkbox" name="check-3" id="check-3" />
+                                                                           <label for="check-3c" class="checkbox">
+                                                                              <input type="checkbox" name="check-3c" id="check-3c" />
                                                                               <div class="checkbox-text"></div>
                                                                            </label>
                                                                         </td>
@@ -962,13 +966,11 @@
                                                                         <td>
                                                                            <div>Baby & Kids</div>
                                                                         </td>
-                                                                        <td>
-                                                                           <div>999</div>
-                                                                        </td>
+                                                                        
                                                                         <td>
                                                                            <div>Chips, Summer,  Summer Activities, Summer Toys</div>
                                                                         </td>
-                                                                      
+                                                                       
                                                                         <td>
                                                                            <div>10000</div>
                                                                         </td>
@@ -1028,7 +1030,44 @@
          </main>
          <footer class="footer">
          </footer>
+         <div class="popup popup-confirm popup-confirm-push active">
+            <div class="popup_wrapper">
+               <div class="popup_content">
+                  <div class="popup-close">
+                     <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-close"></use>
+                     </svg>
+                  </div>
+                  <div class="popup_content-header">
+                     <svg class="icon">
+                        <use xlink:href="images/sprite.svg#icon-info-1"></use>
+                     </svg>
+                     <div class="h1">Confirmation Required</div>
+                  </div>
+                  <div class="popup_content-body text-center">
+                     <p class="mb-4">
+                        You are assigning 1 product to <span class="link-text fw-bold">[Retailer Store Name]</span>. 
+                        They will be able to order these products in ShopDot. 
+                     </p>
+                      <p>Do you wish to continue?</p>
+                  </div>
+                  <div class="popup_content-footer">
+                     <button class="button button-dark ignore-cancel">
+                     Cancel
+                     </button>
+                     <button class="button button-orange push">
+                     Yes
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         
       </div>
+      
+       
+       
       <script src="./js/vendor.min.js" defer></script>
       <script
          src="https://code.jquery.com/jquery-3.6.0.min.js"

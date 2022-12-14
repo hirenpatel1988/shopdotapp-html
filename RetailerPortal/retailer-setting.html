@@ -5,10 +5,7 @@
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Retailer Setting</title>
-      <link
-         rel="icon"
-         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
-         />
+      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
@@ -18,7 +15,6 @@
       <link media="all" rel="stylesheet" href="./css/vendor.min.css" />
       <link media="all" rel="stylesheet" href="./css/styles.min.css" />
       <link media="all" rel="stylesheet" href="./css/media.css" />
-      <link media="all" rel="stylesheet" href="./css/ckeditor.css" />
    </head>
    <body>
       <div class="wrapper">
@@ -325,23 +321,7 @@
                                        </div>
                                        <div class="form-input form-story mb-4">
                                           <label for="" class="form-label">About the retailer <span class="asterisk-red">*</span></label>
-                                          <div class="content-info-">
-                                             <div data-editor="ClassicEditor" data-collaboration="false" data-revision-history="false">
-                                                <main>
-                                                   <div class="centered">
-                                                      <div class="">
-                                                         <div class="editor-container">
-                                                            <div class="editor">
-                                                               <p>
-                                                                  &nbsp;
-                                                               </p>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </main>
-                                             </div>
-                                          </div>
+                                          <textarea name="" id="" rows="8" required="" class="text-area" placeholder=""></textarea>
                                        </div>
                                        <div class="form-input form-upload mb-4">
                                           <label for="" class="form-label">Upload a photo the retail store</label>
@@ -456,7 +436,7 @@
                                                    User Access
                                                 </th>
                                                 <th>
-                                                   Action
+                                                   Actions
                                                 </th>
                                              </tr>
                                           </thead>
@@ -551,7 +531,7 @@
                                                    User Access
                                                 </th>
                                                 <th>
-                                                   Action
+                                                   Actions
                                                 </th>
                                              </tr>
                                           </thead>
@@ -724,7 +704,7 @@
                                              <input type="checkbox" id="checkbox3" checked="">
                                              <label for="checkbox3">
                                              <span class="on" title="Active"></span>
-                                             <span class="off" title="Inctive"></span>
+                                             <span class="off" title="inactive"></span>
                                              </label>
                                           </div>
                                        </div>
@@ -737,7 +717,7 @@
                                                 <input type="checkbox" id="checkbox4" checked="">
                                                 <label for="checkbox4">
                                                 <span class="on" title="Active"></span>
-                                                <span class="off" title="Inctive"></span>
+                                                <span class="off" title="inactive"></span>
                                                 </label>
                                              </div>
                                           </div>
@@ -751,7 +731,7 @@
                                                 <input type="checkbox" id="checkbox5" checked="">
                                                 <label for="checkbox5">
                                                 <span class="on" title="Active"></span>
-                                                <span class="off" title="Inctive"></span>
+                                                <span class="off" title="inactive"></span>
                                                 </label>
                                              </div>
                                           </div>
@@ -765,7 +745,7 @@
                                                <input type="checkbox" id="checkbox6" checked="">
                                                <label for="checkbox6">
                                                <span class="on" title="Active"></span>
-                                               <span class="off" title="Inctive"></span>
+                                               <span class="off" title="inactive"></span>
                                                </label>
                                             </div>
                                           </div>
@@ -955,15 +935,7 @@
                     <div class="si-info" style="display: none"><img src="images/onboarding/tick-white-dark.png"><span href="#">Confirm your mandatory settings</span></div>
                    </div>
                        </div>
-      <script src="js/ckeditor.js"></script>
-      <script>ClassicEditor
-         .create( document.querySelector( '.editor' ), {
-         	licenseKey: '',
-         } )
-         .then( editor => {
-         	window.editor = editor;
-         } )
-      </script>
+      
       <script src="./js/vendor.min.js" defer></script>
       <script
          src="https://code.jquery.com/jquery-3.6.0.min.js"
